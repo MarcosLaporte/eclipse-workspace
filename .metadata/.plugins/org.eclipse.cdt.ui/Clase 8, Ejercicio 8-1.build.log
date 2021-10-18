@@ -1,28 +1,10 @@
-16:48:17 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+18:07:10 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
-..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosUnJugador':
-..\src\Clase 8, Ejercicio 8-1.c:46:50: error: incompatible type for argument 1 of 'CalcularPromedioGoles'
-   46 |  unJugador.promedioGoles = CalcularPromedioGoles(unJugador, T);
-      |                                                  ^~~~~~~~~
-      |                                                  |
-      |                                                  eJugador {aka struct <anonymous>}
-..\src\Clase 8, Ejercicio 8-1.c:30:36: note: expected 'eJugador *' {aka 'struct <anonymous> *'} but argument is of type 'eJugador' {aka 'struct <anonymous>'}
-   30 | int CalcularPromedioGoles(eJugador jugador[], int tam);
-      |                           ~~~~~~~~~^~~~~~~~~
-..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
-..\src\Clase 8, Ejercicio 8-1.c:72:9: error: 'promedio' undeclared (first use in this function)
-   72 |  return promedio;
-      |         ^~~~~~~~
-..\src\Clase 8, Ejercicio 8-1.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
-..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosJugadores':
-..\src\Clase 8, Ejercicio 8-1.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
-   57 | }
-      | ^
-..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
-..\src\Clase 8, Ejercicio 8-1.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
-   73 | }
-      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugadores.o" "..\\src\\Jugadores.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" "src\\Jugadores.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 8, Ejercicio 8-1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
 
-16:48:17 Build Failed. 2 errors, 2 warnings. (took 208ms)
+18:07:11 Build Failed. 1 errors, 0 warnings. (took 781ms)
 

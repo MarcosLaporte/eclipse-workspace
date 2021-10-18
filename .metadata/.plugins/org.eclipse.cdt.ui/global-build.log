@@ -2202,3 +2202,1416 @@ gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "s
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
 gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+15:31:41 **** Rebuild of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc: error: ..\src\Input.c: No such file or directory
+gcc: fatal error: no input files
+compilation terminated.
+15:31:48 **** Rebuild of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductNation.o" "..\\src\\ProductNation.c" 
+In file included from ..\src\ProductNation.c:6:
+..\src\ProductNation.h:12:1: warning: unnamed struct/union that defines no instances
+   12 | };
+      | ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+..\src\Products.c: In function 'printProductsByType':
+..\src\Products.c:342:51: error: 'prodList' is a pointer; did you mean to use '->'?
+  342 |      printf("|%4d|%15s|%6d|%4d|%7.2f|\n", prodList.idProduct, prodList.description,
+      |                                                   ^
+      |                                                   ->
+..\src\Products.c:342:71: error: 'prodList' is a pointer; did you mean to use '->'?
+  342 |      printf("|%4d|%15s|%6d|%4d|%7.2f|\n", prodList.idProduct, prodList.description,
+      |                                                                       ^
+      |                                                                       ->
+..\src\Products.c:343:22: error: 'prodList' is a pointer; did you mean to use '->'?
+  343 |              prodList.nationality, typeList.description, prodList.price);
+      |                      ^
+      |                      ->
+..\src\Products.c:343:44: error: 'typeList' is a pointer; did you mean to use '->'?
+  343 |              prodList.nationality, typeList.description, prodList.price);
+      |                                            ^
+      |                                            ->
+..\src\Products.c:343:66: error: 'prodList' is a pointer; did you mean to use '->'?
+  343 |              prodList.nationality, typeList.description, prodList.price);
+      |                                                                  ^
+      |                                                                  ->
+15:32:19 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductNation.o" "..\\src\\ProductNation.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+gcc: error: src\Products.o: No such file or directory
+15:32:46 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+..\src\Products.c: In function 'printProductsByType':
+..\src\Products.c:342:30: warning: format '%d' expects argument of type 'int', but argument 5 has type 'char *' [-Wformat=]
+  342 |      printf("|%4d|%15s|%6d|%4d|%7.2f|\n", prodList[i].idProduct, prodList[i].description,
+      |                            ~~^
+      |                              |
+      |                              int
+      |                            %4s
+  343 |              prodList[i].nationality, typeList[i].description, prodList[i].price);
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  char *
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:33:00 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+In file included from ..\src\Products.c:6:
+..\src\Products.h:51:58: error: unknown type name 'sType'
+   51 | int printProductsByType(sProduct* prodList, int prodLen, sType* typeList, int typeLen);
+      |                                                          ^~~~~
+..\src\Products.c: In function 'printProductsByType':
+..\src\Products.c:342:30: warning: format '%d' expects argument of type 'int', but argument 5 has type 'char *' [-Wformat=]
+  342 |      printf("|%4d|%15s|%6d|%4d|%7.2f|\n", prodList[i].idProduct, prodList[i].description,
+      |                            ~~^
+      |                              |
+      |                              int
+      |                            %4s
+  343 |              prodList[i].nationality, typeList[i].description, prodList[i].price);
+      |                                       ~~~~~~~~~~~~~~~~~~~~~~~
+      |                                                  |
+      |                                                  char *
+15:34:51 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+In file included from ..\src\Clase 10, Ejercicio 10-3.c:38:
+..\src\Products.h:51:58: error: unknown type name 'sType'
+   51 | int printProductsByType(sProduct* prodList, int prodLen, sType* typeList, int typeLen);
+      |                                                          ^~~~~
+..\src\Clase 10, Ejercicio 10-3.c: In function 'main':
+..\src\Clase 10, Ejercicio 10-3.c:51:45: error: incompatible types when initializing type 'float' using type 'char *'
+   51 |  float averagePrices[MAX_TYPE][4] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |                                             ^~~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:63: error: incompatible types when initializing type 'float' using type 'char *'
+   51 |  float averagePrices[MAX_TYPE][4] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |                                                               ^~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:79: error: incompatible types when initializing type 'float' using type 'char *'
+   51 |  float averagePrices[MAX_TYPE][4] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |                                                                               ^~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:94: error: incompatible types when initializing type 'float' using type 'char *'
+   51 |  float averagePrices[MAX_TYPE][4] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |                                                                                              ^~~~~~~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:115:41: warning: passing argument 3 of 'averagePrice' from incompatible pointer type [-Wincompatible-pointer-types]
+  115 |    averagePrice(arrayProduct, MAX_PROD, averagePrices);
+      |                                         ^~~~~~~~~~~~~
+      |                                         |
+      |                                         float (*)[4]
+In file included from ..\src\Clase 10, Ejercicio 10-3.c:38:
+..\src\Products.h:47:49: note: expected 'float *' but argument is of type 'float (*)[4]'
+   47 | int averagePrice(sProduct* list, int len, float averagePrices[]);
+      |                                           ~~~~~~^~~~~~~~~~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:116:51: warning: passing argument 3 of 'printAveragePerType' from incompatible pointer type [-Wincompatible-pointer-types]
+  116 |    if(printAveragePerType(arrayProduct, MAX_TYPE, averagePrices) == -1){
+      |                                                   ^~~~~~~~~~~~~
+      |                                                   |
+      |                                                   float (*)[4]
+In file included from ..\src\Clase 10, Ejercicio 10-3.c:38:
+..\src\Products.h:48:56: note: expected 'float *' but argument is of type 'float (*)[4]'
+   48 | int printAveragePerType(sProduct* list, int len, float prices[]);
+      |                                                  ~~~~~~^~~~~~~~
+15:35:01 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+In file included from ..\src\Products.c:6:
+..\src\Products.h:51:58: error: unknown type name 'sType'
+   51 | int printProductsByType(sProduct* prodList, int prodLen, sType* typeList, int typeLen);
+      |                                                          ^~~~~
+15:35:26 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+..\src\Clase 10, Ejercicio 10-3.c: In function 'main':
+..\src\Clase 10, Ejercicio 10-3.c:51:2: warning: braces around scalar initializer
+   51 |  float averagePrices[MAX_TYPE] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |  ^~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:2: note: (near initialization for 'averagePrices[0]')
+..\src\Clase 10, Ejercicio 10-3.c:51:42: warning: excess elements in scalar initializer
+   51 |  float averagePrices[MAX_TYPE] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |                                          ^~~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:42: note: (near initialization for 'averagePrices[0]')
+..\src\Clase 10, Ejercicio 10-3.c:51:2: warning: braces around scalar initializer
+   51 |  float averagePrices[MAX_TYPE] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |  ^~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:2: note: (near initialization for 'averagePrices[1]')
+..\src\Clase 10, Ejercicio 10-3.c:51:60: warning: excess elements in scalar initializer
+   51 |  float averagePrices[MAX_TYPE] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |                                                            ^~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:60: note: (near initialization for 'averagePrices[1]')
+..\src\Clase 10, Ejercicio 10-3.c:51:2: warning: braces around scalar initializer
+   51 |  float averagePrices[MAX_TYPE] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |  ^~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:2: note: (near initialization for 'averagePrices[2]')
+..\src\Clase 10, Ejercicio 10-3.c:51:76: warning: excess elements in scalar initializer
+   51 |  float averagePrices[MAX_TYPE] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |                                                                            ^~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:76: note: (near initialization for 'averagePrices[2]')
+..\src\Clase 10, Ejercicio 10-3.c:51:2: warning: braces around scalar initializer
+   51 |  float averagePrices[MAX_TYPE] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |  ^~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:2: note: (near initialization for 'averagePrices[3]')
+..\src\Clase 10, Ejercicio 10-3.c:51:91: warning: excess elements in scalar initializer
+   51 |  float averagePrices[MAX_TYPE] = {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |                                                                                           ^~~~~~~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:91: note: (near initialization for 'averagePrices[3]')
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:36:07 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+..\src\Clase 10, Ejercicio 10-3.c: In function 'main':
+..\src\Clase 10, Ejercicio 10-3.c:52:8: warning: unused variable 'productType' [-Wunused-variable]
+   52 |  sType productType[MAX_TYPE]= {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |        ^~~~~~~~~~~
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:37:05 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+..\src\Clase 10, Ejercicio 10-3.c: In function 'main':
+..\src\Clase 10, Ejercicio 10-3.c:122:7: error: expected expression before ')' token
+  122 |    if()
+      |       ^
+..\src\Clase 10, Ejercicio 10-3.c:52:8: warning: unused variable 'productType' [-Wunused-variable]
+   52 |  sType productType[MAX_TYPE]= {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "ACCESORIOS"}};
+      |        ^~~~~~~~~~~
+15:37:44 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:38:37 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+..\src\Products.c: In function 'printProductsByType':
+..\src\Products.c:342:9: error: 'listaProductos' undeclared (first use in this function)
+  342 |      if(listaProductos[i].tipo==listaTipos[j].idTipo){
+      |         ^~~~~~~~~~~~~~
+..\src\Products.c:342:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Products.c:342:33: error: 'listaTipos' undeclared (first use in this function)
+  342 |      if(listaProductos[i].tipo==listaTipos[j].idTipo){
+      |                                 ^~~~~~~~~~
+15:39:02 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+15:39:26 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:40:35 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:40:56 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:47:24 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:48:27 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:52:07 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+..\src\Products.c: In function 'printMadeInChina':
+..\src\Products.c:364:22: error: invalid operands to binary == (have 'sProduct' {aka 'struct <anonymous>'} and 'int')
+  364 |       if(prodList[i] == CHINA){
+      |          ~~~~~~~~~~~ ^~
+      |                  |
+      |                  sProduct {aka struct <anonymous>}
+..\src\Products.c:356:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
+  356 |  int Return;
+      |      ^~~~~~
+..\src\Products.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+  374 | }
+      | ^
+15:52:33 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+..\src\Products.c: In function 'printMadeInChina':
+..\src\Products.c:356:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
+  356 |  int Return;
+      |      ^~~~~~
+..\src\Products.c:374:1: warning: control reaches end of non-void function [-Wreturn-type]
+  374 | }
+      | ^
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:52:52 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:53:20 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Clase 10, Ejercicio 10-3.o: in function `main':
+C:\Users\54113\Desktop\eclipse-workspace\Clase 10, Ejercicio 10-3\Debug/../src/Clase 10, Ejercicio 10-3.c:122: undefined reference to `printProductsByType'
+collect2.exe: error: ld returned 1 exit status
+15:53:50 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:55:27 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductNation.o" "..\\src\\ProductNation.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+..\src\Clase 10, Ejercicio 10-3.c: In function 'main':
+..\src\Clase 10, Ejercicio 10-3.c:60:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'do'
+   60 |  do{
+      |  ^~
+15:58:40 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductType.o" "..\\src\\ProductType.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+In file included from ..\src\Products.c:6:
+..\src\Products.h:53:85: error: unknown type name 'sNation'
+   53 | int printMadeInChina(sProduct* prodList, int prodLen, sType* typeList, int typeLen, sNation* nationList, int nationLen);
+      |                                                                                     ^~~~~~~
+..\src\Products.c:355:85: error: unknown type name 'sNation'
+  355 | int printMadeInChina(sProduct* prodList, int prodLen, sType* typeList, int typeLen, sNation* nationList, int nationLen){
+      |                                                                                     ^~~~~~~
+15:59:09 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+15:59:57 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+16:34:05 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+..\src\Clase 10, Ejercicio 10-3.c: In function 'main':
+..\src\Clase 10, Ejercicio 10-3.c:55:10: warning: unused variable 'productNation' [-Wunused-variable]
+   55 |  sNation productNation[MAX_NATION] = {{1, "EEUU"}, {2, "CHINA"}, {3, "OTRO"}};
+      |          ^~~~~~~~~~~~~
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:40:39 **** Rebuild of configuration Debug for project Clase 6, Ejercicio 6-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-1.o" "..\\src\\Clase 6, Ejercicio 6-1.c" 
+gcc -o "Clase 6, Ejercicio 6-1.exe" "src\\Clase 6, Ejercicio 6-1.o" 
+Info: Nothing to build for Clase 6, Ejercicio 6-1
+Info: Nothing to build for Clase 6, Ejercicio 6-1
+16:41:02 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+gcc: error: src\Input.o: No such file or directory
+16:41:03 **** Rebuild of configuration Debug for project Clase 1, Ejercicio 1-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 1, Ejercicio 1-1.o" "..\\src\\Clase 1, Ejercicio 1-1.c" 
+gcc -o "Clase 1, Ejercicio 1-1.exe" "src\\Clase 1, Ejercicio 1-1.o" 
+16:41:04 **** Rebuild of configuration Debug for project Clase 1, Ejercicio 1-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 1, Ejercicio 1-2.o" "..\\src\\Clase 1, Ejercicio 1-2.c" 
+gcc -o "Clase 1, Ejercicio 1-2.exe" "src\\Clase 1, Ejercicio 1-2.o" 
+16:41:04 **** Rebuild of configuration Debug for project Clase 1, Ejercicio 1-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 1, Ejercicio 1-3.o" "..\\src\\Clase 1, Ejercicio 1-3.c" 
+gcc -o "Clase 1, Ejercicio 1-3.exe" "src\\Clase 1, Ejercicio 1-3.o" 
+16:41:05 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:41:06 **** Rebuild of configuration Debug for project Clase 15, Ejercicio 15-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 15, Ejercicio 15-1.o" "..\\src\\Clase 15, Ejercicio 15-1.c" 
+gcc -o "Clase 15, Ejercicio 15-1.exe" "src\\Clase 15, Ejercicio 15-1.o" 
+16:41:06 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-1.o" "..\\src\\Clase 2, Ejercicio 2-1.c" 
+gcc -o "Clase 2, Ejercicio 2-1.exe" "src\\Clase 2, Ejercicio 2-1.o" 
+16:41:07 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-2.o" "..\\src\\Clase 2, Ejercicio 2-2.c" 
+gcc -o "Clase 2, Ejercicio 2-2.exe" "src\\Clase 2, Ejercicio 2-2.o" 
+16:41:07 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-3.o" "..\\src\\Clase 2, Ejercicio 2-3.c" 
+gcc -o "Clase 2, Ejercicio 2-3.exe" "src\\Clase 2, Ejercicio 2-3.o" 
+16:41:08 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-4.o" "..\\src\\Clase 2, Ejercicio 2-4.c" 
+gcc -o "Clase 2, Ejercicio 2-4.exe" "src\\Clase 2, Ejercicio 2-4.o" 
+16:41:09 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-1.o" "..\\src\\Clase 3, Ejercicio 3-1.c" 
+gcc -o "Clase 3, Ejercicio 3-1.exe" "src\\Clase 3, Ejercicio 3-1.o" 
+16:41:09 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-2.o" "..\\src\\Clase 3, Ejercicio 3-2.c" 
+gcc -o "Clase 3, Ejercicio 3-2.exe" "src\\Clase 3, Ejercicio 3-2.o" 
+16:41:10 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-3.o" "..\\src\\Clase 3, Ejercicio 3-3.c" 
+gcc -o "Clase 3, Ejercicio 3-3.exe" "src\\Clase 3, Ejercicio 3-3.o" 
+16:41:10 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-4.o" "..\\src\\Clase 3, Ejercicio 3-4.c" 
+gcc -o "Clase 3, Ejercicio 3-4.exe" "src\\Biblioteca.o" "src\\Clase 3, Ejercicio 3-4.o" 
+16:41:11 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-5.o" "..\\src\\Clase 3, Ejercicio 3-5.c" 
+gcc -o "Clase 3, Ejercicio 3-5.exe" "src\\Biblioteca.o" "src\\Clase 3, Ejercicio 3-5.o" 
+16:41:12 **** Rebuild of configuration Debug for project Clase 4, Ejercicio 4-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 4, Ejercicio 4-1.o" "..\\src\\Clase 4, Ejercicio 4-1.c" 
+gcc -o "Clase 4, Ejercicio 4-1.exe" "src\\Biblioteca.o" "src\\Clase 4, Ejercicio 4-1.o" 
+16:41:13 **** Rebuild of configuration Debug for project Clase 4, Ejercicio 4-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Conversion.o" "..\\src\\Conversion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 4, Ejercicio 4-2.o" "..\\src\\Clase 4, Ejercicio 4-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 4, Ejercicio 4-2.exe" "src\\Biblioteca.o" "src\\Clase 4, Ejercicio 4-2.o" "src\\Conversion.o" 
+16:41:14 **** Rebuild of configuration Debug for project Clase 5, Anexo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Anexo.o" "..\\src\\Clase 5, Anexo.c" 
+gcc -o "Clase 5, Anexo.exe" "src\\Biblioteca.o" "src\\Clase 5, Anexo.o" 
+16:41:14 **** Rebuild of configuration Debug for project Clase 5, Ejercicio 5-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Ejercicio 5-1.o" "..\\src\\Clase 5, Ejercicio 5-1.c" 
+gcc -o "Clase 5, Ejercicio 5-1.exe" "src\\Biblioteca.o" "src\\Clase 5, Ejercicio 5-1.o" 
+16:41:15 **** Rebuild of configuration Debug for project Clase 5, Ejercicio 5-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Ejercicio 5-2.o" "..\\src\\Clase 5, Ejercicio 5-2.c" 
+gcc -o "Clase 5, Ejercicio 5-2.exe" "src\\Biblioteca.o" "src\\Clase 5, Ejercicio 5-2.o" 
+16:41:16 **** Rebuild of configuration Debug for project Clase 5, Ejercicio 5-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Ejercicio 5-3.o" "..\\src\\Clase 5, Ejercicio 5-3.c" 
+gcc -o "Clase 5, Ejercicio 5-3.exe" "src\\Biblioteca.o" "src\\Clase 5, Ejercicio 5-3.o" 
+Info: Nothing to build for Clase 6, Ejercicio 6-1
+16:41:16 **** Rebuild of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-2.o" "..\\src\\Clase 6, Ejercicio 6-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+16:41:17 **** Rebuild of configuration Debug for project Clase 6, Ejercicio 6-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-3.o" "..\\src\\Clase 6, Ejercicio 6-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ingreso_de_datos.o" "..\\src\\Ingreso_de_datos.c" 
+gcc -o "Clase 6, Ejercicio 6-3.exe" "src\\Clase 6, Ejercicio 6-3.o" "src\\Ingreso_de_datos.o" 
+16:41:17 **** Rebuild of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-1.o" "..\\src\\Clase 7, Ejercicio 7-1.c" 
+..\src\Clase 7, Ejercicio 7-1.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-1.c:59:20: error: 'listaProductos' undeclared (first use in this function); did you mean 'AltaProducto'?
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |                    ^~~~~~~~~~~~~~
+      |                    AltaProducto
+..\src\Clase 7, Ejercicio 7-1.c:59:20: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:4:11: warning: passing argument 2 of 'AltaProducto' makes pointer from integer without a cast [-Wint-conversion]
+    4 | #define T 5
+      |           ^
+      |           |
+      |           int
+..\src\Clase 7, Ejercicio 7-1.c:59:36: note: in expansion of macro 'T'
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |                                    ^
+..\src\Biblioteca.h:24:33: note: expected 'char (*)[50]' but argument is of type 'int'
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |                            ~~~~~^~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:59:7: error: too few arguments to function 'AltaProducto'
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:24:5: note: declared here
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |     ^~~~~~~~~~~~
+..\src\Biblioteca.h:4:11: warning: passing argument 2 of 'AltaProducto' makes pointer from integer without a cast [-Wint-conversion]
+    4 | #define T 5
+      |           ^
+      |           |
+      |           int
+..\src\Clase 7, Ejercicio 7-1.c:62:34: note: in expansion of macro 'T'
+   62 |     AltaProducto(listaProductos, T);
+      |                                  ^
+..\src\Biblioteca.h:24:33: note: expected 'char (*)[50]' but argument is of type 'int'
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |                            ~~~~~^~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:62:5: error: too few arguments to function 'AltaProducto'
+   62 |     AltaProducto(listaProductos, T);
+      |     ^~~~~~~~~~~~
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:24:5: note: declared here
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |     ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:66:7: warning: implicit declaration of function 'BajaProducto'; did you mean 'AltaProducto'? [-Wimplicit-function-declaration]
+   66 |    if(BajaProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~
+      |       AltaProducto
+..\src\Clase 7, Ejercicio 7-1.c:73:7: warning: implicit declaration of function 'ModificarProducto' [-Wimplicit-function-declaration]
+   73 |    if(ModificarProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:80:4: warning: implicit declaration of function 'MostrarLista' [-Wimplicit-function-declaration]
+   80 |    MostrarLista(listaProductos, T);
+      |    ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:83:4: warning: implicit declaration of function 'OrdenarArrayEntero' [-Wimplicit-function-declaration]
+   83 |    OrdenarArrayEntero(listaProductos, T);
+      |    ^~~~~~~~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:49:6: warning: unused variable 'estado' [-Wunused-variable]
+   49 |  int estado[T] = {CARGADO, CARGADO, CARGADO, CARGADO};
+      |      ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:48:8: warning: unused variable 'precio' [-Wunused-variable]
+   48 |  float precio[T] = {200,350,150,50};
+      |        ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:47:6: warning: unused variable 'tipo' [-Wunused-variable]
+   47 |  int tipo[T] = {IPHONE,MAC,IPAD,ACCESORIOS};
+      |      ^~~~
+..\src\Clase 7, Ejercicio 7-1.c:46:6: warning: unused variable 'nacionalidad' [-Wunused-variable]
+   46 |  int nacionalidad[T] = {OTRO,CHINA,EEUU,EEUU};
+      |      ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:45:7: warning: unused variable 'descripcion' [-Wunused-variable]
+   45 |  char descripcion[T][50] = {"Aifon","La macos","Ahí Pa","Unos auris chetos"};
+      |       ^~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:44:6: warning: unused variable 'idProducto' [-Wunused-variable]
+   44 |  int idProducto[T] = {111,222,333,444};
+      |      ^~~~~~~~~~
+16:41:18 **** Rebuild of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+16:41:19 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosUnJugador':
+..\src\Clase 8, Ejercicio 8-1.c:46:50: error: incompatible type for argument 1 of 'CalcularPromedioGoles'
+   46 |  unJugador.promedioGoles = CalcularPromedioGoles(unJugador, T);
+      |                                                  ^~~~~~~~~
+      |                                                  |
+      |                                                  eJugador {aka struct <anonymous>}
+..\src\Clase 8, Ejercicio 8-1.c:30:36: note: expected 'eJugador *' {aka 'struct <anonymous> *'} but argument is of type 'eJugador' {aka 'struct <anonymous>'}
+   30 | int CalcularPromedioGoles(eJugador jugador[], int tam);
+      |                           ~~~~~~~~~^~~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:72:9: error: 'promedio' undeclared (first use in this function)
+   72 |  return promedio;
+      |         ^~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosJugadores':
+..\src\Clase 8, Ejercicio 8-1.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+   57 | }
+      | ^
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+   73 | }
+      | ^
+16:41:19 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ingreso_de_datos.o" "..\\src\\Ingreso_de_datos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-2.o" "..\\src\\Clase 8, Ejercicio 8-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca_Productos.o" "..\\src\\Biblioteca_Productos.c" 
+gcc -o "Clase 8, Ejercicio 8-2.exe" "src\\Biblioteca_Productos.o" "src\\Clase 8, Ejercicio 8-2.o" "src\\Ingreso_de_datos.o" 
+16:41:20 **** Rebuild of configuration Debug for project Sábado Ejercicio 1-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sábado Ejercicio 1-1.o" "..\\src\\Sábado Ejercicio 1-1.c" 
+gcc -o "Sábado Ejercicio 1-1.exe" "src\\Sábado Ejercicio 1-1.o" 
+16:41:20 **** Rebuild of configuration Debug for project Sábado Ejercicio 1-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sábado Ejercicio 1-2.o" "..\\src\\Sábado Ejercicio 1-2.c" 
+gcc -o "Sábado Ejercicio 1-2.exe" "src\\Sábado Ejercicio 1-2.o" 
+16:41:21 **** Rebuild of configuration Debug for project Sábado Ejercicio 1-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sábado Ejercicio 1-3.o" "..\\src\\Sábado Ejercicio 1-3.c" 
+gcc -o "Sábado Ejercicio 1-3.exe" "src\\Sábado Ejercicio 1-3.o" 
+16:41:21 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Operaciones.o" "..\\src\\Operaciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o TP_1.exe "src\\Biblioteca.o" "src\\Operaciones.o" "src\\TP_1.o" 
+16:41:22 **** Rebuild of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for Clase 6, Ejercicio 6-1
+Info: Nothing to build for Clase 6, Ejercicio 6-1
+Info: Nothing to build for Clase 6, Ejercicio 6-1
+Info: Nothing to build for Clase 6, Ejercicio 6-2
+16:44:03 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-2.o" "..\\src\\Clase 6, Ejercicio 6-2.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+Info: Nothing to build for Clase 6, Ejercicio 6-2
+Info: Nothing to build for Clase 6, Ejercicio 6-2
+Info: Nothing to build for Clase 6, Ejercicio 6-2
+16:49:53 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+16:57:40 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-2.o" "..\\src\\Clase 6, Ejercicio 6-2.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+Info: Nothing to build for Clase 6, Ejercicio 6-2
+16:58:24 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-2.o" "..\\src\\Clase 6, Ejercicio 6-2.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+16:59:17 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-2.o" "..\\src\\Clase 6, Ejercicio 6-2.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+Info: Nothing to build for Clase 6, Ejercicio 6-2
+Info: Nothing to build for Clase 6, Ejercicio 6-2
+17:00:29 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-2.o" "..\\src\\Clase 6, Ejercicio 6-2.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+17:00:46 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-2.o" "..\\src\\Clase 6, Ejercicio 6-2.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+17:02:04 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+17:02:56 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 6, Ejercicio 6-2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:03:04 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 6, Ejercicio 6-2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Clase 6, Ejercicio 6-3
+Info: Nothing to build for Clase 6, Ejercicio 6-3
+Info: Nothing to build for Clase 7, Ejercicio 7-1
+Info: Nothing to build for Clase 7, Ejercicio 7-1
+Info: Nothing to build for Clase 7, Ejercicio 7-1
+Info: Nothing to build for Clase 7, Ejercicio 7-1
+Info: Nothing to build for Clase 7, Ejercicio 7-1
+Info: Nothing to build for Clase 7, Ejercicio 7-1
+Info: Nothing to build for Clase 7, Ejercicio 7-1
+17:08:25 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-1.o" "..\\src\\Clase 7, Ejercicio 7-1.c" 
+..\src\Clase 7, Ejercicio 7-1.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-1.c:49:6: warning: unused variable 'estado' [-Wunused-variable]
+   49 |  int estado[T] = {CARGADO, CARGADO, CARGADO, CARGADO};
+      |      ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:48:8: warning: unused variable 'precio' [-Wunused-variable]
+   48 |  float precio[T] = {200,350,150,50};
+      |        ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:47:6: warning: unused variable 'tipo' [-Wunused-variable]
+   47 |  int tipo[T] = {IPHONE,MAC,IPAD,ACCESORIOS};
+      |      ^~~~
+..\src\Clase 7, Ejercicio 7-1.c:46:6: warning: unused variable 'nacionalidad' [-Wunused-variable]
+   46 |  int nacionalidad[T] = {OTRO,CHINA,EEUU,EEUU};
+      |      ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:45:7: warning: unused variable 'descripcion' [-Wunused-variable]
+   45 |  char descripcion[T][50] = {"Aifon","La macos","Ahí Pa","Unos auris chetos"};
+      |       ^~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:44:6: warning: unused variable 'idProducto' [-Wunused-variable]
+   44 |  int idProducto[T] = {111,222,333,444};
+      |      ^~~~~~~~~~
+gcc -o "Clase 7, Ejercicio 7-1.exe" "src\\Biblioteca.o" "src\\Clase 7, Ejercicio 7-1.o" 
+17:08:35 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-1.o" "..\\src\\Clase 7, Ejercicio 7-1.c" 
+..\src\Clase 7, Ejercicio 7-1.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-1.c:42:6: warning: unused variable 'estado' [-Wunused-variable]
+   42 |  int estado[T];
+      |      ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:41:8: warning: unused variable 'precio' [-Wunused-variable]
+   41 |  float precio[T];
+      |        ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:40:6: warning: unused variable 'tipo' [-Wunused-variable]
+   40 |  int tipo[T];
+      |      ^~~~
+..\src\Clase 7, Ejercicio 7-1.c:39:6: warning: unused variable 'nacionalidad' [-Wunused-variable]
+   39 |  int nacionalidad[T];
+      |      ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:38:7: warning: unused variable 'descripcion' [-Wunused-variable]
+   38 |  char descripcion[T][50];
+      |       ^~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:37:6: warning: unused variable 'idProducto' [-Wunused-variable]
+   37 |  int idProducto[T];
+      |      ^~~~~~~~~~
+gcc -o "Clase 7, Ejercicio 7-1.exe" "src\\Biblioteca.o" "src\\Clase 7, Ejercicio 7-1.o" 
+17:11:27 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+..\src\Biblioteca.c:39:6: error: conflicting types for 'PedirDatosProducto'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |      ^~~~~~~~~~~~~~~~~~
+In file included from ..\src\Biblioteca.c:5:
+..\src\Biblioteca.h:23:6: note: previous declaration of 'PedirDatosProducto' was here
+   23 | void PedirDatosProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |      ^~~~~~~~~~~~~~~~~~
+..\src\Biblioteca.c: In function 'AltaProducto':
+..\src\Biblioteca.c:55:23: warning: passing argument 1 of 'PedirDatosProducto' makes integer from pointer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                       ^~
+      |                       |
+      |                       int *
+..\src\Biblioteca.c:39:29: note: expected 'int' but argument is of type 'int *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                         ~~~~^~
+..\src\Biblioteca.c:55:27: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                           ^~~~
+      |                           |
+      |                           char (*)[50]
+..\src\Biblioteca.c:39:38: note: expected 'char *' but argument is of type 'char (*)[50]'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                 ~~~~~^~~~~~~~
+..\src\Biblioteca.c:55:33: warning: passing argument 3 of 'PedirDatosProducto' makes integer from pointer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                                 ^~~~~~
+      |                                 |
+      |                                 int *
+..\src\Biblioteca.c:39:52: note: expected 'int' but argument is of type 'int *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                                ~~~~^~~~~~
+..\src\Biblioteca.c:55:41: warning: passing argument 4 of 'PedirDatosProducto' makes integer from pointer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                                         ^~~~
+      |                                         |
+      |                                         int *
+..\src\Biblioteca.c:39:64: note: expected 'int' but argument is of type 'int *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                                            ~~~~^~~~
+..\src\Biblioteca.c:55:47: error: incompatible type for argument 5 of 'PedirDatosProducto'
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                                               ^~~~~~
+      |                                               |
+      |                                               float *
+..\src\Biblioteca.c:39:76: note: expected 'float' but argument is of type 'float *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                                                      ~~~~~~^~~~~~
+..\src\Biblioteca.c:55:55: warning: passing argument 6 of 'PedirDatosProducto' makes integer from pointer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                                                       ^~~~~~
+      |                                                       |
+      |                                                       int *
+..\src\Biblioteca.c:39:88: note: expected 'int' but argument is of type 'int *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                                                                    ~~~~^~~~~~
+17:12:07 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+..\src\Biblioteca.c: In function 'AltaProducto':
+..\src\Biblioteca.c:55:23: warning: passing argument 1 of 'PedirDatosProducto' makes integer from pointer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                       ^~
+      |                       |
+      |                       int *
+..\src\Biblioteca.c:39:29: note: expected 'int' but argument is of type 'int *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                         ~~~~^~
+..\src\Biblioteca.c:55:27: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                           ^~~~
+      |                           |
+      |                           char (*)[50]
+..\src\Biblioteca.c:39:38: note: expected 'char *' but argument is of type 'char (*)[50]'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                 ~~~~~^~~~~~~~
+..\src\Biblioteca.c:55:33: warning: passing argument 3 of 'PedirDatosProducto' makes integer from pointer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                                 ^~~~~~
+      |                                 |
+      |                                 int *
+..\src\Biblioteca.c:39:52: note: expected 'int' but argument is of type 'int *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                                ~~~~^~~~~~
+..\src\Biblioteca.c:55:41: warning: passing argument 4 of 'PedirDatosProducto' makes integer from pointer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                                         ^~~~
+      |                                         |
+      |                                         int *
+..\src\Biblioteca.c:39:64: note: expected 'int' but argument is of type 'int *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                                            ~~~~^~~~
+..\src\Biblioteca.c:55:47: error: incompatible type for argument 5 of 'PedirDatosProducto'
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                                               ^~~~~~
+      |                                               |
+      |                                               float *
+..\src\Biblioteca.c:39:76: note: expected 'float' but argument is of type 'float *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                                                      ~~~~~~^~~~~~
+..\src\Biblioteca.c:55:55: warning: passing argument 6 of 'PedirDatosProducto' makes integer from pointer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                                                       ^~~~~~
+      |                                                       |
+      |                                                       int *
+..\src\Biblioteca.c:39:88: note: expected 'int' but argument is of type 'int *'
+   39 | void PedirDatosProducto(int id, char desc[50], int nacion, int tipo, float precio, int estado, int tam){
+      |                                                                                    ~~~~^~~~~~
+17:13:13 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-1.o" "..\\src\\Clase 7, Ejercicio 7-1.c" 
+..\src\Clase 7, Ejercicio 7-1.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-1.c:42:6: warning: unused variable 'estado' [-Wunused-variable]
+   42 |  int estado[T];
+      |      ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:41:8: warning: unused variable 'precio' [-Wunused-variable]
+   41 |  float precio[T];
+      |        ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:40:6: warning: unused variable 'tipo' [-Wunused-variable]
+   40 |  int tipo[T];
+      |      ^~~~
+..\src\Clase 7, Ejercicio 7-1.c:39:6: warning: unused variable 'nacionalidad' [-Wunused-variable]
+   39 |  int nacionalidad[T];
+      |      ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:38:7: warning: unused variable 'descripcion' [-Wunused-variable]
+   38 |  char descripcion[T][50];
+      |       ^~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:37:6: warning: unused variable 'idProducto' [-Wunused-variable]
+   37 |  int idProducto[T];
+      |      ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+..\src\Biblioteca.c: In function 'PedirDatosProducto':
+..\src\Biblioteca.c:40:5: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   40 |  id = PedirEntero("Ingrese el ID del producto: ", "ERROR! Ingrese un ID entre 0 y 10000: ", 0, 10000);
+      |     ^
+..\src\Biblioteca.c:41:55: warning: passing argument 2 of 'PedirCadena' from incompatible pointer type [-Wincompatible-pointer-types]
+   41 |  PedirCadena("Ingrese la descripción del producto: ", desc);
+      |                                                       ^~~~
+      |                                                       |
+      |                                                       char **
+..\src\Biblioteca.c:33:39: note: expected 'char *' but argument is of type 'char **'
+   33 | void PedirCadena(char mensaje[], char input[]){
+      |                                  ~~~~~^~~~~~~
+..\src\Biblioteca.c:42:9: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   42 |  nacion = PedirEntero("Ingrese la nacionalidad del producto (1: EEUU - 2: CHINA - 3: OTRO): ", "ERROR! Ingrese una nacionalidad entre 1 y 3 (1: EEUU - 2: CHINA - 3: OTRO): ", 1, 3);
+      |         ^
+..\src\Biblioteca.c:43:7: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   43 |  tipo = PedirEntero("Ingrese el tipo de producto (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", "ERROR! Ingrese un tipo entre 1 y 4 (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", 1, 4);
+      |       ^
+..\src\Biblioteca.c:44:11: error: incompatible types when assigning to type 'float *' from type 'float'
+   44 |  precio = PedirFlotante("Ingrese el precio del producto: ", "ERROR! Ingrese un precio entre 1 y 5000: ", 1, 5000);
+      |           ^~~~~~~~~~~~~
+..\src\Biblioteca.c:45:9: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   45 |  estado = CARGADO;
+      |         ^
+..\src\Biblioteca.c: In function 'AltaProducto':
+..\src\Biblioteca.c:55:27: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                           ^~~~
+      |                           |
+      |                           char (*)[50]
+..\src\Biblioteca.c:39:40: note: expected 'char **' but argument is of type 'char (*)[50]'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                  ~~~~~~^~~~~~~~
+..\src\Biblioteca.c:55:4: error: too many arguments to function 'PedirDatosProducto'
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |    ^~~~~~~~~~~~~~~~~~
+..\src\Biblioteca.c:39:6: note: declared here
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |      ^~~~~~~~~~~~~~~~~~
+17:13:36 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+..\src\Biblioteca.c: In function 'PedirDatosProducto':
+..\src\Biblioteca.c:40:6: error: lvalue required as left operand of assignment
+   40 |  &id = PedirEntero("Ingrese el ID del producto: ", "ERROR! Ingrese un ID entre 0 y 10000: ", 0, 10000);
+      |      ^
+..\src\Biblioteca.c:41:55: warning: passing argument 2 of 'PedirCadena' from incompatible pointer type [-Wincompatible-pointer-types]
+   41 |  PedirCadena("Ingrese la descripción del producto: ", &desc);
+      |                                                       ^~~~~
+      |                                                       |
+      |                                                       char ***
+..\src\Biblioteca.c:33:39: note: expected 'char *' but argument is of type 'char ***'
+   33 | void PedirCadena(char mensaje[], char input[]){
+      |                                  ~~~~~^~~~~~~
+..\src\Biblioteca.c:42:10: error: lvalue required as left operand of assignment
+   42 |  &nacion = PedirEntero("Ingrese la nacionalidad del producto (1: EEUU - 2: CHINA - 3: OTRO): ", "ERROR! Ingrese una nacionalidad entre 1 y 3 (1: EEUU - 2: CHINA - 3: OTRO): ", 1, 3);
+      |          ^
+..\src\Biblioteca.c:43:8: error: lvalue required as left operand of assignment
+   43 |  &tipo = PedirEntero("Ingrese el tipo de producto (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", "ERROR! Ingrese un tipo entre 1 y 4 (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", 1, 4);
+      |        ^
+..\src\Biblioteca.c:44:10: error: lvalue required as left operand of assignment
+   44 |  &precio = PedirFlotante("Ingrese el precio del producto: ", "ERROR! Ingrese un precio entre 1 y 5000: ", 1, 5000);
+      |          ^
+..\src\Biblioteca.c:45:10: error: lvalue required as left operand of assignment
+   45 |  &estado = CARGADO;
+      |          ^
+..\src\Biblioteca.c: In function 'AltaProducto':
+..\src\Biblioteca.c:55:27: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                           ^~~~
+      |                           |
+      |                           char (*)[50]
+..\src\Biblioteca.c:39:40: note: expected 'char **' but argument is of type 'char (*)[50]'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                  ~~~~~~^~~~~~~~
+..\src\Biblioteca.c:55:4: error: too many arguments to function 'PedirDatosProducto'
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |    ^~~~~~~~~~~~~~~~~~
+..\src\Biblioteca.c:39:6: note: declared here
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |      ^~~~~~~~~~~~~~~~~~
+17:13:50 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+..\src\Biblioteca.c: In function 'PedirDatosProducto':
+..\src\Biblioteca.c:41:55: warning: passing argument 2 of 'PedirCadena' from incompatible pointer type [-Wincompatible-pointer-types]
+   41 |  PedirCadena("Ingrese la descripción del producto: ", &desc);
+      |                                                       ^~~~~
+      |                                                       |
+      |                                                       char ***
+..\src\Biblioteca.c:33:39: note: expected 'char *' but argument is of type 'char ***'
+   33 | void PedirCadena(char mensaje[], char input[]){
+      |                                  ~~~~~^~~~~~~
+..\src\Biblioteca.c:42:10: error: lvalue required as left operand of assignment
+   42 |  &nacion = PedirEntero("Ingrese la nacionalidad del producto (1: EEUU - 2: CHINA - 3: OTRO): ", "ERROR! Ingrese una nacionalidad entre 1 y 3 (1: EEUU - 2: CHINA - 3: OTRO): ", 1, 3);
+      |          ^
+..\src\Biblioteca.c:43:8: error: lvalue required as left operand of assignment
+   43 |  &tipo = PedirEntero("Ingrese el tipo de producto (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", "ERROR! Ingrese un tipo entre 1 y 4 (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", 1, 4);
+      |        ^
+..\src\Biblioteca.c:44:10: error: lvalue required as left operand of assignment
+   44 |  &precio = PedirFlotante("Ingrese el precio del producto: ", "ERROR! Ingrese un precio entre 1 y 5000: ", 1, 5000);
+      |          ^
+..\src\Biblioteca.c:45:10: error: lvalue required as left operand of assignment
+   45 |  &estado = CARGADO;
+      |          ^
+..\src\Biblioteca.c: In function 'AltaProducto':
+..\src\Biblioteca.c:55:27: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                           ^~~~
+      |                           |
+      |                           char (*)[50]
+..\src\Biblioteca.c:39:40: note: expected 'char **' but argument is of type 'char (*)[50]'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                  ~~~~~~^~~~~~~~
+..\src\Biblioteca.c:55:4: error: too many arguments to function 'PedirDatosProducto'
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |    ^~~~~~~~~~~~~~~~~~
+..\src\Biblioteca.c:39:6: note: declared here
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |      ^~~~~~~~~~~~~~~~~~
+17:14:03 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+..\src\Biblioteca.c: In function 'AltaProducto':
+..\src\Biblioteca.c:55:27: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |                           ^~~~
+      |                           |
+      |                           char (*)[50]
+..\src\Biblioteca.c:39:40: note: expected 'char **' but argument is of type 'char (*)[50]'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                  ~~~~~~^~~~~~~~
+..\src\Biblioteca.c:55:4: error: too many arguments to function 'PedirDatosProducto'
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+      |    ^~~~~~~~~~~~~~~~~~
+..\src\Biblioteca.c:39:6: note: declared here
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |      ^~~~~~~~~~~~~~~~~~
+17:14:16 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+..\src\Biblioteca.c: In function 'AltaProducto':
+..\src\Biblioteca.c:55:27: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |    PedirDatosProducto(id, desc, nacion, tipo, precio, estado);
+      |                           ^~~~
+      |                           |
+      |                           char (*)[50]
+..\src\Biblioteca.c:39:40: note: expected 'char **' but argument is of type 'char (*)[50]'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                  ~~~~~~^~~~~~~~
+gcc -o "Clase 7, Ejercicio 7-1.exe" "src\\Biblioteca.o" "src\\Clase 7, Ejercicio 7-1.o" 
+17:14:42 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+..\src\Biblioteca.c: In function 'AltaProducto':
+..\src\Biblioteca.c:55:25: warning: passing argument 1 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                       ~~^~~
+      |                         |
+      |                         int
+..\src\Biblioteca.c:39:30: note: expected 'int *' but argument is of type 'int'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                         ~~~~~^~
+..\src\Biblioteca.c:55:34: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                  ^
+      |                                  |
+      |                                  char *
+..\src\Biblioteca.c:39:40: note: expected 'char **' but argument is of type 'char *'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                  ~~~~~~^~~~~~~~
+..\src\Biblioteca.c:55:45: warning: passing argument 3 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                       ~~~~~~^~~
+      |                                             |
+      |                                             int
+..\src\Biblioteca.c:39:55: note: expected 'int *' but argument is of type 'int'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                                  ~~~~~^~~~~~
+..\src\Biblioteca.c:55:54: warning: passing argument 4 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                                  ~~~~^~~
+      |                                                      |
+      |                                                      int
+..\src\Biblioteca.c:39:68: note: expected 'int *' but argument is of type 'int'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                                               ~~~~~^~~~
+..\src\Biblioteca.c:55:65: error: incompatible type for argument 5 of 'PedirDatosProducto'
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                                           ~~~~~~^~~
+      |                                                                 |
+      |                                                                 float
+..\src\Biblioteca.c:39:81: note: expected 'float *' but argument is of type 'float'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                                                          ~~~~~~~^~~~~~
+..\src\Biblioteca.c:55:76: warning: passing argument 6 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                                                      ~~~~~~^~~
+      |                                                                            |
+      |                                                                            int
+..\src\Biblioteca.c:39:94: note: expected 'int *' but argument is of type 'int'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                                                                         ~~~~~^~~~~~
+17:18:59 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:19:29 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:19:41 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:19:50 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:20:08 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:20:14 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:20:21 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:20:27 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:20:34 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:20:46 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:20:52 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:23:01 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'PedirDosArrayEnteros':
+..\src\Input.c:10:15: warning: implicit declaration of function 'PedirEntero' [-Wimplicit-function-declaration]
+   10 |   listaA[i] = PedirEntero("Ingrese un entero para el vector A: ", "ERROR! Ingrese un entero entre -1000 y 1000: ", -1000, 1000);
+      |               ^~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Clase 7, Ejercicio 7-2.o: in function `main':
+C:\Users\54113\Desktop\eclipse-workspace\Clase 7, Ejercicio 7-2\Debug/../src/Clase 7, Ejercicio 7-2.c:31: undefined reference to `MayorNumero'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `PedirDosArrayEnteros':
+C:\Users\54113\Desktop\eclipse-workspace\Clase 7, Ejercicio 7-2\Debug/../src/Input.c:10: undefined reference to `PedirEntero'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54113\Desktop\eclipse-workspace\Clase 7, Ejercicio 7-2\Debug/../src/Input.c:11: undefined reference to `PedirEntero'
+collect2.exe: error: ld returned 1 exit status
+17:23:26 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Clase 7, Ejercicio 7-2.o: in function `main':
+C:\Users\54113\Desktop\eclipse-workspace\Clase 7, Ejercicio 7-2\Debug/../src/Clase 7, Ejercicio 7-2.c:31: undefined reference to `MayorNumero'
+collect2.exe: error: ld returned 1 exit status
+17:24:22 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:24:31 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:26:44 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+..\src\Clase 7, Ejercicio 7-2.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-2.c:32:24: error: expected expression before ']' token
+   32 |  OrdenarVector(vectorC[], int T);
+      |                        ^
+17:26:49 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+..\src\Clase 7, Ejercicio 7-2.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-2.c:32:24: error: expected expression before ']' token
+   32 |  OrdenarVector(vectorC[], T);
+      |                        ^
+17:26:56 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+Info: Nothing to build for Clase 7, Ejercicio 7-2
+17:28:59 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+..\src\Clase 7, Ejercicio 7-2.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-2.c:32:2: warning: implicit declaration of function 'OrdenarVector' [-Wimplicit-function-declaration]
+   32 |  OrdenarVector(vectorC, T);
+      |  ^~~~~~~~~~~~~
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Clase 7, Ejercicio 7-2.o: in function `main':
+C:\Users\54113\Desktop\eclipse-workspace\Clase 7, Ejercicio 7-2\Debug/../src/Clase 7, Ejercicio 7-2.c:32: undefined reference to `OrdenarVector'
+collect2.exe: error: ld returned 1 exit status
+17:29:12 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+..\src\Clase 7, Ejercicio 7-2.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-2.c:32:58: error: expected ';' before 'MostrarTresArray'
+   32 |  OrdenarVectoresPorUnVector(vectorC, T, vectorA, vectorB)
+      |                                                          ^
+      |                                                          ;
+   33 |  MostrarTresArray(vectorA, vectorB, vectorC, T);
+      |  ~~~~~~~~~~~~~~~~                                         
+17:29:18 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+Info: Nothing to build for Clase 7, Ejercicio 7-2
+17:29:44 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:30:12 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:30:31 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+17:31:24 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+Info: Nothing to build for Clase 7, Ejercicio 7-2
+Info: Nothing to build for Clase 8, Ejercicio 8-1
+17:37:11 **** Clean-only build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+rm -rf src/Ingreso_de_datos.o "src/Clase 8, Ejercicio 8-1.d" "src/Clase 8, Ejercicio 8-1.o" src/Ingreso_de_datos.d "Clase 8, Ejercicio 8-1.exe" 
+17:37:11 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+gcc: error: src\Input.o: No such file or directory
+Info: Nothing to build for Clase 1, Ejercicio 1-1
+Info: Nothing to build for Clase 1, Ejercicio 1-2
+Info: Nothing to build for Clase 1, Ejercicio 1-3
+17:37:11 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Clase 15, Ejercicio 15-1
+Info: Nothing to build for Clase 2, Ejercicio 2-1
+Info: Nothing to build for Clase 2, Ejercicio 2-2
+Info: Nothing to build for Clase 2, Ejercicio 2-3
+Info: Nothing to build for Clase 2, Ejercicio 2-4
+Info: Nothing to build for Clase 3, Ejercicio 3-1
+Info: Nothing to build for Clase 3, Ejercicio 3-2
+Info: Nothing to build for Clase 3, Ejercicio 3-3
+Info: Nothing to build for Clase 3, Ejercicio 3-4
+Info: Nothing to build for Clase 3, Ejercicio 3-5
+Info: Nothing to build for Clase 4, Ejercicio 4-1
+Info: Nothing to build for Clase 4, Ejercicio 4-2
+Info: Nothing to build for Clase 5, Anexo
+Info: Nothing to build for Clase 5, Ejercicio 5-1
+Info: Nothing to build for Clase 5, Ejercicio 5-2
+Info: Nothing to build for Clase 5, Ejercicio 5-3
+17:37:12 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-1.o" "..\\src\\Clase 6, Ejercicio 6-1.c" 
+gcc -o "Clase 6, Ejercicio 6-1.exe" "src\\Clase 6, Ejercicio 6-1.o" 
+17:37:13 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 6, Ejercicio 6-2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Clase 6, Ejercicio 6-3
+17:37:13 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+..\src\Biblioteca.c: In function 'AltaProducto':
+..\src\Biblioteca.c:55:25: warning: passing argument 1 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                       ~~^~~
+      |                         |
+      |                         int
+..\src\Biblioteca.c:39:30: note: expected 'int *' but argument is of type 'int'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                         ~~~~~^~
+..\src\Biblioteca.c:55:34: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                  ^
+      |                                  |
+      |                                  char *
+..\src\Biblioteca.c:39:40: note: expected 'char **' but argument is of type 'char *'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                  ~~~~~~^~~~~~~~
+..\src\Biblioteca.c:55:45: warning: passing argument 3 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                       ~~~~~~^~~
+      |                                             |
+      |                                             int
+..\src\Biblioteca.c:39:55: note: expected 'int *' but argument is of type 'int'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                                  ~~~~~^~~~~~
+..\src\Biblioteca.c:55:54: warning: passing argument 4 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                                  ~~~~^~~
+      |                                                      |
+      |                                                      int
+..\src\Biblioteca.c:39:68: note: expected 'int *' but argument is of type 'int'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                                               ~~~~~^~~~
+..\src\Biblioteca.c:55:65: error: incompatible type for argument 5 of 'PedirDatosProducto'
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                                           ~~~~~~^~~
+      |                                                                 |
+      |                                                                 float
+..\src\Biblioteca.c:39:81: note: expected 'float *' but argument is of type 'float'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                                                          ~~~~~~~^~~~~~
+..\src\Biblioteca.c:55:76: warning: passing argument 6 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
+   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
+      |                                                                      ~~~~~~^~~
+      |                                                                            |
+      |                                                                            int
+..\src\Biblioteca.c:39:94: note: expected 'int *' but argument is of type 'int'
+   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+      |                                                                                         ~~~~~^~~~~~
+Info: Nothing to build for Clase 7, Ejercicio 7-2
+17:37:13 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosUnJugador':
+..\src\Clase 8, Ejercicio 8-1.c:46:50: error: incompatible type for argument 1 of 'CalcularPromedioGoles'
+   46 |  unJugador.promedioGoles = CalcularPromedioGoles(unJugador, T);
+      |                                                  ^~~~~~~~~
+      |                                                  |
+      |                                                  eJugador {aka struct <anonymous>}
+..\src\Clase 8, Ejercicio 8-1.c:30:36: note: expected 'eJugador *' {aka 'struct <anonymous> *'} but argument is of type 'eJugador' {aka 'struct <anonymous>'}
+   30 | int CalcularPromedioGoles(eJugador jugador[], int tam);
+      |                           ~~~~~~~~~^~~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:72:9: error: 'promedio' undeclared (first use in this function)
+   72 |  return promedio;
+      |         ^~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosJugadores':
+..\src\Clase 8, Ejercicio 8-1.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+   57 | }
+      | ^
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+   73 | }
+      | ^
+Info: Nothing to build for Clase 8, Ejercicio 8-2
+Info: Nothing to build for Sábado Ejercicio 1-1
+Info: Nothing to build for Sábado Ejercicio 1-2
+Info: Nothing to build for Sábado Ejercicio 1-3
+Info: Nothing to build for TP_1
+Info: Nothing to build for TP_2
+17:37:18 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosUnJugador':
+..\src\Clase 8, Ejercicio 8-1.c:46:50: error: incompatible type for argument 1 of 'CalcularPromedioGoles'
+   46 |  unJugador.promedioGoles = CalcularPromedioGoles(unJugador, T);
+      |                                                  ^~~~~~~~~
+      |                                                  |
+      |                                                  eJugador {aka struct <anonymous>}
+..\src\Clase 8, Ejercicio 8-1.c:30:36: note: expected 'eJugador *' {aka 'struct <anonymous> *'} but argument is of type 'eJugador' {aka 'struct <anonymous>'}
+   30 | int CalcularPromedioGoles(eJugador jugador[], int tam);
+      |                           ~~~~~~~~~^~~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:72:9: error: 'promedio' undeclared (first use in this function)
+   72 |  return promedio;
+      |         ^~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosJugadores':
+..\src\Clase 8, Ejercicio 8-1.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+   57 | }
+      | ^
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+   73 | }
+      | ^
+Info: Nothing to build for Clase 7, Ejercicio 7-2
+17:39:46 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ingreso_de_datos.o" "..\\src\\Ingreso_de_datos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosUnJugador':
+..\src\Clase 8, Ejercicio 8-1.c:46:50: error: incompatible type for argument 1 of 'CalcularPromedioGoles'
+   46 |  unJugador.promedioGoles = CalcularPromedioGoles(unJugador, T);
+      |                                                  ^~~~~~~~~
+      |                                                  |
+      |                                                  eJugador {aka struct <anonymous>}
+..\src\Clase 8, Ejercicio 8-1.c:30:36: note: expected 'eJugador *' {aka 'struct <anonymous> *'} but argument is of type 'eJugador' {aka 'struct <anonymous>'}
+   30 | int CalcularPromedioGoles(eJugador jugador[], int tam);
+      |                           ~~~~~~~~~^~~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:72:9: error: 'promedio' undeclared (first use in this function)
+   72 |  return promedio;
+      |         ^~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosJugadores':
+..\src\Clase 8, Ejercicio 8-1.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+   57 | }
+      | ^
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+   73 | }
+      | ^
+Info: Nothing to build for Clase 7, Ejercicio 7-2
+Info: Nothing to build for Clase 7, Ejercicio 7-2
+17:48:44 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+..\src\Clase 8, Ejercicio 8-1.c: In function 'main':
+..\src\Clase 8, Ejercicio 8-1.c:37:5: warning: implicit declaration of function 'PedirDatosJugadores'; did you mean 'PedirDatosUnJugador'? [-Wimplicit-function-declaration]
+   37 |  if(PedirDatosJugadores(jugadores, T) == 0){
+      |     ^~~~~~~~~~~~~~~~~~~
+      |     PedirDatosUnJugador
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+17:50:29 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+Info: Nothing to build for Clase 8, Ejercicio 8-1
+17:55:17 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+Info: Nothing to build for Clase 8, Ejercicio 8-1
+17:55:58 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+17:56:45 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+17:57:08 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+17:57:35 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 8, Ejercicio 8-1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:57:38 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+17:58:38 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 8, Ejercicio 8-1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:59:10 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+Info: Nothing to build for Clase 8, Ejercicio 8-1
+18:03:19 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+18:05:02 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" 
+18:06:44 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugadores.o" "..\\src\\Jugadores.c" 
+..\src\Jugadores.c: In function 'PedirDatosUnJugador':
+..\src\Jugadores.c:10:2: warning: implicit declaration of function 'PedirCadena' [-Wimplicit-function-declaration]
+   10 |  PedirCadena("Ingrese el nombre del jugador: ", unJugador.nombre);
+      |  ^~~~~~~~~~~
+..\src\Jugadores.c:11:20: warning: implicit declaration of function 'PedirEntero' [-Wimplicit-function-declaration]
+   11 |  unJugador.goles = PedirEntero("Ingrese la cantidad de goles: ", "ERROR! Ingrese una cantidad de goles entre 0 y 10000: ", 0, 10000);
+      |                    ^~~~~~~~~~~
+..\src\Jugadores.c: In function 'MostrarJugadores':
+..\src\Jugadores.c:52:4: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+   52 |    printf("%15s%3d%3d%6.2f\n", jugador[i].nombre, jugador[i].goles, jugador[i].partidos, jugador[i].promedioGoles);
+      |    ^~~~~~
+..\src\Jugadores.c:52:4: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\Jugadores.c:6:1: note: include '<stdio.h>' or provide a declaration of 'printf'
+    5 | #include "Jugadores.h"
+  +++ |+#include <stdio.h>
+    6 | 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" "src\\Jugadores.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 8, Ejercicio 8-1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:07:10 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugadores.o" "..\\src\\Jugadores.c" 
+gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" "src\\Jugadores.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 8, Ejercicio 8-1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status

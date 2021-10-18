@@ -1,9 +1,1 @@
-16:48:17 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-2.o" "..\\src\\Clase 8, Ejercicio 8-2.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ingreso_de_datos.o" "..\\src\\Ingreso_de_datos.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca_Productos.o" "..\\src\\Biblioteca_Productos.c" 
-gcc -o "Clase 8, Ejercicio 8-2.exe" "src\\Biblioteca_Productos.o" "src\\Clase 8, Ejercicio 8-2.o" "src\\Ingreso_de_datos.o" 
-
-16:48:19 Build Finished. 0 errors, 0 warnings. (took 1s.440ms)
-
+Info: Nothing to build for Clase 8, Ejercicio 8-2

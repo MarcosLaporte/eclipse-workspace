@@ -34,19 +34,19 @@ Consigna:
 int main(void) {
 	setbuf(stdout, NULL);
 
-/*	int idProducto[T];
+	int idProducto[T];
 	char descripcion[T][50];
 	int nacionalidad[T];
 	int tipo[T];
 	float precio[T];
-	int estado[T];*/
+	int estado[T];
 
-	int idProducto[T] = {111,222,333,444};
+/*	int idProducto[T] = {111,222,333,444};
 	char descripcion[T][50] = {"Aifon","La macos","Ahí Pa","Unos auris chetos"};
 	int nacionalidad[T] = {OTRO,CHINA,EEUU,EEUU};
 	int tipo[T] = {IPHONE,MAC,IPAD,ACCESORIOS};
 	float precio[T] = {200,350,150,50};
-	int estado[T] = {CARGADO, CARGADO, CARGADO, CARGADO};
+	int estado[T] = {CARGADO, CARGADO, CARGADO, CARGADO};*/
 
 	int opcion;
 
@@ -56,35 +56,6 @@ int main(void) {
 		opcion = PedirEntero("Ingrese una opción: ", "ERROR! Ingrese una opción entre 1 y 7: ", 1, 7);
 		switch(opcion){
 		case 1:
-			if(AltaProducto(listaProductos, T) == 0){
-				printf("Ya se ingresó la cantidad máxima de productos.\n");
-			}else{
-				AltaProducto(listaProductos, T);
-			}
-			break;
-		case 2:
-			if(BajaProducto(listaProductos, T) == 0){
-				printf("No existe un producto con ese ID.\n");
-			}else{
-				printf("El producto fue dado de baja.\n");
-			}
-			break;
-		case 3:
-			if(ModificarProducto(listaProductos, T) == 0){
-				printf("No existe un producto con ese ID.\n");
-			}else{
-				printf("El producto fue modificado.\n");
-			}
-			break;
-		case 4:
-			MostrarLista(listaProductos, T);
-			break;
-		case 5:
-			OrdenarArrayEntero(listaProductos, T);
-			MostrarLista(listaProductos, T);
-			break;
-		case 6:
-
 			break;
 		case 7:
 			printf("Salió de la lista.");

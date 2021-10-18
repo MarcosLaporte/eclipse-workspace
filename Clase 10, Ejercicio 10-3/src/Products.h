@@ -8,6 +8,8 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "ProductType.h"
+#include "ProductNation.h"
 
 #define EMPTY 0
 #define FULL 1
@@ -48,6 +50,7 @@ int averagePrice(sProduct* list, int len, float averagePrices[]);
 int printAveragePerType(sProduct* list, int len, float prices[]);
 float lowestPrice(sProduct* list, int len);
 int lowestPriceProducts(sProduct* list, int len);
-
+int printProductsWithType(sProduct* prodList, int prodLen, sType* typeList, int typeLen);
+int printMadeInChina(sProduct* prodList, int prodLen, sType* typeList, int typeLen, sNation* nationList, int nationLen);
 
 #endif /* PRODUCTS_H_ */

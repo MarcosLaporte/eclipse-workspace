@@ -1,7 +1,7 @@
-11:53:52 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+17:37:11 **** Incremental Build of configuration Debug for project Archivo de prueba ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
 gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+gcc: error: src\Input.o: No such file or directory
 
-11:53:52 Build Finished. 0 errors, 0 warnings. (took 493ms)
+17:37:11 Build Finished. 0 errors, 0 warnings. (took 163ms)
 

@@ -18,56 +18,33 @@ Consigna:
 #include <stdio.h>
 #include <stdlib.h>
 #include "Ingreso_de_datos.h"
-
-typedef struct{
-	char nombre[25];
-	int goles;
-	int partidos;
-	float promedioGoles;
-}eJugador;
-
-eJugador PedirDatosUnJugador(void);
-int CalcularPromedioGoles(eJugador jugador[], int tam);
+#include "Jugadores.h"
 
 int main(void) {
 	setbuf(stdout, NULL);
 
+	eJugador jugadores[T];
+	int opcion;
+
+	do{
+		opcion = PedirEntero("\nIngrese una opción (1.Ingresar - 2.Mostrar - 3.Salir): ", "ERROR! Ingrese una opción (1.Ingresar - 2.Mostrar - 3.Salir): ", 1, 3);
+		switch(opcion){
+		case 1:
+			if(PedirDatosJugadores(jugadores, T) == 0){
+				printf("Ya no hay más espacio.\n");
+			}
+			break;
+		case 2:
+			CalcularPromedioGoles(jugadores, T);
+			if(MostrarJugadores(jugadores, T) == 0){
+				printf("No se han ingresado jugadores.\n");
+			}
+			break;
+		case 3:
+			printf("Salió.");
+		}
+	}while(opcion != 3);
 
 
 	return 0;
-}
-
-eJugador PedirDatosUnJugador(void){
-	eJugador unJugador;
-
-	PedirCadena("Ingrese el nombre del jugador: ", unJugador.nombre);
-	unJugador.goles = PedirEntero("Ingrese la cantidad de goles: ", "ERROR! Ingrese una cantidad de goles entre 0 y 10000: ", 0, 10000);
-	unJugador.partidos = PedirEntero("Ingrese la cantidad de partidos jugados: ", "ERROR! Ingrese una cantidad de partidos entre 0 y 10000: ", 0, 10000);
-	unJugador.promedioGoles = CalcularPromedioGoles(unJugador, T);
-
-	return unJugador;
-}
-
-int PedirDatosJugadores(eJugador listaJugadores[], int tam){
-	int i;
-
-	for(i = 0; i < tam; i++){
-		listaJugadores[i] = PedirDatosUnJugador();
-	}
-}
-
-int CalcularPromedioGoles(eJugador jugador[], int tam){
-	int i;
-//	int retorno;
-//	retorno = -1;
-
-	for(i = 0; i < tam; i++){
-		if(jugador[i].partidos != 0){
-//			retorno = 0;
-			jugador[i].promedioGoles = jugador[i].goles / jugador[i].partidos;
-		}
-	}
-
-//	return retorno;
-	return promedio;
 }

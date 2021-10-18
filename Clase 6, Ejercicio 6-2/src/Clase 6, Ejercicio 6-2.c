@@ -22,9 +22,9 @@ Consigna:
 int main(void) {
 	setbuf(stdout, NULL);
 
-	int numeros[T] = {0};
+	int numeros[T];
 
-//	PedirArrayEnteroSec(numeros, T, "Ingrese un entero: ", "Ingrese un entero entre -1000 y 1000: ", -1000, 1000);
+	PedirArrayEnteroSec(numeros, T, "Ingrese un entero: ", "Ingrese un entero entre -1000 y 1000: ", -1000, 1000);
 
 	OrdenarPositivosCreciente(numeros, T);
 	OrdenarNegativosDecreciente(numeros, T);

@@ -25,7 +25,7 @@ int main(void) {
 	a = 14;
 	b = 6;
 
-	printf("a = %d / b = %d\n", a, b);
+	printf("a = %d | b = %d\n", a, b);
 
 	int aux;
 
@@ -33,7 +33,7 @@ int main(void) {
 	b = a;
 	a = aux;
 
-	printf("\na = %d / b = %d", a, b);
+	printf("\na = %d | b = %d", a, b);
 
 	return 0;
 }

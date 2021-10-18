@@ -8,6 +8,7 @@
 //------------
 #define MAX_PROD 1000
 #define MAX_TYPE 4
+#define MAX_NATION 3
 //------------
 
 /// @brief Pide un entero con un mensaje pasado por parámetro.

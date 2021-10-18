@@ -36,17 +36,13 @@ void PedirCadena(char mensaje[], char input[]){
 	gets(input);
 }
 
-void PedirDatosProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam){
-	int i;
-
-	for(i = 0; i < tam; i++){
-		id[i] = PedirEntero("Ingrese el ID del producto: ", "ERROR! Ingrese un ID entre 0 y 10000: ", 0, 10000);
-		PedirCadena("Ingrese la descripción del producto: ", desc[i]);
-		nacion[i] = PedirEntero("Ingrese la nacionalidad del producto (1: EEUU - 2: CHINA - 3: OTRO): ", "ERROR! Ingrese una nacionalidad entre 1 y 3 (1: EEUU - 2: CHINA - 3: OTRO): ", 1, 3);
-		tipo[i] = PedirEntero("Ingrese el tipo de producto (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", "ERROR! Ingrese un tipo entre 1 y 4 (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", 1, 4);
-		precio[i] = PedirFlotante("Ingrese el precio del producto: ", "ERROR! Ingrese un precio entre 1 y 5000: ", 1, 5000);
-		estado[i] = CARGADO;
-	}
+void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
+	*id = PedirEntero("Ingrese el ID del producto: ", "ERROR! Ingrese un ID entre 0 y 10000: ", 0, 10000);
+	PedirCadena("Ingrese la descripción del producto: ", *desc);
+	*nacion = PedirEntero("Ingrese la nacionalidad del producto (1: EEUU - 2: CHINA - 3: OTRO): ", "ERROR! Ingrese una nacionalidad entre 1 y 3 (1: EEUU - 2: CHINA - 3: OTRO): ", 1, 3);
+	*tipo = PedirEntero("Ingrese el tipo de producto (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", "ERROR! Ingrese un tipo entre 1 y 4 (1: IPHONE - 2: MAC - 3: IPAD - 4: ACCESORIOS): ", 1, 4);
+	*precio = PedirFlotante("Ingrese el precio del producto: ", "ERROR! Ingrese un precio entre 1 y 5000: ", 1, 5000);
+	*estado = CARGADO;
 }
 
 int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam){
@@ -56,7 +52,7 @@ int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float prec
 
 	for(i = 0; i < tam; i++){
 		if(estado[i] != CARGADO){
-			PedirDatosProducto(id, desc, nacion, tipo, precio, estado, tam);
+			PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
 			retorno = CARGADO;
 			break;
 		}

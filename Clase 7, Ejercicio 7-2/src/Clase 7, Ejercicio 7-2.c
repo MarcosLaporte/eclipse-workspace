@@ -23,12 +23,14 @@ Consigna:
 int main(void) {
 	setbuf(stdout, NULL);
 
-	int vectorA[T] = {8,25,9,10,3};
-	int vectorB[T] = {7,10,25,26,0};
+	int vectorA[T] /*= {8,25,9,10,3}*/;
+	int vectorB[T] /*= {7,10,25,26,3}*/;
 	int vectorC[T];
 
-//	PedirDosArrayEnteros(vectorA, vectorB, T);
+	PedirDosArrayEnteros(vectorA, vectorB, T);
 	MayorNumero(vectorA, vectorB, vectorC, T);
+	OrdenarVectoresPorUnVector(vectorC, T, vectorA, vectorB);
 	MostrarTresArray(vectorA, vectorB, vectorC, T);
+
 	return 0;
 }

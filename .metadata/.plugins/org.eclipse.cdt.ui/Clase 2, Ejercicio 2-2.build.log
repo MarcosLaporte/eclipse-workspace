@@ -1,7 +1,1 @@
-16:48:02 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-2 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-2.o" "..\\src\\Clase 2, Ejercicio 2-2.c" 
-gcc -o "Clase 2, Ejercicio 2-2.exe" "src\\Clase 2, Ejercicio 2-2.o" 
-
-16:48:03 Build Finished. 0 errors, 0 warnings. (took 680ms)
-
+Info: Nothing to build for Clase 2, Ejercicio 2-2

@@ -26,29 +26,33 @@ Realizar un programa que permita interactuar con un menú de usuarios con las sig
 	8.	Los productos que cuestan 700.
 	9.	Precio promedio por tipo de producto.
 	10.	Por cada tipo la lista de productos.
-	11.	Los productos "MADE IN CHINA".
-	12.	Las MAC que cuestan más de 700 USD.
-	13.	El/Los Accesorios más caros.
-
------------------------------------------------------------------------------------------------------*/
+	11.	El/los tipos de productos con mas productos importados.
+	12.	La nacionalidad que solo fabrica Iphone.
+	13.	Los productos, ordenados por nacionalidad alfabéticamente.
+	14. La nacionalidad con más tipos de productos fabricados.
+	15. El precio promedio de productos por nacionalidad
+------------------------------------------------------------------*/
 
 #include <stdio.h>
 #include <stdlib.h>
 #include "Input.h"
 #include "Products.h"
 #include "ProductType.h"
+#include "ProductNation.h"
 
 int main(){
 	setbuf(stdout, NULL);
 
 	int option;
-	sProduct arrayProduct[MAX_PROD] = {{111, "Iphone 13", 1, 1, 700, FULL},
-									{222, "MacOS", 2, 2, 1500, FULL},
-									{333, "AirPods", 3, 4, 100, FULL},
-									{444, "IPad 5", 1, 3, 750, FULL},
-									{555, "Cargador", 2, 4, 799, FULL},
-									{666, "Iphone 8", 3, 1, 650, FULL}};
+	sProduct arrayProduct[MAX_PROD] = {{111, "Iphone 13", 1, 1000, 700, FULL},
+									{222, "MacOS", 2, 1002, 1500, FULL},
+									{333, "AirPods", 3, 1003, 100, FULL},
+									{444, "IPad 5", 1, 1001, 750, FULL},
+									{555, "Cargador", 2, 1003, 799, FULL},
+									{666, "Iphone 8", 3, 1000, 650, FULL}};
 	float averagePrices[MAX_TYPE];
+	sType productType[MAX_TYPE]= {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "Accesorios"}};
+	sNation productNation[MAX_NATION] = {{1, "EEUU"}, {2, "CHINA"}, {3, "OTRO"}};
 
 //	if(initProduct(arrayProduct, MAX_PROD) == 0){
 //		printf("Se han inicializado los productos!\n");
@@ -118,8 +122,15 @@ int main(){
 			}
 			break;
 		case 10: //Por cada tipo la lista de productos.
-
+			if(printProductsWithType(arrayProduct, MAX_PROD, productType, MAX_TYPE) == -1){
+				printf("No se han ingresado productos.\n");
+			}
 			break;
+		case 11: //El-los tipos de productos con mas productos importados.
+			break;
+		case 12:
+			break;
+
 		case 0:
 			printf("Ha salido del programa.");
 			break;

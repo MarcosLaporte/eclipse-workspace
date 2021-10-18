@@ -9,7 +9,7 @@
 typedef struct{
 	int nationId;
 	char descriptionNation[51];
-};
+}sNation;
 
 
 

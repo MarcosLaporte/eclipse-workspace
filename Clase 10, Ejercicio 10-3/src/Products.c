@@ -331,7 +331,7 @@ float lowestPrice(sProduct* list, int len){
 	return lowPrice;
 }
 
-int printProductsByType(sProduct* prodList, int prodLen, sType* typeList, int typeLen){
+int printProductsWithType(sProduct* prodList, int prodLen, sType* typeList, int typeLen){
 	int Return;
 	Return = -1;
 
@@ -339,11 +339,35 @@ int printProductsByType(sProduct* prodList, int prodLen, sType* typeList, int ty
 		for(int i = 0; i < prodLen; i++){
 			for(int j = 0; j < typeLen; j++){
 				if(prodList[i].status == FULL){
-					switch(prodList[i].type){
-					case 1000:
+					if(prodList[i].type == typeList[j].typeId){
+						Return = 0;
+						printf("|%4d|%15s|%6d|%11s|%7.2f|\n", prodList[i].idProduct, prodList[i].description,
+														prodList[i].nationality, typeList[j].description, prodList[i].price);
+					}
+				}
+			}
+		}
+	}
 
-						break;
+	return Return;
+}
 
+int printMadeInChina(sProduct* prodList, int prodLen, sType* typeList, int typeLen, sNation* nationList, int nationLen){
+	int Return;
+	Return = -1;
+
+	if(prodList != NULL && prodLen > 0 && typeList != NULL && typeLen > 0){
+		for(int i = 0; i < prodLen; i++){
+			for(int j = 0; j < typeLen; j++){
+				for(int k = 0; k < nationLen; k++){
+					if(prodList[i].status == FULL){
+						if(prodList[i].type == typeList[j].typeId){
+							if(nationList[k].nationId == CHINA){
+								Return = 0;
+								printf("|%4d|%15s|%6s|%11s|%7.2f|\n", prodList[i].idProduct, prodList[i].description,
+																nationList[k].descriptionNation, typeList[j].description, prodList[i].price);
+							}
+						}
 					}
 				}
 			}

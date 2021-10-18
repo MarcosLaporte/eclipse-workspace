@@ -20,7 +20,8 @@
 int PedirEntero(char mensaje[], char mensajeError[], int min, int max);
 float PedirFlotante(char mensaje[], char mensajeError[], int min, int max);
 void PedirCadena(char mensaje[], char input[]);
-void PedirDatosProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+
+void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado);
 int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
 void MostrarDatosProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[]);
 

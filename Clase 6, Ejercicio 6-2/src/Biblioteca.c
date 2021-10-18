@@ -13,7 +13,7 @@ void PedirArrayEnteroSec(int lista[], int tam, char mensaje[], char mensajeError
 			scanf("%d", &lista[i]);
 		}
 	}
-	printf("Lista:\n");
+	printf("\nLista:\n");
 	for(i = 0; i < T; i++){
 		printf("%d\n", lista[i]);
 	}
@@ -35,30 +35,6 @@ int DeterminarPositividad(int numero){
 	return signo;
 }
 
-/*int PositivosYNegativos(int numeros[], int tam, int positivos[], int negativos[], int* refPos, int* refNeg){
-	int i;
-	int signo;
-	int contPos = 0;
-	int contNeg = 0;
-
-	for(i = 0; i < tam; i++){
-		if(numeros[i] > 0){
-			contPos++;
-			positivos[i] = numeros[i];
-		}else{
-			if(numeros[i] < 0){
-				contNeg++;
-				negativos[i] = numeros[i];
-			}
-		}
-		signo = 1;
-	}
-	*refPos = contPos;
-	*refNeg = contNeg;
-
-	return signo;
-}*/
-
 void OrdenarPositivosCreciente(int numeros[], int tam){
 	int i;
 	int flagSwap;
@@ -78,7 +54,7 @@ void OrdenarPositivosCreciente(int numeros[], int tam){
 				}
 			}
 		}while(flagSwap);
-		printf("Positivos ordenados:\n");
+		printf("\nPositivos ordenados:\n");
 		for(i = 0; i <tam; i++){
 			if(DeterminarPositividad(numeros[i]) == 1){
 				printf("%d\n", numeros[i]);
@@ -106,7 +82,7 @@ void OrdenarNegativosDecreciente(int numeros[], int tam){
 				}
 			}
 		}while(flagSwap);
-		printf("Negativos ordenados:\n");
+		printf("\nNegativos ordenados:\n");
 		for(i = 0; i <tam; i++){
 			if(DeterminarPositividad(numeros[i]) == -1){
 				printf("%d\n", numeros[i]);
