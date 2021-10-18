@@ -1,0 +1,18 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Biblioteca.h"
+#include "Input.h"
+
+int main(void){
+	setbuf(stdout, NULL);
+
+	float number;
+
+	getFinalFloat(&number, "Ingrese un número: ",
+			"ERROR! El dato ingresado no es válido.\nIngrese un número entre -5 y 150: ", -5, 150);
+
+	printf("\nEl entero ingresado es: %.2f", number);
+
+	return 0;
+}

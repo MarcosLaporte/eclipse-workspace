@@ -1,0 +1,7 @@
+00:15:32 **** Incremental Build of configuration Debug for project Clase 5, Anexo 5-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 5, Anexo 5-1.exe" "src\\Biblioteca.o" "src\\Clase 5, Anexo 5-1.o" "src\\Ingreso de datos.o" 
+
+00:15:33 Build Finished. 0 errors, 0 warnings. (took 708ms)
+

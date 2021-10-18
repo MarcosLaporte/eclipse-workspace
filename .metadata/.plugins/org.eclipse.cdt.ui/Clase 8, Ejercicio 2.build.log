@@ -1,0 +1,19 @@
+09:27:28 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca_Productos.o" "..\\src\\Biblioteca_Productos.c" 
+..\src\Biblioteca_Productos.c: In function 'OrdenarArrayEnteros':
+..\src\Biblioteca_Productos.c:153:21: error: invalid operands to binary > (have 'eProducto' {aka 'struct <anonymous>'} and 'eProducto' {aka 'struct <anonymous>'})
+  153 |     if(listaProd[i] > listaProd[i+1]){
+      |        ~~~~~~~~~~~~ ^ ~~~~~~~~~~~~~~
+      |                 |              |
+      |                 |              eProducto {aka struct <anonymous>}
+      |                 eProducto {aka struct <anonymous>}
+..\src\Biblioteca_Productos.c:155:12: error: incompatible types when assigning to type 'int' from type 'eProducto' {aka 'struct <anonymous>'}
+  155 |      aux = listaProd[i];
+      |            ^~~~~~~~~
+..\src\Biblioteca_Productos.c:157:23: error: incompatible types when assigning to type 'eProducto' {aka 'struct <anonymous>'} from type 'int'
+  157 |      listaProd[i+1] = aux;
+      |                       ^~~
+
+09:27:28 Build Failed. 3 errors, 0 warnings. (took 158ms)
+

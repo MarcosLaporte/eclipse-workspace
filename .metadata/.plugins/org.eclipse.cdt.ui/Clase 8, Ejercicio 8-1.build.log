@@ -1,0 +1,28 @@
+16:48:17 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosUnJugador':
+..\src\Clase 8, Ejercicio 8-1.c:46:50: error: incompatible type for argument 1 of 'CalcularPromedioGoles'
+   46 |  unJugador.promedioGoles = CalcularPromedioGoles(unJugador, T);
+      |                                                  ^~~~~~~~~
+      |                                                  |
+      |                                                  eJugador {aka struct <anonymous>}
+..\src\Clase 8, Ejercicio 8-1.c:30:36: note: expected 'eJugador *' {aka 'struct <anonymous> *'} but argument is of type 'eJugador' {aka 'struct <anonymous>'}
+   30 | int CalcularPromedioGoles(eJugador jugador[], int tam);
+      |                           ~~~~~~~~~^~~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:72:9: error: 'promedio' undeclared (first use in this function)
+   72 |  return promedio;
+      |         ^~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosJugadores':
+..\src\Clase 8, Ejercicio 8-1.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+   57 | }
+      | ^
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+   73 | }
+      | ^
+
+16:48:17 Build Failed. 2 errors, 2 warnings. (took 208ms)
+

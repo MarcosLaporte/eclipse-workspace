@@ -1,0 +1,16 @@
+/*
+ * SectorEmployee.h
+ *      Author: Marcos
+ */
+
+#ifndef SECTOREMPLOYEE_H_
+#define SECTOREMPLOYEE_H_
+
+typedef struct{
+	int sectorId;
+	char description[21];
+}Sector;
+
+
+
+#endif /* SECTOREMPLOYEE_H_ */

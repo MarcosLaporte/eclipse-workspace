@@ -1,0 +1,49 @@
+/*
+ * Productos.h
+ *      Author: Marcos
+ */
+
+#ifndef PRODUCTOS_H_
+#define PRODUCTOS_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+#define EMPTY 0
+#define FULL 1
+// nacionalidad
+#define EEUU 1
+#define CHINA 2
+#define OTRO 3
+// tipo
+#define IPHONE 1
+#define MAC 2
+#define IPAD 3
+#define ACCESORIOS 4
+
+typedef struct{
+	int idProducto;
+	char descripcion[51];
+	int nacionalidad;
+	int tipo;
+	float precio;
+	int estado;
+}sProduct;
+
+int initProduct(sProduct* list, int len);
+sProduct getProduct();
+int addProduct(sProduct* list, int len);
+void printOneProduct(sProduct aProduct);
+int printAllProducts(sProduct* list, int len);
+int findProductById(sProduct* list, int len, int id);
+int checkAnyProduct(sProduct* list, int len);
+int removeProduct(sProduct* list, int len);
+int modifyProdcut(sProduct* list, int len);
+void sortProductPrice(sProduct* list, int len);
+void sortProductDescr(sProduct* list, int len);
+float highestPrice(sProduct* list, int len);
+int printByPrice(sProduct* list, int len, float searchedPrice);
+int highestPriceProducts(sProduct* list, int len);
+
+
+#endif /* PRODUCTOS_H_ */

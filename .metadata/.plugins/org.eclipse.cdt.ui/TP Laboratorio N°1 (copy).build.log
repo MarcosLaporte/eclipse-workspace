@@ -1,0 +1,7 @@
+16:13:40 **** Incremental Build of configuration Debug for project TP Laboratorio N°1 (copy) ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP Laboratorio N°1.o" "..\\src\\TP Laboratorio N°1.c" 
+gcc -o "TP Laboratorio N°1 (copy).exe" "src\\Biblioteca.o" "src\\Operaciones.o" "src\\TP Laboratorio N°1.o" 
+
+16:13:41 Build Finished. 0 errors, 0 warnings. (took 702ms)
+

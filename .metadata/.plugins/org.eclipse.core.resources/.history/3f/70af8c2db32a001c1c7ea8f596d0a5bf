@@ -1,0 +1,30 @@
+/*
+ * Input.h
+ *      Author: Marcos
+ */
+
+#ifndef INPUT_H_
+#define INPUT_H_
+
+int getInt(char message[]);
+int getLimitedInt(char message[], char errorMessage[], int min, int max);
+void printInt(char message[], int number);
+float getFloat(char message[]);
+float getLimitedFloat(char message[], char errorMessage[], int min, int max);
+void printFloat(char message[], float number);
+void getSequentialArrayInt(int list[], int length, char message[], char errorMessage[], int min, int max);
+void getRandomArrayInt(int list[], int length, char message[], char errorMessage[], int min, int max);
+void printArrayInt(char message[], int number[], int length);
+void getSequentialArrayFloat(float list[], int length, char message[], char errorMessage[], int min, int max);
+void getRandomArrayFloat(float list[], int length, char message[], char errorMessage[], int min, int max);
+void printArrayFloat(char message[], float number[], int length);
+void getString(char message[], char input[], int length);
+void printString(char message[]);
+int searchNumber(int list[], int length, float searchedValue);
+int getMenuOption();
+int getModificationMenu();
+void formatName(char input[]);
+int checkAlphabetAndSpace(char input[]);
+int checkInt(char input[], int length, int* refInt);
+
+#endif /* INPUT_H_ */

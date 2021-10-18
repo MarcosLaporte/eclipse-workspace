@@ -1,0 +1,8 @@
+16:48:10 **** Rebuild of configuration Debug for project Clase 5, Anexo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Anexo.o" "..\\src\\Clase 5, Anexo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 5, Anexo.exe" "src\\Biblioteca.o" "src\\Clase 5, Anexo.o" 
+
+16:48:11 Build Finished. 0 errors, 0 warnings. (took 737ms)
+

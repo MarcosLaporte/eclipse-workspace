@@ -1,0 +1,16 @@
+/*
+ * tipoProducto.h
+ *      Author: Marcos
+ */
+
+#ifndef TIPOPRODUCTO_H_
+#define TIPOPRODUCTO_H_
+
+typedef struct{
+	int idType;
+	char description[51];
+}sType;
+
+
+
+#endif /* TIPOPRODUCTO_H_ */

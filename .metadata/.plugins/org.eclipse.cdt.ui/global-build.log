@@ -1,0 +1,2204 @@
+16:02:31 **** Rebuild of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+..\src\TP_2.c: In function 'main':
+..\src\TP_2.c:29:11: warning: unused variable 'arrayEmployees' [-Wunused-variable]
+   29 |  Employee arrayEmployees[ELEMENTS] /*= {{1, "Mario", "Santos", 100000, 1, FALSE},
+      |           ^~~~~~~~~~~~~~
+..\src\TP_2.c:28:6: warning: unused variable 'option' [-Wunused-variable]
+   28 |  int option;
+      |      ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'getEmployee':
+..\src\ArrayEmployees.c:26:7: warning: unused variable 'auxSector' [-Wunused-variable]
+   26 |  char auxSector[4];
+      |       ^~~~~~~~~
+..\src\ArrayEmployees.c: At top level:
+..\src\ArrayEmployees.c:46:1: error: expected '=', ',', ';', 'asm' or '__attribute__' at end of input
+   46 | int add
+      | ^~~
+16:02:53 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'getEmployee':
+..\src\ArrayEmployees.c:26:7: warning: unused variable 'auxSector' [-Wunused-variable]
+   26 |  char auxSector[4];
+      |       ^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+..\src\TP_2.c: In function 'main':
+..\src\TP_2.c:36:6: warning: unused variable 'auxInt' [-Wunused-variable]
+   36 |  int auxInt;
+      |      ^~~~~~
+..\src\TP_2.c:35:7: warning: unused variable 'aux' [-Wunused-variable]
+   35 |  char aux[50];
+      |       ^~~
+..\src\TP_2.c:34:11: warning: unused variable 'auxWorker' [-Wunused-variable]
+   34 |  Employee auxWorker;
+      |           ^~~~~~~~~
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+17:38:54 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:39:50 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+..\src\TP_2.c: In function 'main':
+..\src\TP_2.c:63:5: warning: implicit declaration of function 'modifyEmployee'; did you mean 'sortEmployee'? [-Wimplicit-function-declaration]
+   63 |     modifyEmployee(arrayEmployees, MAX_EMPLOYEES);
+      |     ^~~~~~~~~~~~~~
+      |     sortEmployee
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+17:41:06 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+17:41:50 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+17:42:46 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+17:43:14 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:43:26 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:43:28 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+17:43:47 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+17:46:04 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+17:47:38 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+17:48:21 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+17:50:43 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:50:46 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+17:53:41 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+..\src\TP_2.c: In function 'main':
+..\src\TP_2.c:73:8: error: void value not ignored as it ought to be
+   73 |     if(printList(arrayEmployees, MAX_EMPLOYEES) == 1){
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+17:56:02 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:13:06 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:13:15 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+18:23:41 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:24:52 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+18:25:52 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+18:45:54 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+21:17:38 **** Rebuild of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+..\src\TP_2.c: In function 'main':
+..\src\TP_2.c:63:8: error: too few arguments to function 'modifyEmployee'
+   63 |     if(modifyEmployee(arrayEmployees, MAX_EMPLOYEES) == -1){
+      |        ^~~~~~~~~~~~~~
+In file included from ..\src\TP_2.c:22:
+..\src\ArrayEmployees.h:75:5: note: declared here
+   75 | int modifyEmployee(Employee* list, int length, int id);
+      |     ^~~~~~~~~~~~~~
+21:20:02 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+21:27:12 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+21:28:41 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+21:29:54 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+18:55:04 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+19:00:16 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+19:03:00 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+19:03:25 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+19:06:07 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+19:08:14 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+19:53:29 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+19:55:32 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+20:07:12 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+20:59:18 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:22:29 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SectorEmployee.o" "..\\src\\SectorEmployee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'printEmployees':
+..\src\ArrayEmployees.c:210:37: error: subscripted value is neither array nor pointer nor vector
+  210 |      if(list[i].sector == sectorList[j].sectorId){
+      |                                     ^
+..\src\ArrayEmployees.c:213:118: error: subscripted value is neither array nor pointer nor vector
+  213 |       printf("|%4d|%50s|%50s|$%10.2f|%15s|\n", list[i].id, list[i].name, list[i].lastName, list[i].salary, sectorList[j].description);
+      |                                                                                                                      ^
+..\src\ArrayEmployees.c:203:9: warning: variable 'sectorList' set but not used [-Wunused-but-set-variable]
+  203 |  Sector sectorList;
+      |         ^~~~~~~~~~
+00:23:30 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'printEmployees':
+..\src\ArrayEmployees.c:210:37: error: subscripted value is neither array nor pointer nor vector
+  210 |      if(list[i].sector == sectorList[i].sectorId){
+      |                                     ^
+..\src\ArrayEmployees.c:213:118: error: subscripted value is neither array nor pointer nor vector
+  213 |       printf("|%4d|%50s|%50s|$%10.2f|%15s|\n", list[i].id, list[i].name, list[i].lastName, list[i].salary, sectorList[j].description);
+      |                                                                                                                      ^
+..\src\ArrayEmployees.c:203:9: warning: variable 'sectorList' set but not used [-Wunused-but-set-variable]
+  203 |  Sector sectorList;
+      |         ^~~~~~~~~~
+00:23:45 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'printEmployees':
+..\src\ArrayEmployees.c:203:9: error: array size missing in 'sectorList'
+  203 |  Sector sectorList[];
+      |         ^~~~~~~~~~
+00:23:58 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\SectorEmployee.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:24:02 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\SectorEmployee.o" "src\\TP_2.o" 
+00:25:51 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\SectorEmployee.o" "src\\TP_2.o" 
+13:21:51 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SectorEmployee.o" "..\\src\\SectorEmployee.c" 
+In file included from ..\src\SectorEmployee.c:6:
+..\src\SectorEmployee.h:10:15: error: expected ':', ',', ';', '}' or '__attribute__' before '=' token
+   10 |  int sectorId = {{1},{2},{3},{4},{5},{6}};
+      |               ^
+13:22:31 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SectorEmployee.o" "..\\src\\SectorEmployee.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\SectorEmployee.o" "src\\TP_2.o" 
+13:26:12 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\SectorEmployee.o" "src\\TP_2.o" 
+13:28:44 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+15:25:30 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+20:12:06 **** Rebuild of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'initProduct':
+..\src\Productos.c:18:9: warning: 'Return' is used uninitialized in this function [-Wuninitialized]
+   18 |  return Return;
+      |         ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getString':
+..\src\Input.c:166:11: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  166 |  length = strlen(input);
+      |           ^~~~~~
+..\src\Input.c:166:11: warning: incompatible implicit declaration of built-in function 'strlen'
+..\src\Input.c:10:1: note: include '<string.h>' or provide a declaration of 'strlen'
+    9 | #include <ctype.h>
+  +++ |+#include <string.h>
+   10 | 
+..\src\Input.c: In function 'formatName':
+..\src\Input.c:172:11: warning: incompatible implicit declaration of built-in function 'strlen'
+  172 |  length = strlen(input);
+      |           ^~~~~~
+..\src\Input.c:172:11: note: include '<string.h>' or provide a declaration of 'strlen'
+..\src\Input.c:175:3: warning: implicit declaration of function 'strlwr' [-Wimplicit-function-declaration]
+  175 |   strlwr(input);
+      |   ^~~~~~
+..\src\Input.c: In function 'checkAlphabetAndSpace':
+..\src\Input.c:185:15: warning: incompatible implicit declaration of built-in function 'strlen'
+  185 |  int length = strlen(input);
+      |               ^~~~~~
+..\src\Input.c:185:15: note: include '<string.h>' or provide a declaration of 'strlen'
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+20:13:07 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+20:18:14 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+20:33:29 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'removeEmployee':
+..\src\ArrayEmployees.c:95:5: error: break statement not within loop or switch
+   95 |     break;
+      |     ^~~~~
+20:33:38 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+21:17:27 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+21:17:32 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+..\src\Clase 10, Ejercicio 10-3.c: In function 'main':
+..\src\Clase 10, Ejercicio 10-3.c:35:2: error: unknown type name 'sProduct'; did you mean 'struct'?
+   35 |  sProduct arrayProduct[MAX_PROD];
+      |  ^~~~~~~~
+      |  struct
+..\src\Clase 10, Ejercicio 10-3.c:41:7: warning: implicit declaration of function 'addProduct' [-Wimplicit-function-declaration]
+   41 |    if(addProduct(arrayProduct, MAX_PROD) == -1){
+      |       ^~~~~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:46:7: warning: implicit declaration of function 'removeProduct' [-Wimplicit-function-declaration]
+   46 |    if(removeProduct(arrayProduct, MAX_PROD) == -1){
+      |       ^~~~~~~~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:7: warning: implicit declaration of function 'modifyProdcut' [-Wimplicit-function-declaration]
+   51 |    if(modifyProdcut(arrayProduct, MAX_PROD) == -1){
+      |       ^~~~~~~~~~~~~
+21:17:49 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+..\src\Clase 10, Ejercicio 10-3.c: In function 'main':
+..\src\Clase 10, Ejercicio 10-3.c:35:2: error: unknown type name 'sProduct'; did you mean 'struct'?
+   35 |  sProduct arrayProduct[MAX_PROD];
+      |  ^~~~~~~~
+      |  struct
+..\src\Clase 10, Ejercicio 10-3.c:41:7: warning: implicit declaration of function 'addProduct' [-Wimplicit-function-declaration]
+   41 |    if(addProduct(arrayProduct, MAX_PROD) == -1){
+      |       ^~~~~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:46:7: warning: implicit declaration of function 'removeProduct' [-Wimplicit-function-declaration]
+   46 |    if(removeProduct(arrayProduct, MAX_PROD) == -1){
+      |       ^~~~~~~~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:51:7: warning: implicit declaration of function 'modifyProdcut' [-Wimplicit-function-declaration]
+   51 |    if(modifyProdcut(arrayProduct, MAX_PROD) == -1){
+      |       ^~~~~~~~~~~~~
+21:18:04 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+21:19:12 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:14:23 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:14:25 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+22:15:30 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+22:15:43 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+22:20:06 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+22:21:54 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+22:40:14 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+22:41:02 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+22:54:54 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+22:56:49 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+23:02:27 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+23:29:02 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'sortProductPrice':
+..\src\Productos.c:151:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
+  151 |  int Return;
+      |      ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:40:31 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:44:58 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'sortProductDescr':
+..\src\Productos.c:180:9: warning: implicit declaration of function 'strcmp' [-Wimplicit-function-declaration]
+  180 |      if(strcmp(list[i].descripcion, list[i+1].descripcion) > 0){
+      |         ^~~~~~
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:45:26 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:45:30 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+23:48:48 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+23:53:06 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+23:53:13 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+23:55:47 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+23:57:28 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+03:28:27 **** Rebuild of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+03:28:35 **** Rebuild of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+03:37:32 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+..\src\Clase 10, Ejercicio 10-3.c: In function 'main':
+..\src\Clase 10, Ejercicio 10-3.c:87:7: error: 'highest' undeclared (first use in this function)
+   87 |    if(highest){
+      |       ^~~~~~~
+..\src\Clase 10, Ejercicio 10-3.c:87:7: note: each undeclared identifier is reported only once for each function it appears in
+03:37:46 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+03:38:38 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+03:38:39 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+03:41:16 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+03:42:15 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+03:47:01 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+03:49:37 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+03:49:47 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+03:54:16 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+03:54:56 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+03:56:58 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+03:57:07 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+18:12:28 **** Rebuild of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+11:05:37 **** Rebuild of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getString':
+..\src\Input.c:166:11: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+  166 |  length = strlen(input);
+      |           ^~~~~~
+..\src\Input.c:166:11: warning: incompatible implicit declaration of built-in function 'strlen'
+..\src\Input.c:10:1: note: include '<string.h>' or provide a declaration of 'strlen'
+    9 | #include <ctype.h>
+  +++ |+#include <string.h>
+   10 | 
+..\src\Input.c: In function 'formatName':
+..\src\Input.c:172:11: warning: incompatible implicit declaration of built-in function 'strlen'
+  172 |  length = strlen(input);
+      |           ^~~~~~
+..\src\Input.c:172:11: note: include '<string.h>' or provide a declaration of 'strlen'
+..\src\Input.c:175:3: warning: implicit declaration of function 'strlwr' [-Wimplicit-function-declaration]
+  175 |   strlwr(input);
+      |   ^~~~~~
+..\src\Input.c: In function 'checkAlphabetAndSpace':
+..\src\Input.c:185:15: warning: incompatible implicit declaration of built-in function 'strlen'
+  185 |  int length = strlen(input);
+      |               ^~~~~~
+..\src\Input.c:185:15: note: include '<string.h>' or provide a declaration of 'strlen'
+..\src\Input.c: At top level:
+..\src\Input.c:212:5: error: conflicting types for 'getInt'
+  212 | int getInt(int *pResultado){ //Busca un entero, llama .
+      |     ^~~~~~
+..\src\Input.c:11:5: note: previous definition of 'getInt' was here
+   11 | int getInt(char message[]){
+      |     ^~~~~~
+..\src\Input.c: In function 'getInt':
+..\src\Input.c:218:4: error: void value not ignored as it ought to be
+  218 |    getString("", auxiliar, sizeof(auxiliar))
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Info: Nothing to build for Archivo de prueba
+11:06:07 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getAInt':
+..\src\Input.c:219:4: error: void value not ignored as it ought to be
+  219 |    getString("", auxiliar, sizeof(auxiliar))
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:06:29 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getAInt':
+..\src\Input.c:219:4: error: void value not ignored as it ought to be
+  219 |    getString(" ", auxiliar, sizeof(auxiliar))
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:06:46 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getAInt':
+..\src\Input.c:218:25: error: void value not ignored as it ought to be
+  218 |  if(pResultado!=NULL && getString("", auxiliar, sizeof(auxiliar))
+      |                         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:07:34 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getAInt':
+..\src\Input.c:218:27: error: void value not ignored as it ought to be
+  218 |  if(pResultado != NULL && getString("", auxiliar, sizeof(auxiliar)) == 0
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:08:07 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getAInt':
+..\src\Input.c:218:27: error: void value not ignored as it ought to be
+  218 |  if(pResultado != NULL && getString("", auxiliar, sizeof(auxiliar)) == 0 && esInt(auxiliar, sizeof(auxiliar)) == 0){
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:08:31 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getAInt':
+..\src\Input.c:218:5: error: void value not ignored as it ought to be
+  218 |  if(getString("", auxiliar, sizeof(auxiliar)) == 0 && esInt(auxiliar, sizeof(auxiliar)) == 0){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:08:50 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getAInt':
+..\src\Input.c:218:27: error: void value not ignored as it ought to be
+  218 |  if(pResultado != NULL && getString("a", auxiliar, sizeof(auxiliar)) == 0 && esInt(auxiliar, sizeof(auxiliar)) == 0){
+      |                           ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+11:11:48 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:12:06 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:12:37 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:14:03 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:14:19 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:14:39 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+11:15:12 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+11:15:50 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+21:08:54 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+Info: Nothing to build for Archivo de prueba
+21:11:08 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+Info: Nothing to build for Archivo de prueba
+21:11:56 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+21:14:04 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Archivo de prueba.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+21:14:05 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `getInt':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:12: multiple definition of `getInt'; src\Archivo de prueba.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:56: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Archivo de prueba.o: in function `main':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:17: undefined reference to `getIntComplete'
+collect2.exe: error: ld returned 1 exit status
+21:14:34 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:17:2: warning: implicit declaration of function 'NumeroEnRango' [-Wimplicit-function-declaration]
+   17 |  NumeroEnRango(&numero, "Ingrese un numero: ", "ERROR! El dato ingresado no es válido. Reingrese: ", -5, 10);
+      |  ^~~~~~~~~~~~~
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `getInt':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:12: multiple definition of `getInt'; src\Archivo de prueba.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:56: first defined here
+collect2.exe: error: ld returned 1 exit status
+21:14:54 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `getInt':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:12: multiple definition of `getInt'; src\Archivo de prueba.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:56: first defined here
+collect2.exe: error: ld returned 1 exit status
+21:14:56 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `getInt':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:12: multiple definition of `getInt'; src\Archivo de prueba.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:56: first defined here
+collect2.exe: error: ld returned 1 exit status
+21:15:06 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `getInt':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:12: multiple definition of `getInt'; src\Archivo de prueba.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:56: first defined here
+collect2.exe: error: ld returned 1 exit status
+21:17:51 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+21:18:03 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+23:42:24 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'getAnInt':
+..\src\Archivo de prueba.c:79:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'char *' [-Wformat=]
+   79 |  printf("%d", auxiliar);
+      |          ~^   ~~~~~~~~
+      |           |   |
+      |           int char *
+      |          %s
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+23:42:43 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'getAnInt':
+..\src\Archivo de prueba.c:79:11: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   79 |  printf("%d", pResultado);
+      |          ~^   ~~~~~~~~~~
+      |           |   |
+      |           int int *
+      |          %n
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+23:42:53 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+Info: Nothing to build for Archivo de prueba
+23:45:35 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Archivo de prueba.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:45:38 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+23:46:46 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+23:47:18 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+00:33:19 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+00:35:12 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+00:49:43 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+00:51:16 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+00:52:21 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+01:06:04 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+Info: Nothing to build for Archivo de prueba
+01:06:49 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+01:07:12 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+01:07:25 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+01:08:29 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Archivo de prueba.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:10:00 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Archivo de prueba.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:28:34 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Archivo de prueba.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:28:49 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+01:29:22 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+01:29:56 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+01:30:50 **** Rebuild of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+01:31:53 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'getEmployee':
+..\src\ArrayEmployees.c:42:2: error: 'getFina' undeclared (first use in this function); did you mean 'getline'?
+   42 |  getFina
+      |  ^~~~~~~
+      |  getline
+..\src\ArrayEmployees.c:42:2: note: each undeclared identifier is reported only once for each function it appears in
+..\src\ArrayEmployees.c:42:9: error: expected ';' before 'return'
+   42 |  getFina
+      |         ^
+      |         ;
+   43 | 
+   44 |  return worker;
+      |  ~~~~~~  
+..\src\ArrayEmployees.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+   45 | }
+      | ^
+01:33:36 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'getEmployee':
+..\src\ArrayEmployees.c:42:2: error: 'getFina' undeclared (first use in this function); did you mean 'getline'?
+   42 |  getFina
+      |  ^~~~~~~
+      |  getline
+..\src\ArrayEmployees.c:42:2: note: each undeclared identifier is reported only once for each function it appears in
+..\src\ArrayEmployees.c:42:9: error: expected ';' before 'return'
+   42 |  getFina
+      |         ^
+      |         ;
+   43 | 
+   44 |  return worker;
+      |  ~~~~~~  
+..\src\ArrayEmployees.c:45:1: warning: control reaches end of non-void function [-Wreturn-type]
+   45 | }
+      | ^
+01:34:00 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+..\src\ArrayEmployees.c: In function 'getEmployee':
+..\src\ArrayEmployees.c:42:20: warning: passing argument 1 of 'getFinalInt' makes pointer from integer without a cast [-Wint-conversion]
+   42 |  getFinalInt(worker.sector, "¬ Ingrese el sector del empleado: ", "ERROR. El dato ingresado no es válido.\nIngrese un entero entre 1 y 6: ", 1, 6);
+      |              ~~~~~~^~~~~~~
+      |                    |
+      |                    int
+In file included from ..\src\ArrayEmployees.c:7:
+..\src\Input.h:152:22: note: expected 'int *' but argument is of type 'int'
+  152 | int getFinalInt(int* refResult, char message[], char errorMessage[], int min, int max);
+      |                 ~~~~~^~~~~~~~~
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+01:34:41 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+Info: Nothing to build for TP_2
+01:36:46 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for Archivo de prueba
+01:37:23 **** Rebuild of configuration Debug for project Clase 1, Ejercicio 1-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 1, Ejercicio 1-1.o" "..\\src\\Clase 1, Ejercicio 1-1.c" 
+gcc -o "Clase 1, Ejercicio 1-1.exe" "src\\Clase 1, Ejercicio 1-1.o" 
+01:37:23 **** Rebuild of configuration Debug for project Clase 1, Ejercicio 1-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 1, Ejercicio 1-2.o" "..\\src\\Clase 1, Ejercicio 1-2.c" 
+gcc -o "Clase 1, Ejercicio 1-2.exe" "src\\Clase 1, Ejercicio 1-2.o" 
+01:37:24 **** Rebuild of configuration Debug for project Clase 1, Ejercicio 1-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 1, Ejercicio 1-3.o" "..\\src\\Clase 1, Ejercicio 1-3.c" 
+gcc -o "Clase 1, Ejercicio 1-3.exe" "src\\Clase 1, Ejercicio 1-3.o" 
+01:37:24 **** Rebuild of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+01:37:25 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-1.o" "..\\src\\Clase 2, Ejercicio 2-1.c" 
+gcc -o "Clase 2, Ejercicio 2-1.exe" "src\\Clase 2, Ejercicio 2-1.o" 
+01:37:26 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-2.o" "..\\src\\Clase 2, Ejercicio 2-2.c" 
+gcc -o "Clase 2, Ejercicio 2-2.exe" "src\\Clase 2, Ejercicio 2-2.o" 
+01:37:27 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-3.o" "..\\src\\Clase 2, Ejercicio 2-3.c" 
+gcc -o "Clase 2, Ejercicio 2-3.exe" "src\\Clase 2, Ejercicio 2-3.o" 
+01:37:28 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-4.o" "..\\src\\Clase 2, Ejercicio 2-4.c" 
+gcc -o "Clase 2, Ejercicio 2-4.exe" "src\\Clase 2, Ejercicio 2-4.o" 
+01:37:28 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-1.o" "..\\src\\Clase 3, Ejercicio 3-1.c" 
+gcc -o "Clase 3, Ejercicio 3-1.exe" "src\\Clase 3, Ejercicio 3-1.o" 
+01:37:29 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-2.o" "..\\src\\Clase 3, Ejercicio 3-2.c" 
+gcc -o "Clase 3, Ejercicio 3-2.exe" "src\\Clase 3, Ejercicio 3-2.o" 
+01:37:29 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-3.o" "..\\src\\Clase 3, Ejercicio 3-3.c" 
+gcc -o "Clase 3, Ejercicio 3-3.exe" "src\\Clase 3, Ejercicio 3-3.o" 
+01:37:30 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-4.o" "..\\src\\Clase 3, Ejercicio 3-4.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 3, Ejercicio 3-4.exe" "src\\Biblioteca.o" "src\\Clase 3, Ejercicio 3-4.o" 
+01:37:31 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-5.o" "..\\src\\Clase 3, Ejercicio 3-5.c" 
+gcc -o "Clase 3, Ejercicio 3-5.exe" "src\\Biblioteca.o" "src\\Clase 3, Ejercicio 3-5.o" 
+01:37:32 **** Rebuild of configuration Debug for project Clase 4, Ejercicio 4-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 4, Ejercicio 4-1.o" "..\\src\\Clase 4, Ejercicio 4-1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 4, Ejercicio 4-1.exe" "src\\Biblioteca.o" "src\\Clase 4, Ejercicio 4-1.o" 
+01:37:33 **** Rebuild of configuration Debug for project Clase 4, Ejercicio 4-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Conversion.o" "..\\src\\Conversion.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 4, Ejercicio 4-2.o" "..\\src\\Clase 4, Ejercicio 4-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 4, Ejercicio 4-2.exe" "src\\Biblioteca.o" "src\\Clase 4, Ejercicio 4-2.o" "src\\Conversion.o" 
+01:37:34 **** Rebuild of configuration Debug for project Clase 5, Anexo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Anexo.o" "..\\src\\Clase 5, Anexo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 5, Anexo.exe" "src\\Biblioteca.o" "src\\Clase 5, Anexo.o" 
+01:37:35 **** Rebuild of configuration Debug for project Clase 5, Ejercicio 5-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Ejercicio 5-1.o" "..\\src\\Clase 5, Ejercicio 5-1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 5, Ejercicio 5-1.exe" "src\\Biblioteca.o" "src\\Clase 5, Ejercicio 5-1.o" 
+01:37:36 **** Rebuild of configuration Debug for project Clase 5, Ejercicio 5-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Ejercicio 5-2.o" "..\\src\\Clase 5, Ejercicio 5-2.c" 
+gcc -o "Clase 5, Ejercicio 5-2.exe" "src\\Biblioteca.o" "src\\Clase 5, Ejercicio 5-2.o" 
+01:37:37 **** Rebuild of configuration Debug for project Clase 5, Ejercicio 5-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Ejercicio 5-3.o" "..\\src\\Clase 5, Ejercicio 5-3.c" 
+gcc -o "Clase 5, Ejercicio 5-3.exe" "src\\Biblioteca.o" "src\\Clase 5, Ejercicio 5-3.o" 
+01:37:38 **** Rebuild of configuration Debug for project Clase 6, Ejercicio 6-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-1.o" "..\\src\\Clase 6, Ejercicio 6-1.c" 
+gcc -o "Clase 6, Ejercicio 6-1.exe" "src\\Clase 6, Ejercicio 6-1.o" 
+01:37:39 **** Rebuild of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-2.o" "..\\src\\Clase 6, Ejercicio 6-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+01:37:40 **** Rebuild of configuration Debug for project Clase 6, Ejercicio 6-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-3.o" "..\\src\\Clase 6, Ejercicio 6-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ingreso_de_datos.o" "..\\src\\Ingreso_de_datos.c" 
+gcc -o "Clase 6, Ejercicio 6-3.exe" "src\\Clase 6, Ejercicio 6-3.o" "src\\Ingreso_de_datos.o" 
+01:37:42 **** Rebuild of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-1.o" "..\\src\\Clase 7, Ejercicio 7-1.c" 
+..\src\Clase 7, Ejercicio 7-1.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-1.c:59:20: error: 'listaProductos' undeclared (first use in this function); did you mean 'AltaProducto'?
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |                    ^~~~~~~~~~~~~~
+      |                    AltaProducto
+..\src\Clase 7, Ejercicio 7-1.c:59:20: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:4:11: warning: passing argument 2 of 'AltaProducto' makes pointer from integer without a cast [-Wint-conversion]
+    4 | #define T 5
+      |           ^
+      |           |
+      |           int
+..\src\Clase 7, Ejercicio 7-1.c:59:36: note: in expansion of macro 'T'
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |                                    ^
+..\src\Biblioteca.h:24:33: note: expected 'char (*)[50]' but argument is of type 'int'
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |                            ~~~~~^~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:59:7: error: too few arguments to function 'AltaProducto'
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:24:5: note: declared here
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |     ^~~~~~~~~~~~
+..\src\Biblioteca.h:4:11: warning: passing argument 2 of 'AltaProducto' makes pointer from integer without a cast [-Wint-conversion]
+    4 | #define T 5
+      |           ^
+      |           |
+      |           int
+..\src\Clase 7, Ejercicio 7-1.c:62:34: note: in expansion of macro 'T'
+   62 |     AltaProducto(listaProductos, T);
+      |                                  ^
+..\src\Biblioteca.h:24:33: note: expected 'char (*)[50]' but argument is of type 'int'
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |                            ~~~~~^~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:62:5: error: too few arguments to function 'AltaProducto'
+   62 |     AltaProducto(listaProductos, T);
+      |     ^~~~~~~~~~~~
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:24:5: note: declared here
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |     ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:66:7: warning: implicit declaration of function 'BajaProducto'; did you mean 'AltaProducto'? [-Wimplicit-function-declaration]
+   66 |    if(BajaProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~
+      |       AltaProducto
+..\src\Clase 7, Ejercicio 7-1.c:73:7: warning: implicit declaration of function 'ModificarProducto' [-Wimplicit-function-declaration]
+   73 |    if(ModificarProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:80:4: warning: implicit declaration of function 'MostrarLista' [-Wimplicit-function-declaration]
+   80 |    MostrarLista(listaProductos, T);
+      |    ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:83:4: warning: implicit declaration of function 'OrdenarArrayEntero' [-Wimplicit-function-declaration]
+   83 |    OrdenarArrayEntero(listaProductos, T);
+      |    ^~~~~~~~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:49:6: warning: unused variable 'estado' [-Wunused-variable]
+   49 |  int estado[T] = {CARGADO, CARGADO, CARGADO, CARGADO};
+      |      ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:48:8: warning: unused variable 'precio' [-Wunused-variable]
+   48 |  float precio[T] = {200,350,150,50};
+      |        ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:47:6: warning: unused variable 'tipo' [-Wunused-variable]
+   47 |  int tipo[T] = {IPHONE,MAC,IPAD,ACCESORIOS};
+      |      ^~~~
+..\src\Clase 7, Ejercicio 7-1.c:46:6: warning: unused variable 'nacionalidad' [-Wunused-variable]
+   46 |  int nacionalidad[T] = {OTRO,CHINA,EEUU,EEUU};
+      |      ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:45:7: warning: unused variable 'descripcion' [-Wunused-variable]
+   45 |  char descripcion[T][50] = {"Aifon","La macos","Ahí Pa","Unos auris chetos"};
+      |       ^~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:44:6: warning: unused variable 'idProducto' [-Wunused-variable]
+   44 |  int idProducto[T] = {111,222,333,444};
+      |      ^~~~~~~~~~
+01:37:42 **** Rebuild of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+01:37:43 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosUnJugador':
+..\src\Clase 8, Ejercicio 8-1.c:46:50: error: incompatible type for argument 1 of 'CalcularPromedioGoles'
+   46 |  unJugador.promedioGoles = CalcularPromedioGoles(unJugador, T);
+      |                                                  ^~~~~~~~~
+      |                                                  |
+      |                                                  eJugador {aka struct <anonymous>}
+..\src\Clase 8, Ejercicio 8-1.c:30:36: note: expected 'eJugador *' {aka 'struct <anonymous> *'} but argument is of type 'eJugador' {aka 'struct <anonymous>'}
+   30 | int CalcularPromedioGoles(eJugador jugador[], int tam);
+      |                           ~~~~~~~~~^~~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:72:9: error: 'promedio' undeclared (first use in this function)
+   72 |  return promedio;
+      |         ^~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosJugadores':
+..\src\Clase 8, Ejercicio 8-1.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+   57 | }
+      | ^
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+   73 | }
+      | ^
+01:37:43 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-2.o" "..\\src\\Clase 8, Ejercicio 8-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca_Productos.o" "..\\src\\Biblioteca_Productos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ingreso_de_datos.o" "..\\src\\Ingreso_de_datos.c" 
+gcc -o "Clase 8, Ejercicio 8-2.exe" "src\\Biblioteca_Productos.o" "src\\Clase 8, Ejercicio 8-2.o" "src\\Ingreso_de_datos.o" 
+01:37:45 **** Rebuild of configuration Debug for project Sábado Ejercicio 1-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sábado Ejercicio 1-1.o" "..\\src\\Sábado Ejercicio 1-1.c" 
+gcc -o "Sábado Ejercicio 1-1.exe" "src\\Sábado Ejercicio 1-1.o" 
+01:37:46 **** Rebuild of configuration Debug for project Sábado Ejercicio 1-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sábado Ejercicio 1-2.o" "..\\src\\Sábado Ejercicio 1-2.c" 
+gcc -o "Sábado Ejercicio 1-2.exe" "src\\Sábado Ejercicio 1-2.o" 
+01:37:46 **** Rebuild of configuration Debug for project Sábado Ejercicio 1-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sábado Ejercicio 1-3.o" "..\\src\\Sábado Ejercicio 1-3.c" 
+gcc -o "Sábado Ejercicio 1-3.exe" "src\\Sábado Ejercicio 1-3.o" 
+01:37:47 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Operaciones.o" "..\\src\\Operaciones.c" 
+gcc -o TP_1.exe "src\\Biblioteca.o" "src\\Operaciones.o" "src\\TP_1.o" 
+01:37:48 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+01:39:43 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:39:45 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+01:39:56 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+01:40:33 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+01:41:31 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+01:42:54 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+12:26:06 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c: In function 'getFinalFloat':
+..\src\Input.c:332:23: warning: passing argument 1 of 'getAFloat' from incompatible pointer type [-Wincompatible-pointer-types]
+  332 |   auxNumber=getAFloat(&number);
+      |                       ^~~~~~~
+      |                       |
+      |                       int *
+..\src\Input.c:312:22: note: expected 'float *' but argument is of type 'int *'
+  312 | int getAFloat(float* refResult){
+      |               ~~~~~~~^~~~~~~~~
+..\src\Input.c:335:26: warning: passing argument 1 of 'getAFloat' from incompatible pointer type [-Wincompatible-pointer-types]
+  335 |    auxNumber = getAFloat(&number);
+      |                          ^~~~~~~
+      |                          |
+      |                          int *
+..\src\Input.c:312:22: note: expected 'float *' but argument is of type 'int *'
+  312 | int getAFloat(float* refResult){
+      |               ~~~~~~~^~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:26:26 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:26:28 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+12:28:32 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:28:36 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+12:32:58 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+12:34:01 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+12:34:28 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:20:37: warning: format '%d' expects argument of type 'int', but argument 2 has type 'double' [-Wformat=]
+   20 |  printf("\nEl entero ingresado es: %d", number);
+      |                                    ~^   ~~~~~~
+      |                                     |   |
+      |                                     int double
+      |                                    %f
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+12:36:48 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Archivo de prueba.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:45:21 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Archivo de prueba.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:45:23 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+12:47:14 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+Info: Nothing to build for Archivo de prueba
+Info: Nothing to build for Archivo de prueba
+12:54:50 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+12:56:25 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+12:58:17 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+12:59:31 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:59:34 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:59:41 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+Info: Nothing to build for Archivo de prueba
+Info: Nothing to build for Archivo de prueba
+Info: Nothing to build for Archivo de prueba
+13:26:56 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+13:27:39 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:27:40 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+Info: Nothing to build for TP_2
+13:29:22 **** Incremental Build of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_2.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:39:35 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+13:41:03 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+13:50:44 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:50:46 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+14:41:13 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'getProduct':
+..\src\Productos.c:30:19: warning: implicit declaration of function 'getFinalFloat'; did you mean 'getFinalInt'? [-Wimplicit-function-declaration]
+   30 |  product.precio = getFinalFloat(&product.precio, "Ingrese el precio del producto: ", "ERROR! Ingrese un precio numérico: ", 1, 999999);
+      |                   ^~~~~~~~~~~~~
+      |                   getFinalInt
+..\src\Productos.c: In function 'averagePrice':
+..\src\Productos.c:269:5: error: expected expression before '}' token
+  269 |     }
+      |     ^
+..\src\Productos.c:269:5: error: label at end of compound statement
+..\src\Productos.c:261:8: warning: unused variable 'accum' [-Wunused-variable]
+  261 |  float accum[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+..\src\Productos.c:260:8: warning: unused variable 'count' [-Wunused-variable]
+  260 |  float count[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+14:41:27 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'getProduct':
+..\src\Productos.c:30:19: warning: implicit declaration of function 'getFinalFloat'; did you mean 'getFinalInt'? [-Wimplicit-function-declaration]
+   30 |  product.precio = getFinalFloat(&product.precio, "Ingrese el precio del producto: ", "ERROR! Ingrese un precio numérico: ", 1, 999999);
+      |                   ^~~~~~~~~~~~~
+      |                   getFinalInt
+..\src\Productos.c: In function 'averagePrice':
+..\src\Productos.c:268:11: error: expected ':' or '...' before ';' token
+  268 |     case 0;
+      |           ^
+..\src\Productos.c:261:8: warning: unused variable 'accum' [-Wunused-variable]
+  261 |  float accum[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+..\src\Productos.c:260:8: warning: unused variable 'count' [-Wunused-variable]
+  260 |  float count[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+14:41:33 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'getProduct':
+..\src\Productos.c:30:19: warning: implicit declaration of function 'getFinalFloat'; did you mean 'getFinalInt'? [-Wimplicit-function-declaration]
+   30 |  product.precio = getFinalFloat(&product.precio, "Ingrese el precio del producto: ", "ERROR! Ingrese un precio numérico: ", 1, 999999);
+      |                   ^~~~~~~~~~~~~
+      |                   getFinalInt
+..\src\Productos.c: In function 'averagePrice':
+..\src\Productos.c:261:8: warning: unused variable 'accum' [-Wunused-variable]
+  261 |  float accum[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+..\src\Productos.c:260:8: warning: unused variable 'count' [-Wunused-variable]
+  260 |  float count[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Productos.o: in function `getProduct':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Clase 10, Ejercicio 10-3\Debug/../src/Productos.c:30: undefined reference to `getFinalFloat'
+collect2.exe: error: ld returned 1 exit status
+14:41:50 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'getProduct':
+..\src\Productos.c:30:2: warning: implicit declaration of function 'getFinalFloat'; did you mean 'getFinalInt'? [-Wimplicit-function-declaration]
+   30 |  getFinalFloat(&product.precio, "Ingrese el precio del producto: ", "ERROR! Ingrese un precio numérico: ", 1, 999999);
+      |  ^~~~~~~~~~~~~
+      |  getFinalInt
+..\src\Productos.c: In function 'averagePrice':
+..\src\Productos.c:261:8: warning: unused variable 'accum' [-Wunused-variable]
+  261 |  float accum[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+..\src\Productos.c:260:8: warning: unused variable 'count' [-Wunused-variable]
+  260 |  float count[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Productos.o: in function `getProduct':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Clase 10, Ejercicio 10-3\Debug/../src/Productos.c:30: undefined reference to `getFinalFloat'
+collect2.exe: error: ld returned 1 exit status
+14:43:40 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'averagePrice':
+..\src\Productos.c:261:8: warning: unused variable 'accum' [-Wunused-variable]
+  261 |  float accum[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+..\src\Productos.c:260:8: warning: unused variable 'count' [-Wunused-variable]
+  260 |  float count[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+14:46:06 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'averagePrice':
+..\src\Productos.c:258:8: warning: unused variable 'accum' [-Wunused-variable]
+  258 |  float accum[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+..\src\Productos.c:257:8: warning: unused variable 'count' [-Wunused-variable]
+  257 |  float count[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:46:07 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+14:46:26 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'averagePrice':
+..\src\Productos.c:256:8: warning: unused variable 'accum' [-Wunused-variable]
+  256 |  float accum[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+..\src\Productos.c:255:8: warning: unused variable 'count' [-Wunused-variable]
+  255 |  float count[MAX_TYPE] = {0, 0, 0, 0};
+      |        ^~~~~
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:13:23 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:42:00 **** Rebuild of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+22:42:06 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+23:21:14 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'printAveragePerType':
+..\src\Productos.c:297:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
+  297 |  int Return;
+      |      ^~~~~~
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+23:21:29 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+Info: Nothing to build for Clase 10, Ejercicio 10-3
+23:42:51 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c:296:5: error: conflicting types for 'printAveragePerType'
+  296 | int printAveragePerType(sProduct* list, int len, float prices[]){
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Productos.c:6:
+..\src\Productos.h:48:6: note: previous declaration of 'printAveragePerType' was here
+   48 | void printAveragePerType(sProduct* list, int len, float prices[]);
+      |      ^~~~~~~~~~~~~~~~~~~
+23:43:01 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+23:44:16 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:30:02 **** Rebuild of configuration Debug for project TP_2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ArrayEmployees.o" "..\\src\\ArrayEmployees.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_2.o" "..\\src\\TP_2.c" 
+gcc -o TP_2.exe "src\\ArrayEmployees.o" "src\\Input.o" "src\\TP_2.o" 
+15:30:11 **** Rebuild of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+15:34:23 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:34:30 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+15:36:15 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:36:16 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+15:40:15 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:40:17 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+15:41:39 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+15:45:06 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:45:09 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+15:48:48 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+15:49:05 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+16:04:43 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:05:09 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:06:05 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+16:09:01 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:18:54 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:35:16 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+..\src\Productos.c: In function 'modifyProduct':
+..\src\Productos.c:158:17: error: 'sProduct' {aka 'struct <anonymous>'} has no member named 'tipo'
+  158 |      list[index].tipo = getInt("Ingrese el nuevo tipo: ");
+      |                 ^
+16:35:24 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Productos.o" "..\\src\\Productos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\tipoProducto.o" "..\\src\\tipoProducto.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Productos.o" "src\\tipoProducto.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:43:54 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductType.o" "..\\src\\ProductType.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:47:57 **** Rebuild of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `isAFloat':
+C:\Users\54113\Desktop\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:262: multiple definition of `isAFloat'; src\Archivo de prueba.o:C:\Users\54113\Desktop\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:24: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `getAFloat':
+C:\Users\54113\Desktop\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:284: multiple definition of `getAFloat'; src\Archivo de prueba.o:C:\Users\54113\Desktop\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:46: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `getFinalFloat':
+C:\Users\54113\Desktop\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:297: multiple definition of `getFinalFloat'; src\Archivo de prueba.o:C:\Users\54113\Desktop\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:59: first defined here
+collect2.exe: error: ld returned 1 exit status
+16:47:59 **** Rebuild of configuration Debug for project Clase 1, Ejercicio 1-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 1, Ejercicio 1-1.o" "..\\src\\Clase 1, Ejercicio 1-1.c" 
+gcc -o "Clase 1, Ejercicio 1-1.exe" "src\\Clase 1, Ejercicio 1-1.o" 
+16:47:59 **** Rebuild of configuration Debug for project Clase 1, Ejercicio 1-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 1, Ejercicio 1-2.o" "..\\src\\Clase 1, Ejercicio 1-2.c" 
+gcc -o "Clase 1, Ejercicio 1-2.exe" "src\\Clase 1, Ejercicio 1-2.o" 
+16:48:00 **** Rebuild of configuration Debug for project Clase 1, Ejercicio 1-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 1, Ejercicio 1-3.o" "..\\src\\Clase 1, Ejercicio 1-3.c" 
+gcc -o "Clase 1, Ejercicio 1-3.exe" "src\\Clase 1, Ejercicio 1-3.o" 
+16:48:01 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:48:01 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-1.o" "..\\src\\Clase 2, Ejercicio 2-1.c" 
+gcc -o "Clase 2, Ejercicio 2-1.exe" "src\\Clase 2, Ejercicio 2-1.o" 
+16:48:02 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-2.o" "..\\src\\Clase 2, Ejercicio 2-2.c" 
+gcc -o "Clase 2, Ejercicio 2-2.exe" "src\\Clase 2, Ejercicio 2-2.o" 
+16:48:03 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-3.o" "..\\src\\Clase 2, Ejercicio 2-3.c" 
+gcc -o "Clase 2, Ejercicio 2-3.exe" "src\\Clase 2, Ejercicio 2-3.o" 
+16:48:04 **** Rebuild of configuration Debug for project Clase 2, Ejercicio 2-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 2, Ejercicio 2-4.o" "..\\src\\Clase 2, Ejercicio 2-4.c" 
+gcc -o "Clase 2, Ejercicio 2-4.exe" "src\\Clase 2, Ejercicio 2-4.o" 
+16:48:04 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-1.o" "..\\src\\Clase 3, Ejercicio 3-1.c" 
+gcc -o "Clase 3, Ejercicio 3-1.exe" "src\\Clase 3, Ejercicio 3-1.o" 
+16:48:05 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-2.o" "..\\src\\Clase 3, Ejercicio 3-2.c" 
+gcc -o "Clase 3, Ejercicio 3-2.exe" "src\\Clase 3, Ejercicio 3-2.o" 
+16:48:06 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-3.o" "..\\src\\Clase 3, Ejercicio 3-3.c" 
+gcc -o "Clase 3, Ejercicio 3-3.exe" "src\\Clase 3, Ejercicio 3-3.o" 
+16:48:06 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-4 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-4.o" "..\\src\\Clase 3, Ejercicio 3-4.c" 
+gcc -o "Clase 3, Ejercicio 3-4.exe" "src\\Biblioteca.o" "src\\Clase 3, Ejercicio 3-4.o" 
+16:48:07 **** Rebuild of configuration Debug for project Clase 3, Ejercicio 3-5 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 3, Ejercicio 3-5.o" "..\\src\\Clase 3, Ejercicio 3-5.c" 
+gcc -o "Clase 3, Ejercicio 3-5.exe" "src\\Biblioteca.o" "src\\Clase 3, Ejercicio 3-5.o" 
+16:48:08 **** Rebuild of configuration Debug for project Clase 4, Ejercicio 4-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 4, Ejercicio 4-1.o" "..\\src\\Clase 4, Ejercicio 4-1.c" 
+gcc -o "Clase 4, Ejercicio 4-1.exe" "src\\Biblioteca.o" "src\\Clase 4, Ejercicio 4-1.o" 
+16:48:09 **** Rebuild of configuration Debug for project Clase 4, Ejercicio 4-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 4, Ejercicio 4-2.o" "..\\src\\Clase 4, Ejercicio 4-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Conversion.o" "..\\src\\Conversion.c" 
+gcc -o "Clase 4, Ejercicio 4-2.exe" "src\\Biblioteca.o" "src\\Clase 4, Ejercicio 4-2.o" "src\\Conversion.o" 
+16:48:10 **** Rebuild of configuration Debug for project Clase 5, Anexo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Anexo.o" "..\\src\\Clase 5, Anexo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 5, Anexo.exe" "src\\Biblioteca.o" "src\\Clase 5, Anexo.o" 
+16:48:11 **** Rebuild of configuration Debug for project Clase 5, Ejercicio 5-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Ejercicio 5-1.o" "..\\src\\Clase 5, Ejercicio 5-1.c" 
+gcc -o "Clase 5, Ejercicio 5-1.exe" "src\\Biblioteca.o" "src\\Clase 5, Ejercicio 5-1.o" 
+16:48:12 **** Rebuild of configuration Debug for project Clase 5, Ejercicio 5-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Ejercicio 5-2.o" "..\\src\\Clase 5, Ejercicio 5-2.c" 
+gcc -o "Clase 5, Ejercicio 5-2.exe" "src\\Biblioteca.o" "src\\Clase 5, Ejercicio 5-2.o" 
+16:48:13 **** Rebuild of configuration Debug for project Clase 5, Ejercicio 5-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 5, Ejercicio 5-3.o" "..\\src\\Clase 5, Ejercicio 5-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 5, Ejercicio 5-3.exe" "src\\Biblioteca.o" "src\\Clase 5, Ejercicio 5-3.o" 
+16:48:13 **** Rebuild of configuration Debug for project Clase 6, Ejercicio 6-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-1.o" "..\\src\\Clase 6, Ejercicio 6-1.c" 
+gcc -o "Clase 6, Ejercicio 6-1.exe" "src\\Clase 6, Ejercicio 6-1.o" 
+16:48:14 **** Rebuild of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-2.o" "..\\src\\Clase 6, Ejercicio 6-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
+16:48:15 **** Rebuild of configuration Debug for project Clase 6, Ejercicio 6-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 6, Ejercicio 6-3.o" "..\\src\\Clase 6, Ejercicio 6-3.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ingreso_de_datos.o" "..\\src\\Ingreso_de_datos.c" 
+gcc -o "Clase 6, Ejercicio 6-3.exe" "src\\Clase 6, Ejercicio 6-3.o" "src\\Ingreso_de_datos.o" 
+16:48:16 **** Rebuild of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-1.o" "..\\src\\Clase 7, Ejercicio 7-1.c" 
+..\src\Clase 7, Ejercicio 7-1.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-1.c:59:20: error: 'listaProductos' undeclared (first use in this function); did you mean 'AltaProducto'?
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |                    ^~~~~~~~~~~~~~
+      |                    AltaProducto
+..\src\Clase 7, Ejercicio 7-1.c:59:20: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:4:11: warning: passing argument 2 of 'AltaProducto' makes pointer from integer without a cast [-Wint-conversion]
+    4 | #define T 5
+      |           ^
+      |           |
+      |           int
+..\src\Clase 7, Ejercicio 7-1.c:59:36: note: in expansion of macro 'T'
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |                                    ^
+..\src\Biblioteca.h:24:33: note: expected 'char (*)[50]' but argument is of type 'int'
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |                            ~~~~~^~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:59:7: error: too few arguments to function 'AltaProducto'
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:24:5: note: declared here
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |     ^~~~~~~~~~~~
+..\src\Biblioteca.h:4:11: warning: passing argument 2 of 'AltaProducto' makes pointer from integer without a cast [-Wint-conversion]
+    4 | #define T 5
+      |           ^
+      |           |
+      |           int
+..\src\Clase 7, Ejercicio 7-1.c:62:34: note: in expansion of macro 'T'
+   62 |     AltaProducto(listaProductos, T);
+      |                                  ^
+..\src\Biblioteca.h:24:33: note: expected 'char (*)[50]' but argument is of type 'int'
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |                            ~~~~~^~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:62:5: error: too few arguments to function 'AltaProducto'
+   62 |     AltaProducto(listaProductos, T);
+      |     ^~~~~~~~~~~~
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:24:5: note: declared here
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |     ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:66:7: warning: implicit declaration of function 'BajaProducto'; did you mean 'AltaProducto'? [-Wimplicit-function-declaration]
+   66 |    if(BajaProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~
+      |       AltaProducto
+..\src\Clase 7, Ejercicio 7-1.c:73:7: warning: implicit declaration of function 'ModificarProducto' [-Wimplicit-function-declaration]
+   73 |    if(ModificarProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:80:4: warning: implicit declaration of function 'MostrarLista' [-Wimplicit-function-declaration]
+   80 |    MostrarLista(listaProductos, T);
+      |    ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:83:4: warning: implicit declaration of function 'OrdenarArrayEntero' [-Wimplicit-function-declaration]
+   83 |    OrdenarArrayEntero(listaProductos, T);
+      |    ^~~~~~~~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:49:6: warning: unused variable 'estado' [-Wunused-variable]
+   49 |  int estado[T] = {CARGADO, CARGADO, CARGADO, CARGADO};
+      |      ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:48:8: warning: unused variable 'precio' [-Wunused-variable]
+   48 |  float precio[T] = {200,350,150,50};
+      |        ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:47:6: warning: unused variable 'tipo' [-Wunused-variable]
+   47 |  int tipo[T] = {IPHONE,MAC,IPAD,ACCESORIOS};
+      |      ^~~~
+..\src\Clase 7, Ejercicio 7-1.c:46:6: warning: unused variable 'nacionalidad' [-Wunused-variable]
+   46 |  int nacionalidad[T] = {OTRO,CHINA,EEUU,EEUU};
+      |      ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:45:7: warning: unused variable 'descripcion' [-Wunused-variable]
+   45 |  char descripcion[T][50] = {"Aifon","La macos","Ahí Pa","Unos auris chetos"};
+      |       ^~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:44:6: warning: unused variable 'idProducto' [-Wunused-variable]
+   44 |  int idProducto[T] = {111,222,333,444};
+      |      ^~~~~~~~~~
+16:48:16 **** Rebuild of configuration Debug for project Clase 7, Ejercicio 7-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-2.o" "..\\src\\Clase 7, Ejercicio 7-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Clase 7, Ejercicio 7-2.exe" "src\\Clase 7, Ejercicio 7-2.o" "src\\Input.o" 
+16:48:17 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosUnJugador':
+..\src\Clase 8, Ejercicio 8-1.c:46:50: error: incompatible type for argument 1 of 'CalcularPromedioGoles'
+   46 |  unJugador.promedioGoles = CalcularPromedioGoles(unJugador, T);
+      |                                                  ^~~~~~~~~
+      |                                                  |
+      |                                                  eJugador {aka struct <anonymous>}
+..\src\Clase 8, Ejercicio 8-1.c:30:36: note: expected 'eJugador *' {aka 'struct <anonymous> *'} but argument is of type 'eJugador' {aka 'struct <anonymous>'}
+   30 | int CalcularPromedioGoles(eJugador jugador[], int tam);
+      |                           ~~~~~~~~~^~~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:72:9: error: 'promedio' undeclared (first use in this function)
+   72 |  return promedio;
+      |         ^~~~~~~~
+..\src\Clase 8, Ejercicio 8-1.c:72:9: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Clase 8, Ejercicio 8-1.c: In function 'PedirDatosJugadores':
+..\src\Clase 8, Ejercicio 8-1.c:57:1: warning: control reaches end of non-void function [-Wreturn-type]
+   57 | }
+      | ^
+..\src\Clase 8, Ejercicio 8-1.c: In function 'CalcularPromedioGoles':
+..\src\Clase 8, Ejercicio 8-1.c:73:1: warning: control reaches end of non-void function [-Wreturn-type]
+   73 | }
+      | ^
+16:48:17 **** Rebuild of configuration Debug for project Clase 8, Ejercicio 8-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-2.o" "..\\src\\Clase 8, Ejercicio 8-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ingreso_de_datos.o" "..\\src\\Ingreso_de_datos.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca_Productos.o" "..\\src\\Biblioteca_Productos.c" 
+gcc -o "Clase 8, Ejercicio 8-2.exe" "src\\Biblioteca_Productos.o" "src\\Clase 8, Ejercicio 8-2.o" "src\\Ingreso_de_datos.o" 
+16:48:19 **** Rebuild of configuration Debug for project Sábado Ejercicio 1-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sábado Ejercicio 1-1.o" "..\\src\\Sábado Ejercicio 1-1.c" 
+gcc -o "Sábado Ejercicio 1-1.exe" "src\\Sábado Ejercicio 1-1.o" 
+16:48:19 **** Rebuild of configuration Debug for project Sábado Ejercicio 1-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sábado Ejercicio 1-2.o" "..\\src\\Sábado Ejercicio 1-2.c" 
+gcc -o "Sábado Ejercicio 1-2.exe" "src\\Sábado Ejercicio 1-2.o" 
+16:48:20 **** Rebuild of configuration Debug for project Sábado Ejercicio 1-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Sábado Ejercicio 1-3.o" "..\\src\\Sábado Ejercicio 1-3.c" 
+gcc -o "Sábado Ejercicio 1-3.exe" "src\\Sábado Ejercicio 1-3.o" 
+16:48:20 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Operaciones.o" "..\\src\\Operaciones.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o TP_1.exe "src\\Biblioteca.o" "src\\Operaciones.o" "src\\TP_1.o" 
+Info: Nothing to build for TP_2
+16:50:15 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductType.o" "..\\src\\ProductType.c" 
+..\src\ProductType.c: In function 'printProductType':
+..\src\ProductType.c:12:30: error: 'sType' {aka 'struct <anonymous>'} has no member named 'id'
+   12 |    printf("%d, %15s", list[i].id, list[i].description);
+      |                              ^
+16:50:35 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductType.o" "..\\src\\ProductType.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:06:09 **** Rebuild of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `isAFloat':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:262: multiple definition of `isAFloat'; src\Archivo de prueba.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:24: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `getAFloat':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:284: multiple definition of `getAFloat'; src\Archivo de prueba.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:46: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Input.o: in function `getFinalFloat':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Input.c:297: multiple definition of `getFinalFloat'; src\Archivo de prueba.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Archivo de prueba\Debug/../src/Archivo de prueba.c:59: first defined here
+collect2.exe: error: ld returned 1 exit status
+11:07:11 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+11:30:32 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:13:9: warning: assignment to 'int *' from incompatible pointer type 'int (*)[5]' [-Wincompatible-pointer-types]
+   13 |  pArray = &array;
+      |         ^
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+11:30:47 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:32:14 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:16:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   16 |   printf("%d\n", pArray+i);
+      |           ~^     ~~~~~~~~
+      |            |           |
+      |            int         int *
+      |           %n
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:33:26 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:16:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   16 |   printf("%d\n", pArray+i); //Direcciones de memoria
+      |           ~^     ~~~~~~~~
+      |            |           |
+      |            int         int *
+      |           %n
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:34:39 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:16:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   16 |   printf("%d\n", array+i); //Direcciones de memoria
+      |           ~^     ~~~~~~~
+      |            |          |
+      |            int        int *
+      |           %n
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:35:09 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:36:13 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:36:52 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:37:47 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:21:18: error: invalid type argument of unary '*' (have 'int')
+   21 |   printf("%d\n", *pArray[i]);
+      |                  ^~~~~~~~~~
+11:37:53 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:21:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   21 |   printf("%d\n", &pArray[i]);
+      |           ~^     ~~~~~~~~~~
+      |            |     |
+      |            int   int *
+      |           %n
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:38:21 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:21:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   21 |   printf("%d - %d\n", &pArray[i], pArray[i]);
+      |           ~^          ~~~~~~~~~~
+      |            |          |
+      |            int        int *
+      |           %n
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:38:49 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:21:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   21 |   printf("%d - %d\n", &pArray[i], pArray[i]);
+      |           ~^          ~~~~~~~~~~
+      |            |          |
+      |            int        int *
+      |           %n
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:38:59 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:21:12: warning: format '%d' expects argument of type 'int', but argument 2 has type 'int *' [-Wformat=]
+   21 |   printf("%d - %d\n", &pArray[i], pArray[i]);
+      |           ~^          ~~~~~~~~~~
+      |            |          |
+      |            int        int *
+      |           %n
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:41:59 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+11:42:17 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:18:25: error: expected ';' before 'for'
+   18 |  printf("-----------\n")
+      |                         ^
+      |                         ;
+   19 |  for(int i = 0; i < 5; i++){
+      |  ~~~                     
+11:42:22 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:45:31 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:16:23: warning: passing argument 1 of 'getFinalInt' from incompatible pointer type [-Wincompatible-pointer-types]
+   16 |    getFinalInt(&pArray+1, "Ingrese un entero: ", "Ingrese un entero entre 1 y 1000: ", 1, 1000);
+      |                ~~~~~~~^~
+      |                       |
+      |                       int **
+In file included from ..\src\Archivo de prueba.c:5:
+..\src\Input.h:146:22: note: expected 'int *' but argument is of type 'int **'
+  146 | int getFinalInt(int* refResult, char message[], char errorMessage[], int min, int max);
+      |                 ~~~~~^~~~~~~~~
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:45:40 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:45:49 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:46:06 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:16:23: warning: passing argument 1 of 'getFinalInt' from incompatible pointer type [-Wincompatible-pointer-types]
+   16 |    getFinalInt(&pArray+1, "Ingrese un entero: ", "Ingrese un entero entre 1 y 1000: ", 1, 1000);
+      |                ~~~~~~~^~
+      |                       |
+      |                       int **
+In file included from ..\src\Archivo de prueba.c:5:
+..\src\Input.h:146:22: note: expected 'int *' but argument is of type 'int **'
+  146 | int getFinalInt(int* refResult, char message[], char errorMessage[], int min, int max);
+      |                 ~~~~~^~~~~~~~~
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:46:23 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:16:16: error: lvalue required as unary '&' operand
+   16 |    getFinalInt(&(pArray+1), "Ingrese un entero: ", "Ingrese un entero entre 1 y 1000: ", 1, 1000);
+      |                ^
+11:48:07 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+11:48:32 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:50:16 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+Info: Nothing to build for Archivo de prueba
+11:50:41 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Archivo de prueba.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:50:41 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 
+11:53:52 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" 

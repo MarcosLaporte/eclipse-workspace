@@ -1,0 +1,19 @@
+/*
+ * Productos.h
+ *      Author: Marcos
+ */
+
+#ifndef PRODUCTOS_H_
+#define PRODUCTOS_H_
+
+typedef struct{
+	int idProducto;
+	char descripcion[51];
+	int nacionalidad;
+	int tipo;
+	float precio;
+}sProduct;
+
+
+
+#endif /* PRODUCTOS_H_ */

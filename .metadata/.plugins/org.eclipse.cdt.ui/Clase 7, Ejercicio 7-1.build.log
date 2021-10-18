@@ -1,0 +1,80 @@
+16:48:16 **** Rebuild of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 7, Ejercicio 7-1.o" "..\\src\\Clase 7, Ejercicio 7-1.c" 
+..\src\Clase 7, Ejercicio 7-1.c: In function 'main':
+..\src\Clase 7, Ejercicio 7-1.c:59:20: error: 'listaProductos' undeclared (first use in this function); did you mean 'AltaProducto'?
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |                    ^~~~~~~~~~~~~~
+      |                    AltaProducto
+..\src\Clase 7, Ejercicio 7-1.c:59:20: note: each undeclared identifier is reported only once for each function it appears in
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:4:11: warning: passing argument 2 of 'AltaProducto' makes pointer from integer without a cast [-Wint-conversion]
+    4 | #define T 5
+      |           ^
+      |           |
+      |           int
+..\src\Clase 7, Ejercicio 7-1.c:59:36: note: in expansion of macro 'T'
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |                                    ^
+..\src\Biblioteca.h:24:33: note: expected 'char (*)[50]' but argument is of type 'int'
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |                            ~~~~~^~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:59:7: error: too few arguments to function 'AltaProducto'
+   59 |    if(AltaProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:24:5: note: declared here
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |     ^~~~~~~~~~~~
+..\src\Biblioteca.h:4:11: warning: passing argument 2 of 'AltaProducto' makes pointer from integer without a cast [-Wint-conversion]
+    4 | #define T 5
+      |           ^
+      |           |
+      |           int
+..\src\Clase 7, Ejercicio 7-1.c:62:34: note: in expansion of macro 'T'
+   62 |     AltaProducto(listaProductos, T);
+      |                                  ^
+..\src\Biblioteca.h:24:33: note: expected 'char (*)[50]' but argument is of type 'int'
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |                            ~~~~~^~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:62:5: error: too few arguments to function 'AltaProducto'
+   62 |     AltaProducto(listaProductos, T);
+      |     ^~~~~~~~~~~~
+In file included from ..\src\Clase 7, Ejercicio 7-1.c:31:
+..\src\Biblioteca.h:24:5: note: declared here
+   24 | int AltaProducto(int id[], char desc[][50], int nacion[], int tipo[], float precio[], int estado[], int tam);
+      |     ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:66:7: warning: implicit declaration of function 'BajaProducto'; did you mean 'AltaProducto'? [-Wimplicit-function-declaration]
+   66 |    if(BajaProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~
+      |       AltaProducto
+..\src\Clase 7, Ejercicio 7-1.c:73:7: warning: implicit declaration of function 'ModificarProducto' [-Wimplicit-function-declaration]
+   73 |    if(ModificarProducto(listaProductos, T) == 0){
+      |       ^~~~~~~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:80:4: warning: implicit declaration of function 'MostrarLista' [-Wimplicit-function-declaration]
+   80 |    MostrarLista(listaProductos, T);
+      |    ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:83:4: warning: implicit declaration of function 'OrdenarArrayEntero' [-Wimplicit-function-declaration]
+   83 |    OrdenarArrayEntero(listaProductos, T);
+      |    ^~~~~~~~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:49:6: warning: unused variable 'estado' [-Wunused-variable]
+   49 |  int estado[T] = {CARGADO, CARGADO, CARGADO, CARGADO};
+      |      ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:48:8: warning: unused variable 'precio' [-Wunused-variable]
+   48 |  float precio[T] = {200,350,150,50};
+      |        ^~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:47:6: warning: unused variable 'tipo' [-Wunused-variable]
+   47 |  int tipo[T] = {IPHONE,MAC,IPAD,ACCESORIOS};
+      |      ^~~~
+..\src\Clase 7, Ejercicio 7-1.c:46:6: warning: unused variable 'nacionalidad' [-Wunused-variable]
+   46 |  int nacionalidad[T] = {OTRO,CHINA,EEUU,EEUU};
+      |      ^~~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:45:7: warning: unused variable 'descripcion' [-Wunused-variable]
+   45 |  char descripcion[T][50] = {"Aifon","La macos","Ahí Pa","Unos auris chetos"};
+      |       ^~~~~~~~~~~
+..\src\Clase 7, Ejercicio 7-1.c:44:6: warning: unused variable 'idProducto' [-Wunused-variable]
+   44 |  int idProducto[T] = {111,222,333,444};
+      |      ^~~~~~~~~~
+
+16:48:16 Build Failed. 3 errors, 12 warnings. (took 162ms)
+

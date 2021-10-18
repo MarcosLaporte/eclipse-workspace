@@ -1,0 +1,9 @@
+16:48:09 **** Rebuild of configuration Debug for project Clase 4, Ejercicio 4-2 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 4, Ejercicio 4-2.o" "..\\src\\Clase 4, Ejercicio 4-2.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Conversion.o" "..\\src\\Conversion.c" 
+gcc -o "Clase 4, Ejercicio 4-2.exe" "src\\Biblioteca.o" "src\\Clase 4, Ejercicio 4-2.o" "src\\Conversion.o" 
+
+16:48:10 Build Finished. 0 errors, 0 warnings. (took 996ms)
+

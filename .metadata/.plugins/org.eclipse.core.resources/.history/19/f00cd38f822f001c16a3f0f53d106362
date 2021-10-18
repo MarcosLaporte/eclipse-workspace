@@ -1,0 +1,7 @@
+/*
+ * tipoProducto.c
+ *      Author: Marcos
+ */
+
+#include "tipoProducto.h"
+#include "Input.h"

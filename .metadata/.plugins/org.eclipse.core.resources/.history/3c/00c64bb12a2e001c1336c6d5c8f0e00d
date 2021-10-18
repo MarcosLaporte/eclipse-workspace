@@ -1,0 +1,99 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Biblioteca.h"
+#include "Input.h"
+
+int myGets(char cadena[], int dimension);
+int esInt(char cadena[], int dimension);
+int getAnInt(int *pResultado);
+int NumeroEnRango(int* pResultado, char* mensaje, char* mensajeError, int minimo, int maximo);
+
+int main(void) {
+	setbuf(stdout, NULL);
+
+	int numero;
+
+	NumeroEnRango(&numero, "Ingrese un numero: ", "ERROR! El dato ingresado no es válido. Reingrese: ", -5, 10);
+
+	printf("%d", numero);
+
+	return 0;
+}
+
+int myGets(char cadena[], int dimension ){
+	int retorno;
+	char auxiliar[3000];
+	retorno=-1;
+	if (cadena != NULL && dimension > 0) {
+		fflush(stdin);
+		scanf("%[^\n]", auxiliar);
+		if (strnlen(auxiliar, sizeof(auxiliar)) <= dimension) {
+			strncpy(cadena, auxiliar, dimension);
+			retorno = 0;
+		}
+	}
+
+
+	//==================
+	printf("%s", cadena);
+	//==================
+
+	return retorno;
+}
+
+int esInt(char cadena[], int dimension){
+	int retorno;
+	int i;
+	retorno=1;
+	for (i = 0;i < dimension  && cadena[i] != '\0' ; i++) {
+		if (i == 0 && (cadena[i] == '-' || cadena[i] == '+')) {
+			continue;
+		}
+		if (cadena[i] > '9' || cadena[i] < '0') {
+			retorno = 0;
+			break;
+		}
+	}
+
+	//==================
+	printf("%s", cadena);
+	//==================
+
+
+	return retorno;
+} //Calcula si es un numero
+
+int getAnInt(int *pResultado){
+	int retorno;
+	char auxiliar[3000];
+	retorno=-1;
+
+	if(pResultado!=NULL &&
+			myGets(auxiliar, sizeof(auxiliar))==0 &&
+			esInt(auxiliar, sizeof(auxiliar))){
+		*pResultado= atoi(auxiliar);
+		retorno=0;
+	}
+
+	return retorno;
+} //Llama a las dos anteriores
+
+int NumeroEnRango(int *pResultado, char *mensaje, char *mensajeError,
+		int minimo, int maximo) {
+	int retorno;
+	int numero;
+	int r;
+	retorno = -1;
+	if (pResultado != NULL && mensaje != NULL && mensajeError != NULL && minimo <= maximo) {
+		printf("%s", mensaje);
+		r=getAnInt(&numero);
+		while ( r!=0|| numero < minimo || numero > maximo) {
+			printf("%s", mensajeError);
+			r=getAnInt(&numero);
+		}
+		*pResultado = numero;
+		retorno = 0;
+	}
+	return retorno;
+}

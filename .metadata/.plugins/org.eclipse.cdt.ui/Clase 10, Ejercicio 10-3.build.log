@@ -1,0 +1,9 @@
+16:50:35 **** Incremental Build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductType.o" "..\\src\\ProductType.c" 
+gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\ProductType.o" "src\\Products.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 10, Ejercicio 10-3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+
+16:50:36 Build Failed. 1 errors, 0 warnings. (took 703ms)
+

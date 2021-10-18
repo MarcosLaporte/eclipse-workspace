@@ -1,0 +1,88 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include "Biblioteca.h"
+#include "Input.h"
+
+int myGets(char input[], int length);
+int isAnInt(char input[], int length);
+int getAnInt(int *refResult);
+int getFinalInt(int* refResult, char* message, char* errorMessage, int min, int max);
+
+int main(void){
+	setbuf(stdout, NULL);
+
+	int number;
+
+	getFinalInt(&number, "Ingrese un número: ",
+			"ERROR! El dato ingresado no es válido. Ingrese un entero entre -5 y 150: ", -5, 150);
+
+	printf("%d", number);
+
+	return 0;
+}
+
+int myGets(char input[], int length){
+	int Return;
+	char aux[3000];
+	Return = -1;
+	if(input != NULL && length > 0) {
+		fflush(stdin);
+		scanf("%[^\n]", aux);
+		if(strnlen(aux, sizeof(aux)) <= length){
+			strncpy(input, aux, length);
+			Return = 0;
+		}
+	}
+
+	return Return;
+}
+
+int isAnInt(char input[], int length){
+	int Return;
+	int i;
+	Return = 1;
+	for(i = 0; i < length  && input[i] != '\0' ; i++){
+		if(i == 0 && (input[i] == '-' || input[i] == '+')){
+			continue;
+		}
+		if(input[i] > '9' || input[i] < '0'){
+			Return = 0;
+			break;
+		}
+	}
+
+	return Return;
+}
+
+int getAnInt(int* refResult){
+	int Return;
+	char aux[3000];
+	Return = -1;
+
+	if(refResult != NULL && myGets(aux, sizeof(aux)) == 0 && isAnInt(aux, sizeof(aux))){
+		*refResult = atoi(aux);
+		Return = 0;
+	}
+
+	return Return;
+} //Llama a las dos anteriores
+
+int getFinalInt(int* refResult, char message[], char errorMessage[], int min, int max){
+	int Return;
+	int number;
+	int r;
+	Return = -1;
+	if (refResult != NULL && message != NULL && errorMessage != NULL && min <= max){
+		printf("%s", message);
+		r=getAnInt(&number);
+		while(r != 0 || number < min || number > max){
+			printf("%s", errorMessage);
+			r = getAnInt(&number);
+		}
+		*refResult = number;
+		Return = 0;
+	}
+
+	return Return;
+}

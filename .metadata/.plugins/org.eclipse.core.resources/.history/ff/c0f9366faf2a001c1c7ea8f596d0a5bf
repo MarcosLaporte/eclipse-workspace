@@ -1,0 +1,16 @@
+/*
+ * SectorEmployee.h
+ *      Author: Marcos
+ */
+
+#ifndef SECTOREMPLOYEE_H_
+#define SECTOREMPLOYEE_H_
+
+typedef struct{
+	int sectorId = {{1},{2},{3},{4},{5},{6}};
+	char description[21] = {{"RRHH"},{"VENTAS"},{"SECRETARIA"},{"CONTABILIDAD"},{"ADMINISTRACION"},{"SISTEMAS"}};
+}Sector;
+
+
+
+#endif /* SECTOREMPLOYEE_H_ */
