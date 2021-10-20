@@ -309,6 +309,36 @@ int getFinalFloat(float* refResult, char message[], char errorMessage[], int min
 	return Return;
 }
 
+int getConfirmation(char message[], char confirmation[], char cancel[], char input[], int length, int tries){
+	int Return;
+
+	printf("%s", message);
+	myGets(input, length);
+
+	do{
+		if(strcmpi(input, confirmation) != 0 && strcmpi(input, cancel) != 0){
+			printf("ERROR! Asegúrese de escribir '%s' si desea confirmar o '%s' para cancelar la acción.\nLe quedan %d intentos: ", confirmation, cancel, tries);
+			myGets(input, length);
+			tries--;
+		}else{
+			if(strcmpi(input, confirmation) == 0){
+				Return = 1;
+			}else{
+				if(strcmpi(input, cancel) == 0){
+					Return = -1;
+				}
+			}
+		}
+	}while(tries > 0 && Return != 1 && Return != -1);
+
+	if(tries == 0){
+		Return = 0;
+		printf("Muchos intentos fallidos. ");
+	}
+
+	return Return;
+}
+
 //-------------------------------------------------------------
 int printMenu(){
 	int option;

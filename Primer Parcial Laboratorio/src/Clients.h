@@ -27,8 +27,13 @@ typedef struct{
 
 int initClients(sClient* list, int len);
 sClient getClient(void);
-int isValidCuit(char input[]);
+void formatCuit(char input[]);
 int addClient(sClient* list, int len, int id);
-int formatCuit(char input[]);
+int findClientById(sClient* list, int len, int id);
+int modifyClient(sClient* list, int length, int id);
+int checkAClient(sClient* list, int lenght);
+int printClients(sClient* list, int len);
+void printList(sClient* list, int len);
+int removeClient(sClient* list, int len, int id);
 
 #endif /* CLIENTS_H_ */

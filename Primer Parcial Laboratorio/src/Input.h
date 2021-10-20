@@ -14,7 +14,7 @@
 #define EMPTY 0
 #define FULL 1
 
-#define MAX_CLIENT 1
+#define MAX_CLIENT 3
 #define MAX_REQUEST 1000
 //------------
 
@@ -180,7 +180,7 @@ int getFinalFloat(float* refResult, char message[], char errorMessage[], int min
 
 
 int printMenu();
-
+int getConfirmation(char message[], char confirmation[], char cancel[],char input[], int length, int tries);
 
 
 #endif /* INPUT_H_ */

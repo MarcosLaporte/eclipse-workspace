@@ -16,9 +16,14 @@ int main(void) {
 		   "\t\t#=======================================#\n");
 
 	int option;
-	sClient arrayClients[MAX_CLIENT];
-	int ids;
-	ids = 1;
+	sClient arrayClients[MAX_CLIENT] /*= {{1, "Neumáticos SA", "23-44816742-9", {"California", 1371, "CABA"}, 1, FULL},
+										{2, "Piedritas SA", "15-24912740-4", {"Salmún Feijóo", 1266, "Barracas"}, 5, FULL},
+										{3, "Joaquin", "30-21035468-7", {"Perón", 520, "San Telmo"}, 2, FULL}
+										{}}*/;
+	int contIds;
+	int id;
+	int r;
+	contIds = 1;
 
 	initClients(arrayClients, MAX_CLIENT);
 
@@ -26,18 +31,43 @@ int main(void) {
 		option = printMenu();
 		switch(option){
 		case 1:
-			if(addClient(arrayClients, MAX_CLIENT, ids) == -1){
+			if(addClient(arrayClients, MAX_CLIENT, contIds) == -1){
 				printf("Ya se han ingresado la cantidad máxima de clientes.\n");
 			}else{
-				printf("El ID del cliente es %d.\n", ids);
-				ids++;
+				printf("El ID del cliente es %d.\n", contIds);
+				contIds++;
 			}
 			break;
 		case 2:
-
+			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
+				printf("ERROR! No se han ingresado clientes.\n");
+			}else{
+				printList(arrayClients, MAX_CLIENT);
+				id = getInt("Ingrese el ID a del cliente a modificar: ");
+				if(modifyClient(arrayClients, MAX_CLIENT, id) == -1){
+					printf("ERROR! No existe un cliente con ese ID.\n");
+				}else{
+					printf("El cliente ha sido modificado!\n");
+				}
+			}
 			break;
 		case 3:
-
+			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
+				printf("ERROR! No se han ingresado clientes.\n");
+			}else{
+				printList(arrayClients, MAX_CLIENT);
+				id = getInt("Ingrese el ID del cliente a dar de baja: ");
+				r = removeClient(arrayClients, MAX_CLIENT, id);
+				if(r == -1){
+					printf("La acción se ha cancelado.\n");
+				}else{
+					if(r == 0){
+						printf("ERROR! No existe un cliente con ese ID.\n");
+					}else{
+						printf("El cliente ha sido dado de baja!\n");
+					}
+				}
+			}
 			break;
 		case 4:
 
@@ -46,7 +76,11 @@ int main(void) {
 
 			break;
 		case 6:
-
+			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
+				printf("ERROR! No se han ingresado clientes.\n");
+			}else{
+				printList(arrayClients, MAX_CLIENT);
+			}
 			break;
 		case 7:
 
