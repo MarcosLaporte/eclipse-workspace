@@ -1,53 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="vectorC"/>
+		<item key="selection" value="costumer"/>
 		<item key="wrap" value="true"/>
-		<item key="casesensitive" value="true"/>
-		<item key="wholeword" value="true"/>
+		<item key="casesensitive" value="false"/>
+		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="lista"/>
-			<item value="numeros"/>
+			<item value="customer"/>
+			<item value="h"/>
+			<item value="Employee"/>
+			<item value="location"/>
+			<item value="address"/>
+			<item value="name"/>
+			<item value="worker"/>
+			<item value="Product"/>
+			<item value="break:"/>
+			<item value=":"/>
+			<item value="Productos"/>
+			<item value="Producto"/>
+			<item value="palabra"/>
+			<item value="letra"/>
 			<item value="[i]"/>
-			<item value="[]"/>
-			<item value="productType"/>
-			<item value="prodList"/>
-			<item value="aProduct"/>
-			<item value=",&quot;"/>
-			<item value="status"/>
-			<item value="estado"/>
-			<item value="precio"/>
-			<item value="tipo"/>
-			<item value="nacionalidad"/>
-			<item value="descripcion"/>
-			<item value="idProducto"/>
 		</list>
 		<list key="replacehistory">
-			<item value="vectorC"/>
-			<item value="lista"/>
+			<item value="costumer"/>
+			<item value="c"/>
+			<item value="Client"/>
+			<item value="locality"/>
+			<item value="location"/>
+			<item value="companyName"/>
+			<item value="customer"/>
+			<item value="sClient"/>
+			<item value="break;"/>
+			<item value=";"/>
+			<item value="Clientes"/>
+			<item value="Cliente"/>
+			<item value="palabra[i]"/>
+			<item value="palabra"/>
 			<item value=""/>
-			<item value="arrayType"/>
-			<item value="prodList[i]"/>
-			<item value="prodList"/>
-			<item value=", &quot;"/>
-			<item value="status"/>
-			<item value="price"/>
-			<item value="type"/>
-			<item value="nationality"/>
-			<item value="description"/>
-			<item value="idProduct"/>
-			<item value="FULL"/>
-			<item value="modifyProduct"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="817"/>
-		<item key="DIALOG_Y_ORIGIN" value="34"/>
-		<item key="DIALOG_WIDTH" value="336"/>
-		<item key="DIALOG_HEIGHT" value="454"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_X_ORIGIN" value="617"/>
+		<item key="DIALOG_Y_ORIGIN" value="133"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="org.eclipse.cdt.internal.ui.preferences.CTemplatePreferencePage$CEditTemplateDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="113"/>

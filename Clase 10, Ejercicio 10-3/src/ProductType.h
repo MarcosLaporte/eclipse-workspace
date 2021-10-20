@@ -5,15 +5,18 @@
 
 #ifndef TIPOPRODUCTO_H_
 #define TIPOPRODUCTO_H_
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+#include "Input.h"
 
-typedef struct{
+#define EMPTY 0
+#define FULL 1
+
+typedef struct {
 	int typeId;
 	char description[51];
-}sType;
+	int status;
+} sType;
 
-void printProductType(sType* list, int len);
+void printProductType(sType *list, int len);
+sType searchTypeById(sType *list, int len, int id);
 
 #endif /* TIPOPRODUCTO_H_ */

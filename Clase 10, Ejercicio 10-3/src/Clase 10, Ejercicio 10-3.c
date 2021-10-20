@@ -33,12 +33,7 @@ Realizar un programa que permita interactuar con un menú de usuarios con las sig
 	15. El precio promedio de productos por nacionalidad
 ------------------------------------------------------------------*/
 
-#include <stdio.h>
-#include <stdlib.h>
-#include "Input.h"
-#include "Products.h"
-#include "ProductType.h"
-#include "ProductNation.h"
+#include "Nexus.h"
 
 int main(){
 	setbuf(stdout, NULL);
@@ -48,11 +43,11 @@ int main(){
 									{222, "MacOS", 2, 1002, 1500, FULL},
 									{333, "AirPods", 3, 1003, 100, FULL},
 									{444, "IPad 5", 1, 1001, 750, FULL},
-									{555, "Cargador", 2, 1003, 799, FULL},
+									{555, "Cargador", 3, 1003, 799, FULL},
 									{666, "Iphone 8", 3, 1000, 650, FULL}};
 	float averagePrices[MAX_TYPE];
-	sType productType[MAX_TYPE]= {{1000, "Iphone"}, {1001, "IPad"}, {1002, "Mac"}, {1003, "Accesorios"}};
-	sNation productNation[MAX_NATION] = {{1, "EEUU"}, {2, "CHINA"}, {3, "OTRO"}};
+	sType productType[MAX_TYPE]= {{1000, "Iphone", FULL}, {1001, "IPad", FULL}, {1002, "Mac", FULL}, {1003, "Accesorios", FULL}};
+	sNation productNation[MAX_NATION] = {{1, "EEUU", FULL}, {2, "CHINA", FULL}, {3, "OTRO", FULL}};
 
 //	if(initProduct(arrayProduct, MAX_PROD) == 0){
 //		printf("Se han inicializado los productos!\n");
@@ -122,7 +117,7 @@ int main(){
 			}
 			break;
 		case 10: //Por cada tipo la lista de productos.
-			if(printProductsWithType(arrayProduct, MAX_PROD, productType, MAX_TYPE) == -1){
+			if(printProductsWithType(arrayProduct, MAX_PROD, productType, MAX_TYPE, productNation, 3) == -1){
 				printf("No se han ingresado productos.\n");
 			}
 			break;

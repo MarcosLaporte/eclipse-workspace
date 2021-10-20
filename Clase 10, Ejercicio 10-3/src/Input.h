@@ -5,6 +5,10 @@
 
 #ifndef INPUT_H_
 #define INPUT_H_
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 //------------
 #define MAX_PROD 1000
 #define MAX_TYPE 4

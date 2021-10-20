@@ -4,8 +4,7 @@
  */
 
 #include "Products.h"
-#include "Input.h"
-#include "ProductType.h"
+
 
 int initProduct(sProduct* list, int len){
 	int Return;
@@ -331,27 +330,7 @@ float lowestPrice(sProduct* list, int len){
 	return lowPrice;
 }
 
-int printProductsWithType(sProduct* prodList, int prodLen, sType* typeList, int typeLen){
-	int Return;
-	Return = -1;
-
-	if(prodList != NULL && prodLen > 0 && typeList != NULL && typeLen > 0){
-		for(int i = 0; i < prodLen; i++){
-			for(int j = 0; j < typeLen; j++){
-				if(prodList[i].status == FULL){
-					if(prodList[i].type == typeList[j].typeId){
-						Return = 0;
-						printf("|%4d|%15s|%6d|%11s|%7.2f|\n", prodList[i].idProduct, prodList[i].description,
-														prodList[i].nationality, typeList[j].description, prodList[i].price);
-					}
-				}
-			}
-		}
-	}
-
-	return Return;
-}
-
+/*
 int printMadeInChina(sProduct* prodList, int prodLen, sType* typeList, int typeLen, sNation* nationList, int nationLen){
 	int Return;
 	Return = -1;
@@ -376,3 +355,22 @@ int printMadeInChina(sProduct* prodList, int prodLen, sType* typeList, int typeL
 
 	return Return;
 }
+*/
+
+int findActiveId(sProduct* list, int len, int id){
+	int Return;
+	Return = -1;
+
+	if(list != NULL && len > 0){
+		Return = 0;
+		for(int i = 0; i < len; i++){
+			if(list[i].status == FULL && list[i].idProduct == id){
+				Return = 1;
+				break;
+			}
+		}
+	}
+
+	return Return;
+}
+

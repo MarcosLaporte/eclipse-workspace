@@ -170,12 +170,4 @@ int getAFloat(float* refResult);
 ///				o 0 si está todo bien.
 int getFinalFloat(float* refResult, char message[], char errorMessage[], int min, int max);
 
-typedef struct{
-	int day;
-	int month;
-	int year;
-}Date;
-
-Date getDate(char message[]);
-
 #endif /* INPUT_H_ */
