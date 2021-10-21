@@ -14,4 +14,7 @@
 
 int addRequest(sClient* clientList, int cliLen, sRequest* requestList, int reqLen, int clientId, int requestId);
 
+void getPlasticTypes(float total, float* HDPE, float* LDPE, float* PP, float* waste);
+
+
 #endif /* NEXUS_H_ */

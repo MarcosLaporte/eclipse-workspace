@@ -18,3 +18,19 @@ int initRequests(sRequest* list, int len){
 
 	return Return;
 }
+
+int findRequestById(sRequest* list, int len, int id){
+	int Return;
+	Return = -1;
+
+	if(list != NULL && len > 0){
+		for(int i = 0; i < len; i++){
+			if(list[i].status == COMPLETED && list[i].id == id){
+				Return = i;
+				break;
+			}
+		}
+	}
+
+	return Return;
+}

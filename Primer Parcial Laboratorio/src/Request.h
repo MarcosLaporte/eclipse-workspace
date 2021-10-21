@@ -12,10 +12,15 @@
 
 typedef struct{
 	int id;
-	float kilos;
+	float kilosTotal;
+	float kilosHDPE;
+	float kilosLDPE;
+	float kilosPP;
+	float kilosWaste;
 	int status;
 }sRequest;
 
 int initRequests(sRequest* list, int len);
+int findRequestById(sRequest* list, int len, int id);
 
 #endif /* REQUEST_H_ */

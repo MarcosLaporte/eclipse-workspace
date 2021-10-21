@@ -87,8 +87,10 @@ int main(void) {
 				}
 			}
 			break;
-		case 5:
-
+		case 5: //Revisar
+			printList(arrayClients, MAX_CLIENT);
+			getFinalInt(&id, "Ingrese el ID del pedido a procesar: ", "ERROR! Ingrese un ID numérico mayor a 0: ", 1, 99999);
+//			loadRequest(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, id, requestId);
 			break;
 		case 6:
 			if(checkAClient(arrayClients, MAX_CLIENT) == -1){

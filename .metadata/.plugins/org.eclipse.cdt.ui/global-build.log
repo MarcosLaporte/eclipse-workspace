@@ -1,38 +1,141 @@
-21:06:02 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
+01:33:40 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer Parcial Laboratorio.o" "..\\src\\Primer Parcial Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Nexus.c: In function 'loadRequest':
+..\src\Nexus.c:30:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
+   30 |  int Return;
+      |      ^~~~~~
+..\src\Nexus.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
+   42 | }
+      | ^
+..\src\Nexus.c: In function 'getPlasticTypes':
+..\src\Nexus.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
+   53 | }
+      | ^
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
 gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
 Info: Nothing to build for Primer Parcial Laboratorio
 Info: Nothing to build for Primer Parcial Laboratorio
 Info: Nothing to build for Primer Parcial Laboratorio
-23:50:48 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Nothing to build for Primer Parcial Laboratorio
+01:41:57 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'loadRequest':
+..\src\Nexus.c:30:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
+   30 |  int Return;
+      |      ^~~~~~
+..\src\Nexus.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
+   42 | }
+      | ^
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
+01:42:33 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'loadRequest':
+..\src\Nexus.c:30:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
+   30 |  int Return;
+      |      ^~~~~~
+..\src\Nexus.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
+   42 | }
+      | ^
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
+01:42:43 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'loadRequest':
+..\src\Nexus.c:30:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
+   30 |  int Return;
+      |      ^~~~~~
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
+01:48:25 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'loadRequest':
+..\src\Nexus.c:32:2: error: 'Return' undeclared (first use in this function)
+   32 |  Return = -1;
+      |  ^~~~~~
+..\src\Nexus.c:32:2: note: each undeclared identifier is reported only once for each function it appears in
+01:48:37 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer Parcial Laboratorio.o" "..\\src\\Primer Parcial Laboratorio.c" 
 ..\src\Primer Parcial Laboratorio.c: In function 'main':
-..\src\Primer Parcial Laboratorio.c:82:8: error: too many arguments to function 'addRequest'
-   82 |     if(addRequest(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, id, reqId, kilos) == -1){
-      |        ^~~~~~~~~~
-In file included from ..\src\Primer Parcial Laboratorio.c:8:
-..\src\Nexus.h:15:5: note: declared here
-   15 | int addRequest(sClient* clientList, int cliLen, sRequest* requestList, int reqLen, int clientId, int requestId);
-      |     ^~~~~~~~~~
-23:51:26 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+..\src\Primer Parcial Laboratorio.c:91:4: error: a label can only be part of a statement and a declaration is not a statement
+   91 |    float total;
+      |    ^~~~~
+01:49:08 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer Parcial Laboratorio.o" "..\\src\\Primer Parcial Laboratorio.c" 
-..\src\Primer Parcial Laboratorio.c: In function 'main':
-..\src\Primer Parcial Laboratorio.c:27:8: warning: unused variable 'kilos' [-Wunused-variable]
-   27 |  float kilos;
-      |        ^~~~~
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
 gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
-23:53:14 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Nothing to build for Primer Parcial Laboratorio
+01:51:05 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer Parcial Laboratorio.o" "..\\src\\Primer Parcial Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
 gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
+01:53:14 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'getPlasticTypes':
+..\src\Nexus.c:63:10: error: incompatible types when assigning to type 'float *' from type 'float'
+   63 |  waste = total - add;
+      |          ^~~~~
+..\src\Nexus.c:66:13: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float *' [-Wformat=]
+   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
+      |            ~^                       ~~~~
+      |             |                       |
+      |             double                  float *
+..\src\Nexus.c:66:17: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
+      |                ~^                         ~~~~
+      |                 |                         |
+      |                 double                    float *
+..\src\Nexus.c:66:21: warning: format '%f' expects argument of type 'double', but argument 4 has type 'float *' [-Wformat=]
+   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
+      |                    ~^                           ~~
+      |                     |                           |
+      |                     double                      float *
+..\src\Nexus.c:66:25: warning: format '%f' expects argument of type 'double', but argument 5 has type 'float *' [-Wformat=]
+   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
+      |                        ~^                           ~~~~~
+      |                         |                           |
+      |                         double                      float *
+01:53:31 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'getPlasticTypes':
+..\src\Nexus.c:66:13: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float *' [-Wformat=]
+   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
+      |            ~^                       ~~~~
+      |             |                       |
+      |             double                  float *
+..\src\Nexus.c:66:17: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
+   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
+      |                ~^                         ~~~~
+      |                 |                         |
+      |                 double                    float *
+..\src\Nexus.c:66:21: warning: format '%f' expects argument of type 'double', but argument 4 has type 'float *' [-Wformat=]
+   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
+      |                    ~^                           ~~
+      |                     |                           |
+      |                     double                      float *
+..\src\Nexus.c:66:25: warning: format '%f' expects argument of type 'double', but argument 5 has type 'float *' [-Wformat=]
+   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
+      |                        ~^                           ~~~~~
+      |                         |                           |
+      |                         double                      float *
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
+01:53:50 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+01:56:57 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
