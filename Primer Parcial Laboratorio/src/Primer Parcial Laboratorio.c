@@ -20,22 +20,26 @@ int main(void) {
 										{2, "Piedritas SA", "15-24912740-4", {"Salmún Feijóo", 1266, "Barracas"}, 5, FULL},
 										{3, "Joaquin", "30-21035468-7", {"Perón", 520, "San Telmo"}, 2, FULL}
 										{}}*/;
-	int contIds;
+	int clientsId;
 	int id;
 	int r;
-	contIds = 1;
+	sRequest arrayRequest[MAX_REQUEST];
+	int reqId;
+	clientsId = 1;
+	reqId = 1;
 
 	initClients(arrayClients, MAX_CLIENT);
+	initRequests(arrayRequest, MAX_REQUEST);
 
 	do{
 		option = printMenu();
 		switch(option){
 		case 1:
-			if(addClient(arrayClients, MAX_CLIENT, contIds) == -1){
+			if(addClient(arrayClients, MAX_CLIENT, clientsId) == -1){
 				printf("Ya se han ingresado la cantidad máxima de clientes.\n");
 			}else{
-				printf("El ID del cliente es %d.\n", contIds);
-				contIds++;
+				printf("El ID del cliente es %d.\n", clientsId);
+				clientsId++;
 			}
 			break;
 		case 2:
@@ -43,7 +47,7 @@ int main(void) {
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
 				printList(arrayClients, MAX_CLIENT);
-				id = getInt("Ingrese el ID a del cliente a modificar: ");
+				getFinalInt(&id, "Ingrese el ID del cliente a modificar: ", "ERROR! Ingrese un ID numérico mayor a 0: ", 1, 99999);
 				if(modifyClient(arrayClients, MAX_CLIENT, id) == -1){
 					printf("ERROR! No existe un cliente con ese ID.\n");
 				}else{
@@ -56,7 +60,7 @@ int main(void) {
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
 				printList(arrayClients, MAX_CLIENT);
-				id = getInt("Ingrese el ID del cliente a dar de baja: ");
+				getFinalInt(&id, "Ingrese el ID del cliente a dar de baja: ", "ERROR! Ingrese un ID numérico mayor a 0: ", 1, 99999);
 				r = removeClient(arrayClients, MAX_CLIENT, id);
 				if(r == -1){
 					printf("La acción se ha cancelado.\n");
@@ -70,7 +74,18 @@ int main(void) {
 			}
 			break;
 		case 4:
-
+			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
+				printf("ERROR! No se han ingresado clientes.\n");
+			}else{
+				printList(arrayClients, MAX_CLIENT);
+				getFinalInt(&id, "Ingrese el ID del cliente a cargo del pedido: ", "ERROR! Ingrese un ID numérico mayor a 0: ", 1, 99999);
+				if(addRequest(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, id, reqId) == -1){
+					printf("ERROR! No existe un cliente con ese ID.\n");
+				}else{
+					printf("El pedido ha sido creado!\n");
+					reqId++;
+				}
+			}
 			break;
 		case 5:
 

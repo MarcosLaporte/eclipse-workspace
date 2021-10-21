@@ -14,8 +14,12 @@
 #define EMPTY 0
 #define FULL 1
 
-#define MAX_CLIENT 3
+#define MAX_CLIENT 100
 #define MAX_REQUEST 1000
+
+#define NO_REQ -1
+#define PENDING 0
+#define COMPLETED 1
 //------------
 
 /// @brief Pide un entero con un mensaje pasado por parámetro.

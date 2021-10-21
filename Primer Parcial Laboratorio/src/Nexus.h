@@ -12,6 +12,6 @@
 #include "Clients.h"
 #include "Request.h"
 
-
+int addRequest(sClient* clientList, int cliLen, sRequest* requestList, int reqLen, int clientId, int requestId);
 
 #endif /* NEXUS_H_ */

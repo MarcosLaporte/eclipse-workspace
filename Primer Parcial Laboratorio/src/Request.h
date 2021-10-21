@@ -16,4 +16,6 @@ typedef struct{
 	int status;
 }sRequest;
 
+int initRequests(sRequest* list, int len);
+
 #endif /* REQUEST_H_ */
