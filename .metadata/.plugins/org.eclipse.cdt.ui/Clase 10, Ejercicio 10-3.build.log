@@ -1,12 +1,5 @@
-17:01:36 **** Rebuild of configuration Debug for project Clase 10, Ejercicio 10-3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductNation.o" "..\\src\\ProductNation.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Products.o" "..\\src\\Products.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 10, Ejercicio 10-3.o" "..\\src\\Clase 10, Ejercicio 10-3.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ProductType.o" "..\\src\\ProductType.c" 
-gcc -o "Clase 10, Ejercicio 10-3.exe" "src\\Clase 10, Ejercicio 10-3.o" "src\\Input.o" "src\\Nexus.o" "src\\ProductNation.o" "src\\ProductType.o" "src\\Products.o" 
+03:05:19 **** Clean-only build of configuration Debug for project Clase 10, Ejercicio 10-3 ****
+rm -rf src/ProductType.o "Clase 10, Ejercicio 10-3.exe" src/Nexus.d src/Input.o src/Nexus.o src/ProductNation.o src/Products.o src/ProductNation.d "src/Clase 10, Ejercicio 10-3.o" src/ProductType.d src/Input.d "src/Clase 10, Ejercicio 10-3.d" src/Products.d 
 
-17:01:37 Build Finished. 0 errors, 0 warnings. (took 1s.692ms)
+03:05:19 Build Finished. 0 errors, 0 warnings. (took 119ms)
 

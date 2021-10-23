@@ -15,11 +15,11 @@ typedef struct{
 }sPlace;
 
 typedef struct{
-	int id;
-	char companyName[21];
+	int id; //PK
+	char companyName[MAX_CHARAC];
 	char cuit[14]; //20-44567890-9
 	sPlace direction;
-	int idRequest; //FK
+	int pendingRequests;
 	int status;
 }sClient;
 
@@ -30,8 +30,12 @@ int addClient(sClient* list, int len, int id);
 int findClientById(sClient* list, int len, int id);
 int modifyClient(sClient* list, int length, int id);
 int checkAClient(sClient* list, int lenght);
-int printClients(sClient* list, int len);
-void printList(sClient* list, int len);
+sClient searchRequestById(sClient* list, int len, int id);
+sClient searchClientById(sClient* list, int len, int id);
 int removeClient(sClient* list, int len, int id);
+int initPendingRequests(sClient* list, int len);
+int printClient(sClient client);
+int printClientList(sClient* list, int len);
+int calculateLocalityRequests(sClient* list, int len, char locality[], int* accum);
 
 #endif /* CLIENTS_H_ */

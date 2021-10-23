@@ -1,26 +1,5 @@
-17:01:35 **** Rebuild of configuration Debug for project Archivo de prueba ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Structures.o" "..\\src\\Structures.c" 
-..\src\Structures.c:6:1: error: unknown type name 'Date'
-    6 | Date getDate(char message[]){
-      | ^~~~
-..\src\Structures.c: In function 'getDate':
-..\src\Structures.c:7:2: error: unknown type name 'Date'
-    7 |  Date entireDate;
-      |  ^~~~
-..\src\Structures.c:9:12: error: request for member 'day' in something not a structure or union
-    9 |  entireDate.day = getLimitedInt("Ingrese el día: ", "ERROR! Ingrese un día entre 1 y 31: ", 1, 31);
-      |            ^
-..\src\Structures.c:9:19: warning: implicit declaration of function 'getLimitedInt' [-Wimplicit-function-declaration]
-    9 |  entireDate.day = getLimitedInt("Ingrese el día: ", "ERROR! Ingrese un día entre 1 y 31: ", 1, 31);
-      |                   ^~~~~~~~~~~~~
-..\src\Structures.c:10:12: error: request for member 'month' in something not a structure or union
-   10 |  entireDate.month = getLimitedInt("Ingrese el mes: ", "ERROR! Ingrese un mes entre 1 y 12: ", 1, 12);
-      |            ^
-..\src\Structures.c:11:12: error: request for member 'year' in something not a structure or union
-   11 |  entireDate.year = getLimitedInt("Ingrese el año: ", "ERROR! Ingrese una fecha entre %min y %max:", 1900, 2021);
-      |            ^
+03:05:18 **** Clean-only build of configuration Debug for project Archivo de prueba ****
+rm -rf "src/Archivo de prueba.o" src/Biblioteca.d src/Input.d "Archivo de prueba.exe" src/Structures.d src/Input.o src/Biblioteca.o src/Structures.o "src/Archivo de prueba.d" 
 
-17:01:36 Build Failed. 5 errors, 1 warnings. (took 423ms)
+03:05:19 Build Finished. 0 errors, 0 warnings. (took 901ms)
 

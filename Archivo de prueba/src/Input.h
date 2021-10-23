@@ -5,6 +5,11 @@
 
 #ifndef INPUT_H_
 #define INPUT_H_
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 //------------
 #define T 5
 #define ELEMENTS 10

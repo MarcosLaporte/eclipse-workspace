@@ -1,141 +1,162 @@
-01:33:40 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
+03:06:50 **** Clean-only build of configuration Debug for project Primer Parcial Laboratorio ****
+rm -rf src/Primer_Parcial_Laboratorio.o src/Clients.d "Primer Parcial Laboratorio.exe" src/Request.o src/Input.d src/Request.d src/Input.o src/Primer_Parcial_Laboratorio.d src/Nexus.d src/Clients.o src/Nexus.o 
+rm: cannot remove `Primer Parcial Laboratorio.exe': Permission denied
+03:06:56 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer Parcial Laboratorio.o" "..\\src\\Primer Parcial Laboratorio.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+03:07:16 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+03:07:20 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+03:20:56 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+Info: Nothing to build for Primer Parcial Laboratorio
+13:24:36 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'addRequest':
+..\src\Nexus.c:20:4: error: too many arguments to function 'printClientList'
+   20 |    printClientList(clientsList, MAX_CLIENT, requestList, MAX_REQUEST);
+      |    ^~~~~~~~~~~~~~~
+In file included from ..\src\Nexus.c:6:
+..\src\Nexus.h:23:5: note: declared here
+   23 | int printClientList(sClient* cliList, int cliLen);
+      |     ^~~~~~~~~~~~~~~
+..\src\Nexus.c: In function 'printLocalityRequests':
+..\src\Nexus.c:265:3: error: too many arguments to function 'printClientList'
+  265 |   printClientList(clientsList, cliLen, requestList, reqLen);
+      |   ^~~~~~~~~~~~~~~
+..\src\Nexus.c:150:5: note: declared here
+  150 | int printClientList(sClient* clientsList, int cliLen){
+      |     ^~~~~~~~~~~~~~~
+13:24:47 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'addRequest':
+..\src\Nexus.c:21:20: error: 'clientList' undeclared (first use in this function); did you mean 'clientsList'?
+   21 |    printClientList(clientList, MAX_CLIENT);
+      |                    ^~~~~~~~~~
+      |                    clientsList
+..\src\Nexus.c:21:20: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Nexus.c: In function 'printLocalityRequests':
+..\src\Nexus.c:265:3: error: too many arguments to function 'printClientList'
+  265 |   printClientList(clientsList, cliLen, requestList, reqLen);
+      |   ^~~~~~~~~~~~~~~
+..\src\Nexus.c:150:5: note: declared here
+  150 | int printClientList(sClient* clientsList, int cliLen){
+      |     ^~~~~~~~~~~~~~~
+13:24:51 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'printLocalityRequests':
+..\src\Nexus.c:265:3: error: too many arguments to function 'printClientList'
+  265 |   printClientList(clientsList, cliLen, requestList, reqLen);
+      |   ^~~~~~~~~~~~~~~
+..\src\Nexus.c:150:5: note: declared here
+  150 | int printClientList(sClient* clientsList, int cliLen){
+      |     ^~~~~~~~~~~~~~~
+13:25:12 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+..\src\Primer_Parcial_Laboratorio.c: In function 'main':
+..\src\Primer_Parcial_Laboratorio.c:77:5: error: too many arguments to function 'printClientList'
+   77 |     printClientList(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST);
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\Primer_Parcial_Laboratorio.c:38:
+..\src\Nexus.h:23:5: note: declared here
+   23 | int printClientList(sClient* cliList, int cliLen);
+      |     ^~~~~~~~~~~~~~~
+..\src\Primer_Parcial_Laboratorio.c:90:5: error: too many arguments to function 'printClientList'
+   90 |     printClientList(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST);
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\Primer_Parcial_Laboratorio.c:38:
+..\src\Nexus.h:23:5: note: declared here
+   23 | int printClientList(sClient* cliList, int cliLen);
+      |     ^~~~~~~~~~~~~~~
+..\src\Primer_Parcial_Laboratorio.c:135:5: error: too many arguments to function 'printClientList'
+  135 |     printClientList(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST);
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\Primer_Parcial_Laboratorio.c:38:
+..\src\Nexus.h:23:5: note: declared here
+   23 | int printClientList(sClient* cliList, int cliLen);
+      |     ^~~~~~~~~~~~~~~
+13:25:55 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+Info: Nothing to build for Primer Parcial Laboratorio
+Info: Nothing to build for Primer Parcial Laboratorio
+13:35:24 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:35:32 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+13:40:45 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+13:42:00 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:43:03 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:43:35 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:47:47 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:57:17 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'loadRequest':
-..\src\Nexus.c:30:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
-   30 |  int Return;
-      |      ^~~~~~
-..\src\Nexus.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
-   42 | }
-      | ^
-..\src\Nexus.c: In function 'getPlasticTypes':
-..\src\Nexus.c:53:1: warning: control reaches end of non-void function [-Wreturn-type]
-   53 | }
-      | ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-01:41:57 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:58:35 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'loadRequest':
-..\src\Nexus.c:30:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
-   30 |  int Return;
-      |      ^~~~~~
-..\src\Nexus.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
-   42 | }
-      | ^
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
-01:42:33 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'loadRequest':
-..\src\Nexus.c:30:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
-   30 |  int Return;
-      |      ^~~~~~
-..\src\Nexus.c:42:1: warning: control reaches end of non-void function [-Wreturn-type]
-   42 | }
-      | ^
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
-01:42:43 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'loadRequest':
-..\src\Nexus.c:30:6: warning: variable 'Return' set but not used [-Wunused-but-set-variable]
-   30 |  int Return;
-      |      ^~~~~~
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
-01:48:25 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'loadRequest':
-..\src\Nexus.c:32:2: error: 'Return' undeclared (first use in this function)
-   32 |  Return = -1;
-      |  ^~~~~~
-..\src\Nexus.c:32:2: note: each undeclared identifier is reported only once for each function it appears in
-01:48:37 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer Parcial Laboratorio.o" "..\\src\\Primer Parcial Laboratorio.c" 
-..\src\Primer Parcial Laboratorio.c: In function 'main':
-..\src\Primer Parcial Laboratorio.c:91:4: error: a label can only be part of a statement and a declaration is not a statement
-   91 |    float total;
-      |    ^~~~~
-01:49:08 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer Parcial Laboratorio.o" "..\\src\\Primer Parcial Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-01:51:05 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
-01:53:14 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'getPlasticTypes':
-..\src\Nexus.c:63:10: error: incompatible types when assigning to type 'float *' from type 'float'
-   63 |  waste = total - add;
-      |          ^~~~~
-..\src\Nexus.c:66:13: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float *' [-Wformat=]
-   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
-      |            ~^                       ~~~~
-      |             |                       |
-      |             double                  float *
-..\src\Nexus.c:66:17: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
-   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
-      |                ~^                         ~~~~
-      |                 |                         |
-      |                 double                    float *
-..\src\Nexus.c:66:21: warning: format '%f' expects argument of type 'double', but argument 4 has type 'float *' [-Wformat=]
-   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
-      |                    ~^                           ~~
-      |                     |                           |
-      |                     double                      float *
-..\src\Nexus.c:66:25: warning: format '%f' expects argument of type 'double', but argument 5 has type 'float *' [-Wformat=]
-   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
-      |                        ~^                           ~~~~~
-      |                         |                           |
-      |                         double                      float *
-01:53:31 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'getPlasticTypes':
-..\src\Nexus.c:66:13: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float *' [-Wformat=]
-   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
-      |            ~^                       ~~~~
-      |             |                       |
-      |             double                  float *
-..\src\Nexus.c:66:17: warning: format '%f' expects argument of type 'double', but argument 3 has type 'float *' [-Wformat=]
-   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
-      |                ~^                         ~~~~
-      |                 |                         |
-      |                 double                    float *
-..\src\Nexus.c:66:21: warning: format '%f' expects argument of type 'double', but argument 4 has type 'float *' [-Wformat=]
-   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
-      |                    ~^                           ~~
-      |                     |                           |
-      |                     double                      float *
-..\src\Nexus.c:66:25: warning: format '%f' expects argument of type 'double', but argument 5 has type 'float *' [-Wformat=]
-   66 |  printf("--%f--%f--%f--%f--%f--\n", HDPE, LDPE, PP, waste, add);
-      |                        ~^                           ~~~~~
-      |                         |                           |
-      |                         double                      float *
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
-01:53:50 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-01:56:57 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer Parcial Laboratorio.o" "src\\Request.o" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
 c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status

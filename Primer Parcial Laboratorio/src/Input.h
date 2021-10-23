@@ -17,6 +17,8 @@
 #define MAX_CLIENT 100
 #define MAX_REQUEST 1000
 
+#define MAX_CHARAC 51
+
 #define NO_REQ -1
 #define PENDING 0
 #define COMPLETED 1
