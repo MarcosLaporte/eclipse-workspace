@@ -160,3 +160,296 @@ Info: Internal Builder is used for build
 gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
 c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
+16:50:04 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+17:00:07 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:00:10 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+17:02:59 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+17:51:31 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+..\src\Primer_Parcial_Laboratorio.c: In function 'main':
+..\src\Primer_Parcial_Laboratorio.c:168:9: error: too many arguments to function 'printLocalityRequests'
+  168 |      if(printLocalityRequests(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST) == -1){
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Nexus.h:12,
+                 from ..\src\Primer_Parcial_Laboratorio.c:38:
+..\src\Clients.h:37:5: note: declared here
+   37 | int printLocalityRequests(sClient* list, int cliLen);
+      |     ^~~~~~~~~~~~~~~~~~~~~
+..\src\Primer_Parcial_Laboratorio.c:181:77: warning: passing argument 5 of 'countAveragePP' from incompatible pointer type [-Wincompatible-pointer-types]
+  181 |      if(countAveragePP(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, &averagePP) == 0){
+      |                                                                             ^~~~~~~~~~
+      |                                                                             |
+      |                                                                             float *
+In file included from ..\src\Primer_Parcial_Laboratorio.c:38:
+..\src\Nexus.h:26:94: note: expected 'int *' but argument is of type 'float *'
+   26 | int countAveragePP(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int* average);
+      |                                                                                         ~~~~~^~~~~~~
+17:52:30 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'countAveragePP':
+..\src\Nexus.c:205:20: warning: comparison between pointer and integer
+  205 |   for(int i = 0; i < requestList; i++){
+      |                    ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+..\src\Primer_Parcial_Laboratorio.c: In function 'main':
+..\src\Primer_Parcial_Laboratorio.c:181:77: warning: passing argument 5 of 'countAveragePP' from incompatible pointer type [-Wincompatible-pointer-types]
+  181 |      if(countAveragePP(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, &averagePP) == 0){
+      |                                                                             ^~~~~~~~~~
+      |                                                                             |
+      |                                                                             float *
+In file included from ..\src\Primer_Parcial_Laboratorio.c:38:
+..\src\Nexus.h:26:94: note: expected 'int *' but argument is of type 'float *'
+   26 | int countAveragePP(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int* average);
+      |                                                                                         ~~~~~^~~~~~~
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:52:47 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:52:52 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+17:58:34 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c:196:5: error: conflicting types for 'countAveragePP'
+  196 | int countAveragePP(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, float* average){
+      |     ^~~~~~~~~~~~~~
+In file included from ..\src\Nexus.c:6:
+..\src\Nexus.h:26:5: note: previous declaration of 'countAveragePP' was here
+   26 | int countAveragePP(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int* average);
+      |     ^~~~~~~~~~~~~~
+17:58:49 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+18:08:00 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+18:10:22 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'countAveragePP':
+..\src\Nexus.c:218:16: warning: format '%f' expects argument of type 'double', but argument 2 has type 'float *' [-Wformat=]
+  218 |   printf("&&%.2f&&", average);
+      |             ~~~^     ~~~~~~~
+      |                |     |
+      |                |     float *
+      |                double
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+18:10:39 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:10:41 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:10:42 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+18:18:20 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:18:23 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+18:21:51 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+18:21:59 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+18:26:39 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+15:10:51 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+..\src\Clients.c: In function 'getClient':
+..\src\Clients.c:26:2: warning: implicit declaration of function 'getName' [-Wimplicit-function-declaration]
+   26 |  getName(customer.companyName);
+      |  ^~~~~~~
+..\src\Clients.c: At top level:
+..\src\Clients.c:61:6: warning: conflicting types for 'getName'
+   61 | void getName(char input[]){
+      |      ^~~~~~~
+..\src\Clients.c:26:2: note: previous implicit declaration of 'getName' was here
+   26 |  getName(customer.companyName);
+      |  ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+15:14:33 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+..\src\Clients.c: In function 'getClient':
+..\src\Clients.c:26:2: warning: implicit declaration of function 'getName' [-Wimplicit-function-declaration]
+   26 |  getName(customer.companyName);
+      |  ^~~~~~~
+..\src\Clients.c: At top level:
+..\src\Clients.c:61:6: warning: conflicting types for 'getName'
+   61 | void getName(char input[]){
+      |      ^~~~~~~
+..\src\Clients.c:26:2: note: previous implicit declaration of 'getName' was here
+   26 |  getName(customer.companyName);
+      |  ^~~~~~~
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+15:23:13 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:55:04 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:15:42 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:15:46 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+16:18:22 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c:312:5: error: conflicting types for 'getConfirmation'
+  312 | int getConfirmation(char message[], char confirmation[], char cancel[], int length, int tries){
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\Input.c:6:
+..\src\Input.h:189:5: note: previous declaration of 'getConfirmation' was here
+  189 | int getConfirmation(char message[], char confirmation[], char cancel[],char input[], int length, int tries);
+      |     ^~~~~~~~~~~~~~~
+..\src\Input.c: In function 'getConfirmation':
+..\src\Input.c:316:2: error: expected '=', ',', ';', 'asm' or '__attribute__' before 'printf'
+  316 |  printf("%s", message);
+      |  ^~~~~~
+..\src\Input.c:317:9: error: 'input' undeclared (first use in this function); did you mean 'int'?
+  317 |  myGets(input, length);
+      |         ^~~~~
+      |         int
+..\src\Input.c:317:9: note: each undeclared identifier is reported only once for each function it appears in
+16:18:25 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+..\src\Input.c:312:5: error: conflicting types for 'getConfirmation'
+  312 | int getConfirmation(char message[], char confirmation[], char cancel[], int length, int tries){
+      |     ^~~~~~~~~~~~~~~
+In file included from ..\src\Input.c:6:
+..\src\Input.h:189:5: note: previous declaration of 'getConfirmation' was here
+  189 | int getConfirmation(char message[], char confirmation[], char cancel[],char input[], int length, int tries);
+      |     ^~~~~~~~~~~~~~~
+16:18:43 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+..\src\Clients.c: In function 'removeClient':
+..\src\Clients.c:183:121: warning: passing argument 4 of 'getConfirmation' makes integer from pointer without a cast [-Wint-conversion]
+  183 |    r = getConfirmation("Esta acción no puede deshacerse. Escriba 'CONFIRMAR' para eliminar: ", "CONFIRMAR", "CANCELAR", confirm, 10, 3);
+      |                                                                                                                         ^~~~~~~
+      |                                                                                                                         |
+      |                                                                                                                         char *
+In file included from ..\src\Clients.h:9,
+                 from ..\src\Clients.c:6:
+..\src\Input.h:190:77: note: expected 'int' but argument is of type 'char *'
+  190 | int getConfirmation(char message[], char confirmation[], char cancel[], int length, int tries);
+      |                                                                         ~~~~^~~~~~
+..\src\Clients.c:183:8: error: too many arguments to function 'getConfirmation'
+  183 |    r = getConfirmation("Esta acción no puede deshacerse. Escriba 'CONFIRMAR' para eliminar: ", "CONFIRMAR", "CANCELAR", confirm, 10, 3);
+      |        ^~~~~~~~~~~~~~~
+In file included from ..\src\Clients.h:9,
+                 from ..\src\Clients.c:6:
+..\src\Input.h:190:5: note: declared here
+  190 | int getConfirmation(char message[], char confirmation[], char cancel[], int length, int tries);
+      |     ^~~~~~~~~~~~~~~
+16:19:09 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+..\src\Clients.c: In function 'removeClient':
+..\src\Clients.c:173:7: warning: unused variable 'confirm' [-Wunused-variable]
+  173 |  char confirm[10];
+      |       ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+16:19:35 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:39:13 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+..\src\Clients.c: In function 'removeClient':
+..\src\Clients.c:174:6: warning: unused variable 'tries' [-Wunused-variable]
+  174 |  int tries;
+      |      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+19:39:20 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio

@@ -52,12 +52,13 @@ int main(void) {
 	int r;
 	sRequest arrayRequest[MAX_REQUEST];
 	int reqId;
+	float averagePP;
 	clientsId = 1;
 	reqId = 1;
 
 	initClients(arrayClients, MAX_CLIENT);
 	initRequests(arrayRequest, MAX_REQUEST);
-	hardcodeClients(arrayClients, arrayRequest, 100, &clientsId, 1000, &reqId);
+	hardcodeClients(arrayClients, arrayRequest, 10, &clientsId, 20, &reqId);
 
 	do{
 		option = printMenu();
@@ -117,7 +118,7 @@ int main(void) {
 			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
-				if(checkARequest(arrayRequest, MAX_REQUEST) == -1){
+				if(checkARequest(arrayRequest, MAX_REQUEST, PENDING) == -1){
 					printf("ERROR! No hay pedidos para procesar.\n");
 				}else{
 					if(loadRequest(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST) == -1){
@@ -139,7 +140,7 @@ int main(void) {
 			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
-				if(checkARequest(arrayRequest, MAX_REQUEST) == -1){
+				if(checkARequest(arrayRequest, MAX_REQUEST, PENDING) == -1){
 					printf("ERROR! No hay pedidos pendientes.\n");
 				}else{
 					printPendingRequestList(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST);
@@ -150,8 +151,8 @@ int main(void) {
 			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
-				if(checkARequest(arrayRequest, MAX_REQUEST) == -1){
-					printf("ERROR! No hay pedidos pendientes.\n");
+				if(checkARequest(arrayRequest, MAX_REQUEST, COMPLETED) == -1){
+					printf("ERROR! No hay pedidos procesados.\n");
 				}else{
 					printCompletedRequests(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST);
 				}
@@ -161,17 +162,27 @@ int main(void) {
 			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
-				if(checkARequest(arrayRequest, MAX_REQUEST) == -1){
+				if(checkARequest(arrayRequest, MAX_REQUEST, PENDING) == -1){
 					printf("ERROR! No hay pedidos pendientes.\n");
 				}else{
-					if(printLocalityRequests(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST) == -1){
+					if(printLocalityRequests(arrayClients, MAX_CLIENT) == -1){
 						printf("No hay pedidos en esa localidad.\n");
 					}
 				}
 			}
 			break;
 		case 10: //Promedio de PP por cliente
-
+			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
+				printf("ERROR! No se han ingresado clientes.\n");
+			}else{
+				if(checkARequest(arrayRequest, MAX_REQUEST, COMPLETED) == -1){
+					printf("ERROR! No hay pedidos procesados.\n");
+				}else{
+					if(countAveragePP(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, &averagePP) == 0){
+						printf("El promedio de polipropeno por cliente es: %.2f.\n", averagePP);
+					}
+				}
+			}
 			break;
 		case 0:
 			printf("Ha salido del programa.\n");

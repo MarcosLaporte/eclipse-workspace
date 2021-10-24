@@ -23,43 +23,44 @@ sClient getClient(){
 	sClient customer;
 
 	//Nombre
-	getString("¬ Ingrese el nombre de la empresa: ", customer.companyName, MAX_CHARAC);
-	while(checkAlphabetAndSpace(customer.companyName) == 0){
-		getString("¬ ERROR! Ingrese un nombre SOLO con letras (sin tildes ni Ñ): ", customer.companyName, MAX_CHARAC);
-	}
-	formatString(customer.companyName);
-
+	getName(customer.companyName);
 	//CUIT
-	getString("¬ Ingrese el CUIT sin espapcios ni guiones: ", customer.cuit, 14);
-	while(isAnInt(customer.cuit, 14) == -1 || strlen(customer.cuit) != 11){
-		getString("¬ ERROR! Ingrese un CUIT válido (01234567890): ", customer.cuit, 14);
-	}
-	formatCuit(customer.cuit);
-
+	getCuit(customer.cuit);
 	//Calle
-	getString("¬ Ingrese la calle donde se encuentra la empresa: ", customer.direction.address, 51);
-	while(strlen(customer.direction.address) > 51){
-		getString("¬ ERROR! Ingrese la calle donde se encuentra la empresa (máximo 51 caracteres): ", customer.direction.address, 51);
-	}
-	formatString(customer.direction.address);
-
+	getAddress(customer.direction.address);
 	//Altura
 	getFinalInt(&customer.direction.number, "¬ Ingrese la altura de la calle donde se encuentra la empresa: ", "¬ ERROR! Ingrese una altura numérica: ", 0, 99999);
-
 	//Localidad
-	getString("¬ Ingrese la localidad de la empresa: ", customer.direction.locality, 51);
-	while(strlen(customer.direction.locality) > 51 || checkAlphabetAndSpace(customer.direction.locality) == 0){
-		getString("¬ ERROR! Este campo no admite números. Reingrese: ", customer.direction.locality, 51);
-	}
-	formatString(customer.direction.locality);
-
+	getLocal(customer.direction.locality);
 	//Pedidos pendientes
 	customer.pendingRequests = 0;
-
 	//Estado
 	customer.status = FULL;
 
 	return customer;
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
+//Datos cliente
+void getName(char input[]){
+	getString("¬ Ingrese el nombre de la empresa: ", input, MAX_CHARAC);
+	while(checkAlphabetAndSpace(input) == 0 || strlen(input) < 1){
+		if(checkAlphabetAndSpace(input) == 0){
+			getString("¬ ERROR! Ingrese un nombre solo con letras: ", input, MAX_CHARAC);
+		}
+		if(strlen(input) > 51 || strlen(input) < 1){
+			getString("¬ ERROR! Este campo no puede quedar vacío ni superar los 50 caracteres. Reingrese: ", input, MAX_CHARAC);
+		}
+	}
+	formatString(input);
+}
+
+void getCuit(char input[]){
+	getString("¬ Ingrese el CUIT sin espapcios ni guiones: ", input, 14);
+	while(isAnInt(input, 14) == -1 || strlen(input) != 11){
+		getString("¬ ERROR! Ingrese un CUIT válido (01234567890): ", input, 14);
+	}
+	formatCuit(input);
 }
 
 void formatCuit(char input[]){
@@ -77,6 +78,29 @@ void formatCuit(char input[]){
 
 	strcpy(input, auxCUIT);
 }
+
+void getAddress(char input[]){
+	getString("¬ Ingrese la calle donde se encuentra la empresa: ", input, MAX_CHARAC);
+	while(strlen(input) > MAX_CHARAC){
+		getString("¬ ERROR! Ingrese la calle donde se encuentra la empresa (máximo 50 caracteres): ", input, MAX_CHARAC);
+	}
+	formatString(input);
+}
+
+void getLocal(char input[]){
+	getString("¬ Ingrese la localidad de la empresa: ", input, MAX_CHARAC);
+	while((strlen(input) > MAX_CHARAC || strlen(input) < 1) || checkAlphabetAndSpace(input) == 0){
+		if(checkAlphabetAndSpace(input) == 0){
+			getString("¬ ERROR! Este campo solo admite letras. Reingrese: ", input, MAX_CHARAC);
+		}
+		if(strlen(input) > MAX_CHARAC || strlen(input) < 1){
+			getString("¬ ERROR! Este campo no puede quedar vacío ni superar los 50 caracteres. Reingrese: ", input, MAX_CHARAC);
+		}
+	}
+	formatString(input);
+}
+
+//////////////////////////////////////////////////////////////////////////////////////////////
 
 int addClient(sClient* list, int len, int id){
 	int Return;
@@ -112,13 +136,13 @@ int findClientById(sClient* list, int len, int id){
 	return Return;
 }
 
-int modifyClient(sClient* list, int length, int id){
+int modifyClient(sClient* list, int len, int id){
 	int Return;
 	int index;
 	Return = -1;
 
-	if(list != NULL && length > 0){
-		index = findClientById(list, length, id);
+	if(list != NULL && len > 0){
+		index = findClientById(list, len, id);
 		if(index != -1){
 			if(list[index].status == FULL){
 				Return = 0;
@@ -146,7 +170,6 @@ int modifyClient(sClient* list, int length, int id){
 int removeClient(sClient* list, int len, int id){
 	int Return;
 	int index;
-	char confirm[10];
 	int r;
 	Return = 0;
 
@@ -156,7 +179,7 @@ int removeClient(sClient* list, int len, int id){
 			if(list[index].pendingRequests != 0){
 				printf("Este cliente tiene pedidos pendientes!\n");
 			}
-			r = getConfirmation("Esta acción no puede deshacerse. Escriba 'CONFIRMAR' para eliminar: ", "CONFIRMAR", "CANCELAR", confirm, 10, 3);
+			r = getConfirmation("Esta acción no puede deshacerse. Escriba 'CONFIRMAR' para eliminar: ", "CONFIRMAR", "CANCELAR", 10, 3);
 			if(r == 1){
 				Return = 1;
 				list[index].status = EMPTY;
@@ -169,12 +192,12 @@ int removeClient(sClient* list, int len, int id){
 	return Return;
 }
 
-int checkAClient(sClient* list, int lenght){
+int checkAClient(sClient* list, int len){
 	int Return;
 	Return = -1;
 
-	if(list != NULL && lenght > 0){
-		for(int i = 0; i < lenght; i++){
+	if(list != NULL && len > 0){
+		for(int i = 0; i < len; i++){
 			if(list[i].status == FULL){
 				Return = 0;
 				break;
@@ -190,6 +213,7 @@ int initPendingRequests(sClient* list, int len){
 
 	if(list != NULL && len > 0){
 		for(int i = 0; i < len; i++){
+			Return = 0;
 			list[i].pendingRequests = 0;
 		}
 	}
@@ -201,11 +225,11 @@ int printClient(sClient client){
 	int Return;
 	Return = -1;
 
-		if(client.status == FULL){
-			Return = 0;
-			printf("|%4d|%50s|%15s|%25s %5d|%20s|%7d|\n", client.id,
-				client.companyName, client.cuit, client.direction.address, client.direction.number, client.direction.locality, client.pendingRequests);
-		}
+	if(client.status == FULL){
+		Return = 0;
+		printf("|%4d|%50s|%15s|%25s %5d|%20s|%7d|\n", client.id,
+			client.companyName, client.cuit, client.direction.address, client.direction.number, client.direction.locality, client.pendingRequests);
+	}
 
 	return Return;
 }
@@ -228,7 +252,6 @@ int printClientList(sClient* list, int len){
 	return Return;
 }
 
-//	Para conseguir los datos del cliente
 sClient searchClientById(sClient* list, int len, int id){
 	sClient aux;
 
@@ -244,7 +267,28 @@ sClient searchClientById(sClient* list, int len, int id){
 	return aux;
 }
 
-// Ingresar una localidad e indicar la cantidad de pedidos pendientes para dicha localidad.
+int printLocalityRequests(sClient* list, int len){
+	int Return;
+	char aux[MAX_CHARAC];
+	int accum;
+	Return = -1;
+
+	if(list != NULL && len > 0){
+		printClientList(list, len);
+		getString("Ingrese una localidad para ver la cantidad de pedidos pendientes: ", aux, MAX_CHARAC);
+		while(calculateLocalityRequests(list, len, aux, &accum) == -1){
+			getString("ERROR! Ingrese una localidad existente: ", aux, MAX_CHARAC);
+		}
+
+		if(calculateLocalityRequests(list, len, aux, &accum) == 0){
+			printf("La cantidad de pedidos en la localidad '%s' es: %d.\n", aux, accum);
+			Return = 0;
+		}
+	}
+
+	return Return;
+}
+
 int calculateLocalityRequests(sClient* list, int len, char locality[], int* accum){
 	int Return;
 	Return = -1;

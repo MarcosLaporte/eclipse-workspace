@@ -186,7 +186,8 @@ int getFinalFloat(float* refResult, char message[], char errorMessage[], int min
 
 
 int printMenu();
-int getConfirmation(char message[], char confirmation[], char cancel[],char input[], int length, int tries);
+
+int getConfirmation(char message[], char confirmation[], char cancel[], int length, int tries);
 
 
 #endif /* INPUT_H_ */

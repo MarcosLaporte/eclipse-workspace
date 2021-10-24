@@ -1,8 +1,8 @@
-c_comment_task_tag=255,128,0
+c_comment_task_tag=255,128,64
 c_comment_task_tag_italic=true
-c_multi_line_comment=255,128,0
+c_multi_line_comment=255,128,64
 c_multi_line_comment_italic=true
-c_single_line_comment=255,128,0
+c_single_line_comment=255,128,64
 c_single_line_comment_italic=true
 eclipse.preferences.version=1
 formattingScopeForEmptySelection=statement

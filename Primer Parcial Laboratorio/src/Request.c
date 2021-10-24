@@ -19,13 +19,13 @@ int initRequests(sRequest* list, int len){
 	return Return;
 }
 
-int checkARequest(sRequest* list, int len){
+int checkARequest(sRequest* list, int len, int status){
 	int Return;
 	Return = -1;
 
 	if(list != NULL && len > 0){
 		for(int i = 0; i < len; i++){
-			if(list[i].isEmpty == FULL){
+			if(list[i].isEmpty == FULL && list[i].status == status){
 				Return = 0;
 				break;
 			}
