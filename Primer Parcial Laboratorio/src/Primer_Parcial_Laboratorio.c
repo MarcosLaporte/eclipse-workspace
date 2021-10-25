@@ -58,14 +58,14 @@ int main(void) {
 
 	initClients(arrayClients, MAX_CLIENT);
 	initRequests(arrayRequest, MAX_REQUEST);
-	hardcodeClients(arrayClients, arrayRequest, 10, &clientsId, 20, &reqId);
+	hardcodeClients(arrayClients, arrayRequest, 100, &clientsId, 1000, &reqId);
 
 	do{
 		option = printMenu();
 		switch(option){
 		case 1: //Alta
 			if(addClient(arrayClients, MAX_CLIENT, clientsId) == -1){
-				printf("Ya se han ingresado la cantidad máxima de clientes.\n");
+				printf("Ya se ha ingresado la cantidad máxima de clientes.\n");
 			}else{
 				printf("El ID del cliente es %d.\n", clientsId);
 				clientsId++;
@@ -106,11 +106,16 @@ int main(void) {
 			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
-				if(addRequest(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, reqId) == -1){
+				r = addRequest(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, reqId);
+				if(r == -1){
 					printf("ERROR! No existe un cliente con ese ID.\n");
 				}else{
-					printf("El pedido ha sido creado! El ID del pedido es %d.\n", reqId);
-					reqId++;
+					if(r == 0){
+						printf("Ya se ha ingresado la cantidad máxima de pedidos.\n");
+					}else{
+						printf("El pedido ha sido creado! El ID del pedido es %d.\n", reqId);
+						reqId++;
+					}
 				}
 			}
 			break;

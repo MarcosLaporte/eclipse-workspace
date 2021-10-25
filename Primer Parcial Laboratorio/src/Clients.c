@@ -296,7 +296,8 @@ int calculateLocalityRequests(sClient* list, int len, char locality[], int* accu
 
 	if(list != NULL && len > 0){
 		for(int i = 0; i < len; i++){
-			if(strcmp(list[i].direction.locality, locality) == 0){
+
+			if(strcmp(strlwr(list[i].direction.locality), strlwr(locality)) == 0){
 				*accum += list[i].pendingRequests;
 				Return = 0;
 			}

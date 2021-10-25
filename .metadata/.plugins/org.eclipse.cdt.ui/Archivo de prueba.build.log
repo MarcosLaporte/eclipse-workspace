@@ -1,5 +1,111 @@
-03:05:18 **** Clean-only build of configuration Debug for project Archivo de prueba ****
-rm -rf "src/Archivo de prueba.o" src/Biblioteca.d src/Input.d "Archivo de prueba.exe" src/Structures.d src/Input.o src/Biblioteca.o src/Structures.o "src/Archivo de prueba.d" 
+20:23:20 **** Rebuild of configuration Debug for project Archivo de prueba ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Structures.o" "..\\src\\Structures.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+..\src\Archivo de prueba.c: In function 'main':
+..\src\Archivo de prueba.c:32:2: error: unknown type name 'Person'
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |  ^~~~~~
+..\src\Archivo de prueba.c:32:2: warning: braces around scalar initializer
+..\src\Archivo de prueba.c:32:2: note: (near initialization for 'people[0]')
+..\src\Archivo de prueba.c:32:26: warning: excess elements in scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |                          ^~~~~~~~
+..\src\Archivo de prueba.c:32:26: note: (near initialization for 'people[0]')
+..\src\Archivo de prueba.c:32:2: warning: braces around scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |  ^~~~~~
+..\src\Archivo de prueba.c:32:2: note: (near initialization for 'people[0]')
+..\src\Archivo de prueba.c:32:41: warning: excess elements in scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |                                         ^~
+..\src\Archivo de prueba.c:32:41: note: (near initialization for 'people[0]')
+..\src\Archivo de prueba.c:32:45: warning: excess elements in scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |                                             ^~~~
+..\src\Archivo de prueba.c:32:45: note: (near initialization for 'people[0]')
+..\src\Archivo de prueba.c:32:36: warning: excess elements in scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |                                    ^
+..\src\Archivo de prueba.c:32:36: note: (near initialization for 'people[0]')
+..\src\Archivo de prueba.c:32:2: warning: braces around scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |  ^~~~~~
+..\src\Archivo de prueba.c:32:2: note: (near initialization for 'people[1]')
+..\src\Archivo de prueba.c:32:57: warning: excess elements in scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |                                                         ^~~~~~~~~~
+..\src\Archivo de prueba.c:32:57: note: (near initialization for 'people[1]')
+..\src\Archivo de prueba.c:32:2: warning: braces around scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |  ^~~~~~
+..\src\Archivo de prueba.c:32:2: note: (near initialization for 'people[1]')
+..\src\Archivo de prueba.c:32:74: warning: excess elements in scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |                                                                          ^~
+..\src\Archivo de prueba.c:32:74: note: (near initialization for 'people[1]')
+..\src\Archivo de prueba.c:32:78: warning: excess elements in scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |                                                                              ^~~~
+..\src\Archivo de prueba.c:32:78: note: (near initialization for 'people[1]')
+..\src\Archivo de prueba.c:32:69: warning: excess elements in scalar initializer
+   32 |  Person people[T] = {{1, "Thiago", {24, 04, 2003}}, {2, "Ezequiel", {06, 07, 1978}},
+      |                                                                     ^
+..\src\Archivo de prueba.c:32:69: note: (near initialization for 'people[1]')
+..\src\Archivo de prueba.c:33:7: warning: braces around scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |       ^
+..\src\Archivo de prueba.c:33:7: note: (near initialization for 'people[2]')
+..\src\Archivo de prueba.c:33:11: warning: excess elements in scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |           ^~~~~~~
+..\src\Archivo de prueba.c:33:11: note: (near initialization for 'people[2]')
+..\src\Archivo de prueba.c:33:7: warning: braces around scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |       ^
+..\src\Archivo de prueba.c:33:7: note: (near initialization for 'people[2]')
+..\src\Archivo de prueba.c:33:25: warning: excess elements in scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |                         ^~
+..\src\Archivo de prueba.c:33:25: note: (near initialization for 'people[2]')
+..\src\Archivo de prueba.c:33:29: warning: excess elements in scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |                             ^~~~
+..\src\Archivo de prueba.c:33:29: note: (near initialization for 'people[2]')
+..\src\Archivo de prueba.c:33:20: warning: excess elements in scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |                    ^
+..\src\Archivo de prueba.c:33:20: note: (near initialization for 'people[2]')
+..\src\Archivo de prueba.c:33:7: warning: braces around scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |       ^
+..\src\Archivo de prueba.c:33:7: note: (near initialization for 'people[3]')
+..\src\Archivo de prueba.c:33:41: warning: excess elements in scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |                                         ^~~~~~~~
+..\src\Archivo de prueba.c:33:41: note: (near initialization for 'people[3]')
+..\src\Archivo de prueba.c:33:7: warning: braces around scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |       ^
+..\src\Archivo de prueba.c:33:7: note: (near initialization for 'people[3]')
+..\src\Archivo de prueba.c:33:55: warning: excess elements in scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |                                                       ^~
+..\src\Archivo de prueba.c:33:55: note: (near initialization for 'people[3]')
+..\src\Archivo de prueba.c:33:59: warning: excess elements in scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |                                                           ^~~~
+..\src\Archivo de prueba.c:33:59: note: (near initialization for 'people[3]')
+..\src\Archivo de prueba.c:33:51: warning: excess elements in scalar initializer
+   33 |       {3, "Elias", {04, 06, 2002}}, {4, "Marcos", {8, 05, 2003}}};
+      |                                                   ^
+..\src\Archivo de prueba.c:33:51: note: (near initialization for 'people[3]')
+..\src\Archivo de prueba.c:37:3: warning: implicit declaration of function 'printById' [-Wimplicit-function-declaration]
+   37 |   printById(people, T, people[i].id);
+      |   ^~~~~~~~~
+..\src\Archivo de prueba.c:37:33: error: request for member 'id' in something not a structure or union
+   37 |   printById(people, T, people[i].id);
+      |                                 ^
 
-03:05:19 Build Finished. 0 errors, 0 warnings. (took 901ms)
+20:23:21 Build Failed. 2 errors, 25 warnings. (took 903ms)
 
