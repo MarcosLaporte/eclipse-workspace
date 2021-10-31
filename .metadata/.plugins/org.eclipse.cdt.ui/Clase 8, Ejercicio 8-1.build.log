@@ -1,10 +1,5 @@
-18:07:10 **** Incremental Build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 8, Ejercicio 8-1.o" "..\\src\\Clase 8, Ejercicio 8-1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Jugadores.o" "..\\src\\Jugadores.c" 
-gcc -o "Clase 8, Ejercicio 8-1.exe" "src\\Clase 8, Ejercicio 8-1.o" "src\\Ingreso_de_datos.o" "src\\Jugadores.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 8, Ejercicio 8-1.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
+18:08:38 **** Clean-only build of configuration Debug for project Clase 8, Ejercicio 8-1 ****
+rm -rf "src/Clase 8, Ejercicio 8-1.d" "src/Clase 8, Ejercicio 8-1.o" src/Ingreso_de_datos.d src/Jugadores.d "Clase 8, Ejercicio 8-1.exe" src/Ingreso_de_datos.o src/Jugadores.o 
 
-18:07:11 Build Failed. 1 errors, 0 warnings. (took 781ms)
+18:08:39 Build Finished. 0 errors, 0 warnings. (took 755ms)
 

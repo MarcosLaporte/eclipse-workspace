@@ -1,8 +1,5 @@
-17:37:13 **** Incremental Build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
-Info: Internal Builder is used for build
-gcc -o "Clase 6, Ejercicio 6-2.exe" "src\\Biblioteca.o" "src\\Clase 6, Ejercicio 6-2.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Clase 6, Ejercicio 6-2.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
+18:08:36 **** Clean-only build of configuration Debug for project Clase 6, Ejercicio 6-2 ****
+rm -rf src/Biblioteca.o "src/Clase 6, Ejercicio 6-2.o" "Clase 6, Ejercicio 6-2.exe" src/Biblioteca.d "src/Clase 6, Ejercicio 6-2.d" 
 
-17:37:13 Build Failed. 1 errors, 0 warnings. (took 249ms)
+18:08:36 Build Finished. 0 errors, 0 warnings. (took 575ms)
 

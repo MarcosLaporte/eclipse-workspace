@@ -1,1 +1,5 @@
-Info: Nothing to build for Clase 5, Ejercicio 5-3
+18:08:35 **** Clean-only build of configuration Debug for project Clase 5, Ejercicio 5-3 ****
+rm -rf "src/Clase 5, Ejercicio 5-3.o" src/Biblioteca.d src/Biblioteca.o "Clase 5, Ejercicio 5-3.exe" "src/Clase 5, Ejercicio 5-3.d" 
+
+18:08:36 Build Finished. 0 errors, 0 warnings. (took 594ms)
+

@@ -1,1 +1,5 @@
-Info: Nothing to build for Clase 2, Ejercicio 2-1
+18:08:30 **** Clean-only build of configuration Debug for project Clase 2, Ejercicio 2-1 ****
+rm -rf "src/Clase 2, Ejercicio 2-1.d" "src/Clase 2, Ejercicio 2-1.o" "Clase 2, Ejercicio 2-1.exe" 
+
+18:08:30 Build Finished. 0 errors, 0 warnings. (took 227ms)
+

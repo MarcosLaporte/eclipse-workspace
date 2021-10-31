@@ -1,1 +1,5 @@
-Info: Nothing to build for Clase 6, Ejercicio 6-3
+18:08:36 **** Clean-only build of configuration Debug for project Clase 6, Ejercicio 6-3 ****
+rm -rf "src/Clase 6, Ejercicio 6-3.d" src/Ingreso_de_datos.d "Clase 6, Ejercicio 6-3.exe" "src/Clase 6, Ejercicio 6-3.o" src/Ingreso_de_datos.o 
+
+18:08:37 Build Finished. 0 errors, 0 warnings. (took 221ms)
+
