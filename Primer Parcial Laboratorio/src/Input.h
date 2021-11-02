@@ -16,6 +16,7 @@
 
 #define MAX_CLIENT 100
 #define MAX_REQUEST 1000
+#define MAX_LOCAL 5
 
 #define MAX_CHARAC 51
 

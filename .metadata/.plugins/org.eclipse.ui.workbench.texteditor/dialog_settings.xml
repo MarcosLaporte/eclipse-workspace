@@ -1,13 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="countRequestsByClient"/>
+		<item key="selection" value="id"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="true"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="idProducto"/>
+			<item value="name"/>
+			<item value="calcMostRequestsClient"/>
+			<item value="mostRequested"/>
 			<item value="countRequestsByClient"/>
 			<item value="j"/>
 			<item value="accum"/>
@@ -19,27 +23,23 @@
 			<item value="printOneCompletedRequest"/>
 			<item value="initRequests"/>
 			<item value="printLocalityRequests"/>
-			<item value="initPendingRequests"/>
-			<item value="searchClientById"/>
-			<item value="searchRequestById"/>
-			<item value="customer.direction.locality"/>
 		</list>
 		<list key="replacehistory">
+			<item value="id"/>
+			<item value="input"/>
+			<item value=""/>
+			<item value="mostPendingRequest"/>
 			<item value="index"/>
 			<item value="accumPP"/>
 			<item value="requestList[i]"/>
 			<item value="len"/>
 			<item value="MAX_CHARAC"/>
-			<item value="input"/>
 			<item value="requestList"/>
 			<item value="clientsList"/>
 			<item value="list"/>
-			<item value=""/>
 			<item value="printClientList(arrayClients, MAX_CLIENT);"/>
 			<item value="reqtList"/>
 			<item value="reqstList"/>
-			<item value="clientstList"/>
-			<item value="clientList"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

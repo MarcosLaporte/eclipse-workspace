@@ -40,7 +40,7 @@
 	</section>
 	<section name="CleanDialogSettings">
 		<item key="BUILD_NOW" value="true"/>
-		<item key="BUILD_ALL" value="false"/>
+		<item key="BUILD_ALL" value="true"/>
 		<item key="TOGGLE_SELECTED" value="false"/>
 		<item key="DIALOG_WIDTH" value="500"/>
 		<item key="DIALOG_HEIGHT" value="467"/>
@@ -53,6 +53,7 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
+			<item value="C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\tp3_windows"/>
 			<item value="C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace"/>
 			<item value="C:\Users\54113\Desktop\eclipse-workspace"/>
 			<item value="C:\Users\Marco\Desktop\eclipse-workspace"/>

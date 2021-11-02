@@ -355,6 +355,9 @@ int printMenu(){
 	printf("8) Imprimir Pedidos procesados\n");
 	printf("9) Cantidad de pedidos pendientes por localidad\n");
 	printf("10) Kilos de polipropileno reciclado por cliente\n");
+	printf("11) Cliente con más pedidos pendientes.\n");
+	printf("12) Cliente con más pedidos completados.\n");
+	printf("13) Cliente con más pedidos.\n");
 
 
 	getFinalInt(&option, "Elija una opción: ", "ERROR! Elija una opción existente: ", 0, 13);

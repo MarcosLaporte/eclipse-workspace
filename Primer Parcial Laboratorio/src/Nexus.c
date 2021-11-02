@@ -5,7 +5,7 @@
 
 #include "Nexus.h"
 
-int addRequest(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int requestId){
+int addRequest(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int requestId, sLocality* localList, int localLen){
 	int Return;
 	int index;
 	int id;
@@ -17,7 +17,7 @@ int addRequest(sClient* clientsList, int cliLen, sRequest* requestList, int reqL
 	if(clientsList != NULL && cliLen > 0 && requestList != NULL && reqLen > 0){
 		index = findFreeSpaceRequest(requestList, reqLen);
 		if(index != -1){
-			printClientList(clientsList, MAX_CLIENT);
+			printClientList(clientsList, MAX_CLIENT, localList, MAX_LOCAL);
 			getFinalInt(&id, "Ingrese el ID del cliente a cargo del pedido: ", "ERROR! Ingrese un ID numérico mayor a 0: ", 1, 99999);
 			while(findClientById(clientsList, cliLen, id) == -1 && tries > 0){
 				printf("ERROR! El ID ingresado no existe. Le quedan %d intentos. ", tries);
@@ -142,6 +142,26 @@ int countRequestsByClient(sClient* clientsList, int cliLen, sRequest* requestLis
 	return Return;
 }
 
+int countCompletedRequestsByClient(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int clientId){
+	int Return;
+	int index;
+	Return = -1;
+
+	if(clientsList != NULL && cliLen > 0 && requestList != NULL && reqLen > 0){
+		for(int i = 0; i < reqLen; i++){
+			if(requestList[i].isEmpty == FULL
+					&& requestList[i].status == COMPLETED
+					&& requestList[i].clientId == clientId){
+				index = findClientById(clientsList, cliLen, clientId);
+				clientsList[index].completedRequests++;
+				Return = 0;
+			}
+		}
+	}
+
+	return Return;
+}
+
 int printCompletedRequests(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen){
 	int Return;
 	Return = -1;
@@ -204,6 +224,153 @@ int countAveragePP(sClient* clientsList, int cliLen, sRequest* requestList, int 
 	}
 	if(count != 0){
 		*average = accumPP/count;
+	}
+
+	return Return;
+}
+
+int printClient(sClient client, sLocality* localList, int localLen){
+	int Return;
+	int index;
+	Return = -1;
+
+	if(client.status == FULL){
+		Return = 0;
+		index = findLocalityById(localList, localLen, client.direction.idLocal);
+		printf("|%4d|%50s|%15s|%25s %5d|%20s|%7d|\n", client.id,
+			client.companyName, client.cuit, client.direction.address, client.direction.number, localList[index].description, client.pendingRequests);
+	}
+
+	return Return;
+}
+
+int printClientList(sClient* list, int len, sLocality* localList, int localLen){
+	int Return;
+	Return = -1;
+
+	if(list != NULL && len > 0){
+		Return = 0;
+		printf("#====================================================================================================================================#\n");
+		printf("| ID |               Nombre de la empresa               |      CUIT     |           Dirección           |     Localidad      |Pedidos|\n");
+		printf("#====+==================================================+===============+===============================+====================+=======#\n");
+		for(int i = 0; i < len; i++){
+			printClient(list[i], localList, localLen);
+		}
+		printf("#====================================================================================================================================#\n");
+	}
+
+	return Return;
+}
+
+
+int calculateLocalityRequests(sClient* list, int len, int localityId, int* accum){
+	int Return;
+	Return = -1;
+	*accum = 0;
+
+	if(list != NULL && len > 0){
+		for(int i = 0; i < len; i++){
+
+//			if(strcmp(strlwr(list[i].direction.locality), strlwr(locality)) == 0){
+			if(list[i].direction.idLocal == localityId){
+				*accum += list[i].pendingRequests;
+				Return = 0;
+			}
+		}
+	}
+
+	return Return;
+}
+
+int printLocalityRequests(sClient* list, int len, sLocality* localList, int localLen){
+	int Return;
+	int aux;
+	int accum;
+	int index;
+	Return = -1;
+
+	if(list != NULL && len > 0){
+		printClientList(list, len, localList, localLen);
+//		getString("Ingrese una localidad para ver la cantidad de pedidos pendientes: ", aux, MAX_CHARAC);
+		getFinalInt(&aux, "¬ Elija la localidad de la empresa.\n\t1. Barracas\n\t2. Avellaneda\n\t3. MicroCentro\n\t4. Once\n\t5. Flores.\n\tIngrese una opción para ver sus pedidos pendientes: ", "ERROR! Ingrese una localidad existente: ", 1, 5);
+//		while(calculateLocalityRequests(list, len, aux, &accum) == -1){
+//			getString("ERROR! Ingrese una localidad existente: ", aux, MAX_CHARAC);
+//		}
+
+		index = findLocalityById(localList, localLen, aux);
+		if(calculateLocalityRequests(list, len, aux, &accum) == 0){
+			printf("La cantidad de pedidos en la localidad '%s' es: %d.\n", localList[index].description, accum);
+			Return = 0;
+		}
+	}
+
+	return Return;
+}
+
+int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient){
+	int Return;
+	int maxRequests;
+	Return = -1;
+	maxRequests = 0;
+
+	if(cliList != NULL && cliLen > 0 && localList != NULL && localLen > 0){
+		for(int i = 0; i < cliLen; i++){
+			if(cliList[i].status == FULL && cliList[i].pendingRequests > maxRequests){
+				maxRequests = cliList[i].pendingRequests;
+				*mostRequestClient = cliList[i];
+				Return = 0;
+			}
+		}
+	}
+
+	return Return;
+}
+
+void printMostRequestsClient(sClient client, sLocality* localList, int localLen){
+
+	printf("El cliente con más pedidos pendientes es:\n");
+	int index = findLocalityById(localList, localLen, client.direction.idLocal);
+	printf("#====================================================================================================================================#\n");
+	printf("| ID |               Nombre de la empresa               |      CUIT     |           Dirección           |     Localidad      |Pedidos|\n");
+	printf("#====+==================================================+===============+===============================+====================+=======#\n");
+	printf("|%4d|%50s|%15s|%25s %5d|%20s|%7d|\n", client.id,
+		client.companyName, client.cuit, client.direction.address, client.direction.number, localList[index].description, client.pendingRequests);
+	printf("#====================================================================================================================================#\n");
+}
+
+int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient){
+	int Return;
+	int maxRequests;
+	Return = -1;
+	maxRequests = 0;
+
+	if(cliList != NULL && cliLen > 0 && localList != NULL && localLen > 0){
+		for(int i = 0; i < cliLen; i++){
+			if(cliList[i].status == FULL && cliList[i].completedRequests > maxRequests){
+				maxRequests = cliList[i].completedRequests;
+				*mostRequestClient = cliList[i];
+				Return = 0;
+			}
+		}
+	}
+
+	return Return;
+}
+
+int calcMostRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient){
+	int Return;
+	int maxRequests;
+	Return = -1;
+	maxRequests = 0;
+
+	if(cliList != NULL && cliLen > 0 && localList != NULL && localLen > 0){
+		for(int i = 0; i < cliLen; i++){
+			if(cliList[i].status == FULL && (cliList[i].pendingRequests + cliList[i].completedRequests) > maxRequests){
+				maxRequests = cliList[i].pendingRequests + cliList[i].completedRequests;
+				*mostRequestClient = cliList[i];
+				Return = 0;
+			}
+		}
 	}
 
 	return Return;
@@ -311,7 +478,7 @@ void hardcodeClients(sClient* clientsList, sRequest* requestList, int maxClients
 			13367, 14502, 12953, 11758, 13662, 11953, 10940,
 			10547, 10950, 12701, 13413, 12550};
 
-	char locality[MAX_CLIENT][MAX_CHARAC] = {"Hornell", "Johnson City",
+/*	char locality[MAX_CLIENT][MAX_CHARAC] = {"Hornell", "Johnson City",
 			"Leicester", "Orange", "Tewksbury", "Leominster", "East Falmouth",
 			"Sturbridge", "Canandaigua", "Hanover", "CABA", "Auburn",
 			"Kingston", "Lancaster", "Monroe", "East Greenbush", "Salem",
@@ -331,7 +498,8 @@ void hardcodeClients(sClient* clientsList, sRequest* requestList, int maxClients
 			"Amherst", "Greece", "Chelmsford", "CABA", "Seekonk",
 			"Methuen", "Albion", "CABA", "Fredonia", "Quincy", "Lynn",
 			"New Hartford", "Johnstown", "Bellingham", "Cobleskill", "Cicero",
-			"Massapequa", "Latham", "Batavia"};
+			"Massapequa", "Latham", "Batavia"};*/
+	int locality[MAX_CLIENT] = {2, 1, 4, 5, 2, 4, 1, 2, 2, 5, 2, 1, 2, 2, 3, 1, 4, 5, 1, 2, 2, 3, 3, 4, 1, 1, 2, 2, 3, 5, 3, 1, 5, 5, 1, 1, 5, 2, 1, 4, 3, 5, 3, 2, 4, 5, 3, 3, 1, 4, 5, 3, 4, 4, 4, 2, 3, 1, 5, 1, 4, 4, 2, 5, 4, 1, 2, 5, 4, 3, 1, 5, 2, 2, 3, 4, 5, 3, 5, 3, 3, 4, 2, 5, 4, 3, 3, 4, 3, 5, 2, 1, 1, 5, 3, 4, 1, 1, 4, 5};
 
 	float totalK[MAX_REQUEST] = {19663, 770, 17815, 17286, 15390, 1074, 2065, 7211, 8499, 2812, 9206, 6893, 11377, 1405, 15725, 15196, 2303, 2224, 7201, 17843, 2769, 6919, 3193, 7881, 7494, 11062, 14482, 18079, 10560, 7535, 17766, 12614, 1111, 15943, 8865, 10903, 17565, 6879, 5942, 13533, 7058, 5030, 15770, 8068, 3497, 5624, 10797, 6274, 19805, 11508, 12048, 18308, 604, 7064, 3776, 6446, 11887, 17501, 7428, 7888, 6989, 16551, 11168, 12705, 740, 10460, 17716, 891, 8060, 961, 7394, 14441, 14777, 763, 3828, 15535, 8037, 11548, 8498, 18974, 7789, 7967, 9145, 18652, 7060, 15984, 6558, 13755, 19613, 17813, 10205, 17233, 10984, 8268, 10643, 10492, 4496, 4563, 5614, 13645, 15140, 521, 13287, 19817, 6158, 15120, 9445, 4520, 1706, 13502, 14689, 10259, 6130, 1637, 4982, 3022, 17282, 6404, 19184, 15753, 7751, 3343, 4267, 10095, 7100, 9303, 9195, 5867, 4565, 19158, 6646, 19096, 16869, 16077, 18240, 12318, 3811, 4068, 18316, 9355, 2349, 645, 7817, 15408, 2180, 11910, 12445, 8845, 17029, 7333, 2968, 3370, 3180, 19352, 3161, 9764, 1565, 18013, 14382, 10058, 17470, 2424, 3309, 9940, 12213, 5077, 4611, 903, 15416, 2903, 2433, 7254, 13674, 12859, 12954, 17308, 5464, 14816, 1277, 19889, 10939, 14775, 14794, 12175, 1931, 19487, 14631, 3543, 9788, 3653, 5071, 973, 4603, 17075, 12821, 18182, 4080, 3523, 1879, 13274, 8404, 9075, 12959, 17839, 15192, 15953, 16666, 7976, 10203, 7527, 18676, 18125, 6277, 10059, 14773, 1835, 8102, 13223, 18772, 7702, 19950, 12943, 4175, 5612, 5398, 388, 18829, 4695, 10670, 3103, 19377, 2379, 18196, 17730, 14603, 4510, 6271, 5996, 5028, 12983, 6731, 5533, 13468, 10870, 1292, 17619, 11423, 4734, 8099, 14644, 13785, 4908, 15079, 2505, 15286, 19664, 11510, 8919, 271, 15223, 17896, 10624, 15406, 5603, 2997, 10731, 8424, 12908, 8357, 17352, 6653, 14246, 14629, 14683, 15538, 5047, 12972, 19330, 11687, 18323, 6763, 6371, 4940, 10361, 7847, 3441, 5160, 5091, 16576, 1622, 17189, 9772, 11354, 6176, 1388, 19608, 3440, 16229, 4047, 14846, 6123, 11340, 7288, 12285, 17487, 19245, 10775, 541, 11755, 14937, 15459, 9812, 8495, 6060, 2467, 7822, 13088, 10197, 3218, 5430, 12015, 14095, 11204, 14295, 13770, 16816, 8848, 19980, 10616, 2427, 4828, 123, 2668, 15972, 15881, 7101, 9662, 3111, 4884, 16651, 180, 12977, 3930, 11279, 16339, 1817, 4969, 7167, 5294, 17215, 2485, 13331, 17605, 17627, 8588, 19722, 8935, 15998, 18577, 6364, 13613, 16178, 5248, 14326, 9271, 5393, 6968, 3120, 14266, 15176, 14955, 7339, 19917, 8204, 17335, 13908, 18661, 4420, 1446, 7691, 14505, 1065, 13716, 17744, 5565, 14726, 19856, 10130, 3091, 5638, 11361, 8702, 12228, 12854, 8567, 18316, 19890, 4658, 12124, 145, 9552, 1191, 6433, 1336, 8373, 3086, 7001, 19518, 14654, 16728, 4014, 3561, 8901, 87, 6829, 6856, 12538, 12618, 14196, 8940, 19554, 7825, 17253, 4942, 12374, 2935, 18395, 5742, 18772, 17427, 8221, 2817, 13369, 503, 2751, 784, 9639, 18268, 18721, 8810, 16796, 1039, 13610, 5607, 5467, 258, 16161, 3974, 3661, 18644, 9133, 1137, 7335, 19884, 3737, 11270, 8311, 5812, 19564, 7618, 1391, 1468, 11593, 19184, 17241, 17283, 8911, 15833, 12629, 14893, 1778, 5025, 5298, 4287, 13556, 9010, 9725, 19977, 8805, 8229, 1316, 11269, 10854, 12203, 372, 4759, 6724, 11569, 19281, 10185, 3407, 19552, 7215, 19766, 13660, 16139, 4670, 10468, 9755, 15644, 11901, 6613, 4859, 17938, 14699, 352, 3801, 907, 5943, 4825, 3054, 192, 16692, 6639, 7500, 15180, 12499, 17544, 13147, 5273, 370, 9926, 9538, 4734, 17583, 9811, 17239, 8977, 19108, 8762, 6303, 9122, 6938, 15881, 14860, 4807, 15669, 7228, 857, 4636, 19163, 8626, 14943, 8067, 17536, 7746, 7322, 4536, 6511, 9941, 17529, 4034, 2011, 4689, 9825, 15168, 13722, 9, 17217, 12076, 12728, 5641, 1906, 2990, 16052, 9121, 282, 18241, 13192, 1128, 13258, 4401, 12750, 19084, 19596, 1078, 1772, 7804, 5707, 6740, 8157, 3131, 10606, 9128, 5102, 12976, 2568, 2464, 11096, 5358, 13448, 1959, 12524, 16937, 16890, 4080, 9320, 9102, 17513, 17471, 6133, 3893, 3473, 12102, 11331, 15261, 10929, 10918, 15224, 16253, 12006, 3826, 12154, 17634, 2887, 17320, 19951, 12764, 11368, 538, 2182, 4991, 18358, 292, 4994, 11078, 8835, 2368, 4123, 1063, 7133, 14029, 13384, 9069, 15327, 3117, 876, 9200, 18543, 10448, 10934, 7, 13282, 11862, 9669, 12541, 1460, 16415, 3115, 18457, 16415, 8252, 5389, 673, 3314, 184, 8758, 17657, 2816, 14629, 14541, 7637, 11257, 6988, 19391, 12643, 6570, 12453, 6956, 1052, 2049, 6127, 5841, 12269, 10028, 10437, 12771, 7631, 10464, 11452, 8813, 14403, 14597, 11340, 14855, 9038, 1247, 15042, 10336, 19026, 13982, 11471, 13917, 11798, 12145, 2906, 10785, 11795, 16048, 7705, 11271, 2565, 18468, 3257, 15943, 14284, 469, 9631, 10061, 404, 2408, 9014, 6855, 13348, 364, 2561, 17015, 10749, 4677, 9380, 2992, 6145, 8869, 18829, 4594, 14691, 8743, 19912, 14973, 3024, 4624, 13275, 7153, 14539, 13179, 6166, 16544, 15199, 4904, 3751, 1359, 11938, 9319, 14470, 16062, 1101, 10712, 13665, 2688, 18884, 18216, 9087, 1608, 12641, 3754, 6, 17446, 2295, 2446, 18061, 15325, 8144, 2971, 3957, 11067, 11571, 6199, 2084, 6944, 199, 12478, 4930, 8287, 17772, 11902, 3087, 15633, 12981, 15831, 1303, 3725, 4118, 5822, 12938, 11823, 4318, 9773, 16643, 497, 15812, 14816, 12747, 9523, 708, 14581, 11414, 19593, 1500, 10559, 13023, 17340, 13157, 13444, 7437, 3015, 3630, 12513, 5958, 18023, 8934, 5239, 18241, 15776, 7390, 10771, 14798, 11712, 10929, 19865, 13776, 18743, 49, 772, 6356, 15499, 8818, 10980, 3433, 18376, 7380, 13773, 11924, 5295, 15095, 14818, 19056, 6765, 8499, 4962, 1996, 11397, 6394, 14940, 16304, 17989, 11395, 1389, 17862, 15834, 2184, 646, 18651, 17517, 4716, 1760, 2685, 2577, 13628, 19711, 4861, 10069, 5811, 15982, 3215, 7962, 19641, 7121, 14907, 16908, 11571, 1342, 1120, 136, 10623, 17243, 6963, 15506, 1338, 10117, 9839, 18139, 17564, 5449, 10028, 19634, 12420, 6646, 5319, 15899, 6096, 12387, 14236, 14531, 5417, 2427, 12371, 6710, 16551, 9367, 14696, 2811, 12473, 244, 5268, 19979, 9904, 8657, 19357, 3292, 3290, 19843, 15647, 18255, 14447, 15273, 17610, 775, 7578, 9214, 18853, 18135, 7465, 2638, 3378, 2767, 11406, 4068, 1961, 11968, 15740, 8652, 12238, 12280, 5696, 1555, 3452, 10254, 8911, 11104, 16541, 7031, 4409, 11668, 9058, 1327, 6961, 8148, 16972, 13760, 1545, 16421, 473, 9139, 7406, 10990, 16782, 5213, 11647, 3881, 10443, 4479, 1571, 589, 8113, 11648, 4624, 1693, 6336, 16672, 14990, 4105, 18403, 19219, 2060, 8087, 18330, 3900, 11652, 10899, 3079, 19270, 704, 15555, 4596, 7968, 7295, 7033, 1481, 18171, 5657, 7613, 164, 15249, 1035, 12045, 10185, 853, 11952, 1543, 5355};
 
@@ -347,19 +515,21 @@ void hardcodeClients(sClient* clientsList, sRequest* requestList, int maxClients
 
 	for(int i = 0; i < maxClients; i++){
 		clientsList[i].id = i+1;
-		*ids = clientsList[i].id;
+		*ids = clientsList[i].id+1;
 		strcpy(clientsList[i].companyName, names[i]);
 		strcpy(clientsList[i].cuit, cuit[i]);
 		strcpy(clientsList[i].direction.address, address[i]);
 		clientsList[i].direction.number = number[i];
-		strcpy(clientsList[i].direction.locality, locality[i]);
+		clientsList[i].direction.idLocal = locality[i];
+//		strcpy(clientsList[i].direction.locality, locality[i]);
 		clientsList[i].pendingRequests = 0;
+		clientsList[i].completedRequests = 0;
 		clientsList[i].status = FULL;
 	}
 
 	for(int i = 0; i < maxRequests; i++){
 		requestList[i].id = i+1;
-		*reqIds = requestList[i].id;
+		*reqIds = requestList[i].id+1;
 		requestList[i].kilosTotal = totalK[i];
 		requestList[i].kilosHDPE = totalHDPE[i];
 		requestList[i].kilosLDPE = totalLDPE[i];

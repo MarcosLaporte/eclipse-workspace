@@ -11,7 +11,7 @@
 typedef struct{
 	char address[51];
 	int number;
-	char locality[51];
+	int idLocal;
 }sPlace;
 
 typedef struct{
@@ -20,6 +20,7 @@ typedef struct{
 	char cuit[14]; //20-44567890-9
 	sPlace direction;
 	int pendingRequests;
+	int completedRequests;
 	int status;
 }sClient;
 
@@ -107,19 +108,6 @@ int checkAClient(sClient* list, int len);
 /// @return int - Retorna -1 si el puntero es nulo o el tamaño es inválido, o 0 si está todo bien.
 int initPendingRequests(sClient* list, int len);
 //---------------------------------------------------------------------------------
-/// @brief Imprime por pantalla los datos del cliente pasados por parámetro.
-///
-/// @param client - El cliente a imprimir.
-/// @return int - Retorna -1 si el cliente pasado por parámetro tiene su 'status' en 0 (VACIO), o 0 si está en 1.
-int printClient(sClient client);
-//---------------------------------------------------------------------------------
-/// @brief Imprime toda la lista de empleados con un encabezado, llamando a la función printClient().
-///
-/// @param list - Puntero al array de clientes.
-/// @param len - Indica el tamaño del array.
-/// @return int - Retorna -1 si el puntero es nulo o el tamaño es inválido, o 0 si está todo bien.
-int printClientList(sClient* list, int len);
-//---------------------------------------------------------------------------------
 /// @brief Busca los datos de un cliente por su ID pasado por parámetro.
 ///
 /// @param list - Puntero al array de clientes.
@@ -128,21 +116,6 @@ int printClientList(sClient* list, int len);
 /// @return sClient - Retorna los datos del cliente encontrado.
 sClient searchClientById(sClient* list, int len, int id);
 //---------------------------------------------------------------------------------
-/// @brief Imprime por pantalla la lista de clientes, pide una localidad e imprime su cantidad de pedidos pendientes
-///
-/// @param list - Puntero al array de clientes.
-/// @param len - Indica el tamaño del array.
-/// @return int - Retorna -1 si el puntero es nulo o el tamaño es inválido, o 0 si está todo bien.
-int printLocalityRequests(sClient* list, int cliLen);
-//---------------------------------------------------------------------------------
-/// @brief Cuenta la cantidad de pedidos pendientes de la localidad pasada por parámetro.
-///
-/// @param list - Puntero al array de clientes.
-/// @param len - Indica el tamaño del array.
-/// @param locality - La localidad a buscar.
-/// @param accum - Puntero a donde se va a guardar la cantidad de pedidos pendientes.
-/// @return int - Retorna -1 si no encuentra la localidad, o 0 si está todo bien.
-int calculateLocalityRequests(sClient* list, int len, char locality[], int* accum);
-//---------------------------------------------------------------------------------
+int initCompletedRequests(sClient* list, int len);
 
 #endif /* CLIENTS_H_ */

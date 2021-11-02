@@ -9,6 +9,7 @@
 #include "Input.h"
 #include "Clients.h"
 #include "Request.h"
+#include "Locality.h"
 
 //---------------------------------------------------------------------------------
 /// @brief Crea un pedido de recolección en el primer lugar vacío del array, pidiendo el ID
@@ -22,7 +23,7 @@
 /// @param reqLen - Tamaño del array de pedidos.
 /// @param requestId - Valor del ID a asignar al pedido.
 /// @return int - Retorna -1 si no existe el ID ingresado, 0 si no encuentra espacio, o 1 si está todo bien.
-int addRequest(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int requestId);
+int addRequest(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int requestId, sLocality* localList, int localLen);
 //---------------------------------------------------------------------------------
 /// @brief Imprime la lista de pedidos pendientes con encabezado, llamando a la función printPendingRequests()
 ///
@@ -95,6 +96,40 @@ int printCompletedRequestByClientId(sRequest* requestList, int reqLen, sClient* 
 /// @param average - Puntero a guardar el promedio.
 /// @return int - Retorna -1 si no encontró ningún cliente con un pedido procesado, o 0 si sí.
 int countAveragePP(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, float* average);
+//---------------------------------------------------------------------------------
+/// @brief Imprime por pantalla los datos del cliente pasados por parámetro.
+///
+/// @param client - El cliente a imprimir.
+/// @return int - Retorna -1 si el cliente pasado por parámetro tiene su 'status' en 0 (VACIO), o 0 si está en 1.
+int printClient(sClient client, sLocality* localList, int localLen);
+//---------------------------------------------------------------------------------
+/// @brief Imprime toda la lista de empleados con un encabezado, llamando a la función printClient().
+///
+/// @param list - Puntero al array de clientes.
+/// @param len - Indica el tamaño del array.
+/// @return int - Retorna -1 si el puntero es nulo o el tamaño es inválido, o 0 si está todo bien.
+int printClientList(sClient* list, int len, sLocality* localList, int localLen);
+//---------------------------------------------------------------------------------
+/// @brief Imprime por pantalla la lista de clientes, pide una localidad e imprime su cantidad de pedidos pendientes
+///
+/// @param list - Puntero al array de clientes.
+/// @param len - Indica el tamaño del array.
+/// @return int - Retorna -1 si el puntero es nulo o el tamaño es inválido, o 0 si está todo bien.
+int printLocalityRequests(sClient* list, int cliLen, sLocality* localList, int localLen);
+//---------------------------------------------------------------------------------
+/// @brief Cuenta la cantidad de pedidos pendientes de la localidad pasada por parámetro.
+///
+/// @param list - Puntero al array de clientes.
+/// @param len - Indica el tamaño del array.
+/// @param locality - La localidad a buscar.
+/// @param accum - Puntero a donde se va a guardar la cantidad de pedidos pendientes.
+/// @return int - Retorna -1 si no encuentra la localidad, o 0 si está todo bien.
+int calculateLocalityRequests(sClient* list, int len, int localityId, int* accum);
+//---------------------------------------------------------------------------------
+int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
+void printMostRequestsClient(sClient client, sLocality* localList, int localLen);
+int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
+int calcMostRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
 //---------------------------------------------------------------------------------
 /// @brief Datos hardcodeados para probar el código.
 ///

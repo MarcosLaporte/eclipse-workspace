@@ -31,7 +31,8 @@ sClient getClient(){
 	//Altura
 	getFinalInt(&customer.direction.number, "¬ Ingrese la altura de la calle donde se encuentra la empresa: ", "¬ ERROR! Ingrese una altura numérica: ", 0, 99999);
 	//Localidad
-	getLocal(customer.direction.locality);
+	getFinalInt(&customer.direction.idLocal, "¬ Elija la localidad de la empresa.\n\t1. Barracas\n\t2. Avellaneda\n\t3. MicroCentro\n\t4. Once\n\t5. Flores.\n\tIngrese una opción: ", "ERROR! Ingrese una localidad existente: ", 1, 5);
+//	getLocal(customer.direction.locality);
 	//Pedidos pendientes
 	customer.pendingRequests = 0;
 	//Estado
@@ -86,7 +87,7 @@ void getAddress(char input[]){
 	}
 	formatString(input);
 }
-
+/*
 void getLocal(char input[]){
 	getString("¬ Ingrese la localidad de la empresa: ", input, MAX_CHARAC);
 	while((strlen(input) > MAX_CHARAC || strlen(input) < 1) || checkAlphabetAndSpace(input) == 0){
@@ -98,7 +99,7 @@ void getLocal(char input[]){
 		}
 	}
 	formatString(input);
-}
+}*/
 
 //////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -155,11 +156,12 @@ int modifyClient(sClient* list, int len, int id){
 				//Altura
 				getFinalInt(&list[index].direction.number, "¬ Ingrese una altura nueva: ", "¬ ERROR! Ingrese una altura nueva numérica: ", 0, 99999);
 				//Localidad
-				getString("¬ Ingrese la localidad nueva de la empresa: ", list[index].direction.locality, 51);
-				while(strlen(list[index].direction.locality) > 51){
-					getString("¬ ERROR! Ingrese una localidad nueva (máximo 51 caracteres): ", list[index].direction.locality, 51);
-				}
-				formatString(list[index].direction.locality);
+//				getString("¬ Ingrese la localidad nueva de la empresa: ", list[index].direction.locality, 51);
+//				while(strlen(list[index].direction.locality) > 51){
+//					getString("¬ ERROR! Ingrese una localidad nueva (máximo 51 caracteres): ", list[index].direction.locality, 51);
+//				}
+//				formatString(list[index].direction.locality);
+				getFinalInt(&list[index].direction.idLocal, "Elija la nueva localidad de la empresa.\n\t1. Barracas\n\t2. Avellaneda\n\t3. MicroCentro\n\t4. Once\n\t5. Flores.\n\tIngrese una opción: ", "ERROR! Ingrese una localidad existente: ", 1, 5);
 			}
 		}
 	}
@@ -221,32 +223,15 @@ int initPendingRequests(sClient* list, int len){
 	return Return;
 }
 
-int printClient(sClient client){
-	int Return;
-	Return = -1;
-
-	if(client.status == FULL){
-		Return = 0;
-		printf("|%4d|%50s|%15s|%25s %5d|%20s|%7d|\n", client.id,
-			client.companyName, client.cuit, client.direction.address, client.direction.number, client.direction.locality, client.pendingRequests);
-	}
-
-	return Return;
-}
-
-int printClientList(sClient* list, int len){
+int initCompletedRequests(sClient* list, int len){
 	int Return;
 	Return = -1;
 
 	if(list != NULL && len > 0){
-		Return = 0;
-		printf("#====================================================================================================================================#\n");
-		printf("| ID |               Nombre de la empresa               |      CUIT     |           Dirección           |     Localidad      |Pedidos|\n");
-		printf("#====+==================================================+===============+===============================+====================+=======#\n");
 		for(int i = 0; i < len; i++){
-			printClient(list[i]);
+			Return = 0;
+			list[i].completedRequests = 0;
 		}
-		printf("#====================================================================================================================================#\n");
 	}
 
 	return Return;
@@ -267,42 +252,3 @@ sClient searchClientById(sClient* list, int len, int id){
 	return aux;
 }
 
-int printLocalityRequests(sClient* list, int len){
-	int Return;
-	char aux[MAX_CHARAC];
-	int accum;
-	Return = -1;
-
-	if(list != NULL && len > 0){
-		printClientList(list, len);
-		getString("Ingrese una localidad para ver la cantidad de pedidos pendientes: ", aux, MAX_CHARAC);
-		while(calculateLocalityRequests(list, len, aux, &accum) == -1){
-			getString("ERROR! Ingrese una localidad existente: ", aux, MAX_CHARAC);
-		}
-
-		if(calculateLocalityRequests(list, len, aux, &accum) == 0){
-			printf("La cantidad de pedidos en la localidad '%s' es: %d.\n", aux, accum);
-			Return = 0;
-		}
-	}
-
-	return Return;
-}
-
-int calculateLocalityRequests(sClient* list, int len, char locality[], int* accum){
-	int Return;
-	Return = -1;
-	*accum = 0;
-
-	if(list != NULL && len > 0){
-		for(int i = 0; i < len; i++){
-
-			if(strcmp(strlwr(list[i].direction.locality), strlwr(locality)) == 0){
-				*accum += list[i].pendingRequests;
-				Return = 0;
-			}
-		}
-	}
-
-	return Return;
-}
