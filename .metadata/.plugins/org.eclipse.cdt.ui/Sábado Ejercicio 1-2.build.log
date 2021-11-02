@@ -1,1 +1,5 @@
-Info: Nothing to build for Sábado Ejercicio 1-2
+18:08:40 **** Clean-only build of configuration Debug for project Sábado Ejercicio 1-2 ****
+rm -rf "Sábado Ejercicio 1-2.exe" "src/Sábado Ejercicio 1-2.o" "src/Sábado Ejercicio 1-2.d" 
+
+18:08:40 Build Finished. 0 errors, 0 warnings. (took 123ms)
+

@@ -1,9 +1,5 @@
-17:01:38 **** Rebuild of configuration Debug for project TP_1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Operaciones.o" "..\\src\\Operaciones.c" 
-gcc -o TP_1.exe "src\\Biblioteca.o" "src\\Operaciones.o" "src\\TP_1.o" 
+18:08:41 **** Clean-only build of configuration Debug for project TP_1 ****
+rm -rf src/Operaciones.d src/Biblioteca.o src/Biblioteca.d src/Operaciones.o src/TP_1.d src/TP_1.o TP_1.exe 
 
-17:01:39 Build Finished. 0 errors, 0 warnings. (took 911ms)
+18:08:41 Build Finished. 0 errors, 0 warnings. (took 504ms)
 

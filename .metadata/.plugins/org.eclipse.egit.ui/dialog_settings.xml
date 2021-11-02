@@ -5,15 +5,30 @@
 		<item value="github.com"/>
 		<item value="bitbucket.org"/>
 	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="LapMarcos &lt;marcoslaporte2015@gmail.com&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="LapMarcos &lt;marcoslaporte2015@gmail.com&gt;"/>
+	</list>
 	<section name="GitCommitSearchPage">
 		<item key="HISTORY_SIZE" value="0"/>
 	</section>
 	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
 		<item key="MAIN_SASH_FORM_ORIENTATION_VERTICAL" value="false"/>
-		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="200,200"/>
-		<item key="STAGING_SASH_FORM_WEIGHT" value="200,200"/>
+		<item key="HORIZONTAL_SASH_FORM_WEIGHT" value="500,500"/>
+		<item key="STAGING_SASH_FORM_WEIGHT" value="500,500"/>
 		<item key="sortItemState" value="false"/>
 	</section>
 	<section name="GitCommitMessageComponent">
+		<list key="C:\Users\54113\Desktop\eclipse-workspace\.git">
+			<item value="false"/>
+			<item value="LapMarcos &lt;marcoslaporte2015@gmail.com&gt;"/>
+			<item value="A"/>
+			<item value="LapMarcos &lt;marcoslaporte2015@gmail.com&gt;"/>
+			<item value="567f93039ec39a2450d9a9506de6ad14f655386b"/>
+			<item value="0"/>
+			<item value="false"/>
+		</list>
 	</section>
 </section>

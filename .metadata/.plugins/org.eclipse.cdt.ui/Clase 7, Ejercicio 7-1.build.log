@@ -1,55 +1,5 @@
-17:37:13 **** Incremental Build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
-..\src\Biblioteca.c: In function 'AltaProducto':
-..\src\Biblioteca.c:55:25: warning: passing argument 1 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
-   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
-      |                       ~~^~~
-      |                         |
-      |                         int
-..\src\Biblioteca.c:39:30: note: expected 'int *' but argument is of type 'int'
-   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
-      |                         ~~~~~^~
-..\src\Biblioteca.c:55:34: warning: passing argument 2 of 'PedirDatosProducto' from incompatible pointer type [-Wincompatible-pointer-types]
-   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
-      |                                  ^
-      |                                  |
-      |                                  char *
-..\src\Biblioteca.c:39:40: note: expected 'char **' but argument is of type 'char *'
-   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
-      |                                  ~~~~~~^~~~~~~~
-..\src\Biblioteca.c:55:45: warning: passing argument 3 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
-   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
-      |                                       ~~~~~~^~~
-      |                                             |
-      |                                             int
-..\src\Biblioteca.c:39:55: note: expected 'int *' but argument is of type 'int'
-   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
-      |                                                  ~~~~~^~~~~~
-..\src\Biblioteca.c:55:54: warning: passing argument 4 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
-   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
-      |                                                  ~~~~^~~
-      |                                                      |
-      |                                                      int
-..\src\Biblioteca.c:39:68: note: expected 'int *' but argument is of type 'int'
-   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
-      |                                                               ~~~~~^~~~
-..\src\Biblioteca.c:55:65: error: incompatible type for argument 5 of 'PedirDatosProducto'
-   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
-      |                                                           ~~~~~~^~~
-      |                                                                 |
-      |                                                                 float
-..\src\Biblioteca.c:39:81: note: expected 'float *' but argument is of type 'float'
-   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
-      |                                                                          ~~~~~~~^~~~~~
-..\src\Biblioteca.c:55:76: warning: passing argument 6 of 'PedirDatosProducto' makes pointer from integer without a cast [-Wint-conversion]
-   55 |    PedirDatosProducto(id[i], desc[i], nacion[i], tipo[i], precio[i], estado[i]);
-      |                                                                      ~~~~~~^~~
-      |                                                                            |
-      |                                                                            int
-..\src\Biblioteca.c:39:94: note: expected 'int *' but argument is of type 'int'
-   39 | void PedirDatosProducto(int* id, char* desc[50], int* nacion, int* tipo, float* precio, int* estado){
-      |                                                                                         ~~~~~^~~~~~
+18:08:37 **** Clean-only build of configuration Debug for project Clase 7, Ejercicio 7-1 ****
+rm -rf src/Biblioteca.d "src/Clase 7, Ejercicio 7-1.o" src/Biblioteca.o "src/Clase 7, Ejercicio 7-1.d" "Clase 7, Ejercicio 7-1.exe" 
 
-17:37:13 Build Failed. 1 errors, 5 warnings. (took 195ms)
+18:08:37 Build Finished. 0 errors, 0 warnings. (took 755ms)
 

@@ -18,10 +18,14 @@ Consigna:
 #include <stdio.h>
 #include <stdlib.h>
 
+int swapInt(int* firstInt, int* secondInt);
+
 int main(void) {
 	setbuf(stdout, NULL);
 
 
 
+
 	return 0;
 }
+
