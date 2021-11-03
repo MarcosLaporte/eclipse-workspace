@@ -1,9 +1,3 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include "LinkedList.h"
-#include "Controller.h"
-#include "Employee.h"
-
 /****************************************************
     Menu:
      1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).
@@ -18,19 +12,24 @@
     10. Salir
 *****************************************************/
 
-
+#include "Controller.h"
 
 int main()
 {
-    int option = 0;
+	setbuf(stdout, NULL);
+    int option;
 
-    LinkedList* listaEmpleados = ll_newLinkedList();
+    LinkedList* arrayEmployees = ll_newLinkedList();
     do{
+    	option = printMenu();
         switch(option)
         {
             case 1:
-                controller_loadFromText("data.csv",listaEmpleados);
+                controller_loadFromText("data.csv", arrayEmployees);
                 break;
+            case 10:
+            	printf("Ha salido del programa.\n");
+            	break;
         }
     }while(option != 10);
     return 0;

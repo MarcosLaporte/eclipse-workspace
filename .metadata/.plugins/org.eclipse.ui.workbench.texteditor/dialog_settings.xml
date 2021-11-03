@@ -1,77 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-<<<<<<< HEAD
-		<item key="selection" value="id"/>
-=======
-		<item key="selection" value="; //"/>
->>>>>>> 80c5a771540fbae9d1824f9d415ed58b04e1b5c6
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
-		<item key="wholeword" value="true"/>
+		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
+		<item key="selection" value=", "/>
 		<list key="findhistory">
-<<<<<<< HEAD
-			<item value="idProducto"/>
-			<item value="name"/>
-			<item value="calcMostRequestsClient"/>
-			<item value="mostRequested"/>
-=======
-			<item value="; "/>
-			<item value="“%d”"/>
->>>>>>> 80c5a771540fbae9d1824f9d415ed58b04e1b5c6
-			<item value="countRequestsByClient"/>
-			<item value="j"/>
-			<item value="accum"/>
-			<item value="request"/>
-			<item value="cliLen"/>
-			<item value="51"/>
-			<item value="printCompletedRequests"/>
-			<item value="printCompletedRequestByClientId"/>
-			<item value="printOneCompletedRequest"/>
-			<item value="initRequests"/>
-			<item value="printLocalityRequests"/>
-<<<<<<< HEAD
+			<item value=","/>
 		</list>
 		<list key="replacehistory">
-			<item value="id"/>
-			<item value="input"/>
-			<item value=""/>
-			<item value="mostPendingRequest"/>
-=======
-			<item value="initPendingRequests"/>
-			<item value="searchClientById"/>
-		</list>
-		<list key="replacehistory">
-			<item value="; //"/>
-			<item value="&quot;%d&quot;"/>
->>>>>>> 80c5a771540fbae9d1824f9d415ed58b04e1b5c6
-			<item value="index"/>
-			<item value="accumPP"/>
-			<item value="requestList[i]"/>
-			<item value="len"/>
-			<item value="MAX_CHARAC"/>
-			<item value="requestList"/>
-			<item value="clientsList"/>
-			<item value="list"/>
-			<item value="printClientList(arrayClients, MAX_CLIENT);"/>
-			<item value="reqtList"/>
-			<item value="reqstList"/>
+			<item value=", "/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="880"/>
-		<item key="DIALOG_Y_ORIGIN" value="254"/>
-		<item key="DIALOG_WIDTH" value="336"/>
-		<item key="DIALOG_HEIGHT" value="454"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
-	</section>
-	<section name="org.eclipse.cdt.internal.ui.preferences.CTemplatePreferencePage$CEditTemplateDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="113"/>
-		<item key="DIALOG_Y_ORIGIN" value="145"/>
-		<item key="DIALOG_WIDTH" value="609"/>
-		<item key="DIALOG_HEIGHT" value="329"/>
+		<item key="DIALOG_X_ORIGIN" value="211"/>
+		<item key="DIALOG_Y_ORIGIN" value="116"/>
+		<item key="DIALOG_WIDTH" value="284"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
 		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 </section>

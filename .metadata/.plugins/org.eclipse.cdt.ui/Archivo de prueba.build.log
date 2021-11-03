@@ -1,7 +1,10 @@
-15:07:01 **** Incremental Build of configuration Debug for project Archivo de prueba ****
+09:12:59 **** Rebuild of configuration Debug for project Archivo de prueba ****
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Structures.o" "..\\src\\Structures.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
 gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" "src\\Structures.o" 
 
-15:07:02 Build Finished. 0 errors, 0 warnings. (took 883ms)
+09:13:02 Build Finished. 0 errors, 0 warnings. (took 3s.368ms)
 
