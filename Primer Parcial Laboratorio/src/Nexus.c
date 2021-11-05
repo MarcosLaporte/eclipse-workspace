@@ -310,13 +310,13 @@ int printLocalityRequests(sClient* list, int len, sLocality* localList, int loca
 	return Return;
 }
 
-int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient){
+int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
 	int Return;
 	int maxRequests;
 	Return = -1;
 	maxRequests = 0;
 
-	if(cliList != NULL && cliLen > 0 && localList != NULL && localLen > 0){
+	if(cliList != NULL && cliLen > 0){
 		for(int i = 0; i < cliLen; i++){
 			if(cliList[i].status == FULL && cliList[i].pendingRequests > maxRequests){
 				maxRequests = cliList[i].pendingRequests;
@@ -332,12 +332,10 @@ int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* local
 void printMostRequestsClient(sClient client, sLocality* localList, int localLen){
 
 	printf("\nEl cliente con más pedidos pendientes es:\n");
-	int index = findLocalityById(localList, localLen, client.direction.idLocal);
 	printf("#====================================================================================================================================#\n");
 	printf("| ID |               Nombre de la empresa               |      CUIT     |           Dirección           |     Localidad      |Pedidos|\n");
 	printf("#====+==================================================+===============+===============================+====================+=======#\n");
-	printf("|%4d|%50s|%15s|%25s %5d|%20s|%7d|\n", client.id,
-		client.companyName, client.cuit, client.direction.address, client.direction.number, localList[index].description, client.pendingRequests);
+		printClient(client, localList, localLen);
 	printf("#====================================================================================================================================#\n");
 }
 
@@ -378,7 +376,6 @@ int calcMostRequestsClient(sClient* cliList, int cliLen, sLocality* localList, i
 
 	return Return;
 }
-
 
 
 void hardcodeClients(sClient* clientsList, sRequest* requestList, int maxClients, int* ids, int maxRequests, int* reqIds){

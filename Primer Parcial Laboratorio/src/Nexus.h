@@ -125,8 +125,7 @@ int printLocalityRequests(sClient* list, int cliLen, sLocality* localList, int l
 /// @return int - Retorna -1 si no encuentra la localidad, o 0 si está todo bien.
 int calculateLocalityRequests(sClient* list, int len, int localityId, int* accum);
 //---------------------------------------------------------------------------------
-int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
-void printMostRequestsClient(sClient client, sLocality* localList, int localLen);
+int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient);
 int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
 int calcMostRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
 //---------------------------------------------------------------------------------

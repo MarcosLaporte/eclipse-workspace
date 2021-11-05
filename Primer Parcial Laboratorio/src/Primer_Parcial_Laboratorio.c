@@ -55,8 +55,7 @@ int main(void) {
 	int r;
 	int reqId;
 	float averagePP;
-	sClient mostPendingRequest;
-	sClient mostCompletedRequest;
+	sClient aux;
 	clientsId = 1;
 	reqId = 1;
 
@@ -198,10 +197,11 @@ int main(void) {
 			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
-				if(calcMostPendingRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &mostPendingRequest) == -1){
+				if(calcMostPendingRequestsClient(arrayClients, MAX_CLIENT, &aux) == -1){
 					printf("ERROR! No hay pedidos pendientes.\n");
 				}else{
-					printMostRequestsClient(mostPendingRequest, arrayLocality, MAX_LOCAL);
+					printf("\nEl cliente con más pedidos pendientes es:\n");
+					printClient(aux, arrayLocality, MAX_LOCAL);
 				}
 			}
 			break;
@@ -209,10 +209,11 @@ int main(void) {
 			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
-				if(calcMostCompletedRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &mostCompletedRequest) == -1){
+				if(calcMostCompletedRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &aux) == -1){
 					printf("ERROR! No hay pedidos procesados.\n");
 				}else{
-					printMostRequestsClient(mostCompletedRequest, arrayLocality, MAX_LOCAL);
+					printf("\nEl cliente con más pedidos procesados es:\n");
+					printClient(aux, arrayLocality, MAX_LOCAL);
 				}
 			}
 			break;
@@ -220,10 +221,11 @@ int main(void) {
 			if(checkAClient(arrayClients, MAX_CLIENT) == -1){
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
-				if(calcMostRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &mostCompletedRequest) == -1){
+				if(calcMostRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &aux) == -1){
 					printf("ERROR! No hay pedidos de ningún tipo.\n");
 				}else{
-					printMostRequestsClient(mostCompletedRequest, arrayLocality, MAX_LOCAL);
+					printf("\nEl cliente con más pedidos totales es:\n");
+					printClient(aux, arrayLocality, MAX_LOCAL);
 				}
 			}
 			break;

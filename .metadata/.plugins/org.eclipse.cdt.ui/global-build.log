@@ -378,3 +378,95 @@ gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Lo
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
 gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+14:36:29 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+14:41:16 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c:313:5: error: conflicting types for 'calcMostPendingRequestsClient'
+  313 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Nexus.c:6:
+..\src\Nexus.h:128:5: note: previous declaration of 'calcMostPendingRequestsClient' was here
+  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+14:45:23 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c:313:5: error: conflicting types for 'calcMostPendingRequestsClient'
+  313 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Nexus.c:6:
+..\src\Nexus.h:128:5: note: previous declaration of 'calcMostPendingRequestsClient' was here
+  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Nexus.c: In function 'printMostRequestsClient':
+..\src\Nexus.c:335:6: warning: unused variable 'index' [-Wunused-variable]
+  335 |  int index = findLocalityById(localList, localLen, client.direction.idLocal);
+      |      ^~~~~
+15:10:04 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c:313:5: error: conflicting types for 'calcMostPendingRequestsClient'
+  313 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Nexus.c:6:
+..\src\Nexus.h:128:5: note: previous declaration of 'calcMostPendingRequestsClient' was here
+  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Nexus.c: In function 'printMostRequestsClient':
+..\src\Nexus.c:335:6: warning: unused variable 'index' [-Wunused-variable]
+  335 |  int index = findLocalityById(localList, localLen, client.direction.idLocal);
+      |      ^~~~~
+15:10:29 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+..\src\Primer_Parcial_Laboratorio.c: In function 'main':
+..\src\Primer_Parcial_Laboratorio.c:201:64: warning: passing argument 3 of 'calcMostPendingRequestsClient' from incompatible pointer type [-Wincompatible-pointer-types]
+  201 |     if(calcMostPendingRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &mostPendingRequest) == -1){
+      |                                                                ^~~~~~~~~~~~~
+      |                                                                |
+      |                                                                sLocality * {aka struct <anonymous> *}
+In file included from ..\src\Primer_Parcial_Laboratorio.c:38:
+..\src\Nexus.h:128:74: note: expected 'sClient *' {aka 'struct <anonymous> *'} but argument is of type 'sLocality *' {aka 'struct <anonymous> *'}
+  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient);
+      |                                                                 ~~~~~~~~~^~~~~~~~~~~~~~~~~
+..\src\Primer_Parcial_Laboratorio.c:201:8: error: too many arguments to function 'calcMostPendingRequestsClient'
+  201 |     if(calcMostPendingRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &mostPendingRequest) == -1){
+      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Primer_Parcial_Laboratorio.c:38:
+..\src\Nexus.h:128:5: note: declared here
+  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+15:10:43 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'printMostRequestsClient':
+..\src\Nexus.c:335:6: warning: unused variable 'index' [-Wunused-variable]
+  335 |  int index = findLocalityById(localList, localLen, client.direction.idLocal);
+      |      ^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+15:50:02 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+16:02:00 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:02:02 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
