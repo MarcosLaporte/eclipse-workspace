@@ -31,7 +31,8 @@ sClient getClient(){
 	//Altura
 	getFinalInt(&customer.direction.number, "¬ Ingrese la altura de la calle donde se encuentra la empresa: ", "¬ ERROR! Ingrese una altura numérica: ", 0, 99999);
 	//Localidad
-	getFinalInt(&customer.direction.idLocal, "¬ Elija la localidad de la empresa.\n\t1. Barracas\n\t2. Avellaneda\n\t3. MicroCentro\n\t4. Once\n\t5. Flores.\n\tIngrese una opción: ", "ERROR! Ingrese una localidad existente: ", 1, 5);
+	getFinalInt(&customer.direction.idLocal, "¬ Elija la localidad de la empresa.\n\t1. Barracas\n\t2. Avellaneda\n\t3. MicroCentro\n\t4. Once\n"
+											"\t5. Flores.\n\tIngrese una opción: ", "ERROR! Ingrese una localidad existente: ", 1, 5);
 //	getLocal(customer.direction.locality);
 	//Pedidos pendientes
 	customer.pendingRequests = 0;
@@ -58,7 +59,7 @@ void getName(char input[]){
 
 void getCuit(char input[]){
 	getString("¬ Ingrese el CUIT sin espapcios ni guiones: ", input, 14);
-	while(isAnInt(input, 14) == -1 || strlen(input) != 11){
+	while(isUnsignedInt(input, 11) == -1 || strlen(input) != 11){
 		getString("¬ ERROR! Ingrese un CUIT válido (01234567890): ", input, 14);
 	}
 	formatCuit(input);
@@ -145,24 +146,23 @@ int modifyClient(sClient* list, int len, int id){
 	if(list != NULL && len > 0){
 		index = findClientById(list, len, id);
 		if(index != -1){
-			if(list[index].status == FULL){
-				Return = 0;
-				//Calle
-				getString("¬ Ingrese la nueva calle: ", list[index].direction.address, 51);
-				while(strlen(list[index].direction.address) > 51 || checkAlphabetAndSpace(list[index].direction.address) == 0){
-					getString("¬ ERROR! Ingrese una calle nueva (máximo 51 caracteres): ", list[index].direction.address, 51);
-				}
-				formatString(list[index].direction.address);
-				//Altura
-				getFinalInt(&list[index].direction.number, "¬ Ingrese una altura nueva: ", "¬ ERROR! Ingrese una altura nueva numérica: ", 0, 99999);
-				//Localidad
+			Return = 0;
+			//Calle
+			getString("¬ Ingrese la nueva calle: ", list[index].direction.address, 51);
+			while(strlen(list[index].direction.address) > 51 || checkAlphabetAndSpace(list[index].direction.address) == 0){
+				getString("¬ ERROR! Ingrese una calle nueva (máximo 51 caracteres): ", list[index].direction.address, 51);
+			}
+			formatString(list[index].direction.address);
+			//Altura
+			getFinalInt(&list[index].direction.number, "¬ Ingrese una altura nueva: ", "¬ ERROR! Ingrese una altura nueva numérica: ", 0, 99999);
+			//Localidad
 //				getString("¬ Ingrese la localidad nueva de la empresa: ", list[index].direction.locality, 51);
 //				while(strlen(list[index].direction.locality) > 51){
 //					getString("¬ ERROR! Ingrese una localidad nueva (máximo 51 caracteres): ", list[index].direction.locality, 51);
 //				}
 //				formatString(list[index].direction.locality);
-				getFinalInt(&list[index].direction.idLocal, "Elija la nueva localidad de la empresa.\n\t1. Barracas\n\t2. Avellaneda\n\t3. MicroCentro\n\t4. Once\n\t5. Flores.\n\tIngrese una opción: ", "ERROR! Ingrese una localidad existente: ", 1, 5);
-			}
+			getFinalInt(&list[index].direction.idLocal, "Elija la nueva localidad de la empresa.\n\t1. Barracas\n\t2. Avellaneda\n\t3. MicroCentro\n"
+													"\t4. Once\n\t5. Flores.\n\tIngrese una opción: ", "ERROR! Ingrese una localidad existente: ", 1, 5);
 		}
 	}
 
@@ -178,7 +178,7 @@ int removeClient(sClient* list, int len, int id){
 	if(list != NULL && len > 0){
 		index = findClientById(list, len, id);
 		if(index != -1){
-			if(list[index].pendingRequests != 0){
+			if(list[index].pendingRequests > 0){
 				printf("Este cliente tiene pedidos pendientes!\n");
 			}
 			r = getConfirmation("Esta acción no puede deshacerse. Escriba 'CONFIRMAR' para eliminar: ", "CONFIRMAR", "CANCELAR", 10, 3);

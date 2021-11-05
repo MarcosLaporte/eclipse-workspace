@@ -27,7 +27,8 @@ int addRequest(sClient* clientsList, int cliLen, sRequest* requestList, int reqL
 			if(findClientById(clientsList, cliLen, id) != -1){
 				requestList[index].clientId = id;
 				requestList[index].id = requestId;
-				getFinalFloat(&requestList[index].kilosTotal, "Ingrese la cantidad de kilos de residuos a recolectar: ", "ERROR! Ingrese una cantidad numérica mayor a 0 y menor a 20000: ", 0, 20000);
+				getFinalFloat(&requestList[index].kilosTotal, "Ingrese la cantidad de kilos de residuos a recolectar: ",
+												"ERROR! Ingrese una cantidad numérica mayor a 0 y menor a 20000: ", 0, 20000);
 				requestList[index].status = PENDING;
 				requestList[index].isEmpty = FULL;
 				Return = 1;
@@ -53,32 +54,32 @@ int printPendingRequestList(sClient* clientsList, int cliLen, sRequest* requestL
 
 	if(clientsList != NULL && cliLen > 0 && requestList != NULL && reqLen > 0){
 		Return = 0;
-		printf("#==========+===============+===============================+========#\n");
+		printf("#===================================================================#\n");
 //		printf("|%-10s|%-15s|%-31s|%-8s|\n", "ID Pedido", "CUIT", "Dirección", "Kilos");
 		printf("|ID Pedido |     CUIT      |           Dirección           | Kilos  |\n");
 		printf("#==========+===============+===============================+========#\n");
-		printPendingRequests(clientsList, cliLen, requestList, reqLen);
+		for(int i = 0; i < reqLen; i++){
+			printPendingRequest(clientsList, cliLen, requestList[i]);
+		}
 		printf("#==========+===============+===============================+========#\n");
 	}
 
 	return Return;
 }
 
-int printPendingRequests(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen){
+int printPendingRequest(sClient* clientsList, int cliLen, sRequest request){
 	int Return;
 	int index;
 	Return = -1;
 
-	if(clientsList != NULL && cliLen > 0 && requestList != NULL && reqLen > 0){
-		for(int i = 0; i < reqLen; i++){
-			if(requestList[i].isEmpty == FULL && requestList[i].status == PENDING){
-				index = findClientById(clientsList, cliLen, requestList[i].clientId);
-				if(clientsList[index].status == FULL && clientsList[index].id == requestList[i].clientId){
-					printf("|%10d|%15s|%25s %5d|%8.2f|\n", requestList[i].id, clientsList[index].cuit,
-							clientsList[index].direction.address, clientsList[index].direction.number,
-							requestList[i].kilosTotal);
-					Return = 0;
-				}
+	if(clientsList != NULL && cliLen > 0){
+		if(request.isEmpty == FULL && request.status == PENDING){
+			index = findClientById(clientsList, cliLen, request.clientId);
+			if(clientsList[index].status == FULL && clientsList[index].id == request.clientId){
+				printf("|%10d|%15s|%25s %5d|%8.2f|\n", request.id, clientsList[index].cuit,
+						clientsList[index].direction.address, clientsList[index].direction.number,
+						request.kilosTotal);
+				Return = 0;
 			}
 		}
 	}
@@ -94,7 +95,7 @@ int loadRequest(sClient* clientsList, int cliLen, sRequest* requestList, int req
 	Return = -1;
 	tries = 2;
 
-	if(requestList != NULL && reqLen > 0){
+	if(requestList != NULL && reqLen > 0 && clientsList != NULL && cliLen > 0){
 		printPendingRequestList(clientsList, MAX_CLIENT, requestList, MAX_REQUEST);
 		getFinalInt(&id, "Ingrese el ID del pedido a procesar: ", "ERROR! Ingrese un ID numérico mayor a 0: ", 1, 99999);
 		index = findRequestById(requestList, reqLen, id);
@@ -167,14 +168,15 @@ int printCompletedRequests(sClient* clientsList, int cliLen, sRequest* requestLi
 	Return = -1;
 
 	if(clientsList != NULL && cliLen > 0 && requestList != NULL && reqLen > 0){
-		printf("#==========+===============+===============================+========+========+========#\n");
+		Return = 0;
+		printf("#=====================================================================================#\n");
 //		printf("|%-10s|%-15s|%-31s|%-8s|%-8s|%-8s|\n", "ID Pedido", "CUIT", "Dirección", "HDPE", "LDPE", "PP");
 		printf("|ID Pedido |     CUIT      |           Dirección           |  HDPE  |  LDPE  |   PP   |\n");
 		printf("#==========+===============+===============================+========+========+========#\n");
 		for(int i = 0; i < cliLen; i++){
-			if(clientsList[i].status == FULL){
+//			if(clientsList[i].status == FULL){
 				printCompletedRequestByClientId(requestList, reqLen, clientsList, cliLen, clientsList[i].id);
-			}
+//			}
 		}
 		printf("#=====================================================================================#\n");
 	}
@@ -292,7 +294,8 @@ int printLocalityRequests(sClient* list, int len, sLocality* localList, int loca
 	if(list != NULL && len > 0){
 		printClientList(list, len, localList, localLen);
 //		getString("Ingrese una localidad para ver la cantidad de pedidos pendientes: ", aux, MAX_CHARAC);
-		getFinalInt(&aux, "¬ Elija la localidad de la empresa.\n\t1. Barracas\n\t2. Avellaneda\n\t3. MicroCentro\n\t4. Once\n\t5. Flores.\n\tIngrese una opción para ver sus pedidos pendientes: ", "ERROR! Ingrese una localidad existente: ", 1, 5);
+		getFinalInt(&aux, "¬ Elija la localidad de la empresa.\n\t1. Barracas\n\t2. Avellaneda\n\t3. MicroCentro\n\t4. Once\n\t5. Flores."
+								"\n\tIngrese una opción para ver sus pedidos pendientes: ", "ERROR! Ingrese una localidad existente: ", 1, 5);
 //		while(calculateLocalityRequests(list, len, aux, &accum) == -1){
 //			getString("ERROR! Ingrese una localidad existente: ", aux, MAX_CHARAC);
 //		}
@@ -328,7 +331,7 @@ int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* local
 
 void printMostRequestsClient(sClient client, sLocality* localList, int localLen){
 
-	printf("El cliente con más pedidos pendientes es:\n");
+	printf("\nEl cliente con más pedidos pendientes es:\n");
 	int index = findLocalityById(localList, localLen, client.direction.idLocal);
 	printf("#====================================================================================================================================#\n");
 	printf("| ID |               Nombre de la empresa               |      CUIT     |           Dirección           |     Localidad      |Pedidos|\n");

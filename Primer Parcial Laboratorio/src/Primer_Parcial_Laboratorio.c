@@ -210,7 +210,7 @@ int main(void) {
 				printf("ERROR! No se han ingresado clientes.\n");
 			}else{
 				if(calcMostCompletedRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &mostCompletedRequest) == -1){
-					printf("ERROR! No hay pedidos completados.\n");
+					printf("ERROR! No hay pedidos procesados.\n");
 				}else{
 					printMostRequestsClient(mostCompletedRequest, arrayLocality, MAX_LOCAL);
 				}
@@ -231,7 +231,6 @@ int main(void) {
 			printf("Ha salido del programa.\n");
 			break;
 		}
-
 	}while(option != 0);
 
 	return 0;

@@ -223,6 +223,21 @@ int isAnInt(char input[], int length){
 	return Return;
 }
 
+int isUnsignedInt(char input[], int length){
+	int Return;
+	int i;
+	Return = 0;
+	for(i = 0; i < length  && input[i] != '\0' ; i++){
+		if(input[i] > '9' || input[i] < '0'){
+			Return = -1;
+			break;
+		}
+	}
+
+	return Return;
+}
+
+
 int getAnInt(int* refResult){
 	int Return;
 	char aux[3000];

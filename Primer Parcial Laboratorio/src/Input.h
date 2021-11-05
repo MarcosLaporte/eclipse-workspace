@@ -143,6 +143,13 @@ int myGets(char input[], int length);
 ///				excepción de '-' o '+' como primer caracter), o 0 si está todo bien.
 int isAnInt(char input[], int length);
 //---------------------------------------------------------------------------------
+/// @brief Revisa que todos los caracteres de la cadena sean numéricos positivos.
+///
+/// @param input - La cadena de caracteres a revisar.
+/// @param length - El tamaño máximo de la cadena.
+/// @return int - Retorna -1 si algún caracter de la cadena no es numérico, o 0 si está todo bien.
+int isUnsignedInt(char input[], int length);
+//---------------------------------------------------------------------------------
 /// @brief Verifica el retorno de las funciones myGets() e isAnInt() para pasar el valor numérico de la cadena.
 ///
 /// @param *refResult - Puntero donde se va a guardar el número convertido a entero.

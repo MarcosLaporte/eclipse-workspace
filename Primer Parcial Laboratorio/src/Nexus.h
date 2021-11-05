@@ -34,14 +34,13 @@ int addRequest(sClient* clientsList, int cliLen, sRequest* requestList, int reqL
 /// @return int - Retorna -1 si algún puntero es nulo o algún tamaño es inválido, o 0 si está todo bien.
 int printPendingRequestList(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen);
 //---------------------------------------------------------------------------------
-/// @brief Imprime la lista de pedidos pendientes, validando que los IDs de ambas estructuras concuerden.
+/// @brief Imprime un pedido pendiente, validando que los IDs de ambas estructuras concuerden.
 ///
 /// @param clientsList - Puntero al array de clientes.
 /// @param cliLen - Tamaño del array de clientes.
-/// @param requestList - Puntero al array de pedidos.
-/// @param reqLen - Tamaño del array de pedidos.
-/// @return int - Retorna -1 si algún puntero es nulo o algún tamaño es inválido, o 0 si está todo bien.
-int printPendingRequests(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen);
+/// @param request - Pedido a imprimir.
+/// @return int - Retorna -1 si el puntero es nulo o el tamaño es inválido, o 0 si está todo bien.
+int printPendingRequest(sClient* clientsList, int cliLen, sRequest request);
 //---------------------------------------------------------------------------------
 /// @brief Cambia el estado del pedido indicado a 1 (COMPLETED). Pide el ID del pedido, y si luego de 3
 /// 	intentos no ingresa uno válido, la acción se cancela. Pide la cantidad de los 3 tipos de plástico
