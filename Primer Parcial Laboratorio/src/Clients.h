@@ -117,5 +117,6 @@ int initPendingRequests(sClient* list, int len);
 sClient searchClientById(sClient* list, int len, int id);
 //---------------------------------------------------------------------------------
 int initCompletedRequests(sClient* list, int len);
+int calcMostRequests(sClient* list, int len, int reqStatus, sClient* client);
 
 #endif /* CLIENTS_H_ */

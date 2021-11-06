@@ -111,9 +111,11 @@ int loadRequest(sClient* clientsList, int cliLen, sRequest* requestList, int req
 			Return = 0;
 
 			initPendingRequests(clientsList, cliLen);
+			initCompletedRequests(clientsList, cliLen);
 			for(int i = 0; i < cliLen; i++){
 				if(clientsList[i].status == FULL){
 					countRequestsByClient(clientsList, cliLen, requestList, reqLen, clientsList[i].id);
+					countCompletedRequestsByClient(clientsList, cliLen, requestList, reqLen, clientsList[i].id);
 				}
 			}
 		}
@@ -246,6 +248,21 @@ int printClient(sClient client, sLocality* localList, int localLen){
 	return Return;
 }
 
+int printClientCompletedRequest(sClient client, sLocality* localList, int localLen){
+	int Return;
+	int index;
+	Return = -1;
+
+	if(client.status == FULL){
+		Return = 0;
+		index = findLocalityById(localList, localLen, client.direction.idLocal);
+		printf("|%4d|%50s|%15s|%25s %5d|%20s|%7d|\n", client.id,
+			client.companyName, client.cuit, client.direction.address, client.direction.number, localList[index].description, client.completedRequests);
+	}
+
+	return Return;
+}
+
 int printClientList(sClient* list, int len, sLocality* localList, int localLen){
 	int Return;
 	Return = -1;
@@ -309,7 +326,7 @@ int printLocalityRequests(sClient* list, int len, sLocality* localList, int loca
 
 	return Return;
 }
-
+/*
 int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
 	int Return;
 	int maxRequests;
@@ -329,23 +346,13 @@ int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostReq
 	return Return;
 }
 
-void printMostRequestsClient(sClient client, sLocality* localList, int localLen){
-
-	printf("\nEl cliente con más pedidos pendientes es:\n");
-	printf("#====================================================================================================================================#\n");
-	printf("| ID |               Nombre de la empresa               |      CUIT     |           Dirección           |     Localidad      |Pedidos|\n");
-	printf("#====+==================================================+===============+===============================+====================+=======#\n");
-		printClient(client, localList, localLen);
-	printf("#====================================================================================================================================#\n");
-}
-
-int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient){
+int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
 	int Return;
 	int maxRequests;
 	Return = -1;
 	maxRequests = 0;
 
-	if(cliList != NULL && cliLen > 0 && localList != NULL && localLen > 0){
+	if(cliList != NULL && cliLen > 0){
 		for(int i = 0; i < cliLen; i++){
 			if(cliList[i].status == FULL && cliList[i].completedRequests > maxRequests){
 				maxRequests = cliList[i].completedRequests;
@@ -358,13 +365,13 @@ int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sLocality* loc
 	return Return;
 }
 
-int calcMostRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient){
+int calcMostRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
 	int Return;
 	int maxRequests;
 	Return = -1;
 	maxRequests = 0;
 
-	if(cliList != NULL && cliLen > 0 && localList != NULL && localLen > 0){
+	if(cliList != NULL && cliLen > 0){
 		for(int i = 0; i < cliLen; i++){
 			if(cliList[i].status == FULL && (cliList[i].pendingRequests + cliList[i].completedRequests) > maxRequests){
 				maxRequests = cliList[i].pendingRequests + cliList[i].completedRequests;
@@ -376,8 +383,7 @@ int calcMostRequestsClient(sClient* cliList, int cliLen, sLocality* localList, i
 
 	return Return;
 }
-
-
+*/
 void hardcodeClients(sClient* clientsList, sRequest* requestList, int maxClients, int* ids, int maxRequests, int* reqIds){
 
 	char names[MAX_CLIENT][MAX_CHARAC] = { "Apple Inc.",

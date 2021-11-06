@@ -470,3 +470,99 @@ collect2.exe: error: ld returned 1 exit status
 Info: Internal Builder is used for build
 gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
 Info: Nothing to build for Primer Parcial Laboratorio
+15:56:01 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c:332:5: error: conflicting types for 'calcMostCompletedRequestsClient'
+  332 | int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Nexus.c:6:
+..\src\Nexus.h:129:5: note: previous declaration of 'calcMostCompletedRequestsClient' was here
+  129 | int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Nexus.c:351:5: error: conflicting types for 'calcMostRequestsClient'
+  351 | int calcMostRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Nexus.c:6:
+..\src\Nexus.h:130:5: note: previous declaration of 'calcMostRequestsClient' was here
+  130 | int calcMostRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+15:56:31 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Primer_Parcial_Laboratorio.o: in function `main':
+C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Primer_Parcial_Laboratorio.c:200: undefined reference to `calcMostPendingRequestsClient'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Primer_Parcial_Laboratorio.c:212: undefined reference to `calcMostCompletedRequestsClient'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Primer_Parcial_Laboratorio.c:224: undefined reference to `calcMostRequestsClient'
+collect2.exe: error: ld returned 1 exit status
+15:58:56 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+16:01:20 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:01:27 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:01:33 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Nexus.o: in function `addRequest':
+C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Nexus.c:37: undefined reference to `initPendingRequests'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Nexus.o: in function `loadRequest':
+C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Nexus.c:113: undefined reference to `initPendingRequests'
+collect2.exe: error: ld returned 1 exit status
+16:01:35 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Nexus.o: in function `addRequest':
+C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Nexus.c:37: undefined reference to `initPendingRequests'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Nexus.o: in function `loadRequest':
+C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Nexus.c:113: undefined reference to `initPendingRequests'
+collect2.exe: error: ld returned 1 exit status
+16:04:03 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'loadRequest':
+..\src\Nexus.c:118:6: warning: implicit declaration of function 'countCompletedRequestsByClient'; did you mean 'printCompletedRequestByClientId'? [-Wimplicit-function-declaration]
+  118 |      countCompletedRequestsByClient(clientsList, cliLen, requestList, reqLen, clientsList[i].id);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |      printCompletedRequestByClientId
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+16:08:05 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio
+Info: Nothing to build for Primer Parcial Laboratorio
+Info: Nothing to build for Primer Parcial Laboratorio
+16:12:09 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+16:30:23 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:30:25 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+Info: Nothing to build for Primer Parcial Laboratorio

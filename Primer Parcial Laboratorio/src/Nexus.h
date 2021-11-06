@@ -64,6 +64,7 @@ int loadRequest(sClient* clientsList, int cliLen, sRequest* requestList, int req
 /// @return int - Retorna -1 si el pedido no está cargado, pendiente y el ID de su cliente
 /// 	no concuerda con el mismo pasado por parámetro.
 int countRequestsByClient(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int clientId);
+int countCompletedRequestsByClient(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen, int clientId);
 //---------------------------------------------------------------------------------
 /// @brief Imprime la lista de pedidos procesados con encabezado, llamando a la función printCompletedRequestByClientId().
 ///
@@ -101,6 +102,7 @@ int countAveragePP(sClient* clientsList, int cliLen, sRequest* requestList, int 
 /// @param client - El cliente a imprimir.
 /// @return int - Retorna -1 si el cliente pasado por parámetro tiene su 'status' en 0 (VACIO), o 0 si está en 1.
 int printClient(sClient client, sLocality* localList, int localLen);
+int printClientCompletedRequest(sClient client, sLocality* localList, int localLen);
 //---------------------------------------------------------------------------------
 /// @brief Imprime toda la lista de empleados con un encabezado, llamando a la función printClient().
 ///

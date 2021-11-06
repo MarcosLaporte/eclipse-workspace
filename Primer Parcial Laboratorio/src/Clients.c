@@ -252,3 +252,43 @@ sClient searchClientById(sClient* list, int len, int id){
 	return aux;
 }
 
+int calcMostRequests(sClient* list, int len, int reqStatus, sClient* client){
+	int Return;
+	int maxRequests;
+	Return = -1;
+	maxRequests = 0;
+
+	if(list != NULL && len > 0){
+		switch(reqStatus){
+		case PENDING:
+			for(int i = 0; i < len; i++){
+				if(list[i].status == FULL && list[i].pendingRequests > maxRequests){
+					maxRequests = list[i].pendingRequests;
+					*client = list[i];
+					Return = 0;
+				}
+			}
+			break;
+		case COMPLETED:
+			for(int i = 0; i < len; i++){
+				if(list[i].status == FULL && list[i].completedRequests > maxRequests){
+					maxRequests = list[i].completedRequests;
+					*client = list[i];
+					Return = 0;
+				}
+			}
+			break;
+		case BOTH:
+			for(int i = 0; i < len; i++){
+				if(list[i].status == FULL && (list[i].pendingRequests + list[i].completedRequests) > maxRequests){
+					maxRequests = list[i].pendingRequests + list[i].completedRequests;
+					*client = list[i];
+					Return = 0;
+				}
+			}
+			break;
+		}
+	}
+
+	return Return;
+}

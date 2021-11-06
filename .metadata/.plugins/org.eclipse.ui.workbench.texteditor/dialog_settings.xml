@@ -8,13 +8,18 @@
 		<item key="isRegEx" value="false"/>
 		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="countCompletedRequestsByClient"/>
 			<item value="initCompletedRequests"/>
+			<item value="cliList"/>
+			<item value="cliLen"/>
 			<item value="completedRequests"/>
 			<item value="initClients"/>
 			<item value="requestList"/>
 			<item value=","/>
 		</list>
 		<list key="replacehistory">
+			<item value="list"/>
+			<item value="len"/>
 			<item value=""/>
 			<item value="request"/>
 			<item value=", "/>
