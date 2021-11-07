@@ -566,3 +566,49 @@ collect2.exe: error: ld returned 1 exit status
 Info: Internal Builder is used for build
 gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
 Info: Nothing to build for Primer Parcial Laboratorio
+18:10:14 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'addRequest':
+..\src\Nexus.c:40:6: warning: implicit declaration of function 'countRequestsByClient' [-Wimplicit-function-declaration]
+   40 |      countRequestsByClient(clientsList, cliLen, requestList, reqLen, clientsList[i].id);
+      |      ^~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+18:11:36 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+..\src\Primer_Parcial_Laboratorio.c: In function 'main':
+..\src\Primer_Parcial_Laboratorio.c:190:9: warning: implicit declaration of function 'countAveragePP' [-Wimplicit-function-declaration]
+  190 |      if(countAveragePP(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, &averagePP) == 0){
+      |         ^~~~~~~~~~~~~~
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+18:27:44 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+18:34:32 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+..\src\Nexus.c: In function 'printCompletedRequestByClientId':
+..\src\Nexus.c:197:11: warning: implicit declaration of function 'searchClientById'; did you mean 'findClientById'? [-Wimplicit-function-declaration]
+  197 |     aux = searchClientById(clientsList, cliLen, requestList[i].clientId);
+      |           ^~~~~~~~~~~~~~~~
+      |           findClientById
+..\src\Nexus.c:197:11: error: incompatible types when assigning to type 'sClient' {aka 'struct <anonymous>'} from type 'int'
+18:35:17 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+18:35:49 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
+gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 

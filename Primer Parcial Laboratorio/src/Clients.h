@@ -116,7 +116,21 @@ int initPendingRequests(sClient* list, int len);
 /// @return sClient - Retorna los datos del cliente encontrado.
 sClient searchClientById(sClient* list, int len, int id);
 //---------------------------------------------------------------------------------
+/// @brief Inicializa el campo de pedidos procesados de todos los clientes en 0.
+///
+/// @param list - Puntero al array de clientes.
+/// @param len - Indica el tamaño del array.
+/// @return int - Retorna -1 si el puntero es nulo o el tamaño es inválido, o 0 si está todo bien.
 int initCompletedRequests(sClient* list, int len);
+//---------------------------------------------------------------------------------
+/// @brief Busca el cliente con la mayor cantidad de pedidos en el estado pasado por parámetro.
+///
+/// @param list - Puntero al array de clientes.
+/// @param len - Indica el tamaño del array.
+/// @param reqStatus - Estado del pedido a buscar su mayor.
+/// @param client - Puntero a guardar el cliente con más pedidos.
+/// @return int - Retorna -1 si no encuentra ningún cliente que supere las condiciones, o 0 si sí.
 int calcMostRequests(sClient* list, int len, int reqStatus, sClient* client);
+//---------------------------------------------------------------------------------
 
 #endif /* CLIENTS_H_ */
