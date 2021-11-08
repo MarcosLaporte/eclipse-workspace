@@ -327,6 +327,37 @@ int printLocalityRequests(sClient* list, int len, sLocality* localList, int loca
 	return Return;
 }
 
+
+int printClientsMaxRequests(sClient* cliList, int cliLen, sLocality* localList, int localLen, int reqStatus, int max){
+	int Return;
+	Return = -1;
+
+	if(cliList != NULL && cliLen > 0 && localList != NULL && localLen > 0){
+		printf("Clientes con más pedidos:\n");
+		for(int i = 0; i < cliLen; i++){
+			switch(reqStatus){
+				case PENDING:
+					if(cliList[i].pendingRequests == max){
+						printClient(cliList[i], localList, localLen);
+					}
+					break;
+				case COMPLETED:
+					if(cliList[i].completedRequests == max){
+						printClientCompletedRequest(cliList[i], localList, localLen);
+					}
+					break;
+				case BOTH:
+					if(cliList[i].completedRequests + cliList[i].pendingRequests == max){
+						printClient(cliList[i], localList, localLen);
+					}
+					break;
+			}
+		}
+	}
+
+	return Return;
+}
+
 void hardcodeClients(sClient* clientsList, sRequest* requestList, int maxClients, int* ids, int maxRequests, int* reqIds){
 
 	char names[MAX_CLIENT][MAX_CHARAC] = { "Apple Inc.",

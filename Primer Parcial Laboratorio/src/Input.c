@@ -327,6 +327,7 @@ int getFinalFloat(float* refResult, char message[], char errorMessage[], int min
 int getConfirmation(char message[], char* confirmation, char* cancel, int length, int tries){
 	int Return;
 	char input[length];
+	Return = 0;
 
 	printf("%s", message);
 	myGets(input, length);
@@ -348,7 +349,6 @@ int getConfirmation(char message[], char* confirmation, char* cancel, int length
 	}while(tries > 0 && Return != 1 && Return != -1);
 
 	if(tries == 0){
-		Return = 0;
 		printf("Muchos intentos fallidos. ");
 	}
 

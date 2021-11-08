@@ -200,6 +200,8 @@ int printMenu();
 /// 	o cancelar antes de que se cancele automáticamente.
 /// @return int - Retorna -1 si cancela, 0 si se acaban los intentos, o 1 si confirma.
 int getConfirmation(char message[], char* confirmation, char* cancel, int length, int tries);
-
+int f_isInt(char* input, int* pNumber);
+int f_getName(char* input, char* aux);
+int myGetString(char* input, char* message, char* errorMessage, int len);
 
 #endif /* INPUT_H_ */

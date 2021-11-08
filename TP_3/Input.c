@@ -171,7 +171,7 @@ void formatString(char input[]){
 	if(input != NULL){
 		strlwr(input);
 		for(int i = 0; i < length; i++){
-			if(i == 0 || isspace(input[i-1])){
+			if(i == 0 || isspace(input[i-1]) || input[i-1] == '-'){
 				input[i] = toupper(input[i]);
 			}
 		}
@@ -182,7 +182,7 @@ int checkAlphabetAndSpace(char input[]){
 	int length = strlen(input);
 	int Return = 1;
 	for(int i = 0; i < length; i++){
-		if(length == 0 || (isalpha(input[i]) == 0 && isspace(input[i]) == 0)){
+		if(length == 0 || (isalpha(input[i]) == 0 && isspace(input[i]) == 0 && input[i] != '-')){
 			Return = 0;
 			break;
 		}
@@ -312,6 +312,7 @@ int getFinalFloat(float* refResult, char message[], char errorMessage[], int min
 int getConfirmation(char message[], char* confirmation, char* cancel, int length, int tries){
 	int Return;
 	char input[length];
+	Return = 0;
 
 	printf("%s", message);
 	myGets(input, length);
@@ -333,18 +334,49 @@ int getConfirmation(char message[], char* confirmation, char* cancel, int length
 	}while(tries > 0 && Return != 1 && Return != -1);
 
 	if(tries == 0){
-		Return = 0;
 		printf("Muchos intentos fallidos. ");
 	}
 
 	return Return;
 }
 
+//int f_isInt(char* input, int* pNumber){
+//	int Return;
+//	Return = -1;
+//
+//	if(input != NULL && isAnInt(input, strlen(input)) == 0){
+//		*pNumber = atoi(input);
+//		Return = 0;
+//	}
+//
+//	return Return;
+//
+//}
+
+int myGetString(char* input, char* message, char* errorMessage, int len){
+	int Return;
+	char aux[len];
+	Return = -1;
+
+	if(input != NULL && message != NULL && errorMessage != NULL && len > 0){
+		printf("%s", message);
+		myGets(aux, len);
+		while(!checkAlphabetAndSpace(aux)){
+			printf("%s", errorMessage);
+			myGets(aux, len);
+		}
+		formatString(aux);
+		strcpy(input, aux);
+		Return = 0;
+	}
+
+	return Return;
+}
 //-------------------------------------------------------------
 int printMenu(){
 	int option;
 
-	printf("1. Cargar empleados modo texto.\n");
+	printf("\n1. Cargar empleados modo texto.\n");
 	printf("2. Cargar empleados modo binario.\n");
 	printf("3. Alta de empleado.\n");
 	printf("4. Modificar empleado.\n");

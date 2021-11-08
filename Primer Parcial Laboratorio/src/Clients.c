@@ -252,7 +252,7 @@ sClient searchClientById(sClient* list, int len, int id){
 	return aux;
 }
 
-int calcMostRequests(sClient* list, int len, int reqStatus, sClient* client){
+int calcMostRequests(sClient* list, int len, int reqStatus, int* max){
 	int Return;
 	int maxRequests;
 	Return = -1;
@@ -264,7 +264,8 @@ int calcMostRequests(sClient* list, int len, int reqStatus, sClient* client){
 			for(int i = 0; i < len; i++){
 				if(list[i].status == FULL && list[i].pendingRequests > maxRequests){
 					maxRequests = list[i].pendingRequests;
-					*client = list[i];
+//					*client = list[i];
+					*max = maxRequests;
 					Return = 0;
 				}
 			}
@@ -273,7 +274,8 @@ int calcMostRequests(sClient* list, int len, int reqStatus, sClient* client){
 			for(int i = 0; i < len; i++){
 				if(list[i].status == FULL && list[i].completedRequests > maxRequests){
 					maxRequests = list[i].completedRequests;
-					*client = list[i];
+//					*client = list[i];
+					*max = maxRequests;
 					Return = 0;
 				}
 			}
@@ -282,7 +284,8 @@ int calcMostRequests(sClient* list, int len, int reqStatus, sClient* client){
 			for(int i = 0; i < len; i++){
 				if(list[i].status == FULL && (list[i].pendingRequests + list[i].completedRequests) > maxRequests){
 					maxRequests = list[i].pendingRequests + list[i].completedRequests;
-					*client = list[i];
+//					*client = list[i];
+					*max = maxRequests;
 					Return = 0;
 				}
 			}

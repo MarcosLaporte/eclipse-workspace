@@ -143,6 +143,7 @@ int printLocalityRequests(sClient* list, int cliLen, sLocality* localList, int l
 /// @return int - Retorna -1 si no encuentra la localidad, o 0 si está todo bien.
 int calculateLocalityRequests(sClient* list, int len, int localityId, int* accum);
 //---------------------------------------------------------------------------------
+int printClientsMaxRequests(sClient* cliList, int cliLen, sLocality* localList, int localLen, int reqStatus, int max);
 /// @brief Datos hardcodeados para probar el código.
 ///
 /// @param clientsList - Puntero al array de clientes.

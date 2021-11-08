@@ -1,3 +1,10 @@
+/*
+ ============================================================================
+ Name        : TP_3.c
+ Author      : Marcos Laporte
+ ============================================================================
+ */
+
 /****************************************************
     Menu:
      1. Cargar los datos de los empleados desde el archivo data.csv (modo texto).
@@ -13,21 +20,114 @@
 *****************************************************/
 
 #include "Controller.h"
+#define DATA "data.csv"
+#define DATA_BIN "data.bin"
 
 int main()
 {
 	setbuf(stdout, NULL);
+
+	printf("\t\t#=======================================#\n"
+		   "\t\t|\t    TP 3 - LinkedList\t\t|\n"
+		   "\t\t|\t    --Marcos Laporte--\t\t|\n"
+		   "\t\t#=======================================#\n");
+
     int option;
+    int id;
+    int flagLoad;
+    int r;
 
     LinkedList* arrayEmployees = ll_newLinkedList();
     do{
     	option = printMenu();
         switch(option)
         {
-            case 1:
-                controller_loadFromText("data.csv", arrayEmployees);
+            case 1: //Cargar de texto
+            	if(flagLoad){
+					if(controller_loadFromText(DATA, arrayEmployees)){
+						printf("Hubo un problema con los punteros.\n");
+					}else{
+						controller_findMaxId(arrayEmployees, &id);
+						printf("Se cargaron los %d empleados!\n", ll_len(arrayEmployees));
+						flagLoad = 0;
+					}
+            	}else{
+            		printf("Los empleados ya se cargaron anteriormente!\n");
+            	}
                 break;
-            case 10:
+            case 2: //Cargar de binario
+            	if(flagLoad){
+					if(controller_loadFromBinary(DATA, arrayEmployees)){
+						printf("Hubo un problema con los punteros.\n");
+					}else{
+						controller_findMaxId(arrayEmployees, &id);
+						printf("Se cargaron los %d empleados del binario!\n", ll_len(arrayEmployees));
+						flagLoad = 0;
+					}
+            	}else{
+            		printf("Los empleados ya se cargaron anteriormente!\n");
+            	}
+            	break;
+            case 3: //Alta
+            	if(!ll_isEmpty(arrayEmployees)){
+					controller_addEmployee(arrayEmployees, &id);
+            	}else{
+            		printf("ERROR! No hay empleados cargados.\n");
+            	}
+            	break;
+            case 4: //Modificar
+            	if(!ll_isEmpty(arrayEmployees)){
+            		r = controller_editEmployee(arrayEmployees);
+					if(r > 0){
+						printf("Ha cancelado la acción.\n");
+					}else{
+						if(!r){
+							printf("Se ha modificado el empleado!\n");
+						}else{
+							printf("ERROR! No existe un empleado con ese ID.\n");
+						}
+					}
+            	}else{
+            		printf("ERROR! No hay empleados cargados.\n");
+            	}
+            	break;
+            case 5: //Baja
+            	if(!ll_isEmpty(arrayEmployees)){
+					if(controller_removeEmployee(arrayEmployees)){
+						printf("ERROR! No existe un empleado con ese ID.\n");
+					}else{
+						printf("El empleado ha sido dado de baja!\n");
+					}
+				}else{
+					printf("ERROR! No hay empleados cargados.\n");
+				}
+            	break;
+            case 6: //Lista
+            	if(!ll_isEmpty(arrayEmployees)){
+					controller_ListEmployee(arrayEmployees);
+				}else{
+					printf("ERROR! No hay empleados cargados.\n");
+				}
+            	break;
+            case 7: //Ordenar
+            	if(!ll_isEmpty(arrayEmployees)){
+					controller_sortEmployee(arrayEmployees);
+				}else{
+					printf("ERROR! No hay empleados cargados.\n");
+				}
+            	break;
+            case 8: //Guardar en texto
+            	break;
+            case 9: //Guardar en binario
+            	if(!ll_isEmpty(arrayEmployees)){
+            		if(controller_saveAsBinary(DATA_BIN, arrayEmployees)){
+            			;
+            		}
+				}else{
+					printf("ERROR! No hay empleados cargados.\n");
+				}
+            	break;
+            case 10: //Salir
             	printf("Ha salido del programa.\n");
             	break;
         }

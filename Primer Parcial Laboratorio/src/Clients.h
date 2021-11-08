@@ -130,7 +130,7 @@ int initCompletedRequests(sClient* list, int len);
 /// @param reqStatus - Estado del pedido a buscar su mayor.
 /// @param client - Puntero a guardar el cliente con más pedidos.
 /// @return int - Retorna -1 si no encuentra ningún cliente que supere las condiciones, o 0 si sí.
-int calcMostRequests(sClient* list, int len, int reqStatus, sClient* client);
+int calcMostRequests(sClient* list, int len, int reqStatus, int* max);
 //---------------------------------------------------------------------------------
 
 #endif /* CLIENTS_H_ */

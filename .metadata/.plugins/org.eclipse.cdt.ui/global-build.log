@@ -1,614 +1,704 @@
-11:16:48 **** Rebuild of configuration Debug for project tp3_windows ****
+22:17:05 **** Rebuild of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
-..\Employee.c: In function 'employee_new':
-..\Employee.c:5:1: warning: control reaches end of non-void function [-Wreturn-type]
-    5 | }
-      | ^
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\tp3_windows" -o tp3_windows.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
-Info: Nothing to build for tp3_windows
-11:20:50 **** Rebuild of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'main':
-..\main.c:41:11: warning: format '%d' expects argument of type 'int *', but argument 2 has type 'int' [-Wformat=]
-   41 |   scanf("%d", option);
-      |          ~^   ~~~~~~
-      |           |   |
-      |           |   int
-      |           int *
-..\main.c:41:3: warning: 'option' is used uninitialized in this function [-Wuninitialized]
-   41 |   scanf("%d", option);
-      |   ^~~~~~~~~~~~~~~~~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
-gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o main.o parser.o -lLinkedList 
-Info: Nothing to build for TP_3
-11:21:19 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'main':
-..\main.c:46:52: error: 'listaEmpleados' undeclared (first use in this function)
-   46 |                 controller_loadFromText("data.csv",listaEmpleados);
-      |                                                    ^~~~~~~~~~~~~~
-..\main.c:46:52: note: each undeclared identifier is reported only once for each function it appears in
-11:21:28 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o main.o parser.o -lLinkedList 
-Info: Nothing to build for TP_3
-11:27:03 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:22:18: warning: passing argument 1 of 'fclose' from incompatible pointer type [-Wincompatible-pointer-types]
+   22 |   pFile = fclose(path);
+      |                  ^~~~
+      |                  |
+      |                  char *
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:263:49: note: expected 'FILE *' {aka 'struct _iobuf *'} but argument is of type 'char *'
+  263 | _CRTIMP __cdecl __MINGW_NOTHROW  int    fclose (FILE *);
+      |                                                 ^~~~~~
+..\Controller.c:22:9: warning: assignment to 'FILE *' {aka 'struct _iobuf *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   22 |   pFile = fclose(path);
+      |         ^
 gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
-11:27:08 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
-11:27:54 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-..\main.c: In function 'main':
-..\main.c:25:9: warning: 'option' is used uninitialized in this function [-Wuninitialized]
-   25 |         switch(option)
-      |         ^~~~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
-gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-11:28:06 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
-gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-11:28:08 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
-11:29:16 **** Incremental Build of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
-gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
-15:51:21 **** Clean-only build of configuration Debug for project 16-1 ****
-rm -rf 16-1.exe src/16-1.o src/16-1.d 
-15:51:22 **** Clean-only build of configuration Debug for project Archivo de prueba ****
-rm -rf "src/Archivo de prueba.o" src/Biblioteca.d src/Input.d "Archivo de prueba.exe" src/Structures.d src/Input.o src/Biblioteca.o src/Structures.o "src/Archivo de prueba.d" 
-15:51:22 **** Clean-only build of configuration Debug for project Clase 15, Ejercicio 15-1 ****
-rm -rf "src/Clase 15, Ejercicio 15-1.d" "Clase 15, Ejercicio 15-1.exe" "src/Clase 15, Ejercicio 15-1.o" 
-15:51:23 **** Clean-only build of configuration Debug for project Clase 17, Ejercicio 17-1 ****
-rm -rf "src/Clase 17, Ejercicio 17-1.d" "src/Clase 17, Ejercicio 17-1.o" "Clase 17, Ejercicio 17-1.exe" 
-15:51:23 **** Clean-only build of configuration Debug for project Ejercicio Punteros ****
-rm -rf "src/Ejercicio Punteros.o" "Ejercicio Punteros.exe" "src/Ejercicio Punteros.d" 
-15:51:23 **** Clean-only build of configuration Debug for project Primer Parcial Laboratorio ****
-rm -rf src/Primer_Parcial_Laboratorio.o src/Clients.d "Primer Parcial Laboratorio.exe" src/Request.o src/Input.d src/Request.d src/Input.o src/Locality.o src/Primer_Parcial_Laboratorio.d src/Nexus.d src/Locality.d src/Clients.o src/Nexus.o 
-15:51:24 **** Clean-only build of configuration Debug for project TP_1 ****
-rm -rf src/TP_1.o src/Biblioteca.d TP_1.exe src/Operaciones.o src/Operaciones.d src/Biblioteca.o src/TP_1.d 
-15:51:24 **** Clean-only build of configuration Debug for project TP_3 ****
+22:17:14 **** Clean-only build of configuration Debug for project TP_3 ****
 rm -rf parser.d Controller.o TP_3.exe parser.o Controller.d main.o Input.o Employee.d Input.d main.d Employee.o 
-15:51:25 **** Rebuild of configuration Debug for project 16-1 ****
+22:17:14 **** Rebuild of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\16-1.o" "..\\src\\16-1.c" 
-gcc -o 16-1.exe "src\\16-1.o" 
-15:51:28 **** Rebuild of configuration Debug for project Archivo de prueba ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Archivo de prueba.o" "..\\src\\Archivo de prueba.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Structures.o" "..\\src\\Structures.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
-gcc -o "Archivo de prueba.exe" "src\\Archivo de prueba.o" "src\\Biblioteca.o" "src\\Input.o" "src\\Structures.o" 
-15:51:29 **** Rebuild of configuration Debug for project Clase 15, Ejercicio 15-1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 15, Ejercicio 15-1.o" "..\\src\\Clase 15, Ejercicio 15-1.c" 
-gcc -o "Clase 15, Ejercicio 15-1.exe" "src\\Clase 15, Ejercicio 15-1.o" 
-15:51:30 **** Rebuild of configuration Debug for project Clase 17, Ejercicio 17-1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clase 17, Ejercicio 17-1.o" "..\\src\\Clase 17, Ejercicio 17-1.c" 
-gcc -o "Clase 17, Ejercicio 17-1.exe" "src\\Clase 17, Ejercicio 17-1.o" 
-15:51:30 **** Rebuild of configuration Debug for project Ejercicio Punteros ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Ejercicio Punteros.o" "..\\src\\Ejercicio Punteros.c" 
-gcc -o "Ejercicio Punteros.exe" "src\\Ejercicio Punteros.o" 
-15:51:31 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-15:51:33 **** Rebuild of configuration Debug for project TP_1 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Operaciones.o" "..\\src\\Operaciones.c" 
-gcc -o TP_1.exe "src\\Biblioteca.o" "src\\Operaciones.o" "src\\TP_1.o" 
-15:51:34 **** Rebuild of configuration Debug for project TP_3 ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:22:18: warning: passing argument 1 of 'fclose' from incompatible pointer type [-Wincompatible-pointer-types]
+   22 |   pFile = fclose(path);
+      |                  ^~~~
+      |                  |
+      |                  char *
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:263:49: note: expected 'FILE *' {aka 'struct _iobuf *'} but argument is of type 'char *'
+  263 | _CRTIMP __cdecl __MINGW_NOTHROW  int    fclose (FILE *);
+      |                                                 ^~~~~~
+..\Controller.c:22:9: warning: assignment to 'FILE *' {aka 'struct _iobuf *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   22 |   pFile = fclose(path);
+      |         ^
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+22:18:34 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_loadFromText':
+..\Controller.c:22:10: warning: passing argument 1 of 'fclose' from incompatible pointer type [-Wincompatible-pointer-types]
+   22 |   fclose(path);
+      |          ^~~~
+      |          |
+      |          char *
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:263:49: note: expected 'FILE *' {aka 'struct _iobuf *'} but argument is of type 'char *'
+  263 | _CRTIMP __cdecl __MINGW_NOTHROW  int    fclose (FILE *);
+      |                                                 ^~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+22:19:41 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+22:58:07 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:15: warning: unused variable 'empleado' [-Wunused-variable]
+   26 |     Employee* empleado;
+      |               ^~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+22:58:34 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+22:59:29 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:26:15: warning: unused variable 'empleado' [-Wunused-variable]
+   26 |     Employee* empleado;
+      |               ^~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+23:03:01 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+23:12:11 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
-Info: Nothing to build for TP_1
-Info: Nothing to build for TP_1
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-16:23:35 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+23:13:45 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-16:24:22 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:24:28 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-16:25:34 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+23:24:30 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-00:02:06 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+23:26:13 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+23:42:09 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:93:36: error: 'id' undeclared (first use in this function)
+   93 |   miEmpleado = employee_newUsuario(id);
+      |                                    ^~
+..\Controller.c:93:36: note: each undeclared identifier is reported only once for each function it appears in
+23:43:49 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:93:3: warning: 'miEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   93 |   employee_printEmpleado(miEmpleado);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:35:43: warning: passing argument 2 of 'controller_findMaxId' makes pointer from integer without a cast [-Wint-conversion]
+   35 |      controller_findMaxId(arrayEmployees, id);
+      |                                           ^~
+      |                                           |
+      |                                           int
+In file included from ..\main.c:19:
+..\Controller.h:15:63: note: expected 'int *' but argument is of type 'int'
+   15 | int controller_findMaxId(LinkedList* pArrayListEmployee, int* id);
+      |                                                          ~~~~~^~
+..\main.c:40:43: warning: passing argument 2 of 'controller_findMaxId' makes pointer from integer without a cast [-Wint-conversion]
+   40 |      controller_findMaxId(arrayEmployees, id);
+      |                                           ^~
+      |                                           |
+      |                                           int
+In file included from ..\main.c:19:
+..\Controller.h:15:63: note: expected 'int *' but argument is of type 'int'
+   15 | int controller_findMaxId(LinkedList* pArrayListEmployee, int* id);
+      |                                                          ~~~~~^~
+..\main.c:35:6: warning: 'id' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   35 |      controller_findMaxId(arrayEmployees, id);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+23:47:31 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+23:48:17 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+00:01:36 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:01:59 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+00:04:39 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:05:48 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:02:48 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:03:10 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:08:52 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:09:39 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:16:22 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:18:25 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+..\Input.c: In function 'getConfirmation':
+..\Input.c:321:24: warning: format '%d' expects a matching 'int' argument [-Wformat=]
+  321 |   printf("\nLe quedan %d intentos: ");
+      |                       ~^
+      |                        |
+      |                        int
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:18:32 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:19:30 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+..\Input.c: In function 'getConfirmation':
+..\Input.c:314:6: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  314 |  int r;
+      |      ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:22:15 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:23:18 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+09:24:34 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+..\Input.c: In function 'myGets':
+..\Input.c:199:3: error: too many arguments to function 'gets'
+  199 |   gets(input, length, stdin);
+      |   ^~~~
+In file included from ..\Input.h:9,
+                 from ..\Input.c:6:
+c:\mingw\include\stdio.h:709:41: note: declared here
+  709 | _CRTIMP __cdecl __MINGW_NOTHROW  char * gets (char *);
+      |                                         ^~~~
+09:24:43 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:25:48 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+09:28:28 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:35:46 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:38:07 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:39:12 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
+Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
 gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
 Info: Nothing to build for Primer Parcial Laboratorio
-00:06:48 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+09:41:42 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-00:08:56 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:43:52 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-00:10:03 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+..\Input.c: In function 'getConfirmation':
+..\Input.c:316:6: warning: variable 'r' set but not used [-Wunused-but-set-variable]
+  316 |  int r;
+      |      ^
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:46:05 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-00:15:14 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-00:18:10 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-00:19:47 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-00:23:15 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-00:24:55 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-00:26:39 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:08:54 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:09:23 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:10:29 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-10:10:31 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:10:53 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:11:48 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:13:55 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
 Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-10:14:33 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+09:49:13 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-10:15:03 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:50:18 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-10:21:24 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:50:24 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c:90:5: error: conflicting types for 'printPendingRequests'
-   90 | int printPendingRequests(sClient* clientsList, int cliLen, sRequest requestList, int reqLen){
-      |     ^~~~~~~~~~~~~~~~~~~~
-..\src\Nexus.c:68:5: note: previous definition of 'printPendingRequests' was here
-   68 | int printPendingRequests(sClient* clientsList, int cliLen, sRequest* requestList, int reqLen){
-      |     ^~~~~~~~~~~~~~~~~~~~
-10:21:45 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:51:45 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-10:22:19 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+10:55:19 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-10:22:21 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+..\Employee.c: In function 'employee_newParametros':
+..\Employee.c:22:4: warning: 'auxId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   22 |    employee_setId(miEmpleado, auxId);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\Employee.c:24:4: warning: 'auxHoras' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   24 |    employee_setHorasTrabajadas(miEmpleado, auxHoras);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\Employee.c:25:4: warning: 'auxSueldo' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   25 |    employee_setSueldo(miEmpleado, auxSueldo);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:31:9: warning: unused variable 'flagFile' [-Wunused-variable]
+   31 |     int flagFile;
+      |         ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:93:2: error: redeclaration of 'retorno' with no linkage
+   93 |  retorno = -1;
+      |  ^~~~~~~
+..\Controller.c:90:6: note: previous declaration of 'retorno' was here
+   90 |  int retorno;
+      |      ^~~~~~~
+10:55:27 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:39:52 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:93:2: error: redeclaration of 'retorno' with no linkage
+   93 |  retorno = -1;
+      |  ^~~~~~~
+..\Controller.c:90:6: note: previous declaration of 'retorno' was here
+   90 |  int retorno;
+      |      ^~~~~~~
+10:55:31 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-10:43:45 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:93:2: error: redeclaration of 'retorno' with no linkage
+   93 |  retorno = -1;
+      |  ^~~~~~~
+..\Controller.c:90:6: note: previous declaration of 'retorno' was here
+   90 |  int retorno;
+      |      ^~~~~~~
+10:55:40 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'printPendingRequestList':
-..\src\Nexus.c:63:4: error: too many arguments to function 'printPendingRequest'
-   63 |    printPendingRequest(clientsList, cliLen, requestList[i], reqLen);
-      |    ^~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Nexus.c:6:
-..\src\Nexus.h:43:5: note: declared here
-   43 | int printPendingRequest(sClient* clientsList, int cliLen, sRequest request);
-      |     ^~~~~~~~~~~~~~~~~~~
-10:43:55 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:93:2: error: redeclaration of 'retorno' with no linkage
+   93 |  retorno = -1;
+      |  ^~~~~~~
+..\Controller.c:90:6: note: previous declaration of 'retorno' was here
+   90 |  int retorno;
+      |      ^~~~~~~
+10:56:05 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-10:46:08 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:95:3: warning: 'miEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   95 |   employee_printEmpleado(miEmpleado);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+10:58:52 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:46:59 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
-..\src\Request.c: In function 'getPlasticTypes':
-..\src\Request.c:58:16: warning: passing argument 1 of 'getFinalFloat' from incompatible pointer type [-Wincompatible-pointer-types]
-   58 |  getFinalFloat(&HDPE, "Ingrese la cantidad de kilos del tipo Alta Densidad: ", "ERROR! La cantidad no puede ser negativa ni mayor al total: ", 0, total);
-      |                ^~~~~
-      |                |
-      |                float **
-In file included from ..\src\Request.h:9,
-                 from ..\src\Request.c:6:
-..\src\Input.h:193:26: note: expected 'float *' but argument is of type 'float **'
-  193 | int getFinalFloat(float* refResult, char message[], char errorMessage[], int min, int max);
-      |                   ~~~~~~~^~~~~~~~~
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-10:47:07 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
-collect2.exe: error: ld returned 1 exit status
-10:51:25 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Primer_Parcial_Laboratorio.o: in function `main':
-C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Primer_Parcial_Laboratorio.c:167: undefined reference to `printCompletedRequests'
-collect2.exe: error: ld returned 1 exit status
-10:51:31 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Primer_Parcial_Laboratorio.o: in function `main':
-C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Primer_Parcial_Laboratorio.c:167: undefined reference to `printCompletedRequests'
-collect2.exe: error: ld returned 1 exit status
-10:51:36 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Primer_Parcial_Laboratorio.o: in function `main':
-C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Primer_Parcial_Laboratorio.c:167: undefined reference to `printCompletedRequests'
-collect2.exe: error: ld returned 1 exit status
-10:51:57 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:52:21 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-10:53:40 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-11:03:48 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-12:46:56 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-12:50:05 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-12:51:03 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-14:36:29 **** Rebuild of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-14:41:16 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c:313:5: error: conflicting types for 'calcMostPendingRequestsClient'
-  313 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Nexus.c:6:
-..\src\Nexus.h:128:5: note: previous declaration of 'calcMostPendingRequestsClient' was here
-  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-14:45:23 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c:313:5: error: conflicting types for 'calcMostPendingRequestsClient'
-  313 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Nexus.c:6:
-..\src\Nexus.h:128:5: note: previous declaration of 'calcMostPendingRequestsClient' was here
-  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Nexus.c: In function 'printMostRequestsClient':
-..\src\Nexus.c:335:6: warning: unused variable 'index' [-Wunused-variable]
-  335 |  int index = findLocalityById(localList, localLen, client.direction.idLocal);
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+..\parser.c: In function 'parser_EmployeeFromText':
+..\parser.c:20:6: warning: unused variable 'auxSueldo' [-Wunused-variable]
+   20 |  int auxSueldo;
+      |      ^~~~~~~~~
+..\parser.c:18:6: warning: unused variable 'auxHoras' [-Wunused-variable]
+   18 |  int auxHoras;
+      |      ^~~~~~~~
+..\parser.c:16:7: warning: unused variable 'auxNombre' [-Wunused-variable]
+   16 |  char auxNombre[MAX_CHAR];
+      |       ^~~~~~~~~
+..\parser.c:14:6: warning: unused variable 'auxId' [-Wunused-variable]
+   14 |  int auxId;
       |      ^~~~~
-15:10:04 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+10:59:04 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c:313:5: error: conflicting types for 'calcMostPendingRequestsClient'
-  313 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Nexus.c:6:
-..\src\Nexus.h:128:5: note: previous declaration of 'calcMostPendingRequestsClient' was here
-  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Nexus.c: In function 'printMostRequestsClient':
-..\src\Nexus.c:335:6: warning: unused variable 'index' [-Wunused-variable]
-  335 |  int index = findLocalityById(localList, localLen, client.direction.idLocal);
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+11:01:24 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+..\parser.c: In function 'parser_EmployeeFromText':
+..\parser.c:25:53: error: 'auxNombre' undeclared (first use in this function)
+   25 |     if(!isAnInt(id, MAX_CHAR) && !f_getName(nombre, auxNombre) &&
+      |                                                     ^~~~~~~~~
+..\parser.c:25:53: note: each undeclared identifier is reported only once for each function it appears in
+11:03:07 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+..\Employee.c: In function 'employee_newParametros':
+..\Employee.c:16:6: warning: unused variable 'auxSueldo' [-Wunused-variable]
+   16 |  int auxSueldo;
+      |      ^~~~~~~~~
+..\Employee.c:15:6: warning: unused variable 'auxHoras' [-Wunused-variable]
+   15 |  int auxHoras;
+      |      ^~~~~~~~
+..\Employee.c:13:6: warning: unused variable 'auxId' [-Wunused-variable]
+   13 |  int auxId;
       |      ^~~~~
-15:10:29 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-..\src\Primer_Parcial_Laboratorio.c: In function 'main':
-..\src\Primer_Parcial_Laboratorio.c:201:64: warning: passing argument 3 of 'calcMostPendingRequestsClient' from incompatible pointer type [-Wincompatible-pointer-types]
-  201 |     if(calcMostPendingRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &mostPendingRequest) == -1){
-      |                                                                ^~~~~~~~~~~~~
-      |                                                                |
-      |                                                                sLocality * {aka struct <anonymous> *}
-In file included from ..\src\Primer_Parcial_Laboratorio.c:38:
-..\src\Nexus.h:128:74: note: expected 'sClient *' {aka 'struct <anonymous> *'} but argument is of type 'sLocality *' {aka 'struct <anonymous> *'}
-  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient);
-      |                                                                 ~~~~~~~~~^~~~~~~~~~~~~~~~~
-..\src\Primer_Parcial_Laboratorio.c:201:8: error: too many arguments to function 'calcMostPendingRequestsClient'
-  201 |     if(calcMostPendingRequestsClient(arrayClients, MAX_CLIENT, arrayLocality, MAX_LOCAL, &mostPendingRequest) == -1){
-      |        ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Primer_Parcial_Laboratorio.c:38:
-..\src\Nexus.h:128:5: note: declared here
-  128 | int calcMostPendingRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-15:10:43 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'printMostRequestsClient':
-..\src\Nexus.c:335:6: warning: unused variable 'index' [-Wunused-variable]
-  335 |  int index = findLocalityById(localList, localLen, client.direction.idLocal);
-      |      ^~~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-15:50:02 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-16:02:00 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-16:02:02 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+11:03:43 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-15:56:01 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+..\Employee.c: In function 'employee_newParametros':
+..\Employee.c:19:35: error: invalid use of void expression
+   19 |    employee_setNombre(miEmpleado, formatString(nombreStr));
+      |                                   ^~~~~~~~~~~~~~~~~~~~~~~
+11:04:37 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Request.o" "..\\src\\Request.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c:332:5: error: conflicting types for 'calcMostCompletedRequestsClient'
-  332 | int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Nexus.c:6:
-..\src\Nexus.h:129:5: note: previous declaration of 'calcMostCompletedRequestsClient' was here
-  129 | int calcMostCompletedRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
-      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Nexus.c:351:5: error: conflicting types for 'calcMostRequestsClient'
-  351 | int calcMostRequestsClient(sClient* cliList, int cliLen, sClient* mostRequestClient){
-      |     ^~~~~~~~~~~~~~~~~~~~~~
-In file included from ..\src\Nexus.c:6:
-..\src\Nexus.h:130:5: note: previous declaration of 'calcMostRequestsClient' was here
-  130 | int calcMostRequestsClient(sClient* cliList, int cliLen, sLocality* localList, int localLen, sClient* mostRequestClient);
-      |     ^~~~~~~~~~~~~~~~~~~~~~
-15:56:31 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
-Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Primer_Parcial_Laboratorio.o: in function `main':
-C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Primer_Parcial_Laboratorio.c:200: undefined reference to `calcMostPendingRequestsClient'
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Primer_Parcial_Laboratorio.c:212: undefined reference to `calcMostCompletedRequestsClient'
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Primer_Parcial_Laboratorio.c:224: undefined reference to `calcMostRequestsClient'
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-15:58:56 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+11:04:39 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-16:01:20 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+11:05:56 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:95:3: warning: 'miEmpleado' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   95 |   employee_printEmpleado(miEmpleado);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+11:17:22 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:97:31: error: 'miEmpleado' undeclared (first use in this function)
+   97 |    ll_add(pArrayListEmployee, miEmpleado);
+      |                               ^~~~~~~~~~
+..\Controller.c:97:31: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c: In function 'controller_removeEmployee':
+..\Controller.c:115:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  115 |  int retorno;
+      |      ^~~~~~~
+11:17:24 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:97:31: error: 'miEmpleado' undeclared (first use in this function)
+   97 |    ll_add(pArrayListEmployee, miEmpleado);
+      |                               ^~~~~~~~~~
+..\Controller.c:97:31: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c: In function 'controller_removeEmployee':
+..\Controller.c:115:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  115 |  int retorno;
+      |      ^~~~~~~
+11:17:29 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:97:31: error: 'miEmpleado' undeclared (first use in this function)
+   97 |    ll_add(pArrayListEmployee, miEmpleado);
+      |                               ^~~~~~~~~~
+..\Controller.c:97:31: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c: In function 'controller_removeEmployee':
+..\Controller.c:115:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  115 |  int retorno;
+      |      ^~~~~~~
+11:17:59 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:37:9: warning: unused variable 'flagFile' [-Wunused-variable]
+   37 |     int flagFile;
+      |         ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_removeEmployee':
+..\Controller.c:115:6: warning: variable 'retorno' set but not used [-Wunused-but-set-variable]
+  115 |  int retorno;
+      |      ^~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+11:18:17 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+11:21:40 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-16:01:27 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+11:21:48 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+11:23:02 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-16:01:33 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+11:23:07 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Nexus.o: in function `addRequest':
-C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Nexus.c:37: undefined reference to `initPendingRequests'
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Nexus.o: in function `loadRequest':
-C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Nexus.c:113: undefined reference to `initPendingRequests'
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_newUsuario':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\TP_3\Debug/../Employee.c:36: undefined reference to `myGetString'
 collect2.exe: error: ld returned 1 exit status
-16:01:35 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+11:23:08 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Nexus.o: in function `addRequest':
-C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Nexus.c:37: undefined reference to `initPendingRequests'
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Nexus.o: in function `loadRequest':
-C:\Users\54113\Desktop\eclipse-workspace\Primer Parcial Laboratorio\Debug/../src/Nexus.c:113: undefined reference to `initPendingRequests'
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_newUsuario':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\TP_3\Debug/../Employee.c:36: undefined reference to `myGetString'
 collect2.exe: error: ld returned 1 exit status
-16:04:03 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+11:23:54 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'loadRequest':
-..\src\Nexus.c:118:6: warning: implicit declaration of function 'countCompletedRequestsByClient'; did you mean 'printCompletedRequestByClientId'? [-Wimplicit-function-declaration]
-  118 |      countCompletedRequestsByClient(clientsList, cliLen, requestList, reqLen, clientsList[i].id);
-      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-      |      printCompletedRequestByClientId
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-16:08:05 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+12:11:46 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-Info: Nothing to build for Primer Parcial Laboratorio
-16:12:09 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:37:9: warning: unused variable 'flagFile' [-Wunused-variable]
+   37 |     int flagFile;
+      |         ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+12:12:59 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-16:30:23 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:37:9: warning: unused variable 'flagFile' [-Wunused-variable]
+   37 |     int flagFile;
+      |         ^~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+12:17:11 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Primer Parcial Laboratorio.exe: Permission denied
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:38:9: warning: unused variable 'flagFile' [-Wunused-variable]
+   38 |     int flagFile;
+      |         ^~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+12:19:39 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:38:9: warning: unused variable 'flagFile' [-Wunused-variable]
+   38 |     int flagFile;
+      |         ^~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+12:23:31 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+14:31:06 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+..\main.c: In function 'main':
+..\main.c:38:9: warning: unused variable 'flagFile' [-Wunused-variable]
+   38 |     int flagFile;
+      |         ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+14:43:14 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+14:46:48 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:101:3: warning: implicit declaration of function 'controller_printList' [-Wimplicit-function-declaration]
+  101 |   controller_printList(pArrayListEmployee);
+      |   ^~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
 collect2.exe: error: ld returned 1 exit status
-16:30:25 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+14:47:03 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-Info: Nothing to build for Primer Parcial Laboratorio
-18:10:14 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_removeEmployee':
+..\Controller.c:147:3: warning: implicit declaration of function 'controller_printList' [-Wimplicit-function-declaration]
+  147 |   controller_printList(pArrayListEmployee);
+      |   ^~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:47:14 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'addRequest':
-..\src\Nexus.c:40:6: warning: implicit declaration of function 'countRequestsByClient' [-Wimplicit-function-declaration]
-   40 |      countRequestsByClient(clientsList, cliLen, requestList, reqLen, clientsList[i].id);
-      |      ^~~~~~~~~~~~~~~~~~~~~
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-18:11:36 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+14:48:01 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-..\src\Primer_Parcial_Laboratorio.c: In function 'main':
-..\src\Primer_Parcial_Laboratorio.c:190:9: warning: implicit declaration of function 'countAveragePP' [-Wimplicit-function-declaration]
-  190 |      if(countAveragePP(arrayClients, MAX_CLIENT, arrayRequest, MAX_REQUEST, &averagePP) == 0){
-      |         ^~~~~~~~~~~~~~
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-18:27:44 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+14:48:14 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-18:34:32 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_removeEmployee':
+..\Controller.c:143:12: warning: unused variable 'miEmpleado' [-Wunused-variable]
+  143 |  Employee* miEmpleado;
+      |            ^~~~~~~~~~
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+14:57:48 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-..\src\Nexus.c: In function 'printCompletedRequestByClientId':
-..\src\Nexus.c:197:11: warning: implicit declaration of function 'searchClientById'; did you mean 'findClientById'? [-Wimplicit-function-declaration]
-  197 |     aux = searchClientById(clientsList, cliLen, requestList[i].clientId);
-      |           ^~~~~~~~~~~~~~~~
-      |           findClientById
-..\src\Nexus.c:197:11: error: incompatible types when assigning to type 'sClient' {aka 'struct <anonymous>'} from type 'int'
-18:35:17 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+14:58:01 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Clients.o" "..\\src\\Clients.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
-18:35:49 **** Incremental Build of configuration Debug for project Primer Parcial Laboratorio ****
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+14:58:08 **** Incremental Build of configuration Debug for project TP_3 ****
 Info: Internal Builder is used for build
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Locality.o" "..\\src\\Locality.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Nexus.o" "..\\src\\Nexus.c" 
-gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Primer_Parcial_Laboratorio.o" "..\\src\\Primer_Parcial_Laboratorio.c" 
-gcc -o "Primer Parcial Laboratorio.exe" "src\\Clients.o" "src\\Input.o" "src\\Locality.o" "src\\Nexus.o" "src\\Primer_Parcial_Laboratorio.o" "src\\Request.o" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+14:58:17 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+14:58:24 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+16:01:56 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:39:06 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_removeEmployee':
+..\Controller.c:143:12: warning: unused variable 'miEmpleado' [-Wunused-variable]
+  143 |  Employee* miEmpleado;
+      |            ^~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:39:22 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+16:42:09 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3

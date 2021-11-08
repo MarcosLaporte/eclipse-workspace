@@ -18,57 +18,77 @@
 
 #ifndef __LINKEDLIST
 #define __LINKEDLIST
-struct Node
-{
+
+struct Node{
     void* pElement;
     struct Node* pNextNode;
 }typedef Node;
 
-struct LinkedList
-{
+struct LinkedList{
     Node* pFirstNode;
     int size;
 }typedef LinkedList;
 #endif
 
 
-
-//Publicas
-LinkedList* ll_newLinkedList(void);
 //Crea una lista nueva
-int ll_len(LinkedList* this);
+LinkedList* ll_newLinkedList(void);
+
 //Cuántos nodos conectados hay
+int ll_len(LinkedList* this);
+
+//
 Node* test_getNode(LinkedList* this, int nodeIndex);
-//
-int test_addNode(LinkedList* this, int nodeIndex,void* pElement);
+
 //Agrega un nodo
+int test_addNode(LinkedList* this, int nodeIndex, void* pElement);
+
+//Agrega un elemento a la lista
 int ll_add(LinkedList* this, void* pElement);
-//Agrega
-void* ll_get(LinkedList* this, int index);
+
 //Recibe una dirección de cualquier cosa y devuelve un dato de la lista
-int ll_set(LinkedList* this, int index,void* pElement);
+void* ll_get(LinkedList* this, int index);
+
 //Reemplaza un elemento por uno nuevo
-int ll_remove(LinkedList* this,int index);
+int ll_set(LinkedList* this, int index, void* pElement);
+
 //Borra un nodo
-int ll_clear(LinkedList* this);
+int ll_remove(LinkedList* this, int index);
+
 //Suelta todos los nodos
-int ll_deleteLinkedList(LinkedList* this);
+int ll_clear(LinkedList* this);
+
 //Borra toda la lista
-int ll_indexOf(LinkedList* this, void* pElement);
+int ll_deleteLinkedList(LinkedList* this);
+
 //Retorna el índice del elemento en el que se encuentra
+int ll_indexOf(LinkedList* this, void* pElement);
+
+//Retorna
 int ll_isEmpty(LinkedList* this);
-//
-int ll_push(LinkedList* this, int index, void* pElement);
+
 //Crea un nodo detrás del indicado
-void* ll_pop(LinkedList* this,int index);
+int ll_push(LinkedList* this, int index, void* pElement);
+
 //Saca el dato del nodo y lo devuelve
-int ll_contains(LinkedList* this, void* pElement);
+void* ll_pop(LinkedList* this, int index);
+
 //Llama a indexOf
-int ll_containsAll(LinkedList* this,LinkedList* this2);
+int ll_contains(LinkedList* this, void* pElement);
+
 //Busca si la primer lista está en la otra
-LinkedList* ll_subList(LinkedList* this,int from,int to);
+int ll_containsAll(LinkedList* this, LinkedList* this2);
+
+//
+LinkedList* ll_subList(LinkedList* this, int from, int to);
+
 //
 LinkedList* ll_clone(LinkedList* this);
-//
-int ll_sort(LinkedList* this, int (*pFunc)(void* ,void*), int order);
-//
+
+/// @brief Ordena la lista LinkedList
+///
+/// @param this - Array LL
+/// @param pFunc - Puntero a función, devuelve como strcmp(),
+/// @param order - 0 para Z-A, 1 para A-Z
+/// @return
+int ll_sort(LinkedList* this, int (*pFunc)(void*, void*), int order);
