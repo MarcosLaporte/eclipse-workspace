@@ -45,7 +45,7 @@ int main()
         {
             case 1: //Cargar de texto
             	if(flagLoad){
-					if(controller_loadFromText(DATA, arrayEmployees)){
+					if(!controller_loadFromText(DATA, arrayEmployees)){
 						printf("Hubo un problema con los punteros.\n");
 					}else{
 						controller_findMaxId(arrayEmployees, &id);
@@ -58,7 +58,7 @@ int main()
                 break;
             case 2: //Cargar de binario
             	if(flagLoad){
-					if(controller_loadFromBinary(DATA_BIN, arrayEmployees)){
+					if(!controller_loadFromBinary(DATA_BIN, arrayEmployees)){
 						printf("Hubo un problema con los punteros.\n");
 					}else{
 						controller_findMaxId(arrayEmployees, &id);
@@ -71,7 +71,9 @@ int main()
             	break;
             case 3: //Alta
             	if(!ll_isEmpty(arrayEmployees)){
-					controller_addEmployee(arrayEmployees, &id);
+					if(controller_addEmployee(arrayEmployees, &id) > 0){
+						printf("Se ha dado de alta el empleado!\n");
+					}
             	}else{
             		printf("ERROR! No hay empleados cargados.\n");
             	}
@@ -95,9 +97,9 @@ int main()
             case 5: //Baja
             	if(!ll_isEmpty(arrayEmployees)){
 					if(controller_removeEmployee(arrayEmployees)){
-						printf("ERROR! No existe un empleado con ese ID.\n");
-					}else{
 						printf("El empleado ha sido dado de baja!\n");
+					}else{
+						printf("ERROR! No existe un empleado con ese ID.\n");
 					}
 				}else{
 					printf("ERROR! No hay empleados cargados.\n");
@@ -112,22 +114,30 @@ int main()
             	break;
             case 7: //Ordenar
             	if(!ll_isEmpty(arrayEmployees)){
-					controller_sortEmployee(arrayEmployees);
+					if(controller_sortEmployee(arrayEmployees)){
+						printf("Se han ordenado los empleados!\n");
+					}
 				}else{
 					printf("ERROR! No hay empleados cargados.\n");
 				}
             	break;
             case 8: //Guardar en texto
             	if(!ll_isEmpty(arrayEmployees)){
-            		controller_saveAsText(DATA, arrayEmployees);
+            		if(controller_saveAsText(DATA, arrayEmployees)){
+            			printf("Los empleados fueron guardados con éxito!\n");
+            		}else{
+						printf("Hubo un problema con los punteros.\n");
+            		}
+            	}else{
+					printf("ERROR! No hay empleados cargados.\n");
             	}
             	break;
             case 9: //Guardar en binario
             	if(!ll_isEmpty(arrayEmployees)){
             		if(controller_saveAsBinary(DATA_BIN, arrayEmployees)){
-						printf("Hubo un problema con los punteros.\n");
+            			printf("Los empleados fueron guardados con éxito!\n");
             		}else{
-            			printf("Re piola pa!\n");
+						printf("Hubo un problema con los punteros.\n");
             		}
 				}else{
 					printf("ERROR! No hay empleados cargados.\n");
@@ -138,6 +148,7 @@ int main()
             	break;
         }
     }while(option != 10);
+
     return 0;
 }
 

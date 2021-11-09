@@ -12,12 +12,12 @@ int controller_loadFromText(char* path , LinkedList* pArrayListEmployee)
 {
 	int retorno;
 	FILE* pFile;
-	retorno = -1;
+	retorno = 0;
 
 	if(path != NULL && pArrayListEmployee != NULL){
 		pFile = fopen(path, "r");
 		if(!parser_EmployeeFromText(pFile, pArrayListEmployee)){
-			retorno = 0;
+			retorno = 1;
 		}
 		fclose(pFile);
 	}
@@ -36,12 +36,12 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
 {
 	int retorno;
 	FILE* pFile;
-	retorno = -1;
+	retorno = 0;
 
 	if(path != NULL && pArrayListEmployee != NULL){
 		pFile = fopen(path, "rb");
 		if(!parser_EmployeeFromBinary(pFile, pArrayListEmployee)){
-			retorno = 0;
+			retorno = 1;
 		}
 		fclose(pFile);
 	}
@@ -60,18 +60,17 @@ int controller_addEmployee(LinkedList* pArrayListEmployee, int* id)
 {
 	int retorno;
 	Employee* miEmpleado;
-	retorno = -1;
+	retorno = 0;
 
 	if(pArrayListEmployee != NULL){
 		miEmpleado = employee_newUsuario(*id);
 		employee_printEmpleado(miEmpleado);
 		if(getConfirmation("Esta acción no puede deshacerse. Escriba 'SI' para eliminar: ", "SI", "NO", 3, 3) == 1){
-			//REVISAR VALIDACION
 			ll_add(pArrayListEmployee, miEmpleado);
 			(*id)++;
-			printf("Se ha dado de alta!\n");
+			retorno = 1;
 		}else{
-			printf("Se ha cancelado la acción.\n");
+			printf("Se ha cancelado la acción!\n");
 		}
 	}
 
@@ -95,7 +94,7 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
 	char auxNombre[MAX_CHAR];
 	int auxHs;
 	int auxSueldo;
-	retorno = -1;
+	retorno = 0;
 
 	if(pArrayListEmployee != NULL){
 		controller_ListEmployee(pArrayListEmployee);
@@ -103,11 +102,11 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
 		index = controller_findEmployeeById(pArrayListEmployee, id);
 		if(index != -1){
 			getInt(&opcion, "\t~ 0. Cancelar\n\t~ 1. Nombre\n\t~ 2. Horas trabajadas\n\t~ 3. Sueldo\nQué desea modificar?: ", "ERROR! Ingrese una opción válida: ", 0, 3);
-			retorno = 0;
+			retorno = 1;
 			miEmpleado = (Employee*)ll_get(pArrayListEmployee, index);
 			switch(opcion){
 			case 0:
-				retorno = 1;
+				retorno = -1;
 				break;
 			case 1:
 				myGetName(auxNombre, "Ingrese el nuevo nombre: ", "Ingrese un nombre válido: ", MAX_CHAR);
@@ -141,7 +140,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
 	int id;
 	int index;
 	Employee* miEmpleado;
-	retorno = -1;
+	retorno = 0;
 
 	if(pArrayListEmployee != NULL){
 		controller_ListEmployee(pArrayListEmployee);
@@ -151,7 +150,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
 			ll_remove(pArrayListEmployee, index);
 			miEmpleado = (Employee*)ll_get(pArrayListEmployee, index);
 			employee_delete(miEmpleado);
-			retorno = 0;
+			retorno = 1;
 		}
 	}
 
@@ -168,10 +167,9 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
 int controller_ListEmployee(LinkedList* pArrayListEmployee)
 {
 	int retorno;
-	retorno = -1;
+	retorno = 0;
 
 	if(pArrayListEmployee != NULL){
-		retorno = 0;
 		printf("#====+=========================+=====+========#\n");
 		printf("| ID |          Nombre         |Horas| Sueldo |\n");
 		printf("#====+=========================+=====+========#\n");
@@ -179,6 +177,7 @@ int controller_ListEmployee(LinkedList* pArrayListEmployee)
 			employee_printEmpleado((Employee*)ll_get(pArrayListEmployee, i));
 		}
 		printf("#=============================================#\n");
+		retorno = 1;
 	}
 
 	return retorno;
@@ -196,11 +195,10 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
 	int retorno;
 	int opcion;
 	int orden;
-	retorno = -1;
+	retorno = 0;
 
 	if(pArrayListEmployee != NULL){
 		getInt(&opcion, "~1) Id\n~2) Nombre\n~3) Horas trabajadas\n~4) Sueldo\nPor qué campo desea ordenar?: ", "ERROR! Ingrese un campo válido (1-4): ", 1, 4);
-			//Especificar mensaje;
 		switch(opcion){
 		case 1:
 			getInt(&orden, "Mayor a menor: 0\tMenor a mayor: 1\nElija un orden: ", "ERROR! Ingrese un orden válido: ", 0, 1);
@@ -219,6 +217,7 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
 			ll_sort(pArrayListEmployee, employee_compareSueldo, orden);
 			break;
 		}
+		retorno = 1;
 	}
 
     return retorno;
@@ -235,13 +234,13 @@ int controller_saveAsText(char* path , LinkedList* pArrayListEmployee)
 {
 	int retorno;
 	FILE* pFile;
-	retorno = -1;
+	retorno = 0;
 
 	if(path != NULL && pArrayListEmployee != NULL){
 		pFile = fopen(path, "w");
 			parser_TextFromEmployee(pFile, pArrayListEmployee);
 		fclose(pFile);
-		retorno = 0;
+		retorno = 1;
 	}
 
     return retorno;
@@ -258,13 +257,13 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
 {
 	int retorno;
 	FILE* pFile;
-	retorno = -1;
+	retorno = 0;
 
 	if(path != NULL && pArrayListEmployee != NULL){
 		pFile = fopen(path, "wb");
 			parser_BinaryFromEmployee(pFile, pArrayListEmployee);
 		fclose(pFile);
-		retorno = 0;
+		retorno = 1;
 	}
     return retorno;
 }
@@ -274,7 +273,7 @@ int controller_findMaxId(LinkedList* pArrayListEmployee, int* id){
 	int max;
 	Employee* aux;
 	int auxId;
-	retorno = -1;
+	retorno = 0;
 
 	if(pArrayListEmployee != NULL && id != NULL){
 		for(int i = 0; i < ll_len(pArrayListEmployee); i++){
@@ -284,8 +283,8 @@ int controller_findMaxId(LinkedList* pArrayListEmployee, int* id){
 				max = auxId;
 			}
 		}
-		retorno = 0;
 		*id = max+1;
+		retorno = 1;
 	}
 
 	return retorno;

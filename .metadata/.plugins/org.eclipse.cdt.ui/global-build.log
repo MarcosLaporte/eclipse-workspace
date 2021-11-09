@@ -181,3 +181,49 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
 gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
 Info: Nothing to build for TP_3
+08:57:31 **** Rebuild of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:15:22 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:287:1: error: 'w' undeclared (first use in this function)
+  287 | w
+      | ^
+..\Controller.c:287:1: note: each undeclared identifier is reported only once for each function it appears in
+..\Controller.c:287:2: error: expected ';' before '}' token
+  287 | w
+      |  ^
+      |  ;
+  288 |  }
+      |  ~
+09:19:55 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:20:46 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+09:21:17 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+09:23:31 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
