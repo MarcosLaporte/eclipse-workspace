@@ -199,7 +199,7 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
 	retorno = -1;
 
 	if(pArrayListEmployee != NULL){
-		getInt(&opcion, "Por qué campo desea ordenar?: ", "ERROR! Ingrese un campo válido (1-4): ", 1, 4);
+		getInt(&opcion, "~1) Id\n~2) Nombre\n~3) Horas trabajadas\n~4) Sueldo\nPor qué campo desea ordenar?: ", "ERROR! Ingrese un campo válido (1-4): ", 1, 4);
 			//Especificar mensaje;
 		switch(opcion){
 		case 1:
@@ -247,18 +247,13 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
 {
 	int retorno;
 	FILE* pFile;
-	Employee* miEmpleado;
 	retorno = -1;
 
 	if(path != NULL && pArrayListEmployee != NULL){
 		pFile = fopen(path, "wb");
-		for(int i = 0; i < ll_len(pArrayListEmployee); i++){
-			miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
-			if(fwrite(miEmpleado, sizeof(Employee), 1, pFile)){
-				retorno = 0;
-			}
-		}
+			parser_BinaryFromEmployee(pFile, pArrayListEmployee);
 		fclose(pFile);
+		retorno = 0;
 	}
     return retorno;
 }

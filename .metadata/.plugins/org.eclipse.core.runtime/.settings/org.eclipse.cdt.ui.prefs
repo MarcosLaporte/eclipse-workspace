@@ -1,8 +1,5 @@
-c_comment_task_tag=255,128,64
 c_comment_task_tag_italic=true
-c_multi_line_comment=255,128,64
 c_multi_line_comment_italic=true
-c_single_line_comment=255,128,64
 c_single_line_comment_italic=true
 consoleOnTop=false
 eclipse.preferences.version=1
@@ -41,15 +38,8 @@ nameStyle.variable.wordDelimiter=
 org.eclipse.cdt.ui.editor.linkToEditor=true
 org.eclipse.cdt.ui.text.custom_code_templates=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
 org.eclipse.cdt.ui.text.templates.custom=<?xml version\="1.0" encoding\="UTF-8" standalone\="no"?><templates/>
-semanticHighlighting.class.strikethrough=false
-semanticHighlighting.class.underline=false
-semanticHighlighting.function.bold=false
 semanticHighlighting.label.color=0,0,160
 semanticHighlighting.label.enabled=true
-semanticHighlighting.namespace.bold=false
-semanticHighlighting.typedef.strikethrough=false
-semanticHighlighting.typedef.underline=false
-sourceHoverBackgroundColor=47,47,47
 spelling_locale_initialized=true
 spelling_user_dictionary_encoding=
 useAnnotationsPrefPage=true

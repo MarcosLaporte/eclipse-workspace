@@ -122,6 +122,8 @@ int main()
             	if(!ll_isEmpty(arrayEmployees)){
             		if(controller_saveAsBinary(DATA_BIN, arrayEmployees)){
 						printf("Hubo un problema con los punteros.\n");
+            		}else{
+            			printf("Re piola pa!\n");
             		}
 				}else{
 					printf("ERROR! No hay empleados cargados.\n");

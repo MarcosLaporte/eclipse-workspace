@@ -50,8 +50,8 @@ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 
 	if(pFile != NULL && pArrayListEmployee != NULL){
 		while(!feof(pFile)){
-			if(fread((Employee*)&miEmpleado, sizeof(Employee), 1, pFile) == 4){
-				miEmpleado = employee_new();
+			miEmpleado = employee_new();
+			if(fread(miEmpleado, sizeof(Employee), 1, pFile) == 1){
 				ll_add(pArrayListEmployee, miEmpleado);
 			}
 		}
@@ -59,4 +59,34 @@ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 	}
 
     return retorno;
+}
+
+int parser_TextFromEmployee(FILE* pFile, LinkedList* pArrayListEmployee){
+	int retorno;
+	Employee* miEmpleado;
+	retorno = -1;
+
+	if(pFile != NULL && pArrayListEmployee != NULL){
+		for(int i = 0; i < ll_len(pArrayListEmployee); i++){
+			miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
+			fwrite(miEmpleado, sizeof(Employee), 1, pFile);
+		}
+	}
+
+	return retorno;
+}
+
+int parser_BinaryFromEmployee(FILE* pFile, LinkedList* pArrayListEmployee){
+	int retorno;
+	Employee* miEmpleado;
+	retorno = -1;
+
+	if(pFile != NULL && pArrayListEmployee != NULL){
+		for(int i = 0; i < ll_len(pArrayListEmployee); i++){
+			miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
+			fwrite(miEmpleado, sizeof(Employee), 1, pFile);
+		}
+	}
+
+	return retorno;
 }
