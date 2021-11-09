@@ -36,6 +36,7 @@ int main()
     int id;
     int flagLoad;
     int r;
+    flagLoad = 1;
 
     LinkedList* arrayEmployees = ll_newLinkedList();
     do{
@@ -117,6 +118,9 @@ int main()
 				}
             	break;
             case 8: //Guardar en texto
+            	if(!ll_isEmpty(arrayEmployees)){
+            		controller_saveAsText(DATA, arrayEmployees);
+            	}
             	break;
             case 9: //Guardar en binario
             	if(!ll_isEmpty(arrayEmployees)){

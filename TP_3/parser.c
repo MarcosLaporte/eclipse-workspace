@@ -64,13 +64,23 @@ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
 int parser_TextFromEmployee(FILE* pFile, LinkedList* pArrayListEmployee){
 	int retorno;
 	Employee* miEmpleado;
+	int id;
+	char nombre[MAX_CHAR];
+	int hs;
+	int sueldo;
 	retorno = -1;
 
 	if(pFile != NULL && pArrayListEmployee != NULL){
+		fprintf(pFile, "ID,Nombre,HorasTrabajadas,Sueldo\n");
 		for(int i = 0; i < ll_len(pArrayListEmployee); i++){
 			miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
-			fwrite(miEmpleado, sizeof(Employee), 1, pFile);
+			employee_getId(miEmpleado, &id);
+			employee_getNombre(miEmpleado, nombre);
+			employee_getHorasTrabajadas(miEmpleado, &hs);
+			employee_getSueldo(miEmpleado, &sueldo);
+			fprintf(pFile, "%d,%s,%d,%d\n", id, nombre, hs, sueldo);
 		}
+		retorno = 0;
 	}
 
 	return retorno;

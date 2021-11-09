@@ -1,4 +1,4 @@
-id,nombre,horasTrabajadas,sueldo
+ID,Nombre,HorasTrabajadas,Sueldo
 1,Lou,120,10000
 2,Ulrike,180,25000
 3,Brade,325,20000
@@ -19,3 +19,4 @@ id,nombre,horasTrabajadas,sueldo
 18,Cirillo,88,50000
 19,Park,120,30000
 20,Bellanca,88,15000
+21,Carla,50,15000
