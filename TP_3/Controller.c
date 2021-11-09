@@ -99,10 +99,10 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
 
 	if(pArrayListEmployee != NULL){
 		controller_ListEmployee(pArrayListEmployee);
-		getFinalInt(&id, "Ingrese el ID que desea modificar: ", "ERROR! Ingrese un ID válido: ", 1, 99999);
+		getInt(&id, "Ingrese el ID que desea modificar: ", "ERROR! Ingrese un ID válido: ", 1, 99999);
 		index = controller_findEmployeeById(pArrayListEmployee, id);
 		if(index != -1){
-			getFinalInt(&opcion, "\t~ 0. Cancelar\n\t~ 1. Nombre\n\t~ 2. Horas trabajadas\n\t~ 3. Sueldo\nQué desea modificar?: ", "ERROR! Ingrese una opción válida: ", 0, 3);
+			getInt(&opcion, "\t~ 0. Cancelar\n\t~ 1. Nombre\n\t~ 2. Horas trabajadas\n\t~ 3. Sueldo\nQué desea modificar?: ", "ERROR! Ingrese una opción válida: ", 0, 3);
 			retorno = 0;
 			miEmpleado = (Employee*)ll_get(pArrayListEmployee, index);
 			switch(opcion){
@@ -110,15 +110,15 @@ int controller_editEmployee(LinkedList* pArrayListEmployee)
 				retorno = 1;
 				break;
 			case 1:
-				myGetString(auxNombre, "Ingrese el nuevo nombre: ", "Ingrese un nombre válido: ", MAX_CHAR);
+				myGetName(auxNombre, "Ingrese el nuevo nombre: ", "Ingrese un nombre válido: ", MAX_CHAR);
 				employee_setNombre(miEmpleado, auxNombre);
 				break;
 			case 2:
-				getFinalInt(&auxHs, "Ingrese las nuevas horas de trabajo: ", "ERROR! Ingrese horas válidas: ", 0, 300);
+				getInt(&auxHs, "Ingrese las nuevas horas de trabajo: ", "ERROR! Ingrese horas válidas: ", 0, 300);
 				employee_setHorasTrabajadas(miEmpleado, auxHs);
 				break;
 			case 3:
-				getFinalInt(&auxSueldo, "Ingrese el nuevo sueldo: ", "ERROR! Ingrese sueldo válido: ", 0, 250000);
+				getInt(&auxSueldo, "Ingrese el nuevo sueldo: ", "ERROR! Ingrese sueldo válido: ", 0, 250000);
 				employee_setSueldo(miEmpleado, auxSueldo);
 				break;
 			}
@@ -145,7 +145,7 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
 
 	if(pArrayListEmployee != NULL){
 		controller_ListEmployee(pArrayListEmployee);
-		getFinalInt(&id, "Ingrese el ID que desea dar de baja: ", "ERROR! Ingrese un ID válido: ", 1, 99999);
+		getInt(&id, "Ingrese el ID que desea dar de baja: ", "ERROR! Ingrese un ID válido: ", 1, 99999);
 		index = controller_findEmployeeById(pArrayListEmployee, id);
 		if(index != -1){
 			ll_remove(pArrayListEmployee, index);
@@ -199,23 +199,23 @@ int controller_sortEmployee(LinkedList* pArrayListEmployee)
 	retorno = -1;
 
 	if(pArrayListEmployee != NULL){
-		getFinalInt(&opcion, "Por qué campo desea ordenar?: ", "ERROR! Ingrese un campo válido (1-4): ", 1, 4);
+		getInt(&opcion, "Por qué campo desea ordenar?: ", "ERROR! Ingrese un campo válido (1-4): ", 1, 4);
 			//Especificar mensaje;
 		switch(opcion){
 		case 1:
-			getFinalInt(&orden, "Mayor a menor: 0\tMenor a mayor: 1\nElija un orden: ", "ERROR! Ingrese un orden válido: ", 0, 1);
+			getInt(&orden, "Mayor a menor: 0\tMenor a mayor: 1\nElija un orden: ", "ERROR! Ingrese un orden válido: ", 0, 1);
 			ll_sort(pArrayListEmployee, employee_compareId, orden);
 			break;
 		case 2:
-			getFinalInt(&orden, "Z-A: 0\tA-Z: 1\nElija un orden: ", "ERROR! Ingrese un orden válido: ", 0, 1);
+			getInt(&orden, "Z-A: 0\tA-Z: 1\nElija un orden: ", "ERROR! Ingrese un orden válido: ", 0, 1);
 			ll_sort(pArrayListEmployee, employee_compareNombre, orden);
 			break;
 		case 3:
-			getFinalInt(&orden, "Mayor a menor: 0\tMenor a mayor: 1\nElija un orden: ", "ERROR! Ingrese un orden válido: ", 0, 1);
+			getInt(&orden, "Mayor a menor: 0\tMenor a mayor: 1\nElija un orden: ", "ERROR! Ingrese un orden válido: ", 0, 1);
 			ll_sort(pArrayListEmployee, employee_compareHoras, orden);
 			break;
 		case 4:
-			getFinalInt(&orden, "Mayor a menor: 0\tMenor a mayor: 1\nElija un orden: ", "ERROR! Ingrese un orden válido: ", 0, 1);
+			getInt(&orden, "Mayor a menor: 0\tMenor a mayor: 1\nElija un orden: ", "ERROR! Ingrese un orden válido: ", 0, 1);
 			ll_sort(pArrayListEmployee, employee_compareSueldo, orden);
 			break;
 		}

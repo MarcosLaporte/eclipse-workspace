@@ -16,7 +16,7 @@ Employee* employee_newParametros(char* idStr, char* nombreStr, char* horasTrabaj
 		/*if(!f_isInt(idStr, &auxId) && !f_getName(nombreStr, auxNombre) &&
 				!f_isInt(horasTrabajadasStr, &auxHoras) && !f_isInt(sueldo, &auxSueldo)){ //Por fuera*/
 			employee_setId(miEmpleado, atoi(idStr));
-			formatString(nombreStr);
+			camelStr(nombreStr);
 			employee_setNombre(miEmpleado, nombreStr);
 			employee_setHorasTrabajadas(miEmpleado, atoi(horasTrabajadasStr));
 			employee_setSueldo(miEmpleado, atoi(sueldo));
@@ -33,9 +33,9 @@ Employee* employee_newUsuario(int id){
 	int auxSueldo;
 
 	miEmpleado = employee_new();
-	if(!myGetString(auxNombre, "Ingrese el nombre del empleado: ", "ERROR! Ingrese un nombre válido: ", MAX_CHAR) &&
-			!getFinalInt(&auxHoras, "Ingrese las horas trabajadas: ", "ERROR! Ingrese horas válidas: ", 0, 300) &&
-			!getFinalInt(&auxSueldo, "Ingrese el sueldo del empleado: ", "ERROR! Ingrese sueldo válido: ", 1, 250000)){
+	if(myGetName(auxNombre, "Ingrese el nombre del empleado: ", "ERROR! Ingrese un nombre válido: ", MAX_CHAR) &&
+			getInt(&auxHoras, "Ingrese las horas trabajadas: ", "ERROR! Ingrese horas válidas: ", 0, 300) &&
+			getInt(&auxSueldo, "Ingrese el sueldo del empleado: ", "ERROR! Ingrese sueldo válido: ", 1, 250000)){
 		employee_setId(miEmpleado, id);
 		employee_setNombre(miEmpleado, auxNombre);
 		employee_setHorasTrabajadas(miEmpleado, auxHoras);

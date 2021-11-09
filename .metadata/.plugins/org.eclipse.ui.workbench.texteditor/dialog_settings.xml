@@ -3,28 +3,35 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="true"/>
-		<item key="wholeword" value="false"/>
-		<item key="incremental" value="false"/>
+		<item key="wholeword" value="true"/>
+		<item key="incremental" value="true"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="opcion"/>
+		<item key="selection" value="getFloat"/>
 		<list key="findhistory">
+			<item value="getFinalFloat"/>
+			<item value="camelString"/>
+			<item value="formatString"/>
+			<item value="getFinalInt"/>
+			<item value="getString"/>
+			<item value="checkAlphabetAndSpace"/>
+			<item value="myGets"/>
+			<item value="isAnInt"/>
+			<item value="getAnInt"/>
+			<item value="isAFloat"/>
+			<item value="getAFloat"/>
+			<item value="myGetName"/>
+			<item value="myGetString"/>
 			<item value="option"/>
 			<item value="Return"/>
-			<item value="newPara"/>
-			<item value="atoi"/>
-			<item value="j"/>
-			<item value="CHAR_NAME"/>
-			<item value="input"/>
-			<item value="f_getName"/>
-			<item value="id"/>
-			<item value="horas"/>
-			<item value="Nombre"/>
-			<item value="getString"/>
-			<item value="countCompletedRequestsByClient"/>
-			<item value="initCompletedRequests"/>
-			<item value="cliList"/>
 		</list>
 		<list key="replacehistory">
+			<item value="getFloat"/>
+			<item value="camelStr"/>
+			<item value="camelString"/>
+			<item value="getInt"/>
+			<item value="isAlphaSpace"/>
+			<item value=""/>
+			<item value="myGetName"/>
 			<item value="opcion"/>
 			<item value="retorno"/>
 			<item value="MAX_CHAR"/>
@@ -33,19 +40,14 @@
 			<item value="horasTrabajadas"/>
 			<item value="horas"/>
 			<item value="Id"/>
-			<item value="list"/>
-			<item value="len"/>
-			<item value=""/>
-			<item value="request"/>
-			<item value=", "/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="647"/>
-		<item key="DIALOG_Y_ORIGIN" value="166"/>
-		<item key="DIALOG_WIDTH" value="284"/>
-		<item key="DIALOG_HEIGHT" value="391"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|5|0|Segoe UI"/>
+		<item key="DIALOG_X_ORIGIN" value="763"/>
+		<item key="DIALOG_Y_ORIGIN" value="20"/>
+		<item key="DIALOG_WIDTH" value="336"/>
+		<item key="DIALOG_HEIGHT" value="454"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="452"/>

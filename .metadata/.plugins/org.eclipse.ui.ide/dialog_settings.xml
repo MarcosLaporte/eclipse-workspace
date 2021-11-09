@@ -15,8 +15,8 @@
 		<item key="WizardProjectsImportPage.STORE_CLOSE_CREATED_PROJECTS_ID" value="false"/>
 		<item key="WizardProjectsImportPage.STORE_HIDE_CONFLICTING_PROJECTS_ID" value="false"/>
 		<list key="WizardProjectsImportPage.STORE_DIRECTORIES">
-			<item value="C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace"/>
 			<item value="C:\Users\54113\Desktop\eclipse-workspace"/>
+			<item value="C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace"/>
 			<item value="C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\TP_3"/>
 		</list>
 		<list key="WizardProjectsImportPage.STORE_ARCHIVES">

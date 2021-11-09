@@ -22,8 +22,8 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 			//Si y solo si el archivo tiene encabezado
 		while(!feof(pFile)){
 			if(fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", id, nombre, hs, sueldo) == 4){
-				if(!isAnInt(id, MAX_CHAR) && checkAlphabetAndSpace(nombre) &&
-						!isAnInt(hs, MAX_CHAR) && !isAnInt(sueldo, MAX_CHAR)){
+				if(isAnInt(id, MAX_CHAR) && isAlphaSpace(nombre) &&
+						isAnInt(hs, MAX_CHAR) && isAnInt(sueldo, MAX_CHAR)){
 					aux = employee_newParametros(id, nombre, hs, sueldo);
 					ll_add(pArrayListEmployee, aux);
 				}

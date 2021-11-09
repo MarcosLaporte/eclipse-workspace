@@ -57,7 +57,7 @@ int main()
                 break;
             case 2: //Cargar de binario
             	if(flagLoad){
-					if(controller_loadFromBinary(DATA, arrayEmployees)){
+					if(controller_loadFromBinary(DATA_BIN, arrayEmployees)){
 						printf("Hubo un problema con los punteros.\n");
 					}else{
 						controller_findMaxId(arrayEmployees, &id);
@@ -121,7 +121,7 @@ int main()
             case 9: //Guardar en binario
             	if(!ll_isEmpty(arrayEmployees)){
             		if(controller_saveAsBinary(DATA_BIN, arrayEmployees)){
-            			;
+						printf("Hubo un problema con los punteros.\n");
             		}
 				}else{
 					printf("ERROR! No hay empleados cargados.\n");

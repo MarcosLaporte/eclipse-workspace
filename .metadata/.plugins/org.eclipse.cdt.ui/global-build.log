@@ -702,3 +702,92 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
 Info: Nothing to build for TP_3
+18:42:37 **** Rebuild of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+18:42:42 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+18:43:29 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+18:47:44 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+19:47:29 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+..\Employee.c: In function 'employee_newUsuario':
+..\Employee.c:36:6: warning: implicit declaration of function 'myGetString'; did you mean 'getString'? [-Wimplicit-function-declaration]
+   36 |  if(!myGetString(auxNombre, "Ingrese el nombre del empleado: ", "ERROR! Ingrese un nombre válido: ", MAX_CHAR) &&
+      |      ^~~~~~~~~~~
+      |      getString
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_editEmployee':
+..\Controller.c:113:5: warning: implicit declaration of function 'myGetString'; did you mean 'getString'? [-Wimplicit-function-declaration]
+  113 |     myGetString(auxNombre, "Ingrese el nuevo nombre: ", "Ingrese un nombre válido: ", MAX_CHAR);
+      |     ^~~~~~~~~~~
+      |     getString
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o: in function `controller_editEmployee':
+C:\Users\54113\Desktop\eclipse-workspace\TP_3\Debug/../Controller.c:113: undefined reference to `myGetString'
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_newUsuario':
+C:\Users\54113\Desktop\eclipse-workspace\TP_3\Debug/../Employee.c:36: undefined reference to `myGetString'
+collect2.exe: error: ld returned 1 exit status
+19:48:58 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+22:45:41 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+..\Employee.c: In function 'employee_newParametros':
+..\Employee.c:19:4: warning: implicit declaration of function 'formatString' [-Wimplicit-function-declaration]
+   19 |    formatString(nombreStr);
+      |    ^~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Employee.o: in function `employee_newParametros':
+C:\Users\54113\Desktop\eclipse-workspace\TP_3\Debug/../Employee.c:19: undefined reference to `formatString'
+collect2.exe: error: ld returned 1 exit status
+22:47:01 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+22:48:42 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+23:02:02 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
