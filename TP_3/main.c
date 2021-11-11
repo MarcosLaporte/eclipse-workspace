@@ -36,6 +36,7 @@ int main()
     int id;
     int flagLoad;
     int r;
+    id = 1000;
     flagLoad = 1;
 
     LinkedList* arrayEmployees = ll_newLinkedList();

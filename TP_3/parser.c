@@ -19,7 +19,6 @@ int parser_EmployeeFromText(FILE* pFile , LinkedList* pArrayListEmployee)
 
 	if(pFile != NULL && pArrayListEmployee != NULL){
 		fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", id, nombre, hs, sueldo);
-			//Si y solo si el archivo tiene encabezado
 		while(!feof(pFile)){
 			if(fscanf(pFile, "%[^,],%[^,],%[^,],%[^\n]\n", id, nombre, hs, sueldo) == 4){
 				if(isAnInt(id, MAX_CHAR) && isAlphaSpace(nombre) &&

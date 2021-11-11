@@ -270,21 +270,25 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
 
 int controller_findMaxId(LinkedList* pArrayListEmployee, int* id){
 	int retorno;
-	int max;
-	Employee* aux;
-	int auxId;
+//	int max;
+//	Employee* aux;
+//	int auxId;
+	FILE* pFile;
 	retorno = 0;
 
 	if(pArrayListEmployee != NULL && id != NULL){
-		for(int i = 0; i < ll_len(pArrayListEmployee); i++){
-			aux = (Employee*)ll_get(pArrayListEmployee, i);
-			employee_getId(aux, &auxId);
-			if(i == 0 || auxId > max){
-				max = auxId;
-			}
-		}
-		*id = max+1;
+		pFile = fopen("ids.txt", "w");
+			fprintf(pFile, "%d", *id+1);
+		fclose(pFile);
 		retorno = 1;
+//		for(int i = 0; i < ll_len(pArrayListEmployee); i++){
+//			aux = (Employee*)ll_get(pArrayListEmployee, i);
+//			employee_getId(aux, &auxId);
+//			if(i == 0 || auxId > max){
+//				max = auxId;
+//			}
+//		}
+//		*id = max+1;
 	}
 
 	return retorno;
