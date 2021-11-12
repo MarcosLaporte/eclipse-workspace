@@ -56,18 +56,20 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
  * \return int
  *
  */
-int controller_addEmployee(LinkedList* pArrayListEmployee)
+int controller_addEmployee(LinkedList* pArrayListEmployee, char* path)
 {
 	int retorno;
 	Employee* miEmpleado;
 	int id;
 	retorno = 0;
 
-	if(pArrayListEmployee != NULL){
+	if(pArrayListEmployee != NULL && path != NULL){
+		controller_readId(path, &id);
 		miEmpleado = employee_newUsuario(id);
 		employee_printEmpleado(miEmpleado);
 		if(getConfirmation("Escriba 'SI' para confirmar: ", "SI", "NO", 3, 3) == 1){
 			ll_add(pArrayListEmployee, miEmpleado);
+			controller_saveId(path, id+1);
 			retorno = 1;
 		}else{
 			printf("Se ha cancelado la acción!\n");
@@ -270,14 +272,19 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
     return retorno;
 }
 
-int controller_saveId(char* path, int* id){
+/// @brief Guarda el id pasado por parámetro en el archivo con la ruta pasada por parámetro.
+///
+/// @param path - Ruta del archivo.
+/// @param id - ID a guardar en el archivo.
+/// @return int - Retorna 0 si el puntero es inválido, o 1 si está todo bien.
+int controller_saveId(char* path, int id){
 	int retorno;
 	FILE* pFile;
 	retorno = 0;
 
-	if(path != NULL && id != NULL){
+	if(path != NULL){
 		pFile = fopen(path, "wb");
-			fwrite(id, sizeof(int), 1, pFile);
+			fwrite(&id, sizeof(int), 1, pFile);
 		fclose(pFile);
 		retorno = 1;
 	}
@@ -285,6 +292,11 @@ int controller_saveId(char* path, int* id){
 	return retorno;
 }
 
+/// @brief Toma el id guardado en el archivo con la ruta pasada por parámetro, y lo pasa por el puntero.
+///
+/// @param path - Ruta del archivo.
+/// @param id - Puntero para guardar el ID leido.
+/// @return int - Retorna 0 si el puntero es inválido, o 1 si está todo bien.
 int controller_readId(char* path, int* id){
 	int retorno;
 	FILE* pFile;
@@ -300,6 +312,11 @@ int controller_readId(char* path, int* id){
 	return retorno;
 }
 
+/// @brief
+///
+/// @param pArrayListEmployee - Puntero al array de empleados.
+/// @param id
+/// @return int - Retorna -1 si el puntero es inválido, o 1 si está todo bien.
 int controller_findEmployeeById(LinkedList* pArrayListEmployee, int id){
 	int retorno;
 	int auxId;
@@ -311,6 +328,8 @@ int controller_findEmployeeById(LinkedList* pArrayListEmployee, int id){
 		employee_getId(miEmpleado, &auxId);
 		if(auxId == id){
 			retorno = ll_indexOf(pArrayListEmployee, miEmpleado);
+			retorno = 0;
+			break;
 		}
 	}
 

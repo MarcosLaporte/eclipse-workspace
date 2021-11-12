@@ -3,11 +3,12 @@
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="true"/>
-		<item key="wholeword" value="true"/>
+		<item key="wholeword" value="false"/>
 		<item key="incremental" value="true"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value="retorno = 0"/>
+		<item key="selection" value=""/>
 		<list key="findhistory">
+			<item value="find"/>
 			<item value="retorno = 5"/>
 			<item value="getFinalFloat"/>
 			<item value="camelString"/>
@@ -15,7 +16,6 @@
 			<item value="getFinalInt"/>
 			<item value="getString"/>
 			<item value="checkAlphabetAndSpace"/>
-			<item value="myGets"/>
 		</list>
 		<list key="replacehistory">
 			<item value="retorno = 0"/>

@@ -22,6 +22,7 @@
 #include "Controller.h"
 #define DATA "data.csv"
 #define DATA_BIN "data.bin"
+#define ID_FILE "id.bin"
 
 int main()
 {
@@ -36,6 +37,7 @@ int main()
     int flagLoad;
     int r;
     flagLoad = 1;
+//	controller_saveId(ID_FILE, 1001);
 
     LinkedList* arrayEmployees = ll_newLinkedList();
     do{
@@ -47,7 +49,6 @@ int main()
 					if(!controller_loadFromText(DATA, arrayEmployees)){
 						printf("Hubo un problema con los punteros.\n");
 					}else{
-//						controller_findMaxId(arrayEmployees);
 						printf("Se cargaron los %d empleados!\n", ll_len(arrayEmployees));
 						flagLoad = 0;
 					}
@@ -60,7 +61,6 @@ int main()
 					if(!controller_loadFromBinary(DATA_BIN, arrayEmployees)){
 						printf("Hubo un problema con los punteros.\n");
 					}else{
-//						controller_findMaxId(arrayEmployees);
 						printf("Se cargaron los %d empleados del binario!\n", ll_len(arrayEmployees));
 						flagLoad = 0;
 					}
@@ -70,7 +70,7 @@ int main()
             	break;
             case 3: //Alta
             	if(!ll_isEmpty(arrayEmployees)){
-					if(controller_addEmployee(arrayEmployees) > 0){
+					if(controller_addEmployee(arrayEmployees, ID_FILE) > 0){
 						printf("Se ha dado de alta el empleado!\n");
 					}
             	}else{
@@ -81,12 +81,12 @@ int main()
             	if(!ll_isEmpty(arrayEmployees)){
             		r = controller_editEmployee(arrayEmployees);
 					if(r > 0){
-						printf("Ha cancelado la acción.\n");
+						printf("Se ha modificado el empleado!\n");
 					}else{
 						if(!r){
-							printf("Se ha modificado el empleado!\n");
-						}else{
 							printf("ERROR! No existe un empleado con ese ID.\n");
+						}else{
+							printf("Ha cancelado la acción.\n");
 						}
 					}
             	}else{
