@@ -1,3 +1,346 @@
-21:16:48 **** Clean-only build of configuration Debug for project TP_3 ****
-rm -rf parser.d Controller.o TP_3.exe parser.o Controller.d main.o Input.o Employee.d Input.d main.d Employee.o 
+16:43:21 **** Clean-only build of configuration Debug for project TP_3 ****
+rm -rf main.o Controller.d Controller.o parser.d main.d Employee.d Input.d Input.o TP_3.exe Employee.o parser.o 
 rm: cannot remove `TP_3.exe': Permission denied
+16:44:22 **** Rebuild of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:287:11: warning: assignment to 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+  287 |   retorno = id;
+      |           ^
+..\Controller.c:277:2: warning: 'id' is used uninitialized in this function [-Wuninitialized]
+  277 |  *id = 1000;
+      |  ^~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+16:45:54 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:45:55 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+16:47:44 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:281:10: warning: passing argument 1 of 'fread' makes pointer from integer without a cast [-Wint-conversion]
+  281 |    fread(id, sizeof(int), 1, pFile);
+      |          ^~
+      |          |
+      |          int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:767:48: note: expected 'void *' but argument is of type 'int'
+  767 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+      |                                                ^~~~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:47:46 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+16:52:21 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:283:10: warning: passing argument 1 of 'fread' makes pointer from integer without a cast [-Wint-conversion]
+  283 |    fread(id, sizeof(int), 1, pFile);
+      |          ^~
+      |          |
+      |          int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:767:48: note: expected 'void *' but argument is of type 'int'
+  767 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+      |                                                ^~~~~~
+..\Controller.c:287:18: warning: passing argument 2 of 'fwrite' makes integer from pointer without a cast [-Wint-conversion]
+  287 |    fwrite(pFile, "%d", id);
+      |                  ^~~~
+      |                  |
+      |                  char *
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:768:63: note: expected 'size_t' {aka 'unsigned int'} but argument is of type 'char *'
+  768 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fwrite (const void *, size_t, size_t, FILE *);
+      |                                                               ^~~~~~
+..\Controller.c:287:4: error: too few arguments to function 'fwrite'
+  287 |    fwrite(pFile, "%d", id);
+      |    ^~~~~~
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:768:41: note: declared here
+  768 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fwrite (const void *, size_t, size_t, FILE *);
+      |                                         ^~~~~~
+16:53:23 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:283:10: warning: passing argument 1 of 'fread' makes pointer from integer without a cast [-Wint-conversion]
+  283 |    fread(id, sizeof(int), 1, pFile);
+      |          ^~
+      |          |
+      |          int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:767:48: note: expected 'void *' but argument is of type 'int'
+  767 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+      |                                                ^~~~~~
+..\Controller.c:288:11: warning: passing argument 1 of 'fwrite' makes pointer from integer without a cast [-Wint-conversion]
+  288 |    fwrite(id, sizeof(int), 1, pFile);
+      |           ^~
+      |           |
+      |           int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:768:49: note: expected 'const void *' but argument is of type 'int'
+  768 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fwrite (const void *, size_t, size_t, FILE *);
+      |                                                 ^~~~~~~~~~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+Info: Nothing to build for TP_3
+16:54:25 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:281:5: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  281 |  id = 1000;
+      |     ^
+..\Controller.c:292:11: warning: assignment to 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+  292 |   retorno = id;
+      |           ^
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+16:54:38 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:281:6: error: lvalue required as left operand of assignment
+  281 |  &id = 1000;
+      |      ^
+16:54:43 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:281:2: warning: 'id' is used uninitialized in this function [-Wuninitialized]
+  281 |  *id = 1000;
+      |  ^~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+16:54:55 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:277:12: warning: initialization of 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  277 |  int* id = 1000;
+      |            ^~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+16:55:31 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+16:55:58 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+16:56:54 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+16:59:07 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:283:10: warning: passing argument 1 of 'fread' makes pointer from integer without a cast [-Wint-conversion]
+  283 |    fread(id, sizeof(int), 1, pFile);
+      |          ^~
+      |          |
+      |          int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:767:48: note: expected 'void *' but argument is of type 'int'
+  767 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+      |                                                ^~~~~~
+..\Controller.c:290:11: warning: passing argument 1 of 'fwrite' makes pointer from integer without a cast [-Wint-conversion]
+  290 |    fwrite(id, sizeof(int), 1, pFile);
+      |           ^~
+      |           |
+      |           int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:768:49: note: expected 'const void *' but argument is of type 'int'
+  768 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fwrite (const void *, size_t, size_t, FILE *);
+      |                                                 ^~~~~~~~~~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+17:10:46 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:283:10: warning: passing argument 1 of 'fread' makes pointer from integer without a cast [-Wint-conversion]
+  283 |    fread(id, sizeof(int), 1, pFile);
+      |          ^~
+      |          |
+      |          int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:767:48: note: expected 'void *' but argument is of type 'int'
+  767 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+      |                                                ^~~~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+17:11:25 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:282:10: warning: passing argument 1 of 'fread' makes pointer from integer without a cast [-Wint-conversion]
+  282 |    fread(id, sizeof(int), 1, pFile);
+      |          ^~
+      |          |
+      |          int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:767:48: note: expected 'void *' but argument is of type 'int'
+  767 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+      |                                                ^~~~~~
+..\Controller.c:282:4: warning: 'id' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  282 |    fread(id, sizeof(int), 1, pFile);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+17:12:42 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:282:10: warning: passing argument 1 of 'fread' makes pointer from integer without a cast [-Wint-conversion]
+  282 |    fread(id, sizeof(int), 1, pFile);
+      |          ^~
+      |          |
+      |          int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:767:48: note: expected 'void *' but argument is of type 'int'
+  767 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+      |                                                ^~~~~~
+..\Controller.c:282:4: warning: 'id' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  282 |    fread(id, sizeof(int), 1, pFile);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+17:13:05 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:282:10: warning: passing argument 1 of 'fread' makes pointer from integer without a cast [-Wint-conversion]
+  282 |    fread(id, sizeof(int), 1, pFile);
+      |          ^~
+      |          |
+      |          int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:767:48: note: expected 'void *' but argument is of type 'int'
+  767 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+      |                                                ^~~~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+17:14:34 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:282:10: warning: passing argument 1 of 'fread' makes pointer from integer without a cast [-Wint-conversion]
+  282 |    fread(id, sizeof(int), 1, pFile);
+      |          ^~
+      |          |
+      |          int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:767:48: note: expected 'void *' but argument is of type 'int'
+  767 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fread (void *, size_t, size_t, FILE *);
+      |                                                ^~~~~~
+..\Controller.c:282:4: warning: 'id' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  282 |    fread(id, sizeof(int), 1, pFile);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+17:23:41 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:23:44 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+17:24:50 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3
+17:29:57 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:284:11: warning: passing argument 1 of 'fwrite' makes pointer from integer without a cast [-Wint-conversion]
+  284 |    fwrite(id, sizeof(int), 1, pFile);
+      |           ^~
+      |           |
+      |           int
+In file included from ..\Input.h:9,
+                 from ..\Employee.h:4,
+                 from ..\Controller.h:2,
+                 from ..\Controller.c:1:
+c:\mingw\include\stdio.h:768:49: note: expected 'const void *' but argument is of type 'int'
+  768 | _CRTIMP __cdecl __MINGW_NOTHROW  size_t fwrite (const void *, size_t, size_t, FILE *);
+      |                                                 ^~~~~~~~~~~~
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+17:30:12 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+..\Controller.c: In function 'controller_findMaxId':
+..\Controller.c:280:5: warning: assignment to 'int' from 'int *' makes integer from pointer without a cast [-Wint-conversion]
+  280 |  id = &auxId;
+      |     ^
+..\Controller.c:286:13: error: invalid type argument of unary '*' (have 'int')
+  286 |   retorno = *id;
+      |             ^~~
+17:30:23 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+17:54:44 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_3.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:54:53 **** Incremental Build of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: Controller.o: in function `controller_addEmployee':
+C:\Users\54113\Desktop\eclipse-workspace\TP_3\Debug/../Controller.c:67: undefined reference to `controller_findMaxId'
+collect2.exe: error: ld returned 1 exit status

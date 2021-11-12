@@ -56,18 +56,18 @@ int controller_loadFromBinary(char* path , LinkedList* pArrayListEmployee)
  * \return int
  *
  */
-int controller_addEmployee(LinkedList* pArrayListEmployee, int* id)
+int controller_addEmployee(LinkedList* pArrayListEmployee)
 {
 	int retorno;
 	Employee* miEmpleado;
+	int id;
 	retorno = 0;
 
 	if(pArrayListEmployee != NULL){
-		miEmpleado = employee_newUsuario(*id);
+		miEmpleado = employee_newUsuario(id);
 		employee_printEmpleado(miEmpleado);
-		if(getConfirmation("Esta acción no puede deshacerse. Escriba 'SI' para eliminar: ", "SI", "NO", 3, 3) == 1){
+		if(getConfirmation("Escriba 'SI' para confirmar: ", "SI", "NO", 3, 3) == 1){
 			ll_add(pArrayListEmployee, miEmpleado);
-			(*id)++;
 			retorno = 1;
 		}else{
 			printf("Se ha cancelado la acción!\n");
@@ -147,10 +147,12 @@ int controller_removeEmployee(LinkedList* pArrayListEmployee)
 		getInt(&id, "Ingrese el ID que desea dar de baja: ", "ERROR! Ingrese un ID válido: ", 1, 99999);
 		index = controller_findEmployeeById(pArrayListEmployee, id);
 		if(index != -1){
-			ll_remove(pArrayListEmployee, index);
-			miEmpleado = (Employee*)ll_get(pArrayListEmployee, index);
-			employee_delete(miEmpleado);
-			retorno = 1;
+			if(getConfirmation("Esta acción no puede deshacerse. Escriba 'SI' para eliminar: ", "SI", "NO", 3, 3) == 1){
+				ll_remove(pArrayListEmployee, index);
+				miEmpleado = (Employee*)ll_get(pArrayListEmployee, index);
+				employee_delete(miEmpleado);
+				retorno = 1;
+			}
 		}
 	}
 
@@ -268,27 +270,31 @@ int controller_saveAsBinary(char* path , LinkedList* pArrayListEmployee)
     return retorno;
 }
 
-int controller_findMaxId(LinkedList* pArrayListEmployee, int* id){
+int controller_saveId(char* path, int* id){
 	int retorno;
-//	int max;
-//	Employee* aux;
-//	int auxId;
 	FILE* pFile;
 	retorno = 0;
 
-	if(pArrayListEmployee != NULL && id != NULL){
-		pFile = fopen("ids.txt", "w");
-			fprintf(pFile, "%d", *id+1);
+	if(path != NULL && id != NULL){
+		pFile = fopen(path, "wb");
+			fwrite(id, sizeof(int), 1, pFile);
 		fclose(pFile);
 		retorno = 1;
-//		for(int i = 0; i < ll_len(pArrayListEmployee); i++){
-//			aux = (Employee*)ll_get(pArrayListEmployee, i);
-//			employee_getId(aux, &auxId);
-//			if(i == 0 || auxId > max){
-//				max = auxId;
-//			}
-//		}
-//		*id = max+1;
+	}
+
+	return retorno;
+}
+
+int controller_readId(char* path, int* id){
+	int retorno;
+	FILE* pFile;
+	retorno = 0;
+
+	if(path != NULL && id != NULL){
+		pFile = fopen(path, "rb");
+			fread(id, sizeof(int), 1, pFile);
+		fclose(pFile);
+		retorno = 1;
 	}
 
 	return retorno;
