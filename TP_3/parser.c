@@ -60,6 +60,11 @@ int parser_EmployeeFromBinary(FILE* pFile , LinkedList* pArrayListEmployee)
     return retorno;
 }
 
+/// @brief Imprime en el archivo 'pFile' los datos del empleado de la LL. (modo texto)
+///
+/// @param pFile - Puntero al archivo.
+/// @param pArrayListEmployee - Puntero a la LinkedList.
+/// @return int - Retorna 0 si el puntero es nulo, o 1 si está tod bien.
 int parser_TextFromEmployee(FILE* pFile, LinkedList* pArrayListEmployee){
 	int retorno;
 	Employee* miEmpleado;
@@ -67,7 +72,7 @@ int parser_TextFromEmployee(FILE* pFile, LinkedList* pArrayListEmployee){
 	char nombre[MAX_CHAR];
 	int hs;
 	int sueldo;
-	retorno = -1;
+	retorno = 0;
 
 	if(pFile != NULL && pArrayListEmployee != NULL){
 		fprintf(pFile, "ID,Nombre,HorasTrabajadas,Sueldo\n");
@@ -79,22 +84,28 @@ int parser_TextFromEmployee(FILE* pFile, LinkedList* pArrayListEmployee){
 			employee_getSueldo(miEmpleado, &sueldo);
 			fprintf(pFile, "%d,%s,%d,%d\n", id, nombre, hs, sueldo);
 		}
-		retorno = 0;
+		retorno = 1;
 	}
 
 	return retorno;
 }
 
+/// @brief Imprime en el archivo 'pFile' los datos del empleado de la LL. (modo binario)
+///
+/// @param pFile - Puntero al archivo.
+/// @param pArrayListEmployee - Puntero a la LinkedList.
+/// @return int - Retorna 0 si el puntero es nulo, o 1 si está tod bien.
 int parser_BinaryFromEmployee(FILE* pFile, LinkedList* pArrayListEmployee){
 	int retorno;
 	Employee* miEmpleado;
-	retorno = -1;
+	retorno = 0;
 
 	if(pFile != NULL && pArrayListEmployee != NULL){
 		for(int i = 0; i < ll_len(pArrayListEmployee); i++){
 			miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
 			fwrite(miEmpleado, sizeof(Employee), 1, pFile);
 		}
+		retorno = 1;
 	}
 
 	return retorno;

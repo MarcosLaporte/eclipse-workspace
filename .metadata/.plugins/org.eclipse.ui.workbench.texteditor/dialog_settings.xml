@@ -6,26 +6,26 @@
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="true"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=""/>
+		<item key="selection" value="sueldo"/>
 		<list key="findhistory">
+			<item value="employee_printEmpleado"/>
+			<item value="employee_newFromUser"/>
+			<item value="employee_newUsuario"/>
+			<item value="sueldo"/>
 			<item value="find"/>
 			<item value="retorno = 5"/>
 			<item value="getFinalFloat"/>
 			<item value="camelString"/>
-			<item value="formatString"/>
-			<item value="getFinalInt"/>
-			<item value="getString"/>
-			<item value="checkAlphabetAndSpace"/>
 		</list>
 		<list key="replacehistory">
+			<item value="employee_newFromUser"/>
+			<item value="sueldoStr"/>
 			<item value="retorno = 0"/>
 			<item value="getFloat"/>
 			<item value="camelStr"/>
 			<item value="camelString"/>
 			<item value="getInt"/>
 			<item value="isAlphaSpace"/>
-			<item value=""/>
-			<item value="myGetName"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

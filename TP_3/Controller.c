@@ -65,7 +65,7 @@ int controller_addEmployee(LinkedList* pArrayListEmployee, char* path)
 
 	if(pArrayListEmployee != NULL && path != NULL){
 		controller_readId(path, &id);
-		miEmpleado = employee_newUsuario(id);
+		miEmpleado = employee_newFromUser(id);
 		employee_printEmpleado(miEmpleado);
 		if(getConfirmation("Escriba 'SI' para confirmar: ", "SI", "NO", 3, 3) == 1){
 			ll_add(pArrayListEmployee, miEmpleado);
@@ -312,11 +312,11 @@ int controller_readId(char* path, int* id){
 	return retorno;
 }
 
-/// @brief
+/// @brief Busca por id la posición de LL ern la que se encuentra el empleado.
 ///
-/// @param pArrayListEmployee - Puntero al array de empleados.
-/// @param id
-/// @return int - Retorna -1 si el puntero es inválido, o 1 si está todo bien.
+/// @param pArrayListEmployee - Puntero al array LL de empleados.
+/// @param id - El ID a buscar.
+/// @return int - Retorna la posición del empleado si la encuentra, o -1 si no.
 int controller_findEmployeeById(LinkedList* pArrayListEmployee, int id){
 	int retorno;
 	int auxId;
@@ -328,7 +328,6 @@ int controller_findEmployeeById(LinkedList* pArrayListEmployee, int id){
 		employee_getId(miEmpleado, &auxId);
 		if(auxId == id){
 			retorno = ll_indexOf(pArrayListEmployee, miEmpleado);
-			retorno = 0;
 			break;
 		}
 	}

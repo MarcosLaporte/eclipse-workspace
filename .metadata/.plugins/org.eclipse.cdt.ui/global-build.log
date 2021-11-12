@@ -255,3 +255,12 @@ Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
 gcc "-LC:\\Estudios\\UTN\\Laboratorio-Programación\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+14:31:04 **** Rebuild of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+Info: Nothing to build for TP_3

@@ -288,10 +288,10 @@ int getConfirmation(char message[], char* confirmation, char* cancel, int length
 
 /// @brief Pide una cadena de caracteres validando que sean letras, espacios o guiones, para luego darles formato.
 ///
-/// @param input
-/// @param message
-/// @param errorMessage
-/// @param len
+/// @param input - Puntero donde se guarda la cadena.
+/// @param message - El mensaje a mostrar por pantalla.
+/// @param errorMessage - El mensaje de error a mostrar.
+/// @param len - El tamaño máximo de input.
 /// @return
 int myGetName(char* input, char* message, char* errorMessage, int len){
 	int Return;
