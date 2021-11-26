@@ -6,8 +6,9 @@
 		<item key="wholeword" value="true"/>
 		<item key="incremental" value="true"/>
 		<item key="isRegEx" value="false"/>
-		<item key="selection" value=" "/>
+		<item key="selection" value="lastNode"/>
 		<list key="findhistory">
+			<item value="nodoAnterior"/>
 			<item value=";"/>
 			<item value="[5];"/>
 			<item value="sPilot"/>
@@ -22,9 +23,9 @@
 			<item value="employee_newUsuario"/>
 			<item value="sueldo"/>
 			<item value="find"/>
-			<item value="retorno = 5"/>
 		</list>
 		<list key="replacehistory">
+			<item value="lastNode"/>
 			<item value=" "/>
 			<item value="sFlight"/>
 			<item value="ans"/>
@@ -39,15 +40,14 @@
 			<item value="camelStr"/>
 			<item value="camelString"/>
 			<item value="getInt"/>
-			<item value="isAlphaSpace"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">
-		<item key="DIALOG_X_ORIGIN" value="763"/>
-		<item key="DIALOG_Y_ORIGIN" value="20"/>
-		<item key="DIALOG_WIDTH" value="315"/>
-		<item key="DIALOG_HEIGHT" value="454"/>
-		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-15|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
+		<item key="DIALOG_X_ORIGIN" value="735"/>
+		<item key="DIALOG_Y_ORIGIN" value="72"/>
+		<item key="DIALOG_WIDTH" value="267"/>
+		<item key="DIALOG_HEIGHT" value="391"/>
+		<item key="DIALOG_FONT_NAME" value="1|Segoe UI|9.0|0|WINDOWS|1|-12|0|0|0|400|0|0|0|1|0|0|0|0|Segoe UI"/>
 	</section>
 	<section name="org.eclipse.ui.texteditor.GotoLineAction$GotoLineDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="452"/>
