@@ -161,9 +161,14 @@ void* ll_get(LinkedList* this, int index)
 
     if(this != NULL && index >= 0 && index < ll_len(this)){
     	auxNode = getNode(this, index);
+<<<<<<< HEAD
     	if(auxNode != NULL){
     		returnAux = auxNode->pElement;
     	}
+=======
+//    	Verificar NULL
+    	returnAux = auxNode->pElement;
+>>>>>>> 939df27751b7b37b78a9a76489d33613e6e196d3
     }
 
     return returnAux;
@@ -238,9 +243,13 @@ int ll_clear(LinkedList* this)
     int returnAux = -1;
 
     if(this != NULL){
-    	for(int i = ll_len(this); i >= 0; i--){
-    		ll_remove(this, i);
+    	for(int i = 0; i < ll_len(this); i++){
+    		ll_remove(this, 0);
     	}
+
+//    	for(int i = ll_len(this)-1; i >= 0 ; i--){
+//    		ll_remove(this, i);
+//    	}
     	returnAux = 0;
     }
 
@@ -279,11 +288,19 @@ int ll_indexOf(LinkedList* this, void* pElement)
 {
     int returnAux = -1;
     Node* auxNode;
+    void* auxElement;
 
     if(this != NULL){
     	for(int i = 0; i < ll_len(this); i++){
+<<<<<<< HEAD
     		auxNode = getNode(this, i);
     		if(auxNode != NULL && auxNode->pElement == pElement){
+=======
+//    		auxNode = getNode(this, i);
+			auxElement = ll_get(this, i);
+//    		if(auxNode->pElement == pElement){
+			if(auxElement == pElement){
+>>>>>>> 939df27751b7b37b78a9a76489d33613e6e196d3
     			returnAux = i;
     			break;
     		}
