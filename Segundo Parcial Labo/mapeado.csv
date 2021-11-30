@@ -1,0 +1,100 @@
+Id,Titulo,Autor,PrecioDesc,IdEdit
+95,El Extranjero,Albert Camus,2241.51,4
+33,Berlin Alexanderplatz,Alfred Doblin,188.76,3
+46,Poema De Gilgamesh,Anonimo,73.93,2
+56,Las Mil Y Una Noches,Anonimo,264.74,3
+88,Libro De Job,Anonimo,2785.63,5
+35,Saga De Njal,Anonimo,4507.26,6
+77,Relatos Cortos,Anton Chejov,4675.77,4
+70,Pippi Calzaslargas,Astrid Lindgren,233.68,3
+57,Grandes Esperanzas,Charles Dickens,2463.17,1
+87,Todo Se Desmorona,Chinua Achebe,137.74,2
+28,Hijos Y Amantes,D. H. Lawrence,4941.33,5
+97,Divina Comedia,Dante Alighieri,4638.68,5
+90,Jacques El Fatalista,Denis Diderot,2069.23,6
+12,El Cuaderno Dorado,Doris Lessing,2845.87,1
+30,Cuentos,Edgar Allan Poe,2776.85,1
+21,La Historia,Elsa Morante,120.84,2
+75,Cumbres Borrascosas,Emily Bronte,4565.09,5
+71,El Viejo Y El Mar,Ernest Hemingway,59.59,2
+72,Medea,Euripides,4039.55,6
+64,Romancero Gitano,Federico Garcia Lorca,2140.15,4
+67,Libro Del Desasosiego,Fernando Pessoa,2539.88,5
+42,Los Hermanos Karamazov,Fiodor Dostoievski,236.61,2
+15,Los Endemoniados,Fiodor Dostoievski,121.74,3
+86,Crimen Y Castigo,Fiodor Dostoievski,139.30,3
+6,El Idiota,Fiodor Dostoievski,164.52,3
+37,Gargantua Y Pantagruel,Francois Rabelais,253.20,3
+62,Relatos Cortos,Franz Kafka,1705.38,5
+74,El Proceso,Franz Kafka,175.27,2
+100,El Castillo,Franz Kafka,253.54,3
+94,El Amor En El Colera,Gabriel Garcia Marquez,211.36,3
+22,Cien Anios De Soledad,Gabriel Garcia Marquez,3414.26,1
+2,Los Cuentos De Canterbury,Geoffrey Chaucer,51.22,3
+58,Middlemarch,George Eliot,4816.24,4
+85,Poemas,Giacomo Leopardi,3741.45,1
+1,Decameron,Giovanni Boccaccio,2297.85,4
+49,El Tambor De Hojalata,Gunter Grass,204.82,2
+34,Madame Bovary,Gustave Flaubert,1886.04,6
+65,La Educacion Sentimental,Gustave Flaubert,4609.81,5
+60,Gente Independiente,Halldor Laxness,3722.24,6
+5,Cuentos Infantiles,Hans Christian Andersen,181.43,3
+32,Casa De Muniecas,Henrik Ibsen,3171.91,1
+81,Moby-Dick,Herman Melville,4065.00,6
+89,Odisea,Homero,3895.49,4
+93,Iliada,Homero,3996.51,6
+55,Papa Goriot,Honore De Balzac,2190.22,4
+3,La Conciencia De Zeno,Italo Svevo,207.94,3
+24,Ulises,James Joyce,129.45,2
+80,Orgullo Y Prejuicio,Jane Austen,266.32,2
+44,Gran Serton Veredas,Joao Guimaraes Rosa,1805.49,4
+17,Fausto,Johann Von Goethe,241.16,2
+83,Los Viajes De Gulliver,Jonathan Swift,4180.33,4
+92,Ficciones,Jorge Luis Borges,99.11,3
+63,Ensayo Sobre La Ceguera,Jose Saramago,129.69,3
+96,Nostromo,Joseph Conrad,130.43,3
+13,Pedro Paramo,Juan Rulfo,3870.20,6
+23,Shakuntala,Kalidasa,80.26,2
+54,Hambre,Knut Hamsun,108.47,3
+16,Vida De Tristram Shandy,Laurence Sterne,1228.78,1
+52,La Muerte De Ivan Ilich,Lev Tolstoi,2531.23,5
+91,Guerra Y Paz,Lev Tolstoi,3200.45,6
+18,Ana Karenina,Lev Tolstoi,2470.63,5
+61,Viaje Al Fin De La Noche,Louis-Ferdinand Celine,78.52,3
+68,Diario De Un Loco,Lu Xun,4198.87,5
+41,En Busca Del Tiempo Perdido,Marcel Proust,2020.66,1
+84,Memorias De Adriano,Marguerite Yourcenar,2627.18,5
+53,Huckleberry Finn,Mark Twain,1929.33,1
+99,Ensayos,Michel De Montaigne,3242.49,1
+4,Don Quijote De La Mancha,Miguel De Cervantes,3351.49,4
+8,Genji Monogatari,Murasaki Shikibu,3820.23,1
+82,Hijos De Nuestro Barrio,Naguib Mahfuz,3224.98,1
+78,Almas Muertas,Nikolai Gogol,140.37,3
+26,Zorba El Griego,Nikos Kazantzakis,61.97,3
+36,Las Metamorfosis,Ovidio,54.85,2
+29,Poemas,Paul Celan,3148.10,4
+51,El Hombre Invisible,Ralph Ellison,4871.46,5
+47,El Hombre Sin Atributos,Robert Musil,1497.84,1
+31,Masnavi,Rumi,2021.38,4
+45,Bostan,Saadi,59.50,3
+20,Hijos De La Medianoche,Salman Rushdie,231.35,3
+11,Molloy,Samuel Beckett,258.41,3
+98,Edipo Rey,Sofocles,2531.78,6
+40,Rojo Y Negro,Stendhal,4987.92,5
+73,Tiempo De Migrar Al Norte,Tayeb Salih,245.98,3
+79,La Montania Magica,Thomas Mann,1610.74,6
+19,Los Buddenbrook,Thomas Mann,3245.87,5
+69,Beloved,Toni Morrison,3202.85,6
+14,Ramayana,Valmiki,3127.76,5
+10,Mahabharata,Viasa,1665.13,6
+66,Eneida,Virgilio,3492.87,6
+38,La Seniora Dalloway,Virginia Woolf,4107.54,6
+50,Al Faro,Virginia Woolf,1695.36,6
+7,Lolita,Vladimir Nabokov,2992.51,5
+27,Hojas De Hierba,Walt Whitman,135.63,2
+25,El Ruido Y La Furia,William Faulkner,1387.73,1
+76,Absalom Absalom,William Faulkner,1679.42,1
+59,Hamlet,William Shakespeare,3075.34,6
+9,Otelo,William Shakespeare,3813.10,5
+43,El Rey Lear,William Shakespeare,4986.37,5
+39,El Sonido De La Montania,Yasunari Kawabata,3947.01,1

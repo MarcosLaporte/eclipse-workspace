@@ -201,3 +201,2259 @@ gcc -o TP_4 "src\\LinkedList.o" "src\\main.o" "testing\\src\\Employee.o" "testin
 Info: Internal Builder is used for build
 gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
 gcc -o TP_4 "src\\LinkedList.o" "src\\main.o" "testing\\src\\Employee.o" "testing\\src\\addNodeTest.o" "testing\\src\\addTest.o" "testing\\src\\clearTest.o" "testing\\src\\cloneTest.o" "testing\\src\\containsAllTest.o" "testing\\src\\containsTest.o" "testing\\src\\deleteLinkedListTest.o" "testing\\src\\getNodeTest.o" "testing\\src\\getTest.o" "testing\\src\\indexOfTest.o" "testing\\src\\isEmptyTest.o" "testing\\src\\lenTest.o" "testing\\src\\main_test.o" "testing\\src\\newTest.o" "testing\\src\\popTest.o" "testing\\src\\pushTest.o" "testing\\src\\removeTest.o" "testing\\src\\setTest.o" "testing\\src\\sortTest.o" "testing\\src\\subListTest.o" "testing\\utest.o" 
+16:53:33 **** Rebuild of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+In file included from ..\src\parser.c:1:
+..\src\parser.h:6:10: fatal error: Employee.h: No such file or directory
+    6 | #include "Employee.h"
+      |          ^~~~~~~~~~~~
+compilation terminated.
+16:53:34 **** Rebuild of configuration Debug for project TP_3 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o parser.o "..\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o main.o "..\\main.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Controller.o "..\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Employee.o "..\\Employee.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o Input.o "..\\Input.c" 
+gcc "-LC:\\Users\\54113\\Desktop\\eclipse-workspace\\TP_3" -o TP_3.exe Controller.o Employee.o Input.o main.o parser.o -lLinkedList 
+19:14:19 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_sortEmployee':
+..\src\Controller.c:64:6: warning: unused variable 'orden' [-Wunused-variable]
+   64 |  int orden;
+      |      ^~~~~
+..\src\Controller.c:63:6: warning: unused variable 'opcion' [-Wunused-variable]
+   63 |  int opcion;
+      |      ^~~~~~
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:89:4: warning: implicit declaration of function 'parser_TextFromEmployee'; did you mean 'parser_TextFromBook'? [-Wimplicit-function-declaration]
+   89 |    parser_TextFromEmployee(pFile, pArrayListEmployee);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+      |    parser_TextFromBook
+..\src\Controller.c: In function 'controller_saveAsBinary':
+..\src\Controller.c:112:4: warning: implicit declaration of function 'parser_BinaryFromEmployee' [-Wimplicit-function-declaration]
+  112 |    parser_BinaryFromEmployee(pFile, pArrayListEmployee);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_findEmployeeById':
+..\src\Controller.c:167:2: error: unknown type name 'Employee'
+  167 |  Employee* miEmpleado;
+      |  ^~~~~~~~
+..\src\Controller.c:171:17: error: 'Employee' undeclared (first use in this function)
+  171 |   miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
+      |                 ^~~~~~~~
+..\src\Controller.c:171:17: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Controller.c:171:26: error: expected expression before ')' token
+  171 |   miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
+      |                          ^
+..\src\Controller.c:172:3: warning: implicit declaration of function 'employee_getId' [-Wimplicit-function-declaration]
+  172 |   employee_getId(miEmpleado, &auxId);
+      |   ^~~~~~~~~~~~~~
+19:14:36 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_TextFromBook':
+..\src\parser.c:44:4: warning: implicit declaration of function 'book_getAuthor'; did you mean 'book_setAuthor'? [-Wimplicit-function-declaration]
+   44 |    book_getAuthor(myBook, author);
+      |    ^~~~~~~~~~~~~~
+      |    book_setAuthor
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+..\src\Books.c: In function 'book_compareTitle':
+..\src\Books.c:193:24: warning: passing argument 2 of 'book_getTitle' from incompatible pointer type [-Wincompatible-pointer-types]
+  193 |   book_getTitle(book1, &name1);
+      |                        ^~~~~~
+      |                        |
+      |                        int *
+..\src\Books.c:72:37: note: expected 'char *' but argument is of type 'int *'
+   72 | int book_getTitle(Book* this, char* title){
+      |                               ~~~~~~^~~~~
+..\src\Books.c:194:24: warning: passing argument 2 of 'book_getTitle' from incompatible pointer type [-Wincompatible-pointer-types]
+  194 |   book_getTitle(book2, &name2);
+      |                        ^~~~~~
+      |                        |
+      |                        int *
+..\src\Books.c:72:37: note: expected 'char *' but argument is of type 'int *'
+   72 | int book_getTitle(Book* this, char* title){
+      |                               ~~~~~~^~~~~
+..\src\Books.c:196:23: warning: passing argument 1 of 'strcmpi' makes pointer from integer without a cast [-Wint-conversion]
+  196 |   returnAux = strcmpi(name1, name2);
+      |                       ^~~~~
+      |                       |
+      |                       int
+In file included from ..\src\Input.h:12,
+                 from ..\src\Books.h:10,
+                 from ..\src\Books.c:8:
+c:\mingw\include\string.h:137:47: note: expected 'const char *' but argument is of type 'int'
+  137 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmpi (const char *, const char *);
+      |                                               ^~~~~~~~~~~~
+..\src\Books.c:196:30: warning: passing argument 2 of 'strcmpi' makes pointer from integer without a cast [-Wint-conversion]
+  196 |   returnAux = strcmpi(name1, name2);
+      |                              ^~~~~
+      |                              |
+      |                              int
+In file included from ..\src\Input.h:12,
+                 from ..\src\Books.h:10,
+                 from ..\src\Books.c:8:
+c:\mingw\include\string.h:137:61: note: expected 'const char *' but argument is of type 'int'
+  137 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmpi (const char *, const char *);
+      |                                                             ^~~~~~~~~~~~
+..\src\Books.c: In function 'book_compareAuthor':
+..\src\Books.c:213:25: warning: passing argument 2 of 'book_getAuthor' from incompatible pointer type [-Wincompatible-pointer-types]
+  213 |   book_getAuthor(book1, &name1);
+      |                         ^~~~~~
+      |                         |
+      |                         int *
+..\src\Books.c:96:38: note: expected 'char *' but argument is of type 'int *'
+   96 | int book_getAuthor(Book* this, char* author){
+      |                                ~~~~~~^~~~~~
+..\src\Books.c:214:25: warning: passing argument 2 of 'book_getAuthor' from incompatible pointer type [-Wincompatible-pointer-types]
+  214 |   book_getAuthor(book2, &name2);
+      |                         ^~~~~~
+      |                         |
+      |                         int *
+..\src\Books.c:96:38: note: expected 'char *' but argument is of type 'int *'
+   96 | int book_getAuthor(Book* this, char* author){
+      |                                ~~~~~~^~~~~~
+..\src\Books.c:216:23: warning: passing argument 1 of 'strcmpi' makes pointer from integer without a cast [-Wint-conversion]
+  216 |   returnAux = strcmpi(name1, name2);
+      |                       ^~~~~
+      |                       |
+      |                       int
+In file included from ..\src\Input.h:12,
+                 from ..\src\Books.h:10,
+                 from ..\src\Books.c:8:
+c:\mingw\include\string.h:137:47: note: expected 'const char *' but argument is of type 'int'
+  137 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmpi (const char *, const char *);
+      |                                               ^~~~~~~~~~~~
+..\src\Books.c:216:30: warning: passing argument 2 of 'strcmpi' makes pointer from integer without a cast [-Wint-conversion]
+  216 |   returnAux = strcmpi(name1, name2);
+      |                              ^~~~~
+      |                              |
+      |                              int
+In file included from ..\src\Input.h:12,
+                 from ..\src\Books.h:10,
+                 from ..\src\Books.c:8:
+c:\mingw\include\string.h:137:61: note: expected 'const char *' but argument is of type 'int'
+  137 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmpi (const char *, const char *);
+      |                                                             ^~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_sortEmployee':
+..\src\Controller.c:64:6: warning: unused variable 'orden' [-Wunused-variable]
+   64 |  int orden;
+      |      ^~~~~
+..\src\Controller.c:63:6: warning: unused variable 'opcion' [-Wunused-variable]
+   63 |  int opcion;
+      |      ^~~~~~
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:89:4: warning: implicit declaration of function 'parser_TextFromEmployee'; did you mean 'parser_TextFromBook'? [-Wimplicit-function-declaration]
+   89 |    parser_TextFromEmployee(pFile, pArrayListEmployee);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+      |    parser_TextFromBook
+..\src\Controller.c: In function 'controller_saveAsBinary':
+..\src\Controller.c:112:4: warning: implicit declaration of function 'parser_BinaryFromEmployee' [-Wimplicit-function-declaration]
+  112 |    parser_BinaryFromEmployee(pFile, pArrayListEmployee);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_findEmployeeById':
+..\src\Controller.c:167:2: error: unknown type name 'Employee'
+  167 |  Employee* miEmpleado;
+      |  ^~~~~~~~
+..\src\Controller.c:171:17: error: 'Employee' undeclared (first use in this function)
+  171 |   miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
+      |                 ^~~~~~~~
+..\src\Controller.c:171:17: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Controller.c:171:26: error: expected expression before ')' token
+  171 |   miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
+      |                          ^
+..\src\Controller.c:172:3: warning: implicit declaration of function 'employee_getId' [-Wimplicit-function-declaration]
+  172 |   employee_getId(miEmpleado, &auxId);
+      |   ^~~~~~~~~~~~~~
+19:15:11 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+..\src\Editorial.c:10:1: error: expected '=', ',', ';', 'asm' or '__attribute__' at end of input
+   10 | int edit_find
+      | ^~~
+19:15:20 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+..\src\Editorial.c:10:1: error: expected '=', ',', ';', 'asm' or '__attribute__' at end of input
+   10 | int edit_find
+      | ^~~
+19:15:28 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:28:25: error: invalid initializer
+   28 |  LinkedList bookArray = ll_newLinkedList();
+      |                         ^~~~~~~~~~~~~~~~
+..\src\Segundo Parcial Labo.c:42:24: error: incompatible type for argument 1 of 'controller_ListBook'
+   42 |    controller_ListBook(bookArray);
+      |                        ^~~~~~~~~
+      |                        |
+      |                        LinkedList {aka struct LinkedList}
+In file included from ..\src\Segundo Parcial Labo.c:23:
+..\src\Controller.h:11:37: note: expected 'LinkedList *' {aka 'struct LinkedList *'} but argument is of type 'LinkedList' {aka 'struct LinkedList'}
+   11 | int controller_ListBook(LinkedList* bookArray);
+      |                         ~~~~~~~~~~~~^~~~~~~~~
+19:16:10 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_sortEmployee':
+..\src\Controller.c:64:6: warning: unused variable 'orden' [-Wunused-variable]
+   64 |  int orden;
+      |      ^~~~~
+..\src\Controller.c:63:6: warning: unused variable 'opcion' [-Wunused-variable]
+   63 |  int opcion;
+      |      ^~~~~~
+..\src\Controller.c: In function 'controller_saveAsText':
+..\src\Controller.c:89:4: warning: implicit declaration of function 'parser_TextFromEmployee'; did you mean 'parser_TextFromBook'? [-Wimplicit-function-declaration]
+   89 |    parser_TextFromEmployee(pFile, pArrayListEmployee);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+      |    parser_TextFromBook
+..\src\Controller.c: In function 'controller_saveAsBinary':
+..\src\Controller.c:112:4: warning: implicit declaration of function 'parser_BinaryFromEmployee' [-Wimplicit-function-declaration]
+  112 |    parser_BinaryFromEmployee(pFile, pArrayListEmployee);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_findEmployeeById':
+..\src\Controller.c:167:2: error: unknown type name 'Employee'
+  167 |  Employee* miEmpleado;
+      |  ^~~~~~~~
+..\src\Controller.c:171:17: error: 'Employee' undeclared (first use in this function)
+  171 |   miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
+      |                 ^~~~~~~~
+..\src\Controller.c:171:17: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Controller.c:171:26: error: expected expression before ')' token
+  171 |   miEmpleado = (Employee*)ll_get(pArrayListEmployee, i);
+      |                          ^
+..\src\Controller.c:172:3: warning: implicit declaration of function 'employee_getId' [-Wimplicit-function-declaration]
+  172 |   employee_getId(miEmpleado, &auxId);
+      |   ^~~~~~~~~~~~~~
+19:16:55 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:28:25: error: invalid initializer
+   28 |  LinkedList bookArray = ll_newLinkedList();
+      |                         ^~~~~~~~~~~~~~~~
+..\src\Segundo Parcial Labo.c:42:24: error: incompatible type for argument 1 of 'controller_ListBook'
+   42 |    controller_ListBook(bookArray);
+      |                        ^~~~~~~~~
+      |                        |
+      |                        LinkedList {aka struct LinkedList}
+In file included from ..\src\Segundo Parcial Labo.c:23:
+..\src\Controller.h:11:37: note: expected 'LinkedList *' {aka 'struct LinkedList *'} but argument is of type 'LinkedList' {aka 'struct LinkedList'}
+   11 | int controller_ListBook(LinkedList* bookArray);
+      |                         ~~~~~~~~~~~~^~~~~~~~~
+19:16:59 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /** \brief Ordenar empleados
+      |  
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+19:17:18 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+19:19:03 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:19:10 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:19:12 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:22:01 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBook':
+..\src\Controller.c:41:20: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   41 |   printf("| ID |%30s|%30s|%10s|ID Ed|\n");
+      |                 ~~~^
+      |                    |
+      |                    char *
+..\src\Controller.c:41:25: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   41 |   printf("| ID |%30s|%30s|%10s|ID Ed|\n");
+      |                      ~~~^
+      |                         |
+      |                         char *
+..\src\Controller.c:41:30: warning: format '%s' expects a matching 'char *' argument [-Wformat=]
+   41 |   printf("| ID |%30s|%30s|%10s|ID Ed|\n");
+      |                           ~~~^
+      |                              |
+      |                              char *
+..\src\Controller.c: At top level:
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:22:34 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:24:42 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:25:53 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:26:08 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+Info: Nothing to build for Segundo Parcial Labo
+Info: Nothing to build for Segundo Parcial Labo
+01:00:08 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:00:54 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:02:11 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:34:01 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_TextFromBook':
+..\src\parser.c:44:4: warning: implicit declaration of function 'book_getAuthor'; did you mean 'book_setAuthor'? [-Wimplicit-function-declaration]
+   44 |    book_getAuthor(aux, author);
+      |    ^~~~~~~~~~~~~~
+      |    book_setAuthor
+..\src\parser.c: In function 'parser_EditFromText':
+..\src\parser.c:57:2: error: unknown type name 'Edit'
+   57 |  Edit* aux;
+      |  ^~~~
+..\src\parser.c:65:12: warning: implicit declaration of function 'edit_newParam'; did you mean 'book_newParam'? [-Wimplicit-function-declaration]
+   65 |      aux = edit_newParam(id, descr);
+      |            ^~~~~~~~~~~~~
+      |            book_newParam
+..\src\parser.c:65:10: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   65 |      aux = edit_newParam(id, descr);
+      |          ^
+01:34:44 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_TextFromBook':
+..\src\parser.c:44:4: warning: implicit declaration of function 'book_getAuthor'; did you mean 'book_setAuthor'? [-Wimplicit-function-declaration]
+   44 |    book_getAuthor(aux, author);
+      |    ^~~~~~~~~~~~~~
+      |    book_setAuthor
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /* \brief Ordenar empleados
+      |  
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+..\src\Editorial.c: In function 'edit_newParam':
+..\src\Editorial.c:21:11: warning: implicit declaration of function 'book_new' [-Wimplicit-function-declaration]
+   21 |  myEdit = book_new();
+      |           ^~~~~~~~
+..\src\Editorial.c:21:9: warning: assignment to 'Edit *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   21 |  myEdit = book_new();
+      |         ^
+..\src\Editorial.c: In function 'edit_getId':
+..\src\Editorial.c:45:6: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   45 |   id = this->idEdit;
+      |      ^
+..\src\Editorial.c: In function 'edit_setName':
+..\src\Editorial.c:56:14: warning: passing argument 1 of 'strcpy' from incompatible pointer type [-Wincompatible-pointer-types]
+   56 |   strcpy(this->descr, name);
+      |          ~~~~^~~~~~~
+      |              |
+      |              int *
+In file included from ..\src\Input.h:12,
+                 from ..\src\Editorial.h:10,
+                 from ..\src\Editorial.c:8:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'int *'
+   79 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+      |                                        ^~~~~~
+..\src\Editorial.c: In function 'edit_getName':
+..\src\Editorial.c:67:20: warning: passing argument 2 of 'strcpy' from incompatible pointer type [-Wincompatible-pointer-types]
+   67 |   strcpy(name, this->descr);
+      |                ~~~~^~~~~~~
+      |                    |
+      |                    int *
+In file included from ..\src\Input.h:12,
+                 from ..\src\Editorial.h:10,
+                 from ..\src\Editorial.c:8:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'int *'
+   79 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+      |                                        ^~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:35:28 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+..\src\Editorial.c: In function 'edit_setName':
+..\src\Editorial.c:56:14: warning: passing argument 1 of 'strcpy' from incompatible pointer type [-Wincompatible-pointer-types]
+   56 |   strcpy(this->descr, name);
+      |          ~~~~^~~~~~~
+      |              |
+      |              int *
+In file included from ..\src\Input.h:12,
+                 from ..\src\Editorial.h:10,
+                 from ..\src\Editorial.c:8:
+c:\mingw\include\string.h:79:40: note: expected 'char *' but argument is of type 'int *'
+   79 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+      |                                        ^~~~~~
+..\src\Editorial.c: In function 'edit_getName':
+..\src\Editorial.c:67:20: warning: passing argument 2 of 'strcpy' from incompatible pointer type [-Wincompatible-pointer-types]
+   67 |   strcpy(name, this->descr);
+      |                ~~~~^~~~~~~
+      |                    |
+      |                    int *
+In file included from ..\src\Input.h:12,
+                 from ..\src\Editorial.h:10,
+                 from ..\src\Editorial.c:8:
+c:\mingw\include\string.h:79:40: note: expected 'const char *' but argument is of type 'int *'
+   79 | _CRTIMP __cdecl __MINGW_NOTHROW  char *strcpy (char *, const char *);
+      |                                        ^~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:35:53 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /* \brief Ordenar empleados
+      |  
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_TextFromBook':
+..\src\parser.c:44:4: warning: implicit declaration of function 'book_getAuthor'; did you mean 'book_setAuthor'? [-Wimplicit-function-declaration]
+   44 |    book_getAuthor(aux, author);
+      |    ^~~~~~~~~~~~~~
+      |    book_setAuthor
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:36:25 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+..\src\Books.c: In function 'book_compareTitle':
+..\src\Books.c:193:24: warning: passing argument 2 of 'book_getTitle' from incompatible pointer type [-Wincompatible-pointer-types]
+  193 |   book_getTitle(book1, &name1);
+      |                        ^~~~~~
+      |                        |
+      |                        int *
+..\src\Books.c:72:37: note: expected 'char *' but argument is of type 'int *'
+   72 | int book_getTitle(Book* this, char* title){
+      |                               ~~~~~~^~~~~
+..\src\Books.c:194:24: warning: passing argument 2 of 'book_getTitle' from incompatible pointer type [-Wincompatible-pointer-types]
+  194 |   book_getTitle(book2, &name2);
+      |                        ^~~~~~
+      |                        |
+      |                        int *
+..\src\Books.c:72:37: note: expected 'char *' but argument is of type 'int *'
+   72 | int book_getTitle(Book* this, char* title){
+      |                               ~~~~~~^~~~~
+..\src\Books.c:196:23: warning: passing argument 1 of 'strcmpi' makes pointer from integer without a cast [-Wint-conversion]
+  196 |   returnAux = strcmpi(name1, name2);
+      |                       ^~~~~
+      |                       |
+      |                       int
+In file included from ..\src\Input.h:12,
+                 from ..\src\Books.h:10,
+                 from ..\src\Books.c:8:
+c:\mingw\include\string.h:137:47: note: expected 'const char *' but argument is of type 'int'
+  137 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmpi (const char *, const char *);
+      |                                               ^~~~~~~~~~~~
+..\src\Books.c:196:30: warning: passing argument 2 of 'strcmpi' makes pointer from integer without a cast [-Wint-conversion]
+  196 |   returnAux = strcmpi(name1, name2);
+      |                              ^~~~~
+      |                              |
+      |                              int
+In file included from ..\src\Input.h:12,
+                 from ..\src\Books.h:10,
+                 from ..\src\Books.c:8:
+c:\mingw\include\string.h:137:61: note: expected 'const char *' but argument is of type 'int'
+  137 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmpi (const char *, const char *);
+      |                                                             ^~~~~~~~~~~~
+..\src\Books.c: In function 'book_compareAuthor':
+..\src\Books.c:213:25: warning: passing argument 2 of 'book_getAuthor' from incompatible pointer type [-Wincompatible-pointer-types]
+  213 |   book_getAuthor(book1, &name1);
+      |                         ^~~~~~
+      |                         |
+      |                         int *
+..\src\Books.c:96:38: note: expected 'char *' but argument is of type 'int *'
+   96 | int book_getAuthor(Book* this, char* author){
+      |                                ~~~~~~^~~~~~
+..\src\Books.c:214:25: warning: passing argument 2 of 'book_getAuthor' from incompatible pointer type [-Wincompatible-pointer-types]
+  214 |   book_getAuthor(book2, &name2);
+      |                         ^~~~~~
+      |                         |
+      |                         int *
+..\src\Books.c:96:38: note: expected 'char *' but argument is of type 'int *'
+   96 | int book_getAuthor(Book* this, char* author){
+      |                                ~~~~~~^~~~~~
+..\src\Books.c:216:23: warning: passing argument 1 of 'strcmpi' makes pointer from integer without a cast [-Wint-conversion]
+  216 |   returnAux = strcmpi(name1, name2);
+      |                       ^~~~~
+      |                       |
+      |                       int
+In file included from ..\src\Input.h:12,
+                 from ..\src\Books.h:10,
+                 from ..\src\Books.c:8:
+c:\mingw\include\string.h:137:47: note: expected 'const char *' but argument is of type 'int'
+  137 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmpi (const char *, const char *);
+      |                                               ^~~~~~~~~~~~
+..\src\Books.c:216:30: warning: passing argument 2 of 'strcmpi' makes pointer from integer without a cast [-Wint-conversion]
+  216 |   returnAux = strcmpi(name1, name2);
+      |                              ^~~~~
+      |                              |
+      |                              int
+In file included from ..\src\Input.h:12,
+                 from ..\src\Books.h:10,
+                 from ..\src\Books.c:8:
+c:\mingw\include\string.h:137:61: note: expected 'const char *' but argument is of type 'int'
+  137 | _CRTIMP __cdecl __MINGW_NOTHROW  int strcmpi (const char *, const char *);
+      |                                                             ^~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:53:1: warning: "/*" within comment [-Wcomment]
+   53 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:37:35 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:40:21 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_EditFromText':
+..\src\Controller.c:32:7: warning: implicit declaration of function 'parser_EditFromText'; did you mean 'parser_BookFromText'? [-Wimplicit-function-declaration]
+   32 |   if(!parser_EditFromText(pFile, editArray)){
+      |       ^~~~~~~~~~~~~~~~~~~
+      |       parser_BookFromText
+..\src\Controller.c: At top level:
+..\src\Controller.c:67:1: warning: "/*" within comment [-Wcomment]
+   67 | /* \brief Ordenar empleados
+      |  
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:50:8: warning: implicit declaration of function 'controller_'; did you mean 'controller_readId'? [-Wimplicit-function-declaration]
+   50 |     if(controller_(F_BOOK, bookArray)){
+      |        ^~~~~~~~~~~
+      |        controller_readId
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:41:21 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:50:8: warning: implicit declaration of function 'controller_'; did you mean 'controller_readId'? [-Wimplicit-function-declaration]
+   50 |     if(controller_(F_BOOK, bookArray)){
+      |        ^~~~~~~~~~~
+      |        controller_readId
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:67:1: warning: "/*" within comment [-Wcomment]
+   67 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:41:56 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:67:1: warning: "/*" within comment [-Wcomment]
+   67 | /* \brief Ordenar empleados
+      |  
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:50:8: warning: implicit declaration of function 'controller_'; did you mean 'controller_readId'? [-Wimplicit-function-declaration]
+   50 |     if(controller_(F_BOOK, bookArray)){
+      |        ^~~~~~~~~~~
+      |        controller_readId
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:42:31 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:42:37 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:43:05 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:43:51 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:44:07 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:67:1: warning: "/*" within comment [-Wcomment]
+   67 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:46:05 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:67:1: warning: "/*" within comment [-Wcomment]
+   67 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:46:21 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:67:1: warning: "/*" within comment [-Wcomment]
+   67 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:46:47 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:67:1: warning: "/*" within comment [-Wcomment]
+   67 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+13:19:12 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBook':
+..\src\Controller.c:58:4: warning: implicit declaration of function 'book_printOneBook'; did you mean 'printOneBook'? [-Wimplicit-function-declaration]
+   58 |    book_printOneBook((Book*)ll_get(bookArray, i));
+      |    ^~~~~~~~~~~~~~~~~
+      |    printOneBook
+..\src\Controller.c: At top level:
+..\src\Controller.c:67:5: error: conflicting types for 'printOneBook'
+   67 | int printOneBook(Book* this, Edit* that){
+      |     ^~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:10:5: note: previous declaration of 'printOneBook' was here
+   10 | int printOneBook(Book* this);
+      |     ^~~~~~~~~~~~
+..\src\Controller.c:91:1: warning: "/*" within comment [-Wcomment]
+   91 | /* \brief Ordenar empleados
+      |  
+17:46:50 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:48:5: error: conflicting types for 'controller_ListBook'
+   48 | int controller_ListBook(LinkedList* bookArray, LinkedList* editArray)
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:9:5: note: previous declaration of 'controller_ListBook' was here
+    9 | int controller_ListBook(LinkedList* bookArray);
+      |     ^~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_ListBook':
+..\src\Controller.c:59:4: warning: implicit declaration of function 'book_printOneBook'; did you mean 'printOneBook'? [-Wimplicit-function-declaration]
+   59 |    book_printOneBook((Book*)ll_get(bookArray, i), edit_getName(editArray, auxName));
+      |    ^~~~~~~~~~~~~~~~~
+      |    printOneBook
+..\src\Controller.c:59:64: warning: passing argument 1 of 'edit_getName' from incompatible pointer type [-Wincompatible-pointer-types]
+   59 |    book_printOneBook((Book*)ll_get(bookArray, i), edit_getName(editArray, auxName));
+      |                                                                ^~~~~~~~~
+      |                                                                |
+      |                                                                LinkedList * {aka struct LinkedList *}
+In file included from ..\src\parser.h:7,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Controller.c:1:
+..\src\Editorial.h:25:24: note: expected 'Edit *' {aka 'struct <anonymous> *'} but argument is of type 'LinkedList *' {aka 'struct LinkedList *'}
+   25 | int edit_getName(Edit* this, char* name);
+      |                  ~~~~~~^~~~
+..\src\Controller.c: At top level:
+..\src\Controller.c:92:1: warning: "/*" within comment [-Wcomment]
+   92 | /* \brief Ordenar empleados
+      |  
+17:51:38 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_ListBook':
+..\src\Controller.c:57:5: warning: implicit declaration of function 'book_printOneBook'; did you mean 'printOneBook'? [-Wimplicit-function-declaration]
+   57 |     book_printOneBook((Book*)ll_get(bookArray, i), (Edit*)ll_get(editArray, j));
+      |     ^~~~~~~~~~~~~~~~~
+      |     printOneBook
+..\src\Controller.c: At top level:
+..\src\Controller.c:91:1: warning: "/*" within comment [-Wcomment]
+   91 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:51:54 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:91:1: warning: "/*" within comment [-Wcomment]
+   91 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+17:52:27 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:89:1: warning: "/*" within comment [-Wcomment]
+   89 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+17:53:14 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:90:1: warning: "/*" within comment [-Wcomment]
+   90 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+18:39:37 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:65:5: error: conflicting types for 'printOneBook'
+   65 | int printOneBook(Book* this, LinkedList* editArray){
+      |     ^~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:10:5: note: previous declaration of 'printOneBook' was here
+   10 | int printOneBook(Book* this, Edit* that);
+      |     ^~~~~~~~~~~~
+..\src\Controller.c: In function 'printOneBook':
+..\src\Controller.c:81:32: warning: passing argument 3 of 'edit_findName' makes integer from pointer without a cast [-Wint-conversion]
+   81 |   edit_findName(editArray, id, edit);
+      |                                ^~~~
+      |                                |
+      |                                char *
+In file included from ..\src\parser.h:7,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Controller.c:1:
+..\src\Editorial.h:27:56: note: expected 'char' but argument is of type 'char *'
+   27 | char edit_findName(LinkedList* editArray, int id, char name);
+      |                                                   ~~~~~^~~~
+..\src\Controller.c: At top level:
+..\src\Controller.c:91:1: warning: "/*" within comment [-Wcomment]
+   91 | /* \brief Ordenar empleados
+      |  
+18:39:52 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:65:5: error: conflicting types for 'printOneBook'
+   65 | int printOneBook(Book* this, LinkedList* editArray){
+      |     ^~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:10:5: note: previous declaration of 'printOneBook' was here
+   10 | int printOneBook(Book* this, Edit* that);
+      |     ^~~~~~~~~~~~
+..\src\Controller.c:91:1: warning: "/*" within comment [-Wcomment]
+   91 | /* \brief Ordenar empleados
+      |  
+18:40:09 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+In file included from ..\src\Editorial.c:8:
+..\src\Editorial.h:27:20: error: unknown type name 'LinkedList'
+   27 | char edit_findName(LinkedList* editArray, int id, char* name);
+      |                    ^~~~~~~~~~
+..\src\Editorial.c:74:19: error: unknown type name 'LinkedList'
+   74 | int edit_findName(LinkedList* editArray, int id, char* name){
+      |                   ^~~~~~~~~~
+18:40:30 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:91:1: warning: "/*" within comment [-Wcomment]
+   91 | /* \brief Ordenar empleados
+      |  
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+In file included from ..\src\Editorial.c:8:
+..\src\Editorial.h:27:20: error: unknown type name 'LinkedList'
+   27 | char edit_findName(LinkedList* editArray, int id, char* name);
+      |                    ^~~~~~~~~~
+..\src\Editorial.c:74:19: error: unknown type name 'LinkedList'
+   74 | int edit_findName(LinkedList* editArray, int id, char* name){
+      |                   ^~~~~~~~~~
+18:40:35 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+In file included from ..\src\Editorial.c:8:
+..\src\Editorial.h:27:20: error: unknown type name 'LinkedList'
+   27 | char edit_findName(LinkedList* editArray, int id, char* name);
+      |                    ^~~~~~~~~~
+..\src\Editorial.c:74:19: error: unknown type name 'LinkedList'
+   74 | int edit_findName(LinkedList* editArray, int id, char* name){
+      |                   ^~~~~~~~~~
+18:41:52 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'findEditName':
+..\src\Controller.c:100:21: warning: passing argument 2 of 'edit_getId' makes pointer from integer without a cast [-Wint-conversion]
+  100 |    edit_getId(this, auxId);
+      |                     ^~~~~
+      |                     |
+      |                     int
+In file included from ..\src\parser.h:7,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Controller.c:1:
+..\src\Editorial.h:22:33: note: expected 'int *' but argument is of type 'int'
+   22 | int edit_getId(Edit* this, int* id);
+      |                            ~~~~~^~
+..\src\Controller.c: At top level:
+..\src\Controller.c:112:1: warning: "/*" within comment [-Wcomment]
+  112 | /* \brief Ordenar empleados
+      |  
+..\src\Controller.c: In function 'findEditName':
+..\src\Controller.c:100:4: warning: 'auxId' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  100 |    edit_getId(this, auxId);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+18:42:15 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:112:1: warning: "/*" within comment [-Wcomment]
+  112 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+18:50:01 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:112:1: warning: "/*" within comment [-Wcomment]
+  112 | /* \brief Ordenar empleados
+      |  
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+18:52:29 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+18:53:22 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+18:54:18 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:00:17 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:00:45 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+19:25:19 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+19:27:04 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:27:37 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:28:22 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:37:12 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:37:40 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+19:40:21 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+19:47:42 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+20:17:23 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_sortEmployee':
+..\src\Controller.c:123:6: warning: unused variable 'orden' [-Wunused-variable]
+  123 |  int orden;
+      |      ^~~~~
+..\src\Controller.c:122:6: warning: unused variable 'opcion' [-Wunused-variable]
+  122 |  int opcion;
+      |      ^~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+20:35:51 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+20:35:57 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+20:50:47 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:13:42 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:9: warning: 'filteredArray' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   89 |     if(!controller_filterBook(bookArray, filteredArray)){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:117:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  117 |   newArray = ll_filter(bookArray, book_compareIdEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:117:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  117 |   newArray = ll_filter(bookArray, book_compareIdEdit);
+      |            ^
+..\src\Controller.c:114:8: warning: unused variable 'auxEdit' [-Wunused-variable]
+  114 |  Edit* auxEdit;
+      |        ^~~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:13:48 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+00:14:36 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:9: warning: 'filteredArray' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   89 |     if(!controller_filterBook(bookArray, filteredArray)){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+00:15:41 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+02:32:03 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:9: warning: 'filteredArray' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   89 |     if(!controller_filterBook(bookArray, filteredArray)){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:117:15: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  117 |    newArray = ll_filter(bookArray, edit_addEdit);
+      |               ^~~~~~~~~
+..\src\Controller.c:117:13: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  117 |    newArray = ll_filter(bookArray, edit_addEdit);
+      |             ^
+..\src\Controller.c:114:8: warning: unused variable 'auxEdit' [-Wunused-variable]
+  114 |  Edit* auxEdit;
+      |        ^~~~~~~
+..\src\Controller.c:113:6: warning: variable 'returnAux' set but not used [-Wunused-but-set-variable]
+  113 |  int returnAux = 0;
+      |      ^~~~~~~~~
+..\src\Controller.c: At top level:
+..\src\Controller.c:122:2: error: expected identifier or '(' before 'return'
+  122 |  return returnAux;
+      |  ^~~~~~
+..\src\Controller.c:123:1: error: expected identifier or '(' before '}' token
+  123 | }
+      | ^
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:120:2: warning: control reaches end of non-void function [-Wreturn-type]
+  120 |  }
+      |  ^
+02:32:25 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:117:15: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  117 |    newArray = ll_filter(bookArray, edit_addEdit());
+      |               ^~~~~~~~~
+..\src\Controller.c:117:36: error: too few arguments to function 'edit_addEdit'
+  117 |    newArray = ll_filter(bookArray, edit_addEdit());
+      |                                    ^~~~~~~~~~~~
+In file included from ..\src\parser.h:7,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Controller.c:1:
+..\src\Editorial.h:26:5: note: declared here
+   26 | int edit_addEdit(Edit* this);
+      |     ^~~~~~~~~~~~
+..\src\Controller.c:114:8: warning: unused variable 'auxEdit' [-Wunused-variable]
+  114 |  Edit* auxEdit;
+      |        ^~~~~~~
+..\src\Controller.c:113:6: warning: variable 'returnAux' set but not used [-Wunused-but-set-variable]
+  113 |  int returnAux = 0;
+      |      ^~~~~~~~~
+..\src\Controller.c: At top level:
+..\src\Controller.c:122:2: error: expected identifier or '(' before 'return'
+  122 |  return returnAux;
+      |  ^~~~~~
+..\src\Controller.c:123:1: error: expected identifier or '(' before '}' token
+  123 | }
+      | ^
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:120:2: warning: control reaches end of non-void function [-Wreturn-type]
+  120 |  }
+      |  ^
+02:32:43 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:117:15: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  117 |    newArray = ll_filter(bookArray, edit_addEdit);
+      |               ^~~~~~~~~
+..\src\Controller.c:117:13: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  117 |    newArray = ll_filter(bookArray, edit_addEdit);
+      |             ^
+..\src\Controller.c:114:8: warning: unused variable 'auxEdit' [-Wunused-variable]
+  114 |  Edit* auxEdit;
+      |        ^~~~~~~
+..\src\Controller.c:113:6: warning: variable 'returnAux' set but not used [-Wunused-but-set-variable]
+  113 |  int returnAux = 0;
+      |      ^~~~~~~~~
+..\src\Controller.c: At top level:
+..\src\Controller.c:122:2: error: expected identifier or '(' before 'return'
+  122 |  return returnAux;
+      |  ^~~~~~
+..\src\Controller.c:123:1: error: expected identifier or '(' before '}' token
+  123 | }
+      | ^
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:120:2: warning: control reaches end of non-void function [-Wreturn-type]
+  120 |  }
+      |  ^
+02:32:57 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:117:15: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  117 |    newArray = ll_filter(bookArray, edit_addEdit);
+      |               ^~~~~~~~~
+..\src\Controller.c:117:13: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  117 |    newArray = ll_filter(bookArray, edit_addEdit);
+      |             ^
+..\src\Controller.c:114:8: warning: unused variable 'auxEdit' [-Wunused-variable]
+  114 |  Edit* auxEdit;
+      |        ^~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+02:34:04 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:117:16: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  117 |    *newArray = ll_filter(bookArray, edit_addEdit);
+      |                ^~~~~~~~~
+..\src\Controller.c:117:16: error: incompatible types when assigning to type 'LinkedList' {aka 'struct LinkedList'} from type 'int'
+..\src\Controller.c:114:8: warning: unused variable 'auxEdit' [-Wunused-variable]
+  114 |  Edit* auxEdit;
+      |        ^~~~~~~
+02:38:04 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |            ^
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+02:38:22 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, &edit_addEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, &edit_addEdit);
+      |            ^
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+02:38:59 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |            ^
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+02:40:22 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |            ^
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:40:35 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:15: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   *newArray = ll_filter(bookArray, edit_addEdit);
+      |               ^~~~~~~~~
+..\src\Controller.c:116:15: error: incompatible types when assigning to type 'LinkedList' {aka 'struct LinkedList'} from type 'int'
+02:42:27 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit());
+      |              ^~~~~~~~~
+..\src\Controller.c:116:35: error: too few arguments to function 'edit_addEdit'
+  116 |   newArray = ll_filter(bookArray, edit_addEdit());
+      |                                   ^~~~~~~~~~~~
+In file included from ..\src\parser.h:7,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Controller.c:1:
+..\src\Editorial.h:26:5: note: declared here
+   26 | int edit_addEdit(Edit* this);
+      |     ^~~~~~~~~~~~
+02:42:28 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit());
+      |              ^~~~~~~~~
+..\src\Controller.c:116:35: error: too few arguments to function 'edit_addEdit'
+  116 |   newArray = ll_filter(bookArray, edit_addEdit());
+      |                                   ^~~~~~~~~~~~
+In file included from ..\src\parser.h:7,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Controller.c:1:
+..\src\Editorial.h:26:5: note: declared here
+   26 | int edit_addEdit(Edit* this);
+      |     ^~~~~~~~~~~~
+02:42:48 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |            ^
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:45:41 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, (*edit_addEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, (*edit_addEdit));
+      |            ^
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:45:44 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+02:45:47 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+02:50:05 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, (*edit_addEdit)(Edit*));
+      |              ^~~~~~~~~
+..\src\Controller.c:116:51: error: expected expression before 'Edit'
+  116 |   newArray = ll_filter(bookArray, (*edit_addEdit)(Edit*));
+      |                                                   ^~~~
+03:08:22 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:15: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |    newArray = ll_filter(bookArray, (*edit_addEdit));
+      |               ^~~~~~~~~
+..\src\Controller.c:116:13: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |    newArray = ll_filter(bookArray, (*edit_addEdit));
+      |             ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+..\src\Editorial.c:74:5: error: conflicting types for 'edit_addEdit'
+   74 | int edit_addEdit(void* pElement){
+      |     ^~~~~~~~~~~~
+In file included from ..\src\Editorial.c:8:
+..\src\Editorial.h:26:5: note: previous declaration of 'edit_addEdit' was here
+   26 | int edit_addEdit(Edit* this);
+      |     ^~~~~~~~~~~~
+03:08:45 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:15: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |    newArray = ll_filter(bookArray, edit_addEdit);
+      |               ^~~~~~~~~
+..\src\Controller.c:116:13: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |    newArray = ll_filter(bookArray, edit_addEdit);
+      |             ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:9: warning: 'filteredArray' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   89 |     if(!controller_filterBook(bookArray, filteredArray)){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+03:12:12 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:13:53 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:15:57 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:16:22 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:17:17 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:18:49 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:21:26 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:9: warning: 'filteredArray' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   89 |     if(!controller_filterBook(bookArray, filteredArray)){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:23:08 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |            ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:24:24 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:30:52 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:34:19 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+..\src\Editorial.c: In function 'edit_addEdit':
+..\src\Editorial.c:78:2: error: unknown type name 'Book'
+   78 |  Book* auxBook = (Book*) pElement;
+      |  ^~~~
+..\src\Editorial.c:78:19: error: 'Book' undeclared (first use in this function); did you mean 'auxBook'?
+   78 |  Book* auxBook = (Book*) pElement;
+      |                   ^~~~
+      |                   auxBook
+..\src\Editorial.c:78:19: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Editorial.c:78:24: error: expected expression before ')' token
+   78 |  Book* auxBook = (Book*) pElement;
+      |                        ^
+..\src\Editorial.c:83:3: warning: implicit declaration of function 'book_getIdEdit' [-Wimplicit-function-declaration]
+   83 |   book_getIdEdit(auxBook, id);
+      |   ^~~~~~~~~~~~~~
+03:35:01 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |            ^
+..\src\Controller.c: In function 'edit_addEdit':
+..\src\Controller.c:132:27: warning: passing argument 2 of 'book_getIdEdit' makes pointer from integer without a cast [-Wint-conversion]
+  132 |   book_getIdEdit(auxBook, id);
+      |                           ^~
+      |                           |
+      |                           int
+In file included from ..\src\parser.h:6,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Controller.c:1:
+..\src\Books.h:36:37: note: expected 'int *' but argument is of type 'int'
+   36 | int book_getIdEdit(Book* this, int* id);
+      |                                ~~~~~^~
+..\src\Controller.c:132:3: warning: 'id' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  132 |   book_getIdEdit(auxBook, id);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:35:16 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |            ^
+..\src\Controller.c: In function 'edit_addEdit':
+..\src\Controller.c:132:27: warning: passing argument 2 of 'book_getIdEdit' makes pointer from integer without a cast [-Wint-conversion]
+  132 |   book_getIdEdit(auxBook, id);
+      |                           ^~
+      |                           |
+      |                           int
+In file included from ..\src\parser.h:6,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Controller.c:1:
+..\src\Books.h:36:37: note: expected 'int *' but argument is of type 'int'
+   36 | int book_getIdEdit(Book* this, int* id);
+      |                                ~~~~~^~
+..\src\Controller.c:132:3: warning: 'id' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  132 |   book_getIdEdit(auxBook, id);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:35:31 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, edit_addEdit);
+      |            ^
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+03:35:45 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, (*edit_addEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, (*edit_addEdit));
+      |            ^
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+Info: Nothing to build for Segundo Parcial Labo
+03:38:58 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+03:39:55 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:9: warning: 'filteredArray' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   89 |     if(!controller_filterBook(bookArray, filteredArray)){
+      |         ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+12:15:01 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:9: error: too many arguments to function 'controller_filterBook'
+   89 |     if(!controller_filterBook(bookArray, filteredArray)){
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Segundo Parcial Labo.c:23:
+..\src\Controller.h:14:13: note: declared here
+   14 | LinkedList* controller_filterBook(LinkedList* bookArray);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+12:15:32 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:117:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  117 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:117:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  117 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |            ^
+..\src\Controller.c:121:9: warning: returning 'int' from a function with return type 'LinkedList *' {aka 'struct LinkedList *'} makes pointer from integer without a cast [-Wint-conversion]
+  121 |  return returnAux;
+      |         ^~~~~~~~~
+..\src\Controller.c:114:14: warning: variable 'newArray' set but not used [-Wunused-but-set-variable]
+  114 |  LinkedList* newArray;
+      |              ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:9: error: too many arguments to function 'controller_filterBook'
+   89 |     if(!controller_filterBook(bookArray, filteredArray)){
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Segundo Parcial Labo.c:23:
+..\src\Controller.h:14:13: note: declared here
+   14 | LinkedList* controller_filterBook(LinkedList* bookArray);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+12:16:00 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:117:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  117 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:117:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  117 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |            ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:9: error: too many arguments to function 'controller_filterBook'
+   89 |     if(!controller_filterBook(bookArray, filteredArray)){
+      |         ^~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Segundo Parcial Labo.c:23:
+..\src\Controller.h:14:13: note: declared here
+   14 | LinkedList* controller_filterBook(LinkedList* bookArray);
+      |             ^~~~~~~~~~~~~~~~~~~~~
+12:16:20 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:92:10: warning: 'filteredArray' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   92 |      if(!controller_ListBook(filteredArray, editArray)){
+      |          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+12:16:59 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:89:52: error: expected ')' before ';' token
+   89 |     filteredArray = controller_filterBook(bookArray;
+      |                                                    ^
+      |                                                    )
+..\src\Segundo Parcial Labo.c:92:6: error: expected ';' before '}' token
+   92 |     }
+      |      ^
+      |      ;
+   93 |    }
+      |    ~  
+..\src\Segundo Parcial Labo.c:37:14: warning: variable 'filteredArray' set but not used [-Wunused-but-set-variable]
+   37 |  LinkedList* filteredArray;
+      |              ^~~~~~~~~~~~~
+12:17:06 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+12:20:33 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:116:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  116 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:116:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  116 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |            ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+12:38:19 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:112:5: error: conflicting types for 'controller_sortBook'
+  112 | int controller_sortBook(LinkedList* bookArray, int sortType)
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:12:5: note: previous declaration of 'controller_sortBook' was here
+   12 | int controller_sortBook(LinkedList* bookArray);
+      |     ^~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:148:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:148:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |            ^
+12:38:28 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:87:21: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+   87 |     filteredArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |                     ^~~~~~~~~
+..\src\Segundo Parcial Labo.c:87:19: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   87 |     filteredArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |                   ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:112:5: error: conflicting types for 'controller_sortBook'
+  112 | int controller_sortBook(LinkedList* bookArray, int sortType)
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:12:5: note: previous declaration of 'controller_sortBook' was here
+   12 | int controller_sortBook(LinkedList* bookArray);
+      |     ^~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:148:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:148:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |            ^
+12:38:38 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:112:5: error: conflicting types for 'controller_sortBook'
+  112 | int controller_sortBook(LinkedList* bookArray, int sortType)
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:12:5: note: previous declaration of 'controller_sortBook' was here
+   12 | int controller_sortBook(LinkedList* bookArray);
+      |     ^~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:148:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:148:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |            ^
+12:38:49 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:112:5: error: conflicting types for 'controller_sortBook'
+  112 | int controller_sortBook(LinkedList* bookArray, int sortType)
+      |     ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:12:5: note: previous declaration of 'controller_sortBook' was here
+   12 | int controller_sortBook(LinkedList* bookArray);
+      |     ^~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:148:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:148:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |            ^
+12:39:11 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_filterBook':
+..\src\Controller.c:148:14: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |              ^~~~~~~~~
+..\src\Controller.c:148:12: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  148 |   newArray = ll_filter(bookArray, (*edit_filterByEdit));
+      |            ^
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:66:9: error: too few arguments to function 'controller_sortBook'
+   66 |     if(!controller_sortBook(bookArray)){
+      |         ^~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Segundo Parcial Labo.c:20:
+..\src\Controller.h:12:5: note: declared here
+   12 | int controller_sortBook(LinkedList* bookArray, int sortType);
+      |     ^~~~~~~~~~~~~~~~~~~
+..\src\Segundo Parcial Labo.c:87:21: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+   87 |     filteredArray = ll_filter(bookArray, edit_filterByEdit);
+      |                     ^~~~~~~~~
+..\src\Segundo Parcial Labo.c:87:19: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   87 |     filteredArray = ll_filter(bookArray, edit_filterByEdit);
+      |                   ^
+12:39:20 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:87:21: warning: implicit declaration of function 'll_filter' [-Wimplicit-function-declaration]
+   87 |     filteredArray = ll_filter(bookArray, edit_filterByEdit);
+      |                     ^~~~~~~~~
+..\src\Segundo Parcial Labo.c:87:19: warning: assignment to 'LinkedList *' {aka 'struct LinkedList *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   87 |     filteredArray = ll_filter(bookArray, edit_filterByEdit);
+      |                   ^
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+12:41:46 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:42:48 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+12:43:24 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+12:58:58 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:76:49: warning: passing argument 2 of 'getConfirmation' makes pointer from integer without a cast [-Wint-conversion]
+   76 |       "desea ordenar por otro criterio? (S/N)", 'S', 'N', 2, 3);
+      |                                                 ^~~
+      |                                                 |
+      |                                                 int
+In file included from ..\src\parser.h:4,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Segundo Parcial Labo.c:20:
+..\src\Input.h:40:43: note: expected 'char *' but argument is of type 'int'
+   40 | int getConfirmation(char message[], char* confirmation, char* cancel, int length, int tries);
+      |                                     ~~~~~~^~~~~~~~~~~~
+..\src\Segundo Parcial Labo.c:76:54: warning: passing argument 3 of 'getConfirmation' makes pointer from integer without a cast [-Wint-conversion]
+   76 |       "desea ordenar por otro criterio? (S/N)", 'S', 'N', 2, 3);
+      |                                                      ^~~
+      |                                                      |
+      |                                                      int
+In file included from ..\src\parser.h:4,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Segundo Parcial Labo.c:20:
+..\src\Input.h:40:63: note: expected 'char *' but argument is of type 'int'
+   40 | int getConfirmation(char message[], char* confirmation, char* cancel, int length, int tries);
+      |                                                         ~~~~~~^~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+12:59:45 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:75:101: warning: passing argument 2 of 'getConfirmation' makes pointer from integer without a cast [-Wint-conversion]
+   75 |      getConfirmation("La lista ya está ordenada por autor, desea ordenar por otro criterio? (S/N)", 'S', 'N', 2, 3);
+      |                                                                                                     ^~~
+      |                                                                                                     |
+      |                                                                                                     int
+In file included from ..\src\parser.h:4,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Segundo Parcial Labo.c:20:
+..\src\Input.h:40:43: note: expected 'char *' but argument is of type 'int'
+   40 | int getConfirmation(char message[], char* confirmation, char* cancel, int length, int tries);
+      |                                     ~~~~~~^~~~~~~~~~~~
+..\src\Segundo Parcial Labo.c:75:106: warning: passing argument 3 of 'getConfirmation' makes pointer from integer without a cast [-Wint-conversion]
+   75 |      getConfirmation("La lista ya está ordenada por autor, desea ordenar por otro criterio? (S/N)", 'S', 'N', 2, 3);
+      |                                                                                                          ^~~
+      |                                                                                                          |
+      |                                                                                                          int
+In file included from ..\src\parser.h:4,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Segundo Parcial Labo.c:20:
+..\src\Input.h:40:63: note: expected 'char *' but argument is of type 'int'
+   40 | int getConfirmation(char message[], char* confirmation, char* cancel, int length, int tries);
+      |                                                         ~~~~~~^~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:00:02 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:75:106: warning: passing argument 3 of 'getConfirmation' makes pointer from integer without a cast [-Wint-conversion]
+   75 |      getConfirmation("La lista ya está ordenada por autor, desea ordenar por otro criterio? (S/N)", "S", 'N', 2, 3);
+      |                                                                                                          ^~~
+      |                                                                                                          |
+      |                                                                                                          int
+In file included from ..\src\parser.h:4,
+                 from ..\src\Controller.h:2,
+                 from ..\src\Segundo Parcial Labo.c:20:
+..\src\Input.h:40:63: note: expected 'char *' but argument is of type 'int'
+   40 | int getConfirmation(char message[], char* confirmation, char* cancel, int length, int tries);
+      |                                                         ~~~~~~^~~~~~
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:00:09 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+13:00:35 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+13:00:58 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+13:13:48 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+13:14:40 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+13:21:00 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'edit_filterByEdit':
+..\src\Controller.c:145:1: warning: statement with no effect [-Wunused-value]
+  145 | 26 int returnAux = 0;
+      | ^~
+..\src\Controller.c:145:3: error: expected ';' before 'int'
+  145 | 26 int returnAux = 0;
+      |   ^~~~
+      |   ;
+..\src\Controller.c:152:4: error: 'returnAux' undeclared (first use in this function)
+  152 |    returnAux = 1;
+      |    ^~~~~~~~~
+..\src\Controller.c:152:4: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Controller.c:157:1: warning: control reaches end of non-void function [-Wreturn-type]
+  157 | }
+      | ^
+13:21:18 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+13:22:30 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+13:25:18 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+13:27:53 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+15:06:48 **** Rebuild of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:38:6: warning: unused variable 'flagSort' [-Wunused-variable]
+   38 |  int flagSort = 0;
+      |      ^~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+15:06:57 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+15:10:23 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+15:10:34 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+15:11:27 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+16:48:10 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+..\src\Editorial.c: In function 'edit_filterByEdit':
+..\src\Editorial.c:80:2: error: unknown type name 'Book'
+   80 |  Book* auxBook = (Book*) pElement;
+      |  ^~~~
+..\src\Editorial.c:80:19: error: 'Book' undeclared (first use in this function); did you mean 'auxBook'?
+   80 |  Book* auxBook = (Book*) pElement;
+      |                   ^~~~
+      |                   auxBook
+..\src\Editorial.c:80:19: note: each undeclared identifier is reported only once for each function it appears in
+..\src\Editorial.c:80:24: error: expected expression before ')' token
+   80 |  Book* auxBook = (Book*) pElement;
+      |                        ^
+..\src\Editorial.c:84:3: warning: implicit declaration of function 'book_getIdEdit' [-Wimplicit-function-declaration]
+   84 |   book_getIdEdit(auxBook, &id);
+      |   ^~~~~~~~~~~~~~
+16:49:08 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+..\src\Segundo Parcial Labo.c: In function 'main':
+..\src\Segundo Parcial Labo.c:95:42: error: 'edit_filterByEdit' undeclared (first use in this function); did you mean 'book_filterByEdit'?
+   95 |     filteredArray = ll_filter(bookArray, edit_filterByEdit);
+      |                                          ^~~~~~~~~~~~~~~~~
+      |                                          book_filterByEdit
+..\src\Segundo Parcial Labo.c:95:42: note: each undeclared identifier is reported only once for each function it appears in
+16:49:22 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+16:49:42 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+17:46:59 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+09:27:52 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+..\src\Books.c: In function 'book_discountByEdit':
+..\src\Books.c:394:27: warning: passing argument 2 of 'book_getPrice' makes pointer from integer without a cast [-Wint-conversion]
+  394 |    book_getPrice(auxBook, price);
+      |                           ^~~~~
+      |                           |
+      |                           int
+..\src\Books.c:175:38: note: expected 'float *' but argument is of type 'int'
+  175 | int book_getPrice(Book* this, float* price){
+      |                               ~~~~~~~^~~~~
+..\src\Books.c:401:28: warning: passing argument 2 of 'book_getPrice' makes pointer from integer without a cast [-Wint-conversion]
+  401 |     book_getPrice(auxBook, price);
+      |                            ^~~~~
+      |                            |
+      |                            int
+..\src\Books.c:175:38: note: expected 'float *' but argument is of type 'int'
+  175 | int book_getPrice(Book* this, float* price){
+      |                               ~~~~~~~^~~~~
+..\src\Books.c:394:4: warning: 'price' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  394 |    book_getPrice(auxBook, price);
+      |    ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_mapBook':
+..\src\Controller.c:168:7: warning: implicit declaration of function 'll_map'; did you mean 'll_pop'? [-Wimplicit-function-declaration]
+  168 |   if(!ll_map(bookArray, book_discountByEdit)){
+      |       ^~~~~~
+      |       ll_pop
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+09:28:44 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+..\src\Books.c: In function 'book_discountByEdit':
+..\src\Books.c:394:27: warning: passing argument 2 of 'book_getPrice' from incompatible pointer type [-Wincompatible-pointer-types]
+  394 |    book_getPrice(auxBook, &price);
+      |                           ^~~~~~
+      |                           |
+      |                           int *
+..\src\Books.c:175:38: note: expected 'float *' but argument is of type 'int *'
+  175 | int book_getPrice(Book* this, float* price){
+      |                               ~~~~~~~^~~~~
+..\src\Books.c:401:28: warning: passing argument 2 of 'book_getPrice' makes pointer from integer without a cast [-Wint-conversion]
+  401 |     book_getPrice(auxBook, price);
+      |                            ^~~~~
+      |                            |
+      |                            int
+..\src\Books.c:175:38: note: expected 'float *' but argument is of type 'int'
+  175 | int book_getPrice(Book* this, float* price){
+      |                               ~~~~~~~^~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+09:28:56 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+09:30:16 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+09:35:58 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:36:03 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+09:40:16 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+09:43:13 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c: In function 'controller_mapBook':
+..\src\Controller.c:168:42: error: expected ';' before 'parser_TextFromBook'
+  168 |    ll_map(bookArray, book_discountByEdit)
+      |                                          ^
+      |                                          ;
+  169 |    parser_TextFromBook(pFile, bookArray);
+      |    ~~~~~~~~~~~~~~~~~~~                    
+09:43:19 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file Segundo Parcial Labo.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:43:21 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+09:46:24 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+Info: Nothing to build for Segundo Parcial Labo
+10:21:05 **** Rebuild of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Segundo Parcial Labo.o" "..\\src\\Segundo Parcial Labo.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Editorial.o" "..\\src\\Editorial.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+Info: Nothing to build for Segundo Parcial Labo
+Info: Nothing to build for Segundo Parcial Labo
+12:28:21 **** Incremental Build of configuration Debug for project Segundo Parcial Labo ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\LinkedList.o" "..\\src\\LinkedList.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Books.o" "..\\src\\Books.c" 
+gcc -o "Segundo Parcial Labo.exe" "src\\Books.o" "src\\Controller.o" "src\\Editorial.o" "src\\Input.o" "src\\LinkedList.o" "src\\Segundo Parcial Labo.o" "src\\parser.o" 
+01:30:23 **** Rebuild of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:29:6: warning: implicit declaration of function 'controller_loadToBinary'; did you mean 'controller_loadFromBinary'? [-Wimplicit-function-declaration]
+   29 |      controller_loadToBinary(F_BIN, &climate);
+      |      ^~~~~~~~~~~~~~~~~~~~~~~
+      |      controller_loadFromBinary
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c: In function 'makeWeather':
+..\src\Weather.c:77:21: warning: initialization of 'Weather *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   77 |  Weather* auxWea = {99, "Soleado", 26.3};
+      |                     ^~
+..\src\Weather.c:77:21: note: (near initialization for 'auxWea')
+..\src\Weather.c:77:25: warning: excess elements in scalar initializer
+   77 |  Weather* auxWea = {99, "Soleado", 26.3};
+      |                         ^~~~~~~~~
+..\src\Weather.c:77:25: note: (near initialization for 'auxWea')
+..\src\Weather.c:77:36: warning: excess elements in scalar initializer
+   77 |  Weather* auxWea = {99, "Soleado", 26.3};
+      |                                    ^~~~
+..\src\Weather.c:77:36: note: (near initialization for 'auxWea')
+..\src\Weather.c: In function 'getWeather':
+..\src\Weather.c:85:3: warning: 'auxWea' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   85 |   weather_setId(auxWea, id);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_WeatherFromBinary':
+..\src\parser.c:36:7: warning: 'climate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   36 |    if(fread(climate, sizeof(climate), 1, pFile) == 1){
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:49:5: error: conflicting types for 'controller_ListWeather'
+   49 | int controller_ListWeather(Weather* today){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:7:5: note: previous declaration of 'controller_ListWeather' was here
+    7 | int controller_ListWeather(Weather today);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_ListWeather':
+..\src\Controller.c:54:27: warning: unknown conversion type character '|' in format [-Wformat=]
+   54 |   printf("|%-5s|%-25s|%-11|\n", "ID", "Clima", "Temperatura");
+      |                           ^
+..\src\Controller.c:54:10: warning: too many arguments for format [-Wformat-extra-args]
+   54 |   printf("|%-5s|%-25s|%-11|\n", "ID", "Clima", "Temperatura");
+      |          ^~~~~~~~~~~~~~~~~~~~~
+01:30:48 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:49:5: error: conflicting types for 'controller_ListWeather'
+   49 | int controller_ListWeather(Weather* today){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:7:5: note: previous declaration of 'controller_ListWeather' was here
+    7 | int controller_ListWeather(Weather today);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_ListWeather':
+..\src\Controller.c:54:27: warning: unknown conversion type character '|' in format [-Wformat=]
+   54 |   printf("|%-5s|%-25s|%-11|\n", "ID", "Clima", "Temperatura");
+      |                           ^
+..\src\Controller.c:54:10: warning: too many arguments for format [-Wformat-extra-args]
+   54 |   printf("|%-5s|%-25s|%-11|\n", "ID", "Clima", "Temperatura");
+      |          ^~~~~~~~~~~~~~~~~~~~~
+01:31:29 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+..\src\Controller.c:49:5: error: conflicting types for 'controller_ListWeather'
+   49 | int controller_ListWeather(Weather* today){
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+In file included from ..\src\Controller.c:1:
+..\src\Controller.h:7:5: note: previous declaration of 'controller_ListWeather' was here
+    7 | int controller_ListWeather(Weather today);
+      |     ^~~~~~~~~~~~~~~~~~~~~~
+..\src\Controller.c: In function 'controller_ListWeather':
+..\src\Controller.c:54:27: warning: unknown conversion type character '|' in format [-Wformat=]
+   54 |   printf("|%-5s|%-25s|%-11|\n", "ID", "Clima", "Temperatura");
+      |                           ^
+..\src\Controller.c:54:10: warning: too many arguments for format [-Wformat-extra-args]
+   54 |   printf("|%-5s|%-25s|%-11|\n", "ID", "Clima", "Temperatura");
+      |          ^~~~~~~~~~~~~~~~~~~~~
+01:32:17 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+Info: Nothing to build for 2do Parcial Programación
+Info: Nothing to build for 2do Parcial Programación
+01:33:00 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:21:25: warning: initialization of 'Weather *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   21 |     Weather* climate = {1, "Nublado", 16.5};
+      |                         ^
+..\src\2do Parcial Programación.c:21:25: note: (near initialization for 'climate')
+..\src\2do Parcial Programación.c:21:28: warning: excess elements in scalar initializer
+   21 |     Weather* climate = {1, "Nublado", 16.5};
+      |                            ^~~~~~~~~
+..\src\2do Parcial Programación.c:21:28: note: (near initialization for 'climate')
+..\src\2do Parcial Programación.c:21:39: warning: excess elements in scalar initializer
+   21 |     Weather* climate = {1, "Nublado", 16.5};
+      |                                       ^~~~
+..\src\2do Parcial Programación.c:21:39: note: (near initialization for 'climate')
+..\src\2do Parcial Programación.c:29:37: warning: passing argument 2 of 'controller_loadToBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   29 |      controller_loadToBinary(F_BIN, &climate);
+      |                                     ^~~~~~~~
+      |                                     |
+      |                                     Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Controller.h:6:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+    6 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+..\src\2do Parcial Programación.c:32:39: warning: passing argument 2 of 'controller_loadFromBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   32 |      controller_loadFromBinary(F_BIN, &auxClimate);
+      |                                       ^~~~~~~~~~~
+      |                                       |
+      |                                       Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Controller.h:5:52: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+    5 | int controller_loadFromBinary(char* path, Weather* pWeather);
+      |                                           ~~~~~~~~~^~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 2do Parcial Programación.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:33:13 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:32:39: warning: passing argument 2 of 'controller_loadFromBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   32 |      controller_loadFromBinary(F_BIN, &auxClimate);
+      |                                       ^~~~~~~~~~~
+      |                                       |
+      |                                       Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Controller.h:5:52: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+    5 | int controller_loadFromBinary(char* path, Weather* pWeather);
+      |                                           ~~~~~~~~~^~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 2do Parcial Programación.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:33:16 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+01:33:44 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:35:39: warning: passing argument 2 of 'controller_loadFromBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   35 |      controller_loadFromBinary(F_BIN, &auxClimate);
+      |                                       ^~~~~~~~~~~
+      |                                       |
+      |                                       Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Controller.h:5:52: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+    5 | int controller_loadFromBinary(char* path, Weather* pWeather);
+      |                                           ~~~~~~~~~^~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+01:34:12 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+01:34:43 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+01:35:19 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+01:36:33 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+..\src\parser.c: In function 'parser_WeatherFromBinary':
+..\src\parser.c:36:7: warning: 'climate' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   36 |    if(fread(climate, sizeof(Weather), 1, pFile) == 1){
+      |       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+01:36:46 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 2do Parcial Programación.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+01:36:48 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+01:38:38 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c: In function 'makeWeather':
+..\src\Weather.c:85:21: warning: initialization of 'Weather *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   85 |  Weather* auxWea = {99, "Soleado", 26.3};
+      |                     ^~
+..\src\Weather.c:85:21: note: (near initialization for 'auxWea')
+..\src\Weather.c:85:25: warning: excess elements in scalar initializer
+   85 |  Weather* auxWea = {99, "Soleado", 26.3};
+      |                         ^~~~~~~~~
+..\src\Weather.c:85:25: note: (near initialization for 'auxWea')
+..\src\Weather.c:85:36: warning: excess elements in scalar initializer
+   85 |  Weather* auxWea = {99, "Soleado", 26.3};
+      |                                    ^~~~
+..\src\Weather.c:85:36: note: (near initialization for 'auxWea')
+..\src\Weather.c: In function 'getWeather':
+..\src\Weather.c:93:3: warning: 'auxWea' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   93 |   weather_setId(auxWea, id);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+01:38:53 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+01:39:27 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:37:27: error: incompatible type for argument 1 of 'controller_ListWeather'
+   37 |    controller_ListWeather(auxClimate);
+      |                           ^~~~~~~~~~
+      |                           |
+      |                           Weather {aka struct <anonymous>}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Controller.h:8:37: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather' {aka 'struct <anonymous>'}
+    8 | int controller_ListWeather(Weather* today);
+      |                            ~~~~~~~~~^~~~~

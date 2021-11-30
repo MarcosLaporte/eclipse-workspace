@@ -1,0 +1,101 @@
+﻿Id,Título,Autor,Precio,IdEdit
+1,Decameron,Giovanni Boccaccio,2297.85,4
+2,Los cuentos de Canterbury,Geoffrey Chaucer,51.22,3
+3,La conciencia de Zeno,Italo Svevo,207.94,3
+4,Don Quijote de la Mancha,Miguel de Cervantes,3351.49,4
+5,Cuentos infantiles,Hans Christian Andersen,181.43,3
+6,El idiota,Fiodor Dostoievski,164.52,3
+7,Lolita,Vladimir Nabokov,2992.51,5
+8,Genji Monogatari,Murasaki Shikibu,4775.29,1
+9,Otelo,William Shakespeare,3813.1,5
+10,Mahabharata,Viasa,1665.13,6
+11,Molloy,Samuel Beckett,258.41,3
+12,El cuaderno dorado,Doris Lessing,3557.34,1
+13,Pedro Paramo,Juan Rulfo,3870.2,6
+14,Ramayana,Valmiki,3127.76,5
+15,Los endemoniados,Fiodor Dostoievski,121.74,3
+16,Vida de Tristram Shandy,Laurence Sterne,1535.97,1
+17,Fausto,Johann von Goethe,241.16,2
+18,Ana Karenina,Lev Tolstoi,2470.63,5
+19,Los Buddenbrook,Thomas Mann,3245.87,5
+20,Hijos de la medianoche,Salman Rushdie,231.35,3
+21,La historia,Elsa Morante,134.27,2
+22,Cien anios de soledad,Gabriel Garcia Marquez,4267.83,1
+23,Shakuntala,Kalidasa,89.18,2
+24,Ulises,James Joyce,143.83,2
+25,El ruido y la furia,William Faulkner,1734.66,1
+26,Zorba el griego,Nikos Kazantzakis,61.97,3
+27,Hojas de hierba,Walt Whitman,150.7,2
+28,Hijos y amantes,D. H. Lawrence,4941.33,5
+29,Poemas,Paul Celan,3148.1,4
+30,Cuentos,Edgar Allan Poe,3471.06,1
+31,Masnavi,Rumi,2021.38,4
+32,Casa de muniecas,Henrik Ibsen,3964.89,1
+33,Berlin Alexanderplatz,Alfred Doblin,188.76,3
+34,Madame Bovary,Gustave Flaubert,1886.04,6
+35,Saga de Njal,Anonimo,4507.26,6
+36,Las metamorfosis,Ovidio,60.94,2
+37,Gargantua y Pantagruel,Francois Rabelais,253.2,3
+38,La seniora Dalloway,Virginia Woolf,4107.54,6
+39,El sonido de la montania,Yasunari Kawabata,4933.76,1
+40,Rojo y negro,Stendhal,4987.92,5
+41,En busca del tiempo perdido,Marcel Proust,2525.82,1
+42,Los hermanos Karamazov,Fiodor Dostoievski,236.61,2
+43,El rey Lear,William Shakespeare,4986.37,5
+44,Gran Serton Veredas,Joao Guimaraes Rosa,1805.49,4
+45,Bostan,Saadi,59.5,3
+46,Poema de Gilgamesh,Anonimo,82.15,2
+47,El hombre sin atributos,Robert Musil,1872.3,1
+48,1984,George Orwell,81.62,2
+49,El tambor de hojalata,Gunter Grass,204.82,2
+50,Al faro,Virginia Woolf,1695.36,6
+51,El hombre invisible,Ralph Ellison,4871.46,5
+52,La muerte de Ivan Ilich,Lev Tolstoi,2531.23,5
+53,Huckleberry Finn,Mark Twain,2411.66,1
+54,Hambre,Knut Hamsun,108.47,3
+55,Papa Goriot,Honore de Balzac,2190.22,4
+56,Las mil y una noches,Anonimo,264.74,3
+57,Grandes Esperanzas,Charles Dickens,3078.96,1
+58,Middlemarch,George Eliot,4816.24,4
+59,Hamlet,William Shakespeare,3075.34,6
+60,Gente independiente,Halldor Laxness,3722.24,6
+61,Viaje al fin de la noche,Louis-Ferdinand Celine,78.52,3
+62,Relatos cortos,Franz Kafka,1705.38,5
+63,Ensayo sobre la ceguera,Jose Saramago,129.69,3
+64,Romancero gitano,Federico Garcia Lorca,2140.15,4
+65,La educacion sentimental,Gustave Flaubert,4609.81,5
+66,Eneida,Virgilio,3492.87,6
+67,Libro del desasosiego,Fernando Pessoa,2539.88,5
+68,Diario de un loco,Lu Xun,4198.87,5
+69,Beloved,Toni Morrison,3202.85,6
+70,Pippi Calzaslargas,Astrid Lindgren,233.68,3
+71,El viejo y el mar,Ernest Hemingway,66.21,2
+72,Medea,Euripides,4039.55,6
+73,Tiempo de migrar al norte,Tayeb Salih,245.98,3
+74,El proceso,Franz Kafka,194.74,2
+75,Cumbres Borrascosas,Emily Bronte,4565.09,5
+76,Absalom Absalom,William Faulkner,2099.28,1
+77,Relatos cortos,Anton Chejov,4675.77,4
+78,Almas muertas,Nikolai Gogol,140.37,3
+79,La montania magica,Thomas Mann,1610.74,6
+80,Orgullo y prejuicio,Jane Austen,266.32,2
+81,Moby-Dick,Herman Melville,4065,6
+82,Hijos de nuestro barrio,Naguib Mahfuz,4031.23,1
+83,Los viajes de Gulliver,Jonathan Swift,4180.33,4
+84,Memorias de Adriano,Marguerite Yourcenar,2627.18,5
+85,Poemas,Giacomo Leopardi,4676.81,1
+86,Crimen y castigo,Fiodor Dostoievski,139.3,3
+87,Todo se desmorona,Chinua Achebe,153.04,2
+88,Libro de Job,Anonimo,2785.63,5
+89,Odisea,Homero,3895.49,4
+90,Jacques el fatalista,Denis Diderot,2069.23,6
+91,Guerra y paz,Lev Tolstoi,3200.45,6
+92,Ficciones,Jorge Luis Borges,99.11,3
+93,Iliada,Homero,3996.51,6
+94,El amor en el colera,Gabriel Garcia Marquez,211.36,3
+95,El extranjero,Albert Camus,2241.51,4
+96,Nostromo,Joseph Conrad,130.43,3
+97,Divina comedia,Dante Alighieri,4638.68,5
+98,Edipo rey,Sofocles,2531.78,6
+99,Ensayos,Michel de Montaigne,4053.11,1
+100,El castillo,Franz Kafka,253.54,3
