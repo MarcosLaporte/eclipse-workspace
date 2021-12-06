@@ -1,11 +1,10 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=939df27751b7b37b78a9a76489d33613e6e196d3
 CLOSE_UNRELATED_PROJECTS=true
 IMPORT_FILES_AND_FOLDERS_MODE=prompt
 IMPORT_FILES_AND_FOLDERS_VIRTUAL_FOLDER_MODE=prompt
 eclipse.preferences.version=1
-<<<<<<< HEAD
 platformState=1629759631631
-=======
-platformState=1629935320379
->>>>>>> 939df27751b7b37b78a9a76489d33613e6e196d3
 quickStart=false
-tipsAndTricks=true
+tipsAndTricks=false

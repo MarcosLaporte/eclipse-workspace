@@ -20,7 +20,7 @@
 	<section name="PDOMSearchPage">
 	</section>
 	<section name="CResourceRenameRefactoringInputPage">
-		<item key="updateReferences" value="true"/>
+		<item key="updateReferences" value="false"/>
 	</section>
 	<section name="org.eclipse.cdt.internal.ui.preferences.EditTemplateDialog_dialogBounds">
 		<item key="DIALOG_X_ORIGIN" value="-38"/>
