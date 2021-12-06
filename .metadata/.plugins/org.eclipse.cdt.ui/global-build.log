@@ -2457,3 +2457,630 @@ In file included from ..\src\2do Parcial Programación.c:17:
 ..\src\Controller.h:8:37: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather' {aka 'struct <anonymous>'}
     8 | int controller_ListWeather(Weather* today);
       |                            ~~~~~~~~~^~~~~
+09:03:27 **** Rebuild of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c: In function 'makeWeather':
+..\src\Weather.c:85:21: warning: initialization of 'Weather *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   85 |  Weather* auxWea = {99, "Soleado", 26.3};
+      |                     ^~
+..\src\Weather.c:85:21: note: (near initialization for 'auxWea')
+..\src\Weather.c:85:25: warning: excess elements in scalar initializer
+   85 |  Weather* auxWea = {99, "Soleado", 26.3};
+      |                         ^~~~~~~~~
+..\src\Weather.c:85:25: note: (near initialization for 'auxWea')
+..\src\Weather.c:85:36: warning: excess elements in scalar initializer
+   85 |  Weather* auxWea = {99, "Soleado", 26.3};
+      |                                    ^~~~
+..\src\Weather.c:85:36: note: (near initialization for 'auxWea')
+..\src\Weather.c: In function 'getWeather':
+..\src\Weather.c:93:3: warning: 'auxWea' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   93 |   weather_setId(auxWea, id);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+Info: Nothing to build for 2do Parcial Programación
+09:04:22 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c:84:9: error: conflicting types for 'makeWeather'
+   84 | Weather makeWeather(void){
+      |         ^~~~~~~~~~~
+In file included from ..\src\Weather.c:8:
+..\src\Weather.h:29:10: note: previous declaration of 'makeWeather' was here
+   29 | Weather* makeWeather(void);
+      |          ^~~~~~~~~~~
+..\src\Weather.c: In function 'controller_loadFromBinary':
+..\src\Weather.c:109:6: warning: implicit declaration of function 'parser_WeatherFromBinary' [-Wimplicit-function-declaration]
+  109 |   if(parser_WeatherFromBinary(pFile, pWeather)){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Weather.c: In function 'controller_loadToBinary':
+..\src\Weather.c:124:6: warning: implicit declaration of function 'parser_BinaryFromWeather' [-Wimplicit-function-declaration]
+  124 |   if(parser_BinaryFromWeather(pFile, pWeather)){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+09:05:02 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c: In function 'getWeather':
+..\src\Weather.c:93:3: warning: 'auxWea' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   93 |   weather_setId(auxWea, id);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Controller.o" "..\\src\\Controller.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\parser.o" "..\\src\\parser.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Controller.o" "src\\Input.o" "src\\Weather.o" "src\\parser.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Weather.o: in function `controller_loadFromBinary':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/Weather.c:103: multiple definition of `controller_loadFromBinary'; src\Controller.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/Controller.c:19: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Weather.o: in function `controller_loadToBinary':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/Weather.c:118: multiple definition of `controller_loadToBinary'; src\Controller.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/Controller.c:34: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\Weather.o: in function `controller_ListWeather':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/Weather.c:133: multiple definition of `controller_ListWeather'; src\Controller.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/Controller.c:49: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\parser.o: in function `parser_WeatherFromBinary':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/parser.c:30: multiple definition of `parser_WeatherFromBinary'; src\Weather.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/Weather.c:150: first defined here
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: src\parser.o: in function `parser_BinaryFromWeather':
+C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/parser.c:46: multiple definition of `parser_BinaryFromWeather'; src\Weather.o:C:\Estudios\UTN\Laboratorio-Programación\eclipse-workspace\2do Parcial Programación\Debug/../src/Weather.c:166: first defined here
+collect2.exe: error: ld returned 1 exit status
+09:06:18 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c: In function 'getWeather':
+..\src\Weather.c:93:17: warning: passing argument 1 of 'weather_setId' from incompatible pointer type [-Wincompatible-pointer-types]
+   93 |   weather_setId(&auxWea, id);
+      |                 ^~~~~~~
+      |                 |
+      |                 Weather ** {aka struct <anonymous> **}
+..\src\Weather.c:18:28: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   18 | int weather_setId(Weather* this, int id){
+      |                   ~~~~~~~~~^~~~
+..\src\Weather.c:94:23: warning: passing argument 1 of 'weather_setForecast' from incompatible pointer type [-Wincompatible-pointer-types]
+   94 |   weather_setForecast(&auxWea, forecast);
+      |                       ^~~~~~~
+      |                       |
+      |                       Weather ** {aka struct <anonymous> **}
+..\src\Weather.c:40:34: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int weather_setForecast(Weather* this, char* forec){
+      |                         ~~~~~~~~~^~~~
+..\src\Weather.c:95:19: warning: passing argument 1 of 'weather_setTemp' from incompatible pointer type [-Wincompatible-pointer-types]
+   95 |   weather_setTemp(&auxWea, temp);
+      |                   ^~~~~~~
+      |                   |
+      |                   Weather ** {aka struct <anonymous> **}
+..\src\Weather.c:62:30: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   62 | int weather_setTemp(Weather* this, float temp){
+      |                     ~~~~~~~~~^~~~
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:06:42 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c: In function 'getWeather':
+..\src\Weather.c:93:17: error: incompatible type for argument 1 of 'weather_setId'
+   93 |   weather_setId(*auxWea, id);
+      |                 ^~~~~~~
+      |                 |
+      |                 Weather {aka struct <anonymous>}
+..\src\Weather.c:18:28: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather' {aka 'struct <anonymous>'}
+   18 | int weather_setId(Weather* this, int id){
+      |                   ~~~~~~~~~^~~~
+..\src\Weather.c:94:23: warning: passing argument 1 of 'weather_setForecast' from incompatible pointer type [-Wincompatible-pointer-types]
+   94 |   weather_setForecast(&auxWea, forecast);
+      |                       ^~~~~~~
+      |                       |
+      |                       Weather ** {aka struct <anonymous> **}
+..\src\Weather.c:40:34: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int weather_setForecast(Weather* this, char* forec){
+      |                         ~~~~~~~~~^~~~
+..\src\Weather.c:95:19: warning: passing argument 1 of 'weather_setTemp' from incompatible pointer type [-Wincompatible-pointer-types]
+   95 |   weather_setTemp(&auxWea, temp);
+      |                   ^~~~~~~
+      |                   |
+      |                   Weather ** {aka struct <anonymous> **}
+..\src\Weather.c:62:30: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   62 | int weather_setTemp(Weather* this, float temp){
+      |                     ~~~~~~~~~^~~~
+09:06:47 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c: In function 'getWeather':
+..\src\Weather.c:94:23: warning: passing argument 1 of 'weather_setForecast' from incompatible pointer type [-Wincompatible-pointer-types]
+   94 |   weather_setForecast(&auxWea, forecast);
+      |                       ^~~~~~~
+      |                       |
+      |                       Weather ** {aka struct <anonymous> **}
+..\src\Weather.c:40:34: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int weather_setForecast(Weather* this, char* forec){
+      |                         ~~~~~~~~~^~~~
+..\src\Weather.c:95:19: warning: passing argument 1 of 'weather_setTemp' from incompatible pointer type [-Wincompatible-pointer-types]
+   95 |   weather_setTemp(&auxWea, temp);
+      |                   ^~~~~~~
+      |                   |
+      |                   Weather ** {aka struct <anonymous> **}
+..\src\Weather.c:62:30: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   62 | int weather_setTemp(Weather* this, float temp){
+      |                     ~~~~~~~~~^~~~
+..\src\Weather.c:93:3: warning: 'auxWea' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   93 |   weather_setId(auxWea, id);
+      |   ^~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:07:15 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+Info: Nothing to build for 2do Parcial Programación
+Info: Nothing to build for 2do Parcial Programación
+09:08:20 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:08:30 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:08:44 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:09:20 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:13:18 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c: In function 'parser_BinaryFromWeather':
+..\src\Weather.c:170:6: warning: 'auxWeather' may be used uninitialized in this function [-Wmaybe-uninitialized]
+  170 |   if(fwrite(auxWeather, sizeof(Weather), 1, pFile) == 1){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:13:57 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 2do Parcial Programación.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:14:19 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file 2do Parcial Programación.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+09:14:30 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:21:38 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:22:08 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:22:21 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:24:15 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:25:9: warning: unused variable 'option' [-Wunused-variable]
+   25 |     int option;
+      |         ^~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:24:33 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:25:9: warning: unused variable 'option' [-Wunused-variable]
+   25 |     int option;
+      |         ^~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:26:28 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Input.o" "..\\src\\Input.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+Info: Nothing to build for 2do Parcial Programación
+09:26:51 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:27:34 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:28:20 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:29:51 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:24:15: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   24 |     climate = getWeather(1, "Soleado con granizo", 20.75);
+      |               ^~~~~~~~~~
+..\src\2do Parcial Programación.c:24:13: warning: assignment to 'Weather *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   24 |     climate = getWeather(1, "Soleado con granizo", 20.75);
+      |             ^
+..\src\2do Parcial Programación.c:27:33: warning: passing argument 2 of 'controller_loadToBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   27 |  controller_loadToBinary(F_BIN, &climate);
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Weather.h:40:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:29:59 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:24:15: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   24 |     climate = getWeather(1, "Soleado con granizo", 20.75);
+      |               ^~~~~~~~~~
+..\src\2do Parcial Programación.c:24:15: error: incompatible types when assigning to type 'Weather' {aka 'struct <anonymous>'} from type 'int'
+09:30:28 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:24:16: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   24 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |                ^~~~~~~~~~
+..\src\2do Parcial Programación.c:24:14: error: lvalue required as left operand of assignment
+   24 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |              ^
+..\src\2do Parcial Programación.c:27:33: warning: passing argument 2 of 'controller_loadToBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   27 |  controller_loadToBinary(F_BIN, &climate);
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Weather.h:40:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+09:30:39 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:24:15: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   24 |     climate = getWeather(1, "Soleado con granizo", 20.75);
+      |               ^~~~~~~~~~
+..\src\2do Parcial Programación.c:24:13: warning: assignment to 'Weather *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   24 |     climate = getWeather(1, "Soleado con granizo", 20.75);
+      |             ^
+..\src\2do Parcial Programación.c:27:33: warning: passing argument 2 of 'controller_loadToBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   27 |  controller_loadToBinary(F_BIN, &climate);
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Weather.h:40:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:30:50 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:24:16: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   24 |     *climate = getWeather(1, "Soleado con granizo", 20.75);
+      |                ^~~~~~~~~~
+..\src\2do Parcial Programación.c:24:16: error: incompatible types when assigning to type 'Weather' {aka 'struct <anonymous>'} from type 'int'
+..\src\2do Parcial Programación.c:27:33: warning: passing argument 2 of 'controller_loadToBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   27 |  controller_loadToBinary(F_BIN, &climate);
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Weather.h:40:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+09:30:54 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:24:16: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   24 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |                ^~~~~~~~~~
+..\src\2do Parcial Programación.c:24:14: error: lvalue required as left operand of assignment
+   24 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |              ^
+..\src\2do Parcial Programación.c:27:33: warning: passing argument 2 of 'controller_loadToBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   27 |  controller_loadToBinary(F_BIN, &climate);
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Weather.h:40:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+09:30:59 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:23:24: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   23 |     Weather* climate = getWeather(1, "Soleado con granizo", 20.75);
+      |                        ^~~~~~~~~~
+..\src\2do Parcial Programación.c:23:24: warning: initialization of 'Weather *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+..\src\2do Parcial Programación.c:26:33: warning: passing argument 2 of 'controller_loadToBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   26 |  controller_loadToBinary(F_BIN, &climate);
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Weather.h:40:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:31:37 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:23:23: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   23 |     Weather climate = getWeather(1, "Soleado con granizo", 20.75);
+      |                       ^~~~~~~~~~
+..\src\2do Parcial Programación.c:23:23: error: invalid initializer
+09:32:04 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:26:15: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   26 |     climate = getWeather(1, "Soleado con granizo", 20.75);
+      |               ^~~~~~~~~~
+..\src\2do Parcial Programación.c:26:15: error: incompatible types when assigning to type 'Weather' {aka 'struct <anonymous>'} from type 'int'
+09:32:26 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:26:16: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   26 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |                ^~~~~~~~~~
+..\src\2do Parcial Programación.c:26:14: error: lvalue required as left operand of assignment
+   26 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |              ^
+09:32:27 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:26:16: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   26 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |                ^~~~~~~~~~
+..\src\2do Parcial Programación.c:26:14: error: lvalue required as left operand of assignment
+   26 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |              ^
+09:32:32 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:26:16: warning: implicit declaration of function 'getWeather' [-Wimplicit-function-declaration]
+   26 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |                ^~~~~~~~~~
+..\src\2do Parcial Programación.c:26:14: error: lvalue required as left operand of assignment
+   26 |     &climate = getWeather(1, "Soleado con granizo", 20.75);
+      |              ^
+..\src\2do Parcial Programación.c:28:33: warning: passing argument 2 of 'controller_loadToBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   28 |  controller_loadToBinary(F_BIN, &climate);
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Weather.h:40:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+09:34:59 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:28:33: warning: passing argument 2 of 'controller_loadToBinary' from incompatible pointer type [-Wincompatible-pointer-types]
+   28 |  controller_loadToBinary(F_BIN, &climate);
+      |                                 ^~~~~~~~
+      |                                 |
+      |                                 Weather ** {aka struct <anonymous> **}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Weather.h:40:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather **' {aka 'struct <anonymous> **'}
+   40 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+Info: Nothing to build for 2do Parcial Programación
+09:35:08 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+Info: Nothing to build for 2do Parcial Programación
+09:35:39 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:23:25: warning: initialization of 'Weather *' {aka 'struct <anonymous> *'} from 'int' makes pointer from integer without a cast [-Wint-conversion]
+   23 |     Weather* climate = {1, "Soleado con granizo", 20.75};
+      |                         ^
+..\src\2do Parcial Programación.c:23:25: note: (near initialization for 'climate')
+..\src\2do Parcial Programación.c:23:28: warning: excess elements in scalar initializer
+   23 |     Weather* climate = {1, "Soleado con granizo", 20.75};
+      |                            ^~~~~~~~~~~~~~~~~~~~~
+..\src\2do Parcial Programación.c:23:28: note: (near initialization for 'climate')
+..\src\2do Parcial Programación.c:23:51: warning: excess elements in scalar initializer
+   23 |     Weather* climate = {1, "Soleado con granizo", 20.75};
+      |                                                   ^~~~~
+..\src\2do Parcial Programación.c:23:51: note: (near initialization for 'climate')
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:35:44 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+..\src\2do Parcial Programación.c: In function 'main':
+..\src\2do Parcial Programación.c:28:33: error: incompatible type for argument 2 of 'controller_loadToBinary'
+   28 |  controller_loadToBinary(F_BIN, climate);
+      |                                 ^~~~~~~
+      |                                 |
+      |                                 Weather {aka struct <anonymous>}
+In file included from ..\src\2do Parcial Programación.c:17:
+..\src\Weather.h:40:50: note: expected 'Weather *' {aka 'struct <anonymous> *'} but argument is of type 'Weather' {aka 'struct <anonymous>'}
+   40 | int controller_loadToBinary(char* path, Weather* pWeather);
+      |                                         ~~~~~~~~~^~~~~~~~
+09:35:50 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+09:36:52 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+In file included from ..\src\Weather.c:8:
+..\src\Weather.h:44:30: error: unknown type name 'FILE'
+   44 | int parser_WeatherFromBinary(FILE* pFile, Weather* pWeather);
+      |                              ^~~~
+..\src\Weather.h:1:1: note: 'FILE' is defined in header '<stdio.h>'; did you forget to '#include <stdio.h>'?
+  +++ |+#include <stdio.h>
+    1 | /*
+..\src\Weather.h:45:30: error: unknown type name 'FILE'
+   45 | int parser_BinaryFromWeather(FILE* pFile, Weather* pWeather);
+      |                              ^~~~
+..\src\Weather.h:45:30: note: 'FILE' is defined in header '<stdio.h>'; did you forget to '#include <stdio.h>'?
+..\src\Weather.c: In function 'weather_new':
+..\src\Weather.c:13:25: warning: implicit declaration of function 'calloc' [-Wimplicit-function-declaration]
+   13 |  miEmpleado = (Weather*)calloc(1, sizeof(Weather));
+      |                         ^~~~~~
+..\src\Weather.c:13:25: warning: incompatible implicit declaration of built-in function 'calloc'
+..\src\Weather.c:9:1: note: include '<stdlib.h>' or provide a declaration of 'calloc'
+    8 | #include "Weather.h"
+  +++ |+#include <stdlib.h>
+    9 | 
+..\src\Weather.c: In function 'weather_setId':
+..\src\Weather.c:21:16: error: 'NULL' undeclared (first use in this function)
+   21 |     if(this != NULL){
+      |                ^~~~
+..\src\Weather.c:9:1: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+    8 | #include "Weather.h"
+  +++ |+#include <stddef.h>
+    9 | 
+..\src\Weather.c:21:16: note: each undeclared identifier is reported only once for each function it appears in
+   21 |     if(this != NULL){
+      |                ^~~~
+..\src\Weather.c: In function 'weather_getId':
+..\src\Weather.c:32:16: error: 'NULL' undeclared (first use in this function)
+   32 |     if(this != NULL && id != NULL){
+      |                ^~~~
+..\src\Weather.c:32:16: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+..\src\Weather.c: In function 'weather_setForecast':
+..\src\Weather.c:43:16: error: 'NULL' undeclared (first use in this function)
+   43 |     if(this != NULL && forec != NULL){
+      |                ^~~~
+..\src\Weather.c:43:16: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+..\src\Weather.c:44:9: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   44 |         strcpy(this->forecast, forec);
+      |         ^~~~~~
+..\src\Weather.c:44:9: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\Weather.c:9:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+    8 | #include "Weather.h"
+  +++ |+#include <string.h>
+    9 | 
+..\src\Weather.c: In function 'weather_getForecast':
+..\src\Weather.c:54:16: error: 'NULL' undeclared (first use in this function)
+   54 |     if(this != NULL && forec != NULL){
+      |                ^~~~
+..\src\Weather.c:54:16: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+..\src\Weather.c:55:9: warning: incompatible implicit declaration of built-in function 'strcpy'
+   55 |         strcpy(forec, this->forecast);
+      |         ^~~~~~
+..\src\Weather.c:55:9: note: include '<string.h>' or provide a declaration of 'strcpy'
+..\src\Weather.c: In function 'weather_setTemp':
+..\src\Weather.c:65:16: error: 'NULL' undeclared (first use in this function)
+   65 |     if(this != NULL){
+      |                ^~~~
+..\src\Weather.c:65:16: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+..\src\Weather.c: In function 'weather_getTemp':
+..\src\Weather.c:76:16: error: 'NULL' undeclared (first use in this function)
+   76 |     if(this != NULL && temp != NULL){
+      |                ^~~~
+..\src\Weather.c:76:16: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+..\src\Weather.c: In function 'getWeather':
+..\src\Weather.c:91:20: error: 'NULL' undeclared (first use in this function)
+   91 |  Weather* auxWea = NULL;
+      |                    ^~~~
+..\src\Weather.c:91:20: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+..\src\Weather.c: In function 'controller_loadFromBinary':
+..\src\Weather.c:106:2: error: unknown type name 'FILE'
+  106 |  FILE* pFile;
+      |  ^~~~
+..\src\Weather.c:9:1: note: 'FILE' is defined in header '<stdio.h>'; did you forget to '#include <stdio.h>'?
+    8 | #include "Weather.h"
+  +++ |+#include <stdio.h>
+    9 | 
+..\src\Weather.c:108:13: error: 'NULL' undeclared (first use in this function)
+  108 |  if(path != NULL && pWeather != NULL){
+      |             ^~~~
+..\src\Weather.c:108:13: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+..\src\Weather.c:109:11: warning: implicit declaration of function 'fopen' [-Wimplicit-function-declaration]
+  109 |   pFile = fopen(path, "rb");
+      |           ^~~~~
+..\src\Weather.c:109:11: note: 'fopen' is defined in header '<stdio.h>'; did you forget to '#include <stdio.h>'?
+..\src\Weather.c:109:9: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  109 |   pFile = fopen(path, "rb");
+      |         ^
+..\src\Weather.c:110:6: warning: implicit declaration of function 'parser_WeatherFromBinary' [-Wimplicit-function-declaration]
+  110 |   if(parser_WeatherFromBinary(pFile, pWeather)){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Weather.c:113:3: warning: implicit declaration of function 'fclose' [-Wimplicit-function-declaration]
+  113 |   fclose(pFile);
+      |   ^~~~~~
+..\src\Weather.c: In function 'controller_loadToBinary':
+..\src\Weather.c:122:2: error: unknown type name 'FILE'
+  122 |  FILE* pFile;
+      |  ^~~~
+..\src\Weather.c:122:2: note: 'FILE' is defined in header '<stdio.h>'; did you forget to '#include <stdio.h>'?
+..\src\Weather.c:124:13: error: 'NULL' undeclared (first use in this function)
+  124 |  if(path != NULL && pWeather != NULL){
+      |             ^~~~
+..\src\Weather.c:124:13: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+..\src\Weather.c:125:9: warning: assignment to 'int *' from 'int' makes pointer from integer without a cast [-Wint-conversion]
+  125 |   pFile = fopen(path, "wb");
+      |         ^
+..\src\Weather.c:126:6: warning: implicit declaration of function 'parser_BinaryFromWeather' [-Wimplicit-function-declaration]
+  126 |   if(parser_BinaryFromWeather(pFile, pWeather)){
+      |      ^~~~~~~~~~~~~~~~~~~~~~~~
+..\src\Weather.c: In function 'controller_ListWeather':
+..\src\Weather.c:141:14: error: 'NULL' undeclared (first use in this function)
+  141 |  if(today != NULL){
+      |              ^~~~
+..\src\Weather.c:141:14: note: 'NULL' is defined in header '<stddef.h>'; did you forget to '#include <stddef.h>'?
+..\src\Weather.c:142:3: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  142 |   printf("#===========================================#\n");
+      |   ^~~~~~
+..\src\Weather.c:142:3: warning: incompatible implicit declaration of built-in function 'printf'
+..\src\Weather.c:142:3: note: include '<stdio.h>' or provide a declaration of 'printf'
+..\src\Weather.c: At top level:
+..\src\Weather.c:158:30: error: unknown type name 'FILE'
+  158 | int parser_WeatherFromBinary(FILE* pFile, Weather* pWeather){
+      |                              ^~~~
+..\src\Weather.c:158:30: note: 'FILE' is defined in header '<stdio.h>'; did you forget to '#include <stdio.h>'?
+..\src\Weather.c:177:30: error: unknown type name 'FILE'
+  177 | int parser_BinaryFromWeather(FILE* pFile, Weather* pWeather){
+      |                              ^~~~
+..\src\Weather.c:177:30: note: 'FILE' is defined in header '<stdio.h>'; did you forget to '#include <stdio.h>'?
+09:37:08 **** Incremental Build of configuration Debug for project 2do Parcial Programación ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\2do Parcial Programación.o" "..\\src\\2do Parcial Programación.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c" 
+..\src\Weather.c: In function 'weather_setForecast':
+..\src\Weather.c:44:9: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   44 |         strcpy(this->forecast, forec);
+      |         ^~~~~~
+..\src\Weather.c:44:9: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\Weather.c:9:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+    8 | #include "Weather.h"
+  +++ |+#include <string.h>
+    9 | 
+..\src\Weather.c: In function 'weather_getForecast':
+..\src\Weather.c:55:9: warning: incompatible implicit declaration of built-in function 'strcpy'
+   55 |         strcpy(forec, this->forecast);
+      |         ^~~~~~
+..\src\Weather.c:55:9: note: include '<string.h>' or provide a declaration of 'strcpy'
+gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 

@@ -1,3 +1,6 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=939df27751b7b37b78a9a76489d33613e6e196d3
 applyBackground=false
 approved.defs.file.last.changed.time=1624986146000
 configurationInstallLocation=/C\:/Users/Marco/eclipse/cpp-2021-06/eclipse/
@@ -6,13 +9,8 @@ eclipse.preferences.version=1
 iconcolormode=primary
 iconreplacement=false
 includeThemingInOomph=false
-<<<<<<< HEAD
-last.download.attempt.time=1638235198035
-lastConfiguration=1638235187775
-=======
-last.download.attempt.time=1637699829880
-lastConfiguration=1637699787866
->>>>>>> 939df27751b7b37b78a9a76489d33613e6e196d3
+last.download.attempt.time=1638273683512
+lastConfiguration=1638273649909
 newinstall=false
 showWelcomeDialog=false
 workbench.theme=Dark Gray

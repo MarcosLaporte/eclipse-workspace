@@ -26,7 +26,16 @@ int weather_getForecast(Weather* this, char* forecast);
 int weather_setTemp(Weather* this, float temp);
 int weather_getTemp(Weather* this, float* temp);
 
-Weather* makeWeather(void);
+Weather makeWeather(void);
 Weather* getWeather(int id, char* forecast, float temp);
+
+//Controller
+int controller_loadFromBinary(char* path, Weather* pWeather);
+int controller_loadToBinary(char* path, Weather* pWeather);
+int controller_ListWeather(Weather* today);
+
+//Parser
+int parser_WeatherFromBinary(FILE* pFile, Weather* pWeather);
+int parser_BinaryFromWeather(FILE* pFile, Weather* pWeather);
 
 #endif /* WEATHER_H_ */

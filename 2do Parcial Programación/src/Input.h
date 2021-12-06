@@ -18,14 +18,6 @@
 #define FOREC_LEN 31
 #define TEMP_LEN 10
 //-----------------
-#define ID 1
-#define TITLE 2
-#define AUTHOR 3
-#define PRICE 4
-
-#define ASCEN 1
-#define DESC 0
-//-----------------
 
 int myGets(char input[], int length);
 int isAnInt(char input[], int length);

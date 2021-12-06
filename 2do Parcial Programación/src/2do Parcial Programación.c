@@ -14,30 +14,20 @@ No se podrá utilizar LinkedList
 Los puntos 1c y 1d deberán desarrollarse en funciones distintas, parametrizadas según corresponda.
 No se puede utilzar ninguna estructura de las vistas en clase. Por ejemplo: empleados, productos, etc.
 *******************************************************************************/
-#include "Controller.h"
+#include "Weather.h"
 #define F_BIN "MarcosLaporte.bin"
 
 int main(){
 	setbuf(stdout, NULL);
 
-    Weather climate = {1, "Nublado", 16.5};
+    Weather climate = {1, "Soleado con granizo", 20.75};
     Weather auxClimate;
-    int option;
 
-    do{
-		getInt(&option, "Ingrese una opción: ", "ERROR! Ingrese una opción existente: ", 1, 4);
-		switch(option){
-		case 1:
-			controller_loadToBinary(F_BIN, &climate);
-			break;
-		case 2:
-			controller_loadFromBinary(F_BIN, &auxClimate);
-			break;
-		case 3:
-			controller_ListWeather(&auxClimate);
-			break;
-		}
-    }while(option != 0);
+	controller_loadToBinary(F_BIN, &climate);
+		printf("Los datos se subieron al archivo!\n");
+	controller_loadFromBinary(F_BIN, &auxClimate);
+		printf("Los datos se tomaron del archivo!\n");
+	controller_ListWeather(&auxClimate);
 
     return 0;
 }
