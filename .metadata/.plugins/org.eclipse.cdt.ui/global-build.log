@@ -3084,3 +3084,51 @@ gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Weather.o" "..\\src\\Weather.c"
       |         ^~~~~~
 ..\src\Weather.c:55:9: note: include '<string.h>' or provide a declaration of 'strcpy'
 gcc -o "2do Parcial Programación.exe" "src\\2do Parcial Programación.o" "src\\Input.o" "src\\Weather.o" 
+15:10:38 **** Rebuild of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Operaciones.o" "..\\src\\Operaciones.c" 
+..\src\Operaciones.c: In function 'myGets':
+..\src\Operaciones.c:19:6: warning: implicit declaration of function 'strnlen' [-Wimplicit-function-declaration]
+   19 |   if(strnlen(aux, sizeof(aux)) <= length){
+      |      ^~~~~~~
+..\src\Operaciones.c:19:6: warning: incompatible implicit declaration of built-in function 'strnlen'
+..\src\Operaciones.c:20:4: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   20 |    strcpy(input, aux);
+      |    ^~~~~~
+..\src\Operaciones.c:20:4: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\Operaciones.c:9:1: note: include '<string.h>' or provide a declaration of 'strcpy'
+    8 | #include <stdlib.h>
+  +++ |+#include <string.h>
+    9 | 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TP_1.o" "..\\src\\TP_1.c" 
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Biblioteca.o" "..\\src\\Biblioteca.c" 
+gcc -o TP_1.exe "src\\Biblioteca.o" "src\\Operaciones.o" "src\\TP_1.o" 
+15:12:16 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Operaciones.o" "..\\src\\Operaciones.c" 
+..\src\Operaciones.c: In function 'myGets':
+..\src\Operaciones.c:19:6: warning: implicit declaration of function 'strlen' [-Wimplicit-function-declaration]
+   19 |   if(strlen(aux, sizeof(aux)) <= length){
+      |      ^~~~~~
+..\src\Operaciones.c:19:6: warning: incompatible implicit declaration of built-in function 'strlen'
+..\src\Operaciones.c:9:1: note: include '<string.h>' or provide a declaration of 'strlen'
+    8 | #include <stdlib.h>
+  +++ |+#include <string.h>
+    9 | 
+..\src\Operaciones.c:19:6: error: too many arguments to function 'strlen'
+   19 |   if(strlen(aux, sizeof(aux)) <= length){
+      |      ^~~~~~
+..\src\Operaciones.c:20:4: warning: implicit declaration of function 'strcpy' [-Wimplicit-function-declaration]
+   20 |    strcpy(input, aux);
+      |    ^~~~~~
+..\src\Operaciones.c:20:4: warning: incompatible implicit declaration of built-in function 'strcpy'
+..\src\Operaciones.c:20:4: note: include '<string.h>' or provide a declaration of 'strcpy'
+15:12:33 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Operaciones.o" "..\\src\\Operaciones.c" 
+gcc -o TP_1.exe "src\\Biblioteca.o" "src\\Operaciones.o" "src\\TP_1.o" 
+c:/mingw/bin/../lib/gcc/mingw32/9.2.0/../../../../mingw32/bin/ld.exe: cannot open output file TP_1.exe: Permission denied
+collect2.exe: error: ld returned 1 exit status
+15:12:41 **** Incremental Build of configuration Debug for project TP_1 ****
+Info: Internal Builder is used for build
+gcc -o TP_1.exe "src\\Biblioteca.o" "src\\Operaciones.o" "src\\TP_1.o" 
